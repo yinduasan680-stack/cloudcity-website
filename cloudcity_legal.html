@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud City | 隐私政策与用户协议</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+Myanmar:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --purple:#7C3AED;--purple-light:#9F67F5;--purple-dark:#5B21B6;
+  --purple-pale:#F3EEFF;--purple-mid:#EDE9FE;
+  --mint:#22D3A0;--sky:#38BDF8;
+  --text-dark:#1A1020;--text-mid:#4A3A6A;--text-light:#9080B0;
+  --bg:#FAFAF8;--white:#FFFFFF;
+  --radius:16px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans Myanmar','Noto Sans SC','Nunito',sans-serif;background:var(--bg);color:var(--text-dark);overflow-x:hidden;line-height:1.7}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(124,58,237,0.1);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:64px;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.nav-logo .brand{font-family:'Nunito',sans-serif;font-weight:900;font-size:18px;color:var(--purple)}
+.nav-logo .sub{color:var(--text-light);font-size:11px;font-weight:600;display:block;margin-top:-3px}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-back{background:var(--purple-pale);color:var(--purple);border:1.5px solid rgba(124,58,237,0.2);border-radius:50px;padding:8px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;text-decoration:none;transition:background 0.2s}
+.nav-back:hover{background:var(--purple-mid)}
+
+/* LANG */
+.lang-btn{display:flex;align-items:center;gap:6px;background:var(--purple-pale);border:1.5px solid rgba(124,58,237,0.2);color:var(--purple);border-radius:50px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;position:relative;font-family:inherit;transition:background 0.2s}
+.lang-btn:hover{background:var(--purple-mid)}
+.lang-dropdown{position:absolute;top:calc(100% + 8px);right:0;background:white;border-radius:12px;box-shadow:0 8px 32px rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.1);overflow:hidden;min-width:140px;z-index:200;display:none}
+.lang-dropdown.open{display:block}
+.lang-option{display:flex;align-items:center;gap:10px;padding:10px 16px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text-mid);transition:background 0.15s;font-family:inherit}
+.lang-option:hover,.lang-option.active{background:var(--purple-pale);color:var(--purple)}
+
+/* HERO */
+.legal-hero{padding:100px 5% 48px;background:linear-gradient(150deg,#F3EEFF,#EDE9FE 50%,#E0F5FF);text-align:center;position:relative;overflow:hidden}
+.legal-hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:rgba(124,58,237,0.08);top:-100px;right:-80px;filter:blur(60px)}
+.legal-hero::after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(56,189,248,0.08);bottom:-60px;left:-60px;filter:blur(60px)}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(124,58,237,0.1);border:1.5px solid rgba(124,58,237,0.2);color:var(--purple);border-radius:50px;padding:6px 16px;font-size:11px;font-weight:700;margin-bottom:20px}
+.legal-hero h1{font-size:clamp(24px,4vw,42px);font-weight:700;color:var(--text-dark);margin-bottom:12px;line-height:1.25}
+.legal-hero p{font-size:14px;color:var(--text-mid);max-width:560px;margin:0 auto 32px}
+.effective-date{display:inline-flex;align-items:center;gap:6px;background:white;border:1px solid rgba(124,58,237,0.15);border-radius:50px;padding:6px 16px;font-size:12px;color:var(--text-mid);font-weight:600}
+
+/* TAB NAV */
+.tab-nav{background:white;border-bottom:2px solid rgba(124,58,237,0.08);position:sticky;top:64px;z-index:90;display:flex;overflow-x:auto;padding:0 5%}
+.tab-nav::-webkit-scrollbar{display:none}
+.tab-btn{flex-shrink:0;padding:16px 20px;font-size:13px;font-weight:700;color:var(--text-light);cursor:pointer;border-bottom:2.5px solid transparent;margin-bottom:-2px;transition:color 0.2s,border-color 0.2s;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;white-space:nowrap}
+.tab-btn.active{color:var(--purple);border-bottom-color:var(--purple)}
+.tab-btn:hover{color:var(--purple)}
+
+/* CONTENT */
+.legal-container{max-width:820px;margin:0 auto;padding:56px 5%}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* SUB-TABS (Zh/En/My) */
+.lang-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.lang-tab{padding:8px 18px;border-radius:50px;font-size:12px;font-weight:700;cursor:pointer;border:1.5px solid rgba(124,58,237,0.2);color:var(--text-mid);background:white;transition:all 0.2s;font-family:inherit}
+.lang-tab.active{background:var(--purple);color:white;border-color:var(--purple)}
+
+.version-panel{display:none}
+.version-panel.active{display:block}
+
+/* ARTICLE STYLES */
+.policy-article{}
+.policy-article .article-header{background:linear-gradient(135deg,var(--purple-dark),var(--purple));border-radius:var(--radius);padding:28px 30px;margin-bottom:32px;color:white}
+.policy-article .article-header .art-tag{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);color:white;border-radius:50px;padding:4px 14px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:14px}
+.policy-article .article-header h2{font-size:clamp(18px,3vw,26px);font-weight:700;line-height:1.3;margin-bottom:8px}
+.policy-article .article-header p{font-size:13px;opacity:0.85;line-height:1.8}
+
+.policy-section{margin-bottom:28px}
+.policy-section h3{font-size:15px;font-weight:700;color:var(--purple);margin-bottom:10px;padding-left:14px;border-left:3px solid var(--purple);line-height:1.4}
+.policy-section p{font-size:14px;color:var(--text-mid);line-height:1.9;margin-bottom:10px}
+.policy-section ul{list-style:none;padding:0;margin:0}
+.policy-section ul li{font-size:14px;color:var(--text-mid);line-height:1.9;padding:4px 0 4px 20px;position:relative}
+.policy-section ul li::before{content:'•';position:absolute;left:4px;color:var(--purple);font-weight:700}
+
+.divider{border:none;border-top:1.5px solid rgba(124,58,237,0.08);margin:32px 0}
+
+.info-card{background:var(--purple-pale);border:1px solid rgba(124,58,237,0.12);border-radius:var(--radius);padding:20px 22px;margin-bottom:16px}
+.info-card .ic-title{font-size:13px;font-weight:700;color:var(--purple);margin-bottom:8px}
+.info-card p{font-size:13px;color:var(--text-mid);line-height:1.85}
+
+.contact-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.contact-item{background:white;border:1.5px solid rgba(124,58,237,0.1);border-radius:12px;padding:16px;display:flex;align-items:center;gap:12px}
+.contact-item .ci-icon{width:36px;height:36px;border-radius:10px;background:var(--purple-pale);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.contact-item .ci-text{font-size:12px;color:var(--text-light);font-weight:600}
+.contact-item .ci-val{font-size:13px;color:var(--text-dark);font-weight:700;margin-top:2px}
+
+/* FOOTER */
+footer{background:var(--text-dark);color:rgba(255,255,255,0.6);text-align:center;padding:32px 5%;font-size:12px}
+footer a{color:rgba(255,255,255,0.5);text-decoration:none;margin:0 8px}
+footer a:hover{color:white}
+.footer-logo{font-family:'Nunito',sans-serif;font-weight:900;font-size:18px;color:white;margin-bottom:12px}
+
+/* QUICK-NAV SIDEBAR (desktop only) */
+@media(min-width:900px){
+  .legal-layout{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:start}
+  .quick-nav{position:sticky;top:130px;background:white;border:1.5px solid rgba(124,58,237,0.1);border-radius:var(--radius);padding:20px;font-size:13px}
+  .quick-nav .qn-title{font-weight:700;color:var(--text-dark);margin-bottom:14px;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+  .quick-nav a{display:block;color:var(--text-light);text-decoration:none;padding:6px 0;font-weight:600;transition:color 0.2s;border-bottom:1px solid rgba(124,58,237,0.05)}
+  .quick-nav a:last-child{border-bottom:none}
+  .quick-nav a:hover{color:var(--purple)}
+}
+@media(max-width:899px){
+  .quick-nav{display:none}
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.tab-panel.active{animation:fadeIn 0.35s ease}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="cloudcity_website_final.html" class="nav-logo">
+    <span>
+      <span class="brand">Cloud City</span>
+      <span class="sub">云城外卖</span>
+    </span>
+  </a>
+  <div class="nav-right">
+    <div style="position:relative">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="width:15px;height:15px"><circle cx="8" cy="8" r="6.5"/><path d="M8 1.5C8 1.5 6 4 6 8s2 6.5 2 6.5M8 1.5C8 1.5 10 4 10 8s-2 6.5-2 6.5M1.5 8h13"/></svg>
+        <span id="currentLang">中文</span>
+        <svg viewBox="0 0 10 6" fill="currentColor" style="width:10px;height:10px"><path d="M0 0l5 6 5-6z"/></svg>
+      </button>
+      <div class="lang-dropdown" id="langDropdown">
+        <div class="lang-option active" onclick="setPageLang('zh')"><span class="flag">🇨🇳</span>中文</div>
+        <div class="lang-option" onclick="setPageLang('en')"><span class="flag">🇬🇧</span>English</div>
+        <div class="lang-option" onclick="setPageLang('my')"><span class="flag">🇲🇲</span>မြန်မာ</div>
+      </div>
+    </div>
+    <a href="cloudcity_website_final.html" class="nav-back">← 返回官网</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="legal-hero">
+  <div class="hero-badge">⚖️ 法律文件 · Legal Documents</div>
+  <h1 id="heroTitle">隐私政策与用户协议</h1>
+  <p id="heroSub">感谢您使用 Cloud City。以下文件说明我们如何收集、使用和保护您的数据，以及您使用本平台的相关权利与义务。</p>
+  <div class="effective-date">📅 生效日期：2026年1月27日</div>
+</div>
+
+<!-- TAB NAV -->
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('privacy')" id="tab-privacy">🔒 隐私政策</button>
+  <button class="tab-btn" onclick="switchTab('user-agreement')" id="tab-user-agreement">👤 用户协议</button>
+  <button class="tab-btn" onclick="switchTab('merchant-agreement')" id="tab-merchant-agreement">🏪 商家协议</button>
+  <button class="tab-btn" onclick="switchTab('rider-agreement')" id="tab-rider-agreement">🛵 骑手协议 <span style="font-size:10px;background:rgba(124,58,237,0.1);color:var(--purple);border-radius:20px;padding:2px 7px;margin-left:4px">即将更新</span></button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="legal-container">
+
+  <!-- ============ PRIVACY POLICY ============ -->
+  <div class="tab-panel active" id="panel-privacy">
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="switchVersion('privacy','zh')">🇨🇳 中文</button>
+      <button class="lang-tab" onclick="switchVersion('privacy','en')">🇬🇧 English</button>
+      <button class="lang-tab" onclick="switchVersion('privacy','my')">🇲🇲 မြန်မာ</button>
+    </div>
+
+    <!-- ZH -->
+    <div class="version-panel active" id="privacy-zh">
+      <div class="legal-layout">
+        <div class="quick-nav">
+          <div class="qn-title">快速导航</div>
+          <a href="#pz-intro">引言</a>
+          <a href="#pz-collect">收集的信息</a>
+          <a href="#pz-use">信息使用</a>
+          <a href="#pz-access">访问与控制</a>
+          <a href="#pz-share">信息共享</a>
+          <a href="#pz-security">信息安全</a>
+          <a href="#pz-cookies">Cookies</a>
+          <a href="#pz-ads">广告服务</a>
+          <a href="#pz-minor">未成年人</a>
+          <a href="#pz-contact">联系我们</a>
+        </div>
+        <div class="policy-article">
+          <div class="article-header">
+            <div class="art-tag">隐私政策 · Privacy Policy</div>
+            <h2>CloudCity 隐私政策</h2>
+            <p>生效日期：2026年1月27日 | 适用范围：所有 CloudCity 服务用户</p>
+          </div>
+
+          <div class="policy-section" id="pz-intro">
+            <h3>引言</h3>
+            <p>CloudCity 重视用户的隐私。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。</p>
+            <p>您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。</p>
+            <div class="info-card">
+              <div class="ic-title">📧 如有疑问请联系我们</div>
+              <p>如对本《隐私政策》或相关事宜有任何问题，请通过 <strong>cloudcitymm@gmail.com</strong> 与我们联系。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-collect">
+            <h3>我们可能收集的信息</h3>
+            <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息：</p>
+            <p><strong>您提供的信息</strong></p>
+            <ul>
+              <li>您在注册账户或使用我们的服务时提供的个人信息，如电话号码、电子邮件或银行卡号等</li>
+              <li>您通过我们的服务向其他方提供的共享信息，以及使用我们服务时储存的信息</li>
+            </ul>
+            <p style="margin-top:12px"><strong>我们自动获取的信息</strong></p>
+            <ul>
+              <li>日志信息：设备或软件信息、IP地址、移动设备版本及设备识别码</li>
+              <li>搜索或浏览信息：搜索词语、访问的页面URL、浏览内容详情</li>
+              <li>移动应用及软件使用信息</li>
+              <li>通讯信息：曾通讯的账号、通讯时间、数据和时长</li>
+              <li>位置信息：通过GPS或WiFi收集的地理位置信息（可通过关闭定位功能停止收集）</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-use">
+            <h3>我们可能如何使用信息</h3>
+            <ul>
+              <li>向您提供服务</li>
+              <li>用于身份验证、客户服务、安全防范、诈骗监测、存档和备份</li>
+              <li>帮助我们设计新服务，改善现有服务</li>
+              <li>了解您如何接入和使用我们的服务，针对性回应个性化需求</li>
+              <li>向您提供与您更加相关的广告</li>
+              <li>评估广告和促销活动的效果并加以改善</li>
+              <li>软件认证或管理软件升级</li>
+              <li>让您参与有关我们产品和服务的调查</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-access">
+            <h3>您如何访问和控制自己的个人信息</h3>
+            <p>我们将尽一切可能采取适当的技术手段，保证您可以访问、更新和更正自己的注册信息或使用我们的服务时提供的其他个人信息。在访问、更新、更正和删除前述信息时，我们可能会要求您进行身份验证，以保障账户安全。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-share">
+            <h3>我们可能分享的信息</h3>
+            <p>除以下情形外，未经您同意，我们以及我们的关联公司不会与任何第三方分享您的个人信息：</p>
+            <ul>
+              <li>向您提供我们的服务所必需的关联公司、合作伙伴及第三方服务供应商（如通讯服务商、地图服务供应商等）</li>
+              <li>遵守适用的法律法规</li>
+              <li>遵守法院命令或其他法律程序的规定</li>
+              <li>遵守相关政府机关的要求</li>
+              <li>保护我们的客户、用户或雇员的人身和财产安全或合法权益</li>
+            </ul>
+            <p style="margin-top:10px">如发生合并、收购、资产转让等交易，您的个人信息可能作为此类交易的一部分被转移，我们将在转移前通知您。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-security">
+            <h3>信息安全</h3>
+            <p>我们仅在本《隐私政策》所述目的所必需的期间和法律法规要求的时限内保留您的个人信息。我们使用各种安全技术和程序，以防信息的丢失、不当使用、未经授权阅览或披露。例如，在某些服务中，我们将利用加密技术（如SSL）来保护您提供的个人信息。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-cookies">
+            <h3>我们可能如何收集信息（Cookies）</h3>
+            <p>我们或我们的第三方合作伙伴，可能通过 Cookies 和 Web Beacon 收集和使用您的信息，用于：</p>
+            <ul>
+              <li>记住您的身份和偏好设置</li>
+              <li>分析您使用我们服务的情况</li>
+              <li>广告优化——根据您的信息提供相关广告</li>
+            </ul>
+            <p style="margin-top:10px">您可以通过浏览器设置拒绝或管理 Cookies。但请注意，如果停用，您有可能无法享受最佳的服务体验。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-ads">
+            <h3>广告服务</h3>
+            <p>我们可能使用您的相关信息，向您提供与您更加相关的广告，并通过我们的服务、电子邮件或其他方式向您发送营销信息。如您不希望我们将您的个人信息用作广告用途，您可以通过相关提示要求我们停止。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-minor">
+            <h3>未成年人使用我们的服务</h3>
+            <p>我们鼓励父母或监护人指导未满十八岁的未成年人使用我们的服务。我们建议未成年人在提交个人信息之前寻求父母或监护人的同意和指导。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="pz-contact">
+            <h3>联系我们</h3>
+            <div class="contact-row">
+              <div class="contact-item">
+                <div class="ci-icon">📧</div>
+                <div><div class="ci-text">电子邮件</div><div class="ci-val">cloudcitymm@gmail.com</div></div>
+              </div>
+              <div class="contact-item">
+                <div class="ci-icon">🌐</div>
+                <div><div class="ci-text">官方网站</div><div class="ci-val">www.cloudcitymm.com</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /privacy-zh -->
+
+    <!-- EN -->
+    <div class="version-panel" id="privacy-en">
+      <div class="policy-article">
+        <div class="article-header">
+          <div class="art-tag">Privacy Policy · English</div>
+          <h2>CloudCity Privacy Policy</h2>
+          <p>Effective Date: January 27, 2026 | Applies to all CloudCity service users</p>
+        </div>
+        <div class="policy-section">
+          <h3>Introduction</h3>
+          <p>CloudCity values your privacy. When you use our services, we may collect and use information about you. This Privacy Policy explains how we collect, use, store, and share that information, and how you can access, update, control, and protect it.</p>
+          <p>By using or continuing to use our services, you agree to the collection, use, storage, and sharing of your information as described in this Privacy Policy.</p>
+          <div class="info-card"><div class="ic-title">📧 Contact Us</div><p>If you have any questions about this Privacy Policy, please contact us at <strong>cloudcitymm@gmail.com</strong>.</p></div>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>Information We May Collect</h3>
+          <p><strong>Information you provide:</strong></p>
+          <ul>
+            <li>Personal information provided when registering or using our services, such as phone number, email address, or payment details</li>
+            <li>Shared information provided to other parties through our services</li>
+          </ul>
+          <p style="margin-top:12px"><strong>Information we collect automatically:</strong></p>
+          <ul>
+            <li>Log information: device/software info, IP address, device identifiers</li>
+            <li>Browsing information: search queries, visited URLs, content details</li>
+            <li>App and software usage information</li>
+            <li>Communication data: accounts communicated with, time, and duration</li>
+            <li>Location data via GPS or WiFi (can be disabled in device settings)</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>How We Use Information</h3>
+          <ul>
+            <li>To provide our services</li>
+            <li>For authentication, customer service, security, fraud detection, archiving and backup</li>
+            <li>To design new services and improve existing ones</li>
+            <li>To personalize your experience</li>
+            <li>To serve relevant advertisements</li>
+            <li>To evaluate and improve advertising campaigns</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>Information Security</h3>
+          <p>We retain your personal information only as long as necessary for the purposes described in this policy. We use security technologies such as SSL encryption to protect your information from loss, misuse, unauthorized access, or disclosure.</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>Children's Privacy</h3>
+          <p>We encourage parents or guardians to supervise minors under 18 in the use of our services. We recommend that minors seek parental consent before submitting personal information.</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>Contact Us</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">Email</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">Website</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /privacy-en -->
+
+    <!-- MY -->
+    <div class="version-panel" id="privacy-my">
+      <div class="policy-article">
+        <div class="article-header">
+          <div class="art-tag">ကိုယ်ရေးအချက်အလက် မူဝါဒ · မြန်မာဘာသာ</div>
+          <h2>CloudCity ကိုယ်ရေးအချက်အလက် လုံခြုံမှု မူဝါဒ</h2>
+          <p>စတင်အသက်ဝင်သည့်ရက်စွဲ - ၂၀၂၆ ခုနှစ်၊ ဇန်နဝါရီလ ၂၇ ရက်</p>
+        </div>
+        <div class="policy-section">
+          <h3>နိဒါန်း</h3>
+          <p>CloudCity သည် သုံးစွဲသူများ၏ ကိုယ်ရေးအချက်အလက်ကို အလေးထားပါသည်။ ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုများကို အသုံးပြုသောအခါ၊ ကျွန်ုပ်တို့သည် သင်နှင့်ပတ်သက်သော သတင်းအချက်အလက်များကို စုဆောင်းပြီး အသုံးပြုနိုင်ပါသည်။</p>
+          <div class="info-card"><div class="ic-title">📧 ဆက်သွယ်ရန်</div><p>ဤမူဝါဒနှင့်ပတ်သက်၍ မေးခွန်းများရှိပါက <strong>cloudcitymm@gmail.com</strong> သို့ ဆက်သွယ်ပါ။</p></div>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>ကျွန်ုပ်တို့ ရယူနိုင်သော သတင်းအချက်အလက်များ</h3>
+          <ul>
+            <li>မှတ်ပုံတင်ရာတွင် ပေးသော ကိုယ်ရေးအချက်အလက်များ - ဖုန်းနံပါတ်၊ အီးမေးလ် လိပ်စာ</li>
+            <li>ဝန်ဆောင်မှု အသုံးပြုမှုမှ အလိုအလျောက် ရရှိသော Log အချက်အလက်များ</li>
+            <li>GPS သို့မဟုတ် WiFi မှတဆင့် ရရှိသော တည်နေရာ အချက်အလက်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>အချက်အလက် အသုံးပြုပုံ</h3>
+          <ul>
+            <li>ဝန်ဆောင်မှုများ ပေးဆောင်ရန်</li>
+            <li>လုံခြုံရေးနှင့် လိမ်လည်မှု ကာကွယ်ရန်</li>
+            <li>ဝန်ဆောင်မှုများ တိုးတက်အောင် ပြုလုပ်ရန်</li>
+            <li>သင်နှင့် သက်ဆိုင်သော ကြော်ငြာများ ပေးဆောင်ရန်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>ကလေးများဆိုင်ရာ မူဝါဒ</h3>
+          <p>ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုသည် အသက် ၁၈ နှစ်အောက် ကလေးများအတွက် မရည်ရွယ်ပါ။ မိဘများနှင့် အုပ်ထိန်းသူများသည် ကလေးများကို လမ်းညွှန်ပေးရန် တိုက်တွန်းပါသည်။</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>ဆက်သွယ်ရန်</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">အီးမေးလ်</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">ဝဘ်ဆိုက်</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /privacy-my -->
+  </div><!-- /panel-privacy -->
+
+
+  <!-- ============ USER AGREEMENT ============ -->
+  <div class="tab-panel" id="panel-user-agreement">
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="switchVersion('user','zh')">🇨🇳 中文</button>
+      <button class="lang-tab" onclick="switchVersion('user','en')">🇬🇧 English</button>
+      <button class="lang-tab" onclick="switchVersion('user','my')">🇲🇲 မြန်မာ</button>
+    </div>
+
+    <!-- ZH -->
+    <div class="version-panel active" id="user-zh">
+      <div class="legal-layout">
+        <div class="quick-nav">
+          <div class="qn-title">快速导航</div>
+          <a href="#uz-intro">介绍</a>
+          <a href="#uz-def">定义</a>
+          <a href="#uz-scope">服务范围</a>
+          <a href="#uz-collect">信息收集</a>
+          <a href="#uz-transfer">数据传输</a>
+          <a href="#uz-disclosure">数据披露</a>
+          <a href="#uz-providers">服务提供商</a>
+          <a href="#uz-children">儿童隐私</a>
+          <a href="#uz-ip">知识产权</a>
+          <a href="#uz-changes">政策变更</a>
+          <a href="#uz-contact">联系我们</a>
+        </div>
+        <div class="policy-article">
+          <div class="article-header">
+            <div class="art-tag">用户协议 · 中文版</div>
+            <h2>云城外卖 (Cloud City) 用户协议与隐私政策</h2>
+            <p>生效日期：2026年1月27日</p>
+          </div>
+
+          <div class="policy-section" id="uz-intro">
+            <h3>1. 介绍</h3>
+            <p>欢迎使用 Cloud City（云城）。Cloud City（以下简称"我们"、"我们的"或"本平台"）运营 <strong>www.cloudcitymm.com</strong> 及 CloudCity Food 移动应用程序（以下简称"服务"）。</p>
+            <p>本协议管辖您对我们网站和应用程序的访问，并说明我们如何收集、保护和披露您因使用我们服务（包括外卖、跑腿、帮买及打车服务）而产生的信息。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-def">
+            <h3>2. 定义</h3>
+            <ul>
+              <li><strong>服务 (SERVICE)</strong>：指由 CloudCity Food 运营的 www.cloudcitymm.com 网站及移动应用程序</li>
+              <li><strong>个人数据 (PERSONAL DATA)</strong>：关于可以被识别出的活体个人的数据</li>
+              <li><strong>使用数据 (USAGE DATA)</strong>：通过使用服务自动生成的数据（如页面访问时长）</li>
+              <li><strong>位置数据 (LOCATION DATA)</strong>：用于通过GPS、Wi-Fi或蜂窝网络塔识别您的移动设备地理位置的信息</li>
+              <li><strong>Cookies</strong>：存储在您设备上的小文件</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-scope">
+            <h3>3. 服务内容与规范</h3>
+            <ul>
+              <li><strong>餐饮外卖</strong>：用户需确保收货地址准确</li>
+              <li><strong>跑腿与帮买</strong>：严禁利用本服务寄递或购买缅甸法律禁止的违禁品（如毒品、武器等）</li>
+              <li><strong>打车服务</strong>：司乘双方应文明沟通。18岁以下未成年人建议由监护人陪同乘车</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-collect">
+            <h3>4. 信息收集与使用</h3>
+            <p><strong>4.1 个人数据</strong></p>
+            <ul>
+              <li>电子邮件地址</li>
+              <li>名字和姓氏</li>
+              <li>电话号码</li>
+              <li>地址、国家、省、城市、邮政编码（用于外卖配送）</li>
+              <li>Cookies 和使用数据</li>
+            </ul>
+            <p style="margin-top:12px"><strong>4.2 位置数据</strong></p>
+            <ul>
+              <li><strong>外卖/跑腿</strong>：追踪配送员位置并向您展示订单进度</li>
+              <li><strong>打车</strong>：匹配附近的司机，计算行程费用及导航</li>
+            </ul>
+            <p style="margin-top:8px">您可以在设备设置中随时启用或禁用位置服务。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-transfer">
+            <h3>5. 数据传输</h3>
+            <p>您的信息（包括个人数据）可能会被传输到您所在地区之外的计算机上并在那里进行维护。</p>
+            <div class="info-card"><div class="ic-title">⚠️ 特别注意</div><p>如果您位于缅甸境外并选择向我们提供信息，请注意我们会将数据传输到缅甸（Myanmar）并在那里进行处理。您同意本协议并提交信息，即表示您同意该传输。</p></div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-disclosure">
+            <h3>6. 数据披露</h3>
+            <ul>
+              <li><strong>执法要求</strong>：在法律要求或公共机构（如法院或政府机构）的有效要求下</li>
+              <li><strong>业务需求</strong>：为了完成您的订单，我们会将您的电话号码和地址披露给接单的商家、配送员或司机</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-providers">
+            <h3>7. 服务提供商</h3>
+            <p>我们可能雇用第三方公司来促进我们的服务（如支付处理、地图服务、服务器托管）。</p>
+            <ul>
+              <li><strong>支付</strong>：使用 KBZPay、WaveMoney 等第三方支付服务。我们不会存储您的完整支付卡详细信息</li>
+              <li><strong>地图服务</strong>：使用 Google Maps API 或其他地图服务商提供定位和导航功能</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-children">
+            <h3>8. 儿童隐私</h3>
+            <p>我们的服务不面向 18 岁以下的儿童。我们不会有意收集 18 岁以下儿童的个人身份信息。如果我们发现在未经父母同意的情况下收集了儿童的个人数据，我们将采取措施从我们的服务器中删除该信息。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-ip">
+            <h3>9. 知识产权与免责声明</h3>
+            <ul>
+              <li><strong>知识产权</strong>：Cloud City 的所有商标、Logo、软件代码归本公司所有</li>
+              <li><strong>免责声明</strong>：虽然我们努力确保数据安全，但由于互联网的固有性质，我们不能保证数据传输的绝对安全。对于因不可抗力（如地震、网络中断）导致的服务中断，平台不承担主要责任</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-changes">
+            <h3>10. 本协议的更改</h3>
+            <p>我们可能会不时更新我们的用户协议和隐私政策。我们将通过在此页面上发布新的政策来通知您更改。建议您定期查看本政策以了解任何更改。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="uz-contact">
+            <h3>11. 联系我们</h3>
+            <div class="contact-row">
+              <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">电子邮件</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+              <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">官方网站</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /user-zh -->
+
+    <!-- EN -->
+    <div class="version-panel" id="user-en">
+      <div class="policy-article">
+        <div class="article-header">
+          <div class="art-tag">User Agreement · English</div>
+          <h2>Cloud City User Agreement & Privacy Policy</h2>
+          <p>Effective Date: January 27, 2026</p>
+        </div>
+        <div class="policy-section">
+          <h3>1. Introduction</h3>
+          <p>Welcome to Cloud City. Cloud City ("us", "we", or "our") operates <strong>www.cloudcitymm.com</strong> and the CloudCity Food mobile application (the "Service"). This agreement governs your visit to our website and application, and explains how we collect, safeguard, and disclose information from your use of our Service (including Food Delivery, Errands, Buy-for-Me, and Taxi Services).</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>2. Definitions</h3>
+          <ul>
+            <li><strong>SERVICE</strong>: The website www.cloudcitymm.com and the mobile application operated by CloudCity Food</li>
+            <li><strong>PERSONAL DATA</strong>: Data about a living individual who can be identified from those data</li>
+            <li><strong>USAGE DATA</strong>: Data collected automatically from the use of the Service (e.g., duration of a page visit)</li>
+            <li><strong>LOCATION DATA</strong>: Information used to identify the geographic location of your mobile device via GPS, Wi-Fi, or cellular network towers</li>
+            <li><strong>COOKIES</strong>: Small files stored on your device</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>3. Scope of Service</h3>
+          <ul>
+            <li><strong>Food Delivery</strong>: Users must ensure that the delivery address is accurate</li>
+            <li><strong>Errands & Buy-for-Me</strong>: It is strictly prohibited to use this service to send or purchase contraband prohibited by Myanmar law (such as drugs, weapons, explosives, etc.)</li>
+            <li><strong>Taxi Service</strong>: Drivers and passengers should communicate civilly. Minors under 18 are recommended to be accompanied by a guardian</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>4. Information Collection and Use</h3>
+          <p><strong>4.1 Personal Data</strong> — We may ask you to provide: Email address, First name and last name, Phone number, Address/City/ZIP (for delivery), Cookies and Usage Data.</p>
+          <p style="margin-top:10px"><strong>4.2 Location Data</strong> — Used to track rider location for delivery/errands, and to match nearby drivers and calculate trip fares for taxi. You can enable or disable location services at any time via your device settings.</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>5. Transfer of Data</h3>
+          <div class="info-card"><div class="ic-title">⚠️ Important Note</div><p>If you are located outside Myanmar and choose to provide information to us, please note that we transfer the data, including Personal Data, to Myanmar and process it there. Your consent to this Privacy Policy represents your agreement to that transfer.</p></div>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>6. Disclosure of Data</h3>
+          <ul>
+            <li><strong>Law Enforcement</strong>: Under required laws or valid requests by public authorities</li>
+            <li><strong>Business Necessity</strong>: To fulfill your order, we will disclose your Phone Number and Address to the Merchant, Rider, or Driver who accepts the order</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>7. Service Providers</h3>
+          <ul>
+            <li><strong>Payments</strong>: KBZPay, WaveMoney, etc. We will not store your full payment card details</li>
+            <li><strong>Map Services</strong>: Google Maps API or other map service providers</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>8. Children's Privacy</h3>
+          <p>Our Service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from anyone under 18. If we become aware that we have collected Personal Data from children without parental consent, we take steps to remove that information from our servers.</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>9. Intellectual Property & Disclaimer</h3>
+          <ul>
+            <li><strong>Intellectual Property</strong>: All trademarks, logos, and software code of Cloud City belong to the company</li>
+            <li><strong>Disclaimer</strong>: We cannot guarantee absolute security of data transmission. The platform assumes no primary liability for service interruptions caused by force majeure (e.g., earthquakes, network outages)</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>11. Contact Us</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">Email</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">Website</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /user-en -->
+
+    <!-- MY -->
+    <div class="version-panel" id="user-my">
+      <div class="policy-article">
+        <div class="article-header">
+          <div class="art-tag">သုံးစွဲသူ သဘောတူညီချက် · မြန်မာဘာသာ</div>
+          <h2>Cloud City ၏ အသုံးပြုသူ သဘောတူညီချက်နှင့် ကိုယ်ရေးအချက်အလက် လုံခြုံမှု မူဝါဒ</h2>
+          <p>စတင်အသက်ဝင်သည့်ရက်စွဲ - ၂၀၂၆ ခုနှစ်၊ ဇန်နဝါရီလ ၂၇ ရက်</p>
+        </div>
+        <div class="policy-section">
+          <h3>၁။ နိဒါန်း</h3>
+          <p>Cloud City (CloudCity Food) မှ ကြိုဆိုပါသည်။ Cloud City ("ကျွန်ုပ်တို့") သည် www.cloudcitymm.com ဝဘ်ဆိုက်နှင့် CloudCity Food မိုဘိုင်းအက်ပ် ("ဝန်ဆောင်မှု") ကို လုပ်ဆောင်ပါသည်။</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၂။ အဓိပ္ပါယ်ဖွင့်ဆိုချက်များ</h3>
+          <ul>
+            <li><strong>ဝန်ဆောင်မှု (SERVICE)</strong> - CloudCity Food မှ လုပ်ဆောင်သော ဝဘ်ဆိုက်နှင့် မိုဘိုင်းအက်ပ်</li>
+            <li><strong>ကိုယ်ရေးအချက်အလက် (PERSONAL DATA)</strong> - လူပုဂ္ဂိုလ်တစ်ဦးကို ခွဲခြားသိရှိနိုင်သော အချက်အလက်များ</li>
+            <li><strong>တည်နေရာ အချက်အလက် (LOCATION DATA)</strong> - GPS သို့မဟုတ် အင်တာနက်ကွန်ရက်မှတဆင့် သင်၏ မိုဘိုင်းဖုန်း တည်နေရာကို သိရှိနိုင်သော အချက်အလက်များ</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၃။ ဝန်ဆောင်မှု အတိုင်းအတာနှင့် စည်းကမ်းများ</h3>
+          <ul>
+            <li><strong>အစားအသောက် ပို့ဆောင်ခြင်း (Food Delivery)</strong> - သုံးစွဲသူများသည် ပို့ဆောင်ရမည့် လိပ်စာအမှန်ကို ထည့်သွင်းရပါမည်</li>
+            <li><strong>အထွေထွေ ပို့ဆောင်ခြင်းနှင့် အစားဝယ်ပေးခြင်း (Errands & Buy-for-Me)</strong> - မြန်မာနိုင်ငံ ဥပဒေအရ တားမြစ်ထားသော ပစ္စည်းများကို ပို့ဆောင်ခြင်း လုံးဝ မပြုလုပ်ရပါ</li>
+            <li><strong>Taxi ဝန်ဆောင်မှု</strong> - ယာဉ်မောင်းနှင့် ခရီးသည် ယဉ်ကျေးစွာ ဆက်ဆံရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၄။ အချက်အလက် ရယူခြင်းနှင့် အသုံးပြုခြင်း</h3>
+          <ul>
+            <li>အီးမေးလ် လိပ်စာ</li>
+            <li>နာမည်</li>
+            <li>ဖုန်းနံပါတ်</li>
+            <li>လိပ်စာ၊ မြို့နယ် (ပို့ဆောင်ရေးအတွက်)</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၆။ အချက်အလက် ထုတ်ဖော်ခြင်း</h3>
+          <ul>
+            <li>ဥပဒေအရ လိုအပ်ချက် - တရားရုံး သို့မဟုတ် အစိုးရအဖွဲ့အစည်းများမှ တောင်းဆိုလာလျှင်</li>
+            <li>လုပ်ငန်း လိုအပ်ချက် - သင့်အော်ဒါ အောင်မြင်စေရန် ဆိုင်များ၊ Rider များ ထံသို့ သင်၏ ဖုန်းနံပါတ်နှင့် လိပ်စာ ပေးပို့ရပါမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၇။ ဝန်ဆောင်မှု အထောက်အကူပြုသူများ</h3>
+          <ul>
+            <li>ငွေပေးချေမှု - KBZPay, WaveMoney စသည်တို့ကို အသုံးပြုနိုင်ပါသည်</li>
+            <li>မြေပုံ - Google Maps API စသည်တို့ကို အသုံးပြုပါသည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၈။ ကလေးများဆိုင်ရာ မူဝါဒ</h3>
+          <p>ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုသည် အသက် ၁၈ နှစ်အောက် ကလေးများအတွက် မရည်ရွယ်ပါ။ မိဘခွင့်ပြုချက်မရှိဘဲ ကလေးများ၏ အချက်အလက်ကို ရယူထားမိပါက ချက်ချင်း ပယ်ဖျက်ပါမည်။</p>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၉။ မူပိုင်ခွင့်နှင့် တာဝန်ယူမှု ကန့်သတ်ချက်</h3>
+          <ul>
+            <li>မူပိုင်ခွင့် - Cloud City ၏ ကုန်အမှတ်တံဆိပ် (Logo) နှင့် ဆော့ဖ်ဝဲကုဒ်များသည် ကုမ္ပဏီပိုင် ဖြစ်သည်</li>
+            <li>တာဝန်ယူမှု - ငလျင်လှုပ်ခြင်း၊ အင်တာနက်လိုင်းပြတ်တောက်ခြင်း စသည့် သဘာဝဘေးအန္တရာယ်များကြောင့် ဝန်ဆောင်မှု ပြတ်တောက်မှုများအတွက် ပလက်ဖောင်းမှ တာဝန်ယူမည် မဟုတ်ပါ</li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="policy-section">
+          <h3>၁၁။ ဆက်သွယ်ရန်</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">အီးမေးလ်</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">ဝဘ်ဆိုက်</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /user-my -->
+  </div><!-- /panel-user-agreement -->
+
+
+  <!-- ============ MERCHANT AGREEMENT ============ -->
+  <div class="tab-panel" id="panel-merchant-agreement">
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="switchVersion('merchant','zh')">🇨🇳 中文</button>
+      <button class="lang-tab" onclick="switchVersion('merchant','en')">🇬🇧 English</button>
+      <button class="lang-tab" onclick="switchVersion('merchant','my')">🇲🇲 မြန်မာ</button>
+    </div>
+
+    <!-- ZH -->
+    <div class="version-panel active" id="merchant-zh">
+      <div class="legal-layout">
+        <div class="quick-nav">
+          <div class="qn-title">快速导航</div>
+          <a href="#mz-intro">介绍</a>
+          <a href="#mz-qualify">入驻资格</a>
+          <a href="#mz-review">审核流程</a>
+          <a href="#mz-commission">佣金与结算</a>
+          <a href="#mz-order">订单规范</a>
+          <a href="#mz-food">食品安全</a>
+          <a href="#mz-penalty">违规处理</a>
+          <a href="#mz-settlement">结算周期</a>
+          <a href="#mz-terminate">退出平台</a>
+          <a href="#mz-contact">联系我们</a>
+        </div>
+        <div class="policy-article">
+          <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
+            <div class="art-tag">商家协议 · Merchant Agreement</div>
+            <h2>🏪 Cloud City 商家入驻协议</h2>
+            <p>生效日期：2026年1月27日 | 适用于所有在 Cloud City 平台入驻的商家</p>
+          </div>
+
+          <div class="policy-section" id="mz-intro">
+            <h3>1. 介绍</h3>
+            <p>欢迎加入 Cloud City（云城外卖）平台。本协议规定了商家在 Cloud City 平台入驻、经营及退出的相关权利与义务。请仔细阅读本协议，入驻即视为同意本协议全部条款。</p>
+            <div class="info-card">
+              <div class="ic-title">🌟 Cloud City 平台定位</div>
+              <p>Cloud City 不是普通的路边外卖平台。我们专注于邀请具备资质的优质商家入驻，致力于为用户提供高品质的餐饮与生活服务体验。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-qualify">
+            <h3>2. 入驻资格</h3>
+            <p>申请入驻 Cloud City 平台的商家须满足以下基本条件：</p>
+            <ul>
+              <li>持有合法有效的<strong>营业执照</strong></li>
+              <li>持有合法有效的<strong>食品经营许可证</strong>（餐饮类商家）</li>
+              <li>厨房环境符合食品卫生标准，平台保留实地考察权利</li>
+              <li>食材来源合法，品质符合平台要求</li>
+              <li>同意并遵守本协议全部条款</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-review">
+            <h3>3. 审核流程</h3>
+            <ul>
+              <li>商家提交入驻申请及相关资质材料后，平台将在 <strong>3个工作日内</strong> 完成审核</li>
+              <li>审核通过后，业务团队将主动联系商家，协助完成免费入驻流程</li>
+              <li>平台保留对厨房及经营场所进行实地考察的权利</li>
+              <li>平台入驻全程<strong>无需支付任何费用</strong>，业务团队免费提供协助</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-commission">
+            <h3>4. 佣金与费用</h3>
+            <ul>
+              <li>平台按每笔订单实际成交金额收取 <strong>15% 平台服务佣金</strong></li>
+              <li>配送费由用户承担，平台负责统一收取和分配</li>
+              <li>入驻及日常运营<strong>不收取任何额外费用</strong></li>
+              <li>佣金比例如有调整，平台将提前 30 天书面通知商家</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-order">
+            <h3>5. 订单管理规范</h3>
+            <p><strong>出餐时间</strong></p>
+            <ul>
+              <li>商家可在后台自行设置出餐时间（如 20 分钟）</li>
+              <li>接单后必须在设定时间内完成出餐</li>
+              <li>提前出餐完成后，须点击<strong>「备餐完成」</strong>按钮，订单方可推送至骑手端</li>
+            </ul>
+            <p style="margin-top:12px"><strong>拒单规定</strong></p>
+            <ul>
+              <li>所有拒单记录将被平台系统记录存档</li>
+              <li>平台设有<strong>商家考察机制</strong>，系统将综合评估拒单率、出餐速度及用户投诉情况</li>
+              <li>评分持续偏低的店铺将被系统<strong>自动下架</strong></li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-food">
+            <h3>6. 食品安全要求</h3>
+            <p>食品安全是 Cloud City 平台的核心标准，所有入驻商家须严格遵守：</p>
+            <ul>
+              <li>食材必须新鲜、来源合法，严禁使用过期或劣质食材</li>
+              <li>厨房环境须保持清洁卫生，符合食品安全法规</li>
+              <li>平台保留不定期对商家厨房进行抽查的权利</li>
+              <li>食品包装须符合卫生标准，确保配送过程中食品安全</li>
+              <li>如发生食品安全事件，商家须承担相应法律责任</li>
+            </ul>
+            <div class="info-card">
+              <div class="ic-title">⚠️ 重要声明</div>
+              <p>Cloud City 对入驻商家的食材品质有严格要求。平台会对商家厨房情况进行考察，确保每一位用户都能享受到安全、高品质的餐饮服务。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-penalty">
+            <h3>7. 违规处理机制</h3>
+            <p>平台将根据违规情节轻重，采取以下处理措施：</p>
+            <ul>
+              <li><strong>轻微违规</strong>：系统警告通知，限制店铺流量曝光</li>
+              <li><strong>一般违规</strong>：扣除相应罚款（金额由平台根据情节认定），限流处理</li>
+              <li><strong>严重违规</strong>：系统自动下架，业务人员联系处理</li>
+              <li><strong>多次违规</strong>：商家可自行申请重新上架，平台将重新评估</li>
+            </ul>
+            <p style="margin-top:10px">具体罚款标准以平台实时公告为准，平台保留根据实际情况调整的权利。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-settlement">
+            <h3>8. 结算周期</h3>
+            <p>平台采用动态结算机制，结算周期根据商家综合评分自动调整：</p>
+            <ul>
+              <li><strong>新入驻商家</strong>：统一采用<strong>每月结算</strong>（1个月）</li>
+              <li><strong>评分良好商家</strong>：系统自动调整为<strong>每15天结算</strong></li>
+              <li><strong>评分优秀商家</strong>：系统自动调整为<strong>每3天结算</strong></li>
+            </ul>
+            <p style="margin-top:10px">结算方式：<strong>KBZPay</strong>（缅甸本地支付）</p>
+            <div class="info-card">
+              <div class="ic-title">💡 提示</div>
+              <p>保持良好的出餐速度、低拒单率和高用户满意度，有助于提升评分，享受更快的结算周期。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-terminate">
+            <h3>9. 协议期限与退出</h3>
+            <ul>
+              <li>本协议<strong>长期有效</strong>，无固定期限限制</li>
+              <li>商家如需退出平台，可随时向平台提出申请</li>
+              <li>退出前须结清所有未完成订单及待结算款项</li>
+              <li>平台保留因违规强制下架商家的权利</li>
+              <li>被下架商家如需重新入驻，须重新提交申请并通过审核</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-contact">
+            <h3>10. 联系我们</h3>
+            <div class="contact-row">
+              <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">商务合作</div><div class="ci-val">merchant@cloudcitymm.com</div></div></div>
+              <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">客服邮件</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+              <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">官方网站</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /merchant-zh -->
+
+    <!-- EN -->
+    <div class="version-panel" id="merchant-en">
+      <div class="policy-article">
+        <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
+          <div class="art-tag">Merchant Agreement · English</div>
+          <h2>🏪 Cloud City Merchant Agreement</h2>
+          <p>Effective Date: January 27, 2026 | Applies to all merchants on the Cloud City platform</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>1. Introduction</h3>
+          <p>Welcome to Cloud City. This agreement sets out the rights and obligations of merchants joining the Cloud City platform. By completing the onboarding process, you agree to all terms of this agreement.</p>
+          <div class="info-card"><div class="ic-title">🌟 About Cloud City</div><p>Cloud City is not an ordinary street-food delivery platform. We focus on inviting qualified, high-quality merchants to ensure every user receives a safe and premium dining experience.</p></div>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>2. Eligibility Requirements</h3>
+          <ul>
+            <li>Valid <strong>Business License</strong></li>
+            <li>Valid <strong>Food Business Permit</strong> (for food and beverage merchants)</li>
+            <li>Kitchen environment meeting food hygiene standards (platform reserves the right to conduct on-site inspections)</li>
+            <li>Legally sourced ingredients meeting platform quality standards</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>3. Review Process</h3>
+          <ul>
+            <li>After submitting your application and documents, the platform will complete the review within <strong>3 working days</strong></li>
+            <li>Upon approval, our business team will contact you to assist with onboarding at <strong>no charge</strong></li>
+            <li>The platform reserves the right to conduct on-site kitchen inspections</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>4. Commission & Fees</h3>
+          <ul>
+            <li>Platform service commission: <strong>15% of each order's transaction value</strong></li>
+            <li>Delivery fees are paid by the customer and managed by the platform</li>
+            <li><strong>No additional fees</strong> for onboarding or daily operations</li>
+            <li>Any changes to commission rates will be communicated 30 days in advance</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>5. Order Management</h3>
+          <ul>
+            <li>Merchants set their own preparation time (e.g. 20 minutes) in the merchant dashboard</li>
+            <li>Orders must be prepared within the set time after acceptance</li>
+            <li>When preparation is complete, merchants must tap <strong>"Preparation Complete"</strong> — only then will the order be sent to the rider</li>
+            <li>All order rejections are recorded by the system</li>
+            <li>High rejection rates, slow preparation, and frequent complaints may result in automatic delisting</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>6. Food Safety</h3>
+          <ul>
+            <li>All ingredients must be fresh, legally sourced, and of high quality</li>
+            <li>Kitchen environments must comply with food safety regulations</li>
+            <li>Platform may conduct unannounced kitchen inspections</li>
+            <li>Merchants are legally responsible for any food safety incidents</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>7. Violations & Penalties</h3>
+          <ul>
+            <li><strong>Minor violations</strong>: System warning, reduced traffic exposure</li>
+            <li><strong>General violations</strong>: Financial penalty (amount determined by platform), traffic restriction</li>
+            <li><strong>Serious violations</strong>: Automatic delisting, business team follow-up</li>
+            <li><strong>Repeated violations</strong>: Merchant may apply to be relisted after review</li>
+          </ul>
+          <p style="margin-top:10px">Specific penalty amounts are subject to platform announcements and may be adjusted.</p>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>8. Settlement Schedule</h3>
+          <ul>
+            <li><strong>New merchants</strong>: Monthly settlement</li>
+            <li><strong>Good rating merchants</strong>: Automatic upgrade to 15-day settlement</li>
+            <li><strong>Excellent rating merchants</strong>: Automatic upgrade to 3-day settlement</li>
+          </ul>
+          <p style="margin-top:10px">Settlement method: <strong>KBZPay</strong></p>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>9. Agreement Duration & Exit</h3>
+          <ul>
+            <li>This agreement is <strong>valid indefinitely</strong> with no fixed term</li>
+            <li>Merchants may request to leave the platform at any time</li>
+            <li>All pending orders and outstanding payments must be settled before exit</li>
+            <li>Delisted merchants may reapply after meeting platform requirements</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>10. Contact Us</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">Merchant Support</div><div class="ci-val">merchant@cloudcitymm.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">Website</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /merchant-en -->
+
+    <!-- MY -->
+    <div class="version-panel" id="merchant-my">
+      <div class="policy-article">
+        <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
+          <div class="art-tag">ဆိုင်ရှင် သဘောတူညီချက် · မြန်မာဘာသာ</div>
+          <h2>🏪 Cloud City ဆိုင်ရှင် သဘောတူညီချက်</h2>
+          <p>စတင်အသက်ဝင်သည့်ရက်စွဲ - ၂၀၂၆ ခုနှစ်၊ ဇန်နဝါရီလ ၂၇ ရက်</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>၁။ နိဒါန်း</h3>
+          <p>Cloud City (ကလောက်စီတီ) ပလက်ဖောင်းသို့ ကြိုဆိုပါသည်။ ဤသဘောတူညီချက်သည် Cloud City တွင် ဆိုင်ဖွင့်သောဆိုင်ရှင်များ၏ အခွင့်အရေးနှင့် တာဝန်ဝတ္တရားများကို သတ်မှတ်ထားပါသည်။</p>
+          <div class="info-card"><div class="ic-title">🌟 Cloud City အကြောင်း</div><p>Cloud City သည် လမ်းဘေး သာမန် ဒယ်လီ ပလက်ဖောင်း မဟုတ်ပါ။ အရည်အသွေး ပြည့်မီသော ဆိုင်များကိုသာ ဖိတ်ခေါ်ကာ သုံးစွဲသူများအား အကောင်းဆုံး ဝန်ဆောင်မှု ပေးရန် ရည်ရွယ်ပါသည်။</p></div>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၂။ ဆိုင်ဖွင့်ရန် အရည်အချင်းများ</h3>
+          <ul>
+            <li>တရားဝင် <strong>လုပ်ငန်းမှတ်ပုံတင်လက်မှတ်</strong> ရှိရမည်</li>
+            <li>တရားဝင် <strong>အစားအသောက် လုပ်ငန်းခွင့်လက်မှတ်</strong> ရှိရမည်</li>
+            <li>မီးဖိုချောင် သန့်ရှင်းမှု စံနှုန်းနှင့် ကိုက်ညီရမည်</li>
+            <li>ပလက်ဖောင်းမှ ဆိုင်စစ်ဆေးနိုင်ခွင့် ပေးအပ်ရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၃။ စိစစ်ရေး လုပ်ငန်းစဉ်</h3>
+          <ul>
+            <li>လျှောက်လွှာတင်ပြီး <strong>အလုပ်လုပ်ရက် ၃ ရက်အတွင်း</strong> စစ်ဆေးပြီးစီးမည်</li>
+            <li>အတည်ပြုပြီးပါက စီးပွားရေးအဖွဲ့မှ <strong>အခမဲ့</strong> ကူညီဆောင်ရွက်ပေးမည်</li>
+            <li>ပလက်ဖောင်းမှ မီးဖိုချောင်ကို တိုင်းတာစစ်ဆေးနိုင်ခွင့် ရှိသည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၄။ ကော်မရှင် နှင့် ကြေးနှုန်း</h3>
+          <ul>
+            <li>အော်ဒါတစ်ခုချင်းစီ၏ <strong>၁၅% ကို ပလက်ဖောင်း ကော်မရှင်</strong> အဖြစ် ကောက်ခံသည်</li>
+            <li>ပို့ဆောင်ကြေးကို သုံးစွဲသူမှ ကျခံသည်</li>
+            <li>ဆိုင်ဖွင့်ခြင်းနှင့် နေ့စဉ်လုပ်ငန်းဆောင်ရွက်မှုအတွက် <strong>အပိုကြေးမကောက်ပါ</strong></li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၅။ အော်ဒါ စီမံခန့်ခွဲမှု</h3>
+          <ul>
+            <li>ဆိုင်ရှင်သည် ချက်ပြုတ်ချိန် (ဥပမာ ၂၀ မိနစ်) ကို ကိုယ်တိုင် သတ်မှတ်နိုင်သည်</li>
+            <li>အော်ဒါလက်ခံပြီးနောက် သတ်မှတ်ချိန်အတွင်း ချက်ပြုတ်ပြီးစီးရမည်</li>
+            <li>ချက်ပြုတ်ပြီးပါက <strong>「备餐完成」ခလုတ်</strong> နှိပ်မှသာ Rider ထံ အော်ဒါ ပေးပို့မည်</li>
+            <li>ငြင်းဆန်မှုများကို စနစ်မှ မှတ်တမ်းတင်မည်</li>
+            <li>ငြင်းဆန်မှု များလွန်းသောဆိုင်များကို စနစ်မှ အလိုအလျောက် ဆိုင်ချပိတ်မည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၆။ အစားအသောက် လုံခြုံရေး</h3>
+          <ul>
+            <li>အစားအသောက် ပစ္စည်းများ အရည်အသွေး ကောင်းမွန်ရမည်</li>
+            <li>မီးဖိုချောင် သန့်ရှင်းမှုနှင့် ကျန်းမာရေး စံနှုန်း လိုက်နာရမည်</li>
+            <li>ပလက်ဖောင်းမှ အချိန်မရွေး စစ်ဆေးနိုင်ခွင့် ရှိသည်</li>
+            <li>အစားအသောက် ဘေးအန္တရာယ် ဖြစ်ပါက ဆိုင်ရှင်မှ တာဝန်ယူရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၇။ စည်းကမ်းဖောက်ဖျက်မှု ကိုင်တွယ်မှု</h3>
+          <ul>
+            <li><strong>အနည်းငယ် ဖောက်ဖျက်မှု</strong> - စနစ်သတိပေးချက်၊ ကြော်ငြာ ကန့်သတ်ခြင်း</li>
+            <li><strong>သာမန် ဖောက်ဖျက်မှု</strong> - ဒဏ်ငွေ ကောက်ခံခြင်း၊ လူသိမြင်သိ ကန့်သတ်ခြင်း</li>
+            <li><strong>ပြင်းထန်သော ဖောက်ဖျက်မှု</strong> - ဆိုင် အလိုအလျောက် ချပိတ်ခြင်း</li>
+            <li><strong>ထပ်ခါတလဲ ဖောက်ဖျက်မှု</strong> - ဆိုင်ရှင် ကိုယ်တိုင် ပြန်တင်ရန် လျှောက်ထားနိုင်သည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၈။ ငွေချေ ကာလ</h3>
+          <ul>
+            <li><strong>အသစ် ဝင်ရောက်သောဆိုင်</strong> - တစ်လ တစ်ကြိမ် ချေပေးသည်</li>
+            <li><strong>အဆင့်အတန်း ကောင်းသောဆိုင်</strong> - ၁၅ ရက်တစ်ကြိမ် အလိုအလျောက် ပြောင်းလဲသည်</li>
+            <li><strong>အဆင့်အတန်း အထူးကောင်းသောဆိုင်</strong> - ၃ ရက်တစ်ကြိမ် အလိုအလျောက် ပြောင်းလဲသည်</li>
+          </ul>
+          <p style="margin-top:10px">ငွေချေ နည်းလမ်း - <strong>KBZPay</strong></p>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၉။ သဘောတူညီချက် ကာလနှင့် ထွက်ခွာမှု</h3>
+          <ul>
+            <li>ဤသဘောတူညီချက်သည် <strong>သက်တမ်းကန့်သတ်မှုမရှိဘဲ</strong> အကျုံးဝင်သည်</li>
+            <li>ဆိုင်ရှင်သည် မည်သည့်အချိန်မဆို ထွက်ခွာရန် လျှောက်ထားနိုင်သည်</li>
+            <li>ထွက်ခွာမတိုင်မီ လက်ကျန်အော်ဒါများနှင့် ငွေပေးချေမှုများ ဖြေရှင်းရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၁၀။ ဆက်သွယ်ရန်</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">စီးပွားရေး ဆက်သွယ်ရန်</div><div class="ci-val">merchant@cloudcitymm.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">ဝဘ်ဆိုက်</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /merchant-my -->
+  </div><!-- /panel-merchant-agreement -->
+
+
+  <!-- ============ RIDER AGREEMENT ============ -->
+  <div class="tab-panel" id="panel-rider-agreement">
+    <div class="policy-article">
+      <div class="article-header" style="background:linear-gradient(135deg,#B45309,#FBBF24)">
+        <div class="art-tag">骑手协议 · Rider Agreement</div>
+        <h2>🛵 骑手入驻协议</h2>
+        <p>即将发布 · Coming Soon · မကြာမီ ထုတ်ပြန်မည်</p>
+      </div>
+      <div style="text-align:center;padding:48px 20px">
+        <div style="font-size:64px;margin-bottom:20px">🛠️</div>
+        <h3 style="font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:12px">骑手协议正在准备中</h3>
+        <p style="font-size:14px;color:var(--text-mid);max-width:400px;margin:0 auto 24px">骑手端用户协议文件收到后，将立即整合发布于此页面。如有疑问请联系我们。</p>
+        <a href="mailto:hello@cloudcitymm.com" style="display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:white;padding:12px 24px;border-radius:50px;text-decoration:none;font-weight:700;font-size:14px">📧 联系我们</a>
+      </div>
+    </div>
+  </div><!-- /panel-rider-agreement -->
+
+</div><!-- /legal-container -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">☁️ Cloud City</div>
+  <div style="margin-bottom:12px">
+    <a href="cloudcity_website_final.html">← 返回官网</a>
+    <a href="cloudcity_legal.html">隐私政策</a>
+    <a href="cloudcity_legal.html?tab=user-agreement">用户协议</a>
+    <a href="mailto:cloudcitymm@gmail.com">cloudcitymm@gmail.com</a>
+    <a href="http://www.cloudcitymm.com">www.cloudcitymm.com</a>
+  </div>
+  <p>© 2026 Cloud City (Cloud City Takeout). All rights reserved. · ဒေသတွင်း လူနေမှုဘဝ ဝန်ဆောင်မှု ပလက်ဖောင်း</p>
+</footer>
+
+<script>
+// Tab switching
+function switchTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  document.getElementById('tab-' + id).classList.add('active');
+}
+
+// Version (language) switching within a tab
+function switchVersion(tab, lang) {
+  const panelId = tab === 'privacy' ? 'panel-privacy' : tab === 'user' ? 'panel-user-agreement' : 'panel-merchant-agreement';
+  const panel = document.getElementById(panelId);
+  if (!panel) return;
+  panel.querySelectorAll('.version-panel').forEach(p => p.classList.remove('active'));
+  panel.querySelectorAll('.lang-tab').forEach(b => b.classList.remove('active'));
+  const vp = document.getElementById(tab + '-' + lang);
+  if (vp) vp.classList.add('active');
+  panel.querySelectorAll('.lang-tab').forEach(b => {
+    const flags = {'zh':'🇨🇳','en':'🇬🇧','my':'🇲🇲'};
+    if (b.textContent.trim().startsWith(flags[lang])) b.classList.add('active');
+  });
+}
+
+// Page-level language (UI labels)
+function setPageLang(lang) {
+  const labels = {
+    zh: { hero:'隐私政策与用户协议', sub:'感谢您使用 Cloud City。以下文件说明我们如何收集、使用和保护您的数据，以及您使用本平台的相关权利与义务。', back:'← 返回官网', current:'中文' },
+    en: { hero:'Privacy Policy & User Agreement', sub:'Thank you for using Cloud City. The following documents explain how we collect, use, and protect your data, and your rights and obligations on our platform.', back:'← Back to Home', current:'English' },
+    my: { hero:'ကိုယ်ရေးအချက်အလက် မူဝါဒနှင့် သဘောတူညီချက်', sub:'Cloud City ကို အသုံးပြုသောအတွက် ကျေးဇူးတင်ပါသည်။ ကျွန်ုပ်တို့ သင်၏ အချက်အလက်များကို မည်သို့ ကိုင်တွယ်သည်ကို ဤစာတမ်းများတွင် ဖော်ပြထားပါသည်။', back:'← ပင်မစာမျက်နှာ', current:'မြန်မာ' }
+  };
+  const l = labels[lang];
+  document.getElementById('heroTitle').textContent = l.hero;
+  document.getElementById('heroSub').textContent = l.sub;
+  document.querySelectorAll('.nav-back').forEach(el => { el.textContent = l.back; el.href = 'cloudcity_website_final.html'; });
+  document.getElementById('currentLang').textContent = l.current;
+  document.querySelectorAll('.lang-option').forEach((opt,i) => {
+    opt.classList.toggle('active', ['zh','en','my'][i] === lang);
+  });
+  closeLang();
+}
+
+function toggleLang() { document.getElementById('langDropdown').classList.toggle('open'); }
+function closeLang() { document.getElementById('langDropdown').classList.remove('open'); }
+// Auto-switch tab from URL param
+const urlParams = new URLSearchParams(window.location.search);
+const tabParam = urlParams.get('tab');
+if (tabParam) switchTab(tabParam);
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('#langBtn') && !e.target.closest('#langDropdown')) closeLang();
+});
+</script>
+</body>
+</html>
