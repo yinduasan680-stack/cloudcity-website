@@ -153,7 +153,7 @@ footer a:hover{color:white}
 <div class="tab-nav">
   <button class="tab-btn active" onclick="switchTab('privacy')" id="tab-privacy">🔒 隐私政策</button>
   <button class="tab-btn" onclick="switchTab('user-agreement')" id="tab-user-agreement">👤 用户协议</button>
-  <button class="tab-btn" onclick="switchTab('merchant-agreement')" id="tab-merchant-agreement">🏪 商家协议 <span style="font-size:10px;background:rgba(124,58,237,0.1);color:var(--purple);border-radius:20px;padding:2px 7px;margin-left:4px">即将更新</span></button>
+  <button class="tab-btn" onclick="switchTab('merchant-agreement')" id="tab-merchant-agreement">🏪 商家协议</button>
   <button class="tab-btn" onclick="switchTab('rider-agreement')" id="tab-rider-agreement">🛵 骑手协议 <span style="font-size:10px;background:rgba(124,58,237,0.1);color:var(--purple);border-radius:20px;padding:2px 7px;margin-left:4px">即将更新</span></button>
 </div>
 
@@ -722,19 +722,393 @@ footer a:hover{color:white}
 
   <!-- ============ MERCHANT AGREEMENT ============ -->
   <div class="tab-panel" id="panel-merchant-agreement">
-    <div class="policy-article">
-      <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
-        <div class="art-tag">商家协议 · Merchant Agreement</div>
-        <h2>🏪 商家入驻协议</h2>
-        <p>即将发布 · Coming Soon · မကြာမီ ထုတ်ပြန်မည်</p>
-      </div>
-      <div style="text-align:center;padding:48px 20px">
-        <div style="font-size:64px;margin-bottom:20px">🛠️</div>
-        <h3 style="font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:12px">商家协议正在准备中</h3>
-        <p style="font-size:14px;color:var(--text-mid);max-width:400px;margin:0 auto 24px">商家端用户协议文件收到后，将立即整合发布于此页面。如有疑问请联系我们。</p>
-        <a href="mailto:merchant@cloudcitymm.com" style="display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:white;padding:12px 24px;border-radius:50px;text-decoration:none;font-weight:700;font-size:14px">📧 联系商务合作</a>
-      </div>
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="switchVersion('merchant','zh')">🇨🇳 中文</button>
+      <button class="lang-tab" onclick="switchVersion('merchant','en')">🇬🇧 English</button>
+      <button class="lang-tab" onclick="switchVersion('merchant','my')">🇲🇲 မြန်မာ</button>
     </div>
+
+    <!-- ZH -->
+    <div class="version-panel active" id="merchant-zh">
+      <div class="legal-layout">
+        <div class="quick-nav">
+          <div class="qn-title">快速导航</div>
+          <a href="#mz-intro">介绍</a>
+          <a href="#mz-qualify">入驻资格</a>
+          <a href="#mz-review">审核流程</a>
+          <a href="#mz-commission">佣金与结算</a>
+          <a href="#mz-order">订单规范</a>
+          <a href="#mz-food">食品安全</a>
+          <a href="#mz-penalty">违规处理</a>
+          <a href="#mz-settlement">结算周期</a>
+          <a href="#mz-terminate">退出平台</a>
+          <a href="#mz-contact">联系我们</a>
+        </div>
+        <div class="policy-article">
+          <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
+            <div class="art-tag">商家协议 · Merchant Agreement</div>
+            <h2>🏪 Cloud City 商家入驻协议</h2>
+            <p>生效日期：2026年1月27日 | 适用于所有在 Cloud City 平台入驻的商家</p>
+          </div>
+
+          <div class="policy-section" id="mz-intro">
+            <h3>1. 介绍</h3>
+            <p>欢迎加入 Cloud City（云城外卖）平台。本协议规定了商家在 Cloud City 平台入驻、经营及退出的相关权利与义务。请仔细阅读本协议，入驻即视为同意本协议全部条款。</p>
+            <div class="info-card">
+              <div class="ic-title">🌟 Cloud City 平台定位</div>
+              <p>Cloud City 不是普通的路边外卖平台。我们专注于邀请具备资质的优质商家入驻，致力于为用户提供高品质的餐饮与生活服务体验。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-qualify">
+            <h3>2. 入驻资格</h3>
+            <p>申请入驻 Cloud City 平台的商家须满足以下基本条件：</p>
+            <ul>
+              <li>持有合法有效的<strong>营业执照</strong></li>
+              <li>持有合法有效的<strong>食品经营许可证</strong>（餐饮类商家）</li>
+              <li>厨房环境符合食品卫生标准，平台保留实地考察权利</li>
+              <li>食材来源合法，品质符合平台要求</li>
+              <li>同意并遵守本协议全部条款</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-review">
+            <h3>3. 审核流程</h3>
+            <ul>
+              <li>商家提交入驻申请及相关资质材料后，平台将在 <strong>3个工作日内</strong> 完成审核</li>
+              <li>审核通过后，业务团队将主动联系商家，协助完成免费入驻流程</li>
+              <li>平台保留对厨房及经营场所进行实地考察的权利</li>
+              <li>平台入驻全程<strong>无需支付任何费用</strong>，业务团队免费提供协助</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-commission">
+            <h3>4. 佣金与费用</h3>
+            <ul>
+              <li>平台按每笔订单实际成交金额收取 <strong>15% 平台服务佣金</strong></li>
+              <li>配送费由用户承担，平台负责统一收取和分配</li>
+              <li>入驻及日常运营<strong>不收取任何额外费用</strong></li>
+              <li>佣金比例如有调整，平台将提前 30 天书面通知商家</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-order">
+            <h3>5. 订单管理规范</h3>
+            <p><strong>出餐时间</strong></p>
+            <ul>
+              <li>商家可在后台自行设置出餐时间（如 20 分钟）</li>
+              <li>接单后必须在设定时间内完成出餐</li>
+              <li>提前出餐完成后，须点击<strong>「备餐完成」</strong>按钮，订单方可推送至骑手端</li>
+            </ul>
+            <p style="margin-top:12px"><strong>拒单规定</strong></p>
+            <ul>
+              <li>所有拒单记录将被平台系统记录存档</li>
+              <li>平台设有<strong>商家考察机制</strong>，系统将综合评估拒单率、出餐速度及用户投诉情况</li>
+              <li>评分持续偏低的店铺将被系统<strong>自动下架</strong></li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-food">
+            <h3>6. 食品安全要求</h3>
+            <p>食品安全是 Cloud City 平台的核心标准，所有入驻商家须严格遵守：</p>
+            <ul>
+              <li>食材必须新鲜、来源合法，严禁使用过期或劣质食材</li>
+              <li>厨房环境须保持清洁卫生，符合食品安全法规</li>
+              <li>平台保留不定期对商家厨房进行抽查的权利</li>
+              <li>食品包装须符合卫生标准，确保配送过程中食品安全</li>
+              <li>如发生食品安全事件，商家须承担相应法律责任</li>
+            </ul>
+            <div class="info-card">
+              <div class="ic-title">⚠️ 重要声明</div>
+              <p>Cloud City 对入驻商家的食材品质有严格要求。平台会对商家厨房情况进行考察，确保每一位用户都能享受到安全、高品质的餐饮服务。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-penalty">
+            <h3>7. 违规处理机制</h3>
+            <p>平台将根据违规情节轻重，采取以下处理措施：</p>
+            <ul>
+              <li><strong>轻微违规</strong>：系统警告通知，限制店铺流量曝光</li>
+              <li><strong>一般违规</strong>：扣除相应罚款（金额由平台根据情节认定），限流处理</li>
+              <li><strong>严重违规</strong>：系统自动下架，业务人员联系处理</li>
+              <li><strong>多次违规</strong>：商家可自行申请重新上架，平台将重新评估</li>
+            </ul>
+            <p style="margin-top:10px">具体罚款标准以平台实时公告为准，平台保留根据实际情况调整的权利。</p>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-settlement">
+            <h3>8. 结算周期</h3>
+            <p>平台采用动态结算机制，结算周期根据商家综合评分自动调整：</p>
+            <ul>
+              <li><strong>新入驻商家</strong>：统一采用<strong>每月结算</strong>（1个月）</li>
+              <li><strong>评分良好商家</strong>：系统自动调整为<strong>每15天结算</strong></li>
+              <li><strong>评分优秀商家</strong>：系统自动调整为<strong>每3天结算</strong></li>
+            </ul>
+            <p style="margin-top:10px">结算方式：<strong>KBZPay</strong>（缅甸本地支付）</p>
+            <div class="info-card">
+              <div class="ic-title">💡 提示</div>
+              <p>保持良好的出餐速度、低拒单率和高用户满意度，有助于提升评分，享受更快的结算周期。</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-terminate">
+            <h3>9. 协议期限与退出</h3>
+            <ul>
+              <li>本协议<strong>长期有效</strong>，无固定期限限制</li>
+              <li>商家如需退出平台，可随时向平台提出申请</li>
+              <li>退出前须结清所有未完成订单及待结算款项</li>
+              <li>平台保留因违规强制下架商家的权利</li>
+              <li>被下架商家如需重新入驻，须重新提交申请并通过审核</li>
+            </ul>
+          </div>
+          <hr class="divider">
+
+          <div class="policy-section" id="mz-contact">
+            <h3>10. 联系我们</h3>
+            <div class="contact-row">
+              <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">商务合作</div><div class="ci-val">merchant@cloudcitymm.com</div></div></div>
+              <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">客服邮件</div><div class="ci-val">cloudcitymm@gmail.com</div></div></div>
+              <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">官方网站</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /merchant-zh -->
+
+    <!-- EN -->
+    <div class="version-panel" id="merchant-en">
+      <div class="policy-article">
+        <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
+          <div class="art-tag">Merchant Agreement · English</div>
+          <h2>🏪 Cloud City Merchant Agreement</h2>
+          <p>Effective Date: January 27, 2026 | Applies to all merchants on the Cloud City platform</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>1. Introduction</h3>
+          <p>Welcome to Cloud City. This agreement sets out the rights and obligations of merchants joining the Cloud City platform. By completing the onboarding process, you agree to all terms of this agreement.</p>
+          <div class="info-card"><div class="ic-title">🌟 About Cloud City</div><p>Cloud City is not an ordinary street-food delivery platform. We focus on inviting qualified, high-quality merchants to ensure every user receives a safe and premium dining experience.</p></div>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>2. Eligibility Requirements</h3>
+          <ul>
+            <li>Valid <strong>Business License</strong></li>
+            <li>Valid <strong>Food Business Permit</strong> (for food and beverage merchants)</li>
+            <li>Kitchen environment meeting food hygiene standards (platform reserves the right to conduct on-site inspections)</li>
+            <li>Legally sourced ingredients meeting platform quality standards</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>3. Review Process</h3>
+          <ul>
+            <li>After submitting your application and documents, the platform will complete the review within <strong>3 working days</strong></li>
+            <li>Upon approval, our business team will contact you to assist with onboarding at <strong>no charge</strong></li>
+            <li>The platform reserves the right to conduct on-site kitchen inspections</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>4. Commission & Fees</h3>
+          <ul>
+            <li>Platform service commission: <strong>15% of each order's transaction value</strong></li>
+            <li>Delivery fees are paid by the customer and managed by the platform</li>
+            <li><strong>No additional fees</strong> for onboarding or daily operations</li>
+            <li>Any changes to commission rates will be communicated 30 days in advance</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>5. Order Management</h3>
+          <ul>
+            <li>Merchants set their own preparation time (e.g. 20 minutes) in the merchant dashboard</li>
+            <li>Orders must be prepared within the set time after acceptance</li>
+            <li>When preparation is complete, merchants must tap <strong>"Preparation Complete"</strong> — only then will the order be sent to the rider</li>
+            <li>All order rejections are recorded by the system</li>
+            <li>High rejection rates, slow preparation, and frequent complaints may result in automatic delisting</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>6. Food Safety</h3>
+          <ul>
+            <li>All ingredients must be fresh, legally sourced, and of high quality</li>
+            <li>Kitchen environments must comply with food safety regulations</li>
+            <li>Platform may conduct unannounced kitchen inspections</li>
+            <li>Merchants are legally responsible for any food safety incidents</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>7. Violations & Penalties</h3>
+          <ul>
+            <li><strong>Minor violations</strong>: System warning, reduced traffic exposure</li>
+            <li><strong>General violations</strong>: Financial penalty (amount determined by platform), traffic restriction</li>
+            <li><strong>Serious violations</strong>: Automatic delisting, business team follow-up</li>
+            <li><strong>Repeated violations</strong>: Merchant may apply to be relisted after review</li>
+          </ul>
+          <p style="margin-top:10px">Specific penalty amounts are subject to platform announcements and may be adjusted.</p>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>8. Settlement Schedule</h3>
+          <ul>
+            <li><strong>New merchants</strong>: Monthly settlement</li>
+            <li><strong>Good rating merchants</strong>: Automatic upgrade to 15-day settlement</li>
+            <li><strong>Excellent rating merchants</strong>: Automatic upgrade to 3-day settlement</li>
+          </ul>
+          <p style="margin-top:10px">Settlement method: <strong>KBZPay</strong></p>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>9. Agreement Duration & Exit</h3>
+          <ul>
+            <li>This agreement is <strong>valid indefinitely</strong> with no fixed term</li>
+            <li>Merchants may request to leave the platform at any time</li>
+            <li>All pending orders and outstanding payments must be settled before exit</li>
+            <li>Delisted merchants may reapply after meeting platform requirements</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>10. Contact Us</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">Merchant Support</div><div class="ci-val">merchant@cloudcitymm.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">Website</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /merchant-en -->
+
+    <!-- MY -->
+    <div class="version-panel" id="merchant-my">
+      <div class="policy-article">
+        <div class="article-header" style="background:linear-gradient(135deg,#1A6B3C,#22D3A0)">
+          <div class="art-tag">ဆိုင်ရှင် သဘောတူညီချက် · မြန်မာဘာသာ</div>
+          <h2>🏪 Cloud City ဆိုင်ရှင် သဘောတူညီချက်</h2>
+          <p>စတင်အသက်ဝင်သည့်ရက်စွဲ - ၂၀၂၆ ခုနှစ်၊ ဇန်နဝါရီလ ၂၇ ရက်</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>၁။ နိဒါန်း</h3>
+          <p>Cloud City (ကလောက်စီတီ) ပလက်ဖောင်းသို့ ကြိုဆိုပါသည်။ ဤသဘောတူညီချက်သည် Cloud City တွင် ဆိုင်ဖွင့်သောဆိုင်ရှင်များ၏ အခွင့်အရေးနှင့် တာဝန်ဝတ္တရားများကို သတ်မှတ်ထားပါသည်။</p>
+          <div class="info-card"><div class="ic-title">🌟 Cloud City အကြောင်း</div><p>Cloud City သည် လမ်းဘေး သာမန် ဒယ်လီ ပလက်ဖောင်း မဟုတ်ပါ။ အရည်အသွေး ပြည့်မီသော ဆိုင်များကိုသာ ဖိတ်ခေါ်ကာ သုံးစွဲသူများအား အကောင်းဆုံး ဝန်ဆောင်မှု ပေးရန် ရည်ရွယ်ပါသည်။</p></div>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၂။ ဆိုင်ဖွင့်ရန် အရည်အချင်းများ</h3>
+          <ul>
+            <li>တရားဝင် <strong>လုပ်ငန်းမှတ်ပုံတင်လက်မှတ်</strong> ရှိရမည်</li>
+            <li>တရားဝင် <strong>အစားအသောက် လုပ်ငန်းခွင့်လက်မှတ်</strong> ရှိရမည်</li>
+            <li>မီးဖိုချောင် သန့်ရှင်းမှု စံနှုန်းနှင့် ကိုက်ညီရမည်</li>
+            <li>ပလက်ဖောင်းမှ ဆိုင်စစ်ဆေးနိုင်ခွင့် ပေးအပ်ရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၃။ စိစစ်ရေး လုပ်ငန်းစဉ်</h3>
+          <ul>
+            <li>လျှောက်လွှာတင်ပြီး <strong>အလုပ်လုပ်ရက် ၃ ရက်အတွင်း</strong> စစ်ဆေးပြီးစီးမည်</li>
+            <li>အတည်ပြုပြီးပါက စီးပွားရေးအဖွဲ့မှ <strong>အခမဲ့</strong> ကူညီဆောင်ရွက်ပေးမည်</li>
+            <li>ပလက်ဖောင်းမှ မီးဖိုချောင်ကို တိုင်းတာစစ်ဆေးနိုင်ခွင့် ရှိသည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၄။ ကော်မရှင် နှင့် ကြေးနှုန်း</h3>
+          <ul>
+            <li>အော်ဒါတစ်ခုချင်းစီ၏ <strong>၁၅% ကို ပလက်ဖောင်း ကော်မရှင်</strong> အဖြစ် ကောက်ခံသည်</li>
+            <li>ပို့ဆောင်ကြေးကို သုံးစွဲသူမှ ကျခံသည်</li>
+            <li>ဆိုင်ဖွင့်ခြင်းနှင့် နေ့စဉ်လုပ်ငန်းဆောင်ရွက်မှုအတွက် <strong>အပိုကြေးမကောက်ပါ</strong></li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၅။ အော်ဒါ စီမံခန့်ခွဲမှု</h3>
+          <ul>
+            <li>ဆိုင်ရှင်သည် ချက်ပြုတ်ချိန် (ဥပမာ ၂၀ မိနစ်) ကို ကိုယ်တိုင် သတ်မှတ်နိုင်သည်</li>
+            <li>အော်ဒါလက်ခံပြီးနောက် သတ်မှတ်ချိန်အတွင်း ချက်ပြုတ်ပြီးစီးရမည်</li>
+            <li>ချက်ပြုတ်ပြီးပါက <strong>「备餐完成」ခလုတ်</strong> နှိပ်မှသာ Rider ထံ အော်ဒါ ပေးပို့မည်</li>
+            <li>ငြင်းဆန်မှုများကို စနစ်မှ မှတ်တမ်းတင်မည်</li>
+            <li>ငြင်းဆန်မှု များလွန်းသောဆိုင်များကို စနစ်မှ အလိုအလျောက် ဆိုင်ချပိတ်မည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၆။ အစားအသောက် လုံခြုံရေး</h3>
+          <ul>
+            <li>အစားအသောက် ပစ္စည်းများ အရည်အသွေး ကောင်းမွန်ရမည်</li>
+            <li>မီးဖိုချောင် သန့်ရှင်းမှုနှင့် ကျန်းမာရေး စံနှုန်း လိုက်နာရမည်</li>
+            <li>ပလက်ဖောင်းမှ အချိန်မရွေး စစ်ဆေးနိုင်ခွင့် ရှိသည်</li>
+            <li>အစားအသောက် ဘေးအန္တရာယ် ဖြစ်ပါက ဆိုင်ရှင်မှ တာဝန်ယူရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၇။ စည်းကမ်းဖောက်ဖျက်မှု ကိုင်တွယ်မှု</h3>
+          <ul>
+            <li><strong>အနည်းငယ် ဖောက်ဖျက်မှု</strong> - စနစ်သတိပေးချက်၊ ကြော်ငြာ ကန့်သတ်ခြင်း</li>
+            <li><strong>သာမန် ဖောက်ဖျက်မှု</strong> - ဒဏ်ငွေ ကောက်ခံခြင်း၊ လူသိမြင်သိ ကန့်သတ်ခြင်း</li>
+            <li><strong>ပြင်းထန်သော ဖောက်ဖျက်မှု</strong> - ဆိုင် အလိုအလျောက် ချပိတ်ခြင်း</li>
+            <li><strong>ထပ်ခါတလဲ ဖောက်ဖျက်မှု</strong> - ဆိုင်ရှင် ကိုယ်တိုင် ပြန်တင်ရန် လျှောက်ထားနိုင်သည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၈။ ငွေချေ ကာလ</h3>
+          <ul>
+            <li><strong>အသစ် ဝင်ရောက်သောဆိုင်</strong> - တစ်လ တစ်ကြိမ် ချေပေးသည်</li>
+            <li><strong>အဆင့်အတန်း ကောင်းသောဆိုင်</strong> - ၁၅ ရက်တစ်ကြိမ် အလိုအလျောက် ပြောင်းလဲသည်</li>
+            <li><strong>အဆင့်အတန်း အထူးကောင်းသောဆိုင်</strong> - ၃ ရက်တစ်ကြိမ် အလိုအလျောက် ပြောင်းလဲသည်</li>
+          </ul>
+          <p style="margin-top:10px">ငွေချေ နည်းလမ်း - <strong>KBZPay</strong></p>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၉။ သဘောတူညီချက် ကာလနှင့် ထွက်ခွာမှု</h3>
+          <ul>
+            <li>ဤသဘောတူညီချက်သည် <strong>သက်တမ်းကန့်သတ်မှုမရှိဘဲ</strong> အကျုံးဝင်သည်</li>
+            <li>ဆိုင်ရှင်သည် မည်သည့်အချိန်မဆို ထွက်ခွာရန် လျှောက်ထားနိုင်သည်</li>
+            <li>ထွက်ခွာမတိုင်မီ လက်ကျန်အော်ဒါများနှင့် ငွေပေးချေမှုများ ဖြေရှင်းရမည်</li>
+          </ul>
+        </div>
+        <hr class="divider">
+
+        <div class="policy-section">
+          <h3>၁၀။ ဆက်သွယ်ရန်</h3>
+          <div class="contact-row">
+            <div class="contact-item"><div class="ci-icon">📧</div><div><div class="ci-text">စီးပွားရေး ဆက်သွယ်ရန်</div><div class="ci-val">merchant@cloudcitymm.com</div></div></div>
+            <div class="contact-item"><div class="ci-icon">🌐</div><div><div class="ci-text">ဝဘ်ဆိုက်</div><div class="ci-val">www.cloudcitymm.com</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /merchant-my -->
   </div><!-- /panel-merchant-agreement -->
 
 
@@ -781,13 +1155,13 @@ function switchTab(id) {
 
 // Version (language) switching within a tab
 function switchVersion(tab, lang) {
-  const panel = document.getElementById('panel-' + tab + '-agreement') || document.getElementById('panel-' + tab);
+  const panelId = tab === 'privacy' ? 'panel-privacy' : tab === 'user' ? 'panel-user-agreement' : 'panel-merchant-agreement';
+  const panel = document.getElementById(panelId);
   if (!panel) return;
   panel.querySelectorAll('.version-panel').forEach(p => p.classList.remove('active'));
   panel.querySelectorAll('.lang-tab').forEach(b => b.classList.remove('active'));
-  const vp = document.getElementById(tab + '-' + lang) || document.getElementById(tab + 'agreement-' + lang);
+  const vp = document.getElementById(tab + '-' + lang);
   if (vp) vp.classList.add('active');
-  // activate correct lang-tab button
   panel.querySelectorAll('.lang-tab').forEach(b => {
     const flags = {'zh':'🇨🇳','en':'🇬🇧','my':'🇲🇲'};
     if (b.textContent.trim().startsWith(flags[lang])) b.classList.add('active');
