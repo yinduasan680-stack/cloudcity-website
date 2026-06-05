@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage - top priority, updated frequently -->
+  <url>
+    <loc>https://www.cloudcitymm.com/</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/?lang=my" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cloudcitymm.com/" />
+  </url>
+
+  <!-- Legal documents page (default = privacy policy tab) -->
+  <url>
+    <loc>https://www.cloudcitymm.com/legal</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/legal" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/legal?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/legal?lang=my" />
+  </url>
+
+  <!-- Privacy Policy direct link -->
+  <url>
+    <loc>https://www.cloudcitymm.com/legal?tab=privacy</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- User Agreement direct link -->
+  <url>
+    <loc>https://www.cloudcitymm.com/legal?tab=user-agreement</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Merchant Agreement direct link (high value: drives merchant signup) -->
+  <url>
+    <loc>https://www.cloudcitymm.com/legal?tab=merchant-agreement</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rider Agreement direct link (high value: drives rider signup) -->
+  <url>
+    <loc>https://www.cloudcitymm.com/legal?tab=rider-agreement</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
