@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Customer Feedback — Cloud City Food</title>
+
+<!-- SEO -->
+<meta name="description" content="Share your feedback with Cloud City Food. Help us improve our service in Mandalay and Lashio. We respond within 24 hours.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.cloudcitymm.com/feedback.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Share Feedback — Cloud City Food">
+<meta property="og:description" content="Help us improve. We respond within 24 hours.">
+<meta property="og:url" content="https://www.cloudcitymm.com/feedback.html">
+<meta property="og:image" content="https://www.cloudcitymm.com/icons/icon-512.png">
+
+<!-- PWA & Apple -->
+<meta name="theme-color" content="#8818B8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Cloud City">
+<meta name="format-detection" content="telephone=no">
+
+<!-- iOS Smart App Banner -->
+<meta name="apple-itunes-app" content="app-id=6758687924">
+
+<!-- Favicons & PWA -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+<link rel="shortcut icon" href="icons/favicon.ico">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#1D1D1F; --ink-2:#3a3a3c; --ink-3:#6e6e73; --ink-4:#86868b;
+  --rule:#D2D2D7; --rule-soft:#E8E8ED;
+  --bg:#FBFBFD; --bg-soft:#F5F5F7; --white:#fff;
+  --brand:#8818B8; --brand-deep:#5F0F82; --brand-soft:#F4E8FA;
+  --warn:#F59E0B; --warn-soft:#FEF3E2;
+  --danger:#E74C3C; --danger-soft:#FEE;
+  --success:#22D3A0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{
+  font-family:'Inter','Noto Sans SC','Noto Sans Myanmar',-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--ink);
+  background:linear-gradient(180deg,var(--bg) 0%,var(--brand-soft) 100%);
+  min-height:100vh;line-height:1.5;letter-spacing:-0.005em;
+  -webkit-font-smoothing:antialiased;overflow-x:clip;
+}
+[data-lang="zh"] body,body[data-lang="zh"]{font-family:'Noto Sans SC','Inter',sans-serif}
+[data-lang="my"] body,body[data-lang="my"]{font-family:'Noto Sans Myanmar','Inter',sans-serif}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--rule-soft);height:54px;display:flex;align-items:center}
+.nav-inner{width:100%;max-width:720px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:0;overflow:hidden}
+.nav-logo .mark{width:24px;height:24px;border-radius:6px;overflow:hidden;flex-shrink:0}
+.nav-logo .mark img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-logo .brand{font-weight:600;font-size:14px;letter-spacing:-0.01em;white-space:nowrap}
+.nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.nav-back{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--ink-3);text-decoration:none;padding:6px 12px;border-radius:980px;transition:background 0.15s,color 0.15s}
+.nav-back:hover{background:var(--bg-soft);color:var(--ink)}
+.lang-btn{background:transparent;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:980px;font-family:inherit;font-size:13px;color:var(--ink-2);transition:background 0.15s}
+.lang-btn:hover{background:var(--bg-soft)}
+.lang-dropdown{position:absolute;top:calc(100% + 4px);right:0;background:#fff;border-radius:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,0.15),0 0 0 1px var(--rule-soft);padding:6px;min-width:130px;display:none;z-index:101}
+.lang-dropdown.open{display:block}
+.lang-option{display:flex;align-items:center;width:100%;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--ink-2);background:transparent;border:none;font-family:inherit;text-align:left;transition:background 0.12s,color 0.12s;min-height:36px}
+.lang-option:hover{background:var(--bg-soft);color:var(--ink)}
+.lang-option.active{color:var(--brand);font-weight:600}
+.lang-wrap{position:relative}
+
+/* HERO */
+.hero{max-width:560px;margin:0 auto;padding:48px 22px 24px;text-align:center}
+.hero-mark{width:72px;height:72px;border-radius:18px;overflow:hidden;margin:0 auto 16px;background:var(--brand);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;box-shadow:0 18px 40px -10px rgba(136,24,184,0.45)}
+.hero-mark svg{width:38px;height:38px}
+.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px}
+.hero h1{font-size:clamp(26px,5vw,36px);font-weight:700;letter-spacing:-0.025em;line-height:1.1;margin-bottom:12px}
+.hero p.lead{font-size:15px;color:var(--ink-3);letter-spacing:-0.005em;line-height:1.55;max-width:460px;margin:0 auto}
+
+/* QUICK CONTACT(紧急联系条)*/
+.quick-bar{max-width:560px;margin:8px auto 24px;padding:0 22px}
+.quick-inner{background:#fff;border:1px solid var(--rule-soft);border-radius:14px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.quick-text{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-3);min-width:0}
+.quick-text svg{flex-shrink:0;color:var(--brand)}
+.quick-buttons{display:flex;gap:6px;flex-wrap:wrap}
+.quick-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:8px 16px;border-radius:980px;text-decoration:none;color:#fff;transition:opacity 0.15s,transform 0.12s,box-shadow 0.2s;-webkit-tap-highlight-color:transparent}
+.quick-btn:hover{opacity:0.95;transform:translateY(-1px);box-shadow:0 6px 16px -6px rgba(136,24,184,0.4)}
+.quick-btn:active{transform:scale(0.96)}
+.quick-btn.phone{background:linear-gradient(135deg,var(--brand),var(--brand-deep))}
+.quick-btn.fb{background:#1877F2}
+.quick-btn.tt{background:#000}
+
+/* FORM */
+.form-card{max-width:560px;margin:0 auto 80px;padding:0 22px}
+.form-card .inner{background:#fff;border-radius:22px;padding:28px 22px;box-shadow:0 30px 60px -20px rgba(95,15,130,0.15),0 0 0 1px var(--rule-soft)}
+.form-section{margin-bottom:18px}
+.form-section label{display:block;font-size:13px;font-weight:500;color:var(--ink-2);margin-bottom:6px;letter-spacing:-0.005em}
+.form-section .required{color:var(--danger);margin-left:2px}
+.form-section .optional{font-weight:400;color:var(--ink-4);font-size:12px;margin-left:4px}
+.form-section input[type="text"],.form-section input[type="tel"],.form-section input[type="email"],.form-section textarea{
+  width:100%;padding:12px 14px;font-size:16px;border:1px solid var(--rule);border-radius:10px;
+  font-family:inherit;color:var(--ink);background:#fff;
+  transition:border-color 0.15s,box-shadow 0.15s;-webkit-appearance:none;appearance:none;letter-spacing:-0.005em;
+}
+.form-section input:focus,.form-section textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(136,24,184,0.12)}
+.form-section input::placeholder,.form-section textarea::placeholder{color:var(--ink-4)}
+.form-section textarea{resize:vertical;min-height:90px;line-height:1.5}
+.char-counter{font-size:11px;color:var(--ink-4);text-align:right;margin-top:4px}
+
+/* TYPE GRID(投诉大类选择)*/
+.type-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.type-card{background:#fff;border:1.5px solid var(--rule);border-radius:12px;padding:14px 8px;text-align:center;cursor:pointer;transition:all 0.18s;-webkit-tap-highlight-color:transparent;user-select:none}
+.type-card:hover{border-color:var(--ink-4);background:var(--bg-soft)}
+.type-card.active{border-color:var(--brand);background:var(--brand-soft);color:var(--brand-deep)}
+.type-card svg{width:24px;height:24px;margin:0 auto 6px;display:block;color:var(--ink-3);transition:color 0.18s}
+.type-card.active svg{color:var(--brand)}
+.type-card .lbl{font-size:13px;color:var(--ink-2);font-weight:500;transition:color 0.18s}
+.type-card.active .lbl{color:var(--brand-deep);font-weight:600}
+
+/* SUB-OPTIONS(动态展开的子选项)*/
+.sub-options{margin-top:10px;display:none;animation:slideDown 0.3s ease}
+.sub-options.visible{display:block}
+@keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.sub-options-title{font-size:12px;font-weight:500;color:var(--ink-3);margin-bottom:8px;padding-left:2px}
+.sub-options-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.sub-check{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--rule);border-radius:10px;cursor:pointer;font-size:13px;color:var(--ink-2);transition:all 0.15s;-webkit-tap-highlight-color:transparent;user-select:none;background:#fff}
+.sub-check:hover{border-color:var(--ink-4);background:var(--bg-soft)}
+.sub-check.checked{border-color:var(--brand);background:var(--brand-soft);color:var(--brand-deep);font-weight:500}
+.sub-check input{display:none}
+.sub-check .box{width:16px;height:16px;border:1.5px solid var(--rule);border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:#fff;transition:all 0.15s}
+.sub-check.checked .box{background:var(--brand);border-color:var(--brand)}
+.sub-check.checked .box::after{content:'';width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);margin-top:-2px}
+
+/* UPLOAD AREA(图片上传)*/
+.upload-area{margin-top:8px}
+.upload-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.upload-slot{position:relative;aspect-ratio:1/1;border:2px dashed var(--rule);border-radius:10px;background:var(--bg-soft);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all 0.15s;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.upload-slot:hover{border-color:var(--brand);background:var(--brand-soft)}
+.upload-slot.has-image{border:1px solid var(--rule-soft);background:#000}
+.upload-slot input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer}
+.upload-slot svg{width:24px;height:24px;color:var(--ink-3);margin-bottom:4px}
+.upload-slot .upload-text{font-size:10px;color:var(--ink-3);font-weight:500}
+.upload-slot img{width:100%;height:100%;object-fit:cover}
+.upload-slot .remove-btn{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.7);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;z-index:2;-webkit-tap-highlight-color:transparent}
+.upload-hint{font-size:11px;color:var(--ink-4);margin-top:8px;line-height:1.5;display:flex;align-items:flex-start;gap:5px}
+.upload-hint svg{flex-shrink:0;margin-top:1px}
+
+/* URGENCY(紧急程度)*/
+.urgency-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.urgency-card{background:#fff;border:1.5px solid var(--rule);border-radius:10px;padding:10px 6px;text-align:center;cursor:pointer;transition:all 0.18s;-webkit-tap-highlight-color:transparent;user-select:none}
+.urgency-card:hover{border-color:var(--ink-4)}
+.urgency-card .emoji{font-size:18px;margin-bottom:3px;line-height:1}
+.urgency-card .lbl{font-size:11px;color:var(--ink-2);font-weight:500}
+.urgency-card.active.low{border-color:#22D3A0;background:#E6FFF9}
+.urgency-card.active.mid{border-color:var(--warn);background:var(--warn-soft)}
+.urgency-card.active.high{border-color:var(--danger);background:var(--danger-soft)}
+.urgency-card.active .lbl{font-weight:600}
+.urgency-card.active.low .lbl{color:#0d8a6a}
+.urgency-card.active.mid .lbl{color:#854F0B}
+.urgency-card.active.high .lbl{color:#a02519}
+
+/* SUBMIT */
+.submit-btn{
+  width:100%;padding:14px;font-size:15px;font-weight:600;
+  background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;
+  border:none;border-radius:12px;cursor:pointer;
+  transition:transform 0.12s,box-shadow 0.2s;font-family:inherit;
+  letter-spacing:-0.005em;margin-top:6px;
+  display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;
+}
+.submit-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px -6px rgba(136,24,184,0.4)}
+.submit-btn:active{transform:scale(0.98)}
+.submit-btn:disabled{opacity:0.6;cursor:wait;transform:none;box-shadow:none}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.form-error{background:var(--danger-soft);color:#a02519;padding:11px 14px;border-radius:10px;font-size:13px;margin-top:8px;display:none;text-align:center;border:1px solid #f5c6c0}
+.form-error.visible{display:block}
+.privacy-note{margin-top:14px;text-align:center;font-size:11px;color:var(--ink-4);line-height:1.5}
+
+/* SUCCESS STATE */
+.success-state{display:none;text-align:center;padding:8px 0}
+.success-state.visible{display:block}
+.success-icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#22D3A0,#1eb88a);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;margin:0 auto 18px;box-shadow:0 8px 24px -6px rgba(34,211,160,0.4);animation:pop 0.4s cubic-bezier(0.32,0.72,0.21,1.4)}
+@keyframes pop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.success-state h2{font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-bottom:10px}
+.success-state p{font-size:14px;color:var(--ink-3);margin-bottom:24px;line-height:1.55}
+.success-state .home-btn{display:inline-block;padding:12px 28px;font-size:14px;font-weight:600;background:var(--ink);color:#fff;text-decoration:none;border-radius:980px;transition:background 0.15s}
+.success-state .home-btn:hover{background:var(--ink-2)}
+
+/* FOOTER */
+footer{text-align:center;padding:32px 22px;font-size:12px;color:var(--ink-4);border-top:1px solid var(--rule-soft);background:rgba(255,255,255,0.6)}
+footer a{color:var(--ink-3);text-decoration:none}
+footer a:hover{color:var(--brand)}
+
+/* RESPONSIVE */
+@media(max-width:414px){
+  .hero{padding:36px 18px 20px}
+  .hero h1{font-size:24px}
+  .hero p.lead{font-size:14px}
+  .form-card .inner{padding:22px 16px;border-radius:18px}
+  .nav-inner{padding:0 14px}
+  .nav-logo .brand{font-size:13px}
+  .nav-back span:not(.arrow){display:none}
+  .type-grid{gap:6px}
+  .type-card{padding:12px 6px}
+  .type-card .lbl{font-size:12px}
+  .sub-options-grid{grid-template-columns:1fr}
+}
+@media(max-width:360px){
+  .nav-inner{padding:0 12px}
+  .urgency-card .lbl{font-size:10px}
+  .upload-slot .upload-text{font-size:9px}
+}
+
+/* iOS safe areas */
+@supports(padding:max(0px)){nav{padding-left:max(0px,env(safe-area-inset-left));padding-right:max(0px,env(safe-area-inset-right))}}
+
+/* Hide elements based on language */
+[data-lang-text]{display:none}
+body[data-lang="en"] [data-lang-text="en"],
+body[data-lang="zh"] [data-lang-text="zh"],
+body[data-lang="my"] [data-lang-text="my"]{display:inline}
+body[data-lang="en"] .block-text[data-lang-text="en"],
+body[data-lang="zh"] .block-text[data-lang-text="zh"],
+body[data-lang="my"] .block-text[data-lang-text="my"]{display:block}
+
+::selection{background:rgba(136,24,184,0.18);color:var(--ink)}
+*{-webkit-tap-highlight-color:rgba(136,24,184,0.15)}
+input,select,textarea{font-size:16px}
+img{max-width:100%;height:auto}
+</style>
+</head>
+<body data-lang="zh">
+
+
+<!-- ====== NAV ====== -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="mark"><img src="data:image/png;base64,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" alt="Cloud City Food"></span>
+      <span class="brand">Cloud City Food</span>
+    </a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-back">
+        <span class="arrow">‹</span>
+        <span data-lang-text="en">Home</span>
+        <span data-lang-text="zh">首页</span>
+        <span data-lang-text="my">ပင်မ</span>
+      </a>
+      <div class="lang-wrap">
+        <button class="lang-btn" id="langBtn" onclick="toggleLang(event)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="currentLang">中文</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-option" onclick="setLang('en')">English</button>
+          <button class="lang-option active" onclick="setLang('zh')">中文</button>
+          <button class="lang-option" onclick="setLang('my')">မြန်မာ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="hero-mark">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="16.5" r="1" fill="currentColor"/></svg>
+  </div>
+  <div class="hero-eyebrow">
+    <span data-lang-text="en">Customer Feedback</span>
+    <span data-lang-text="zh">客户反馈</span>
+    <span data-lang-text="my">ဖောက်သည် တုံ့ပြန်ချက်</span>
+  </div>
+  <h1>
+    <span data-lang-text="en">We want to hear from you</span>
+    <span data-lang-text="zh">我们想听您说</span>
+    <span data-lang-text="my">သင်ပြောတာ နားထောင်ချင်ပါတယ်</span>
+  </h1>
+  <p class="lead">
+    <span class="block-text" data-lang-text="en">Encountered a problem? Let us know — we'll respond within 24 hours.</span>
+    <span class="block-text" data-lang-text="zh">遇到问题?告诉我们,24 小时内回复您。</span>
+    <span class="block-text" data-lang-text="my">ပြဿနာရှိနေပါသလား။ ပြောပြပါ — ၂၄ နာရီအတွင်း ပြန်လည် ဆက်သွယ်ပေးပါမည်။</span>
+  </p>
+</section>
+
+<!-- ====== QUICK CONTACT BAR ====== -->
+<section class="quick-bar">
+  <div class="quick-inner">
+    <div class="quick-text">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      <span data-lang-text="en">Urgent?</span>
+      <span data-lang-text="zh">紧急?直接拨打</span>
+      <span data-lang-text="my">အရေးပေါ်လား?</span>
+    </div>
+    <div class="quick-buttons">
+      <a href="tel:09782099992" class="quick-btn phone">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.487 17.14l-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.862a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"/></svg>
+        09782099992
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FORM ====== -->
+<section class="form-card">
+  <div class="inner">
+    <!-- Form state -->
+    <div id="formState">
+      <form id="feedbackForm" novalidate enctype="multipart/form-data">
+
+        <!-- 1. 联系电话 -->
+        <div class="form-section">
+          <label for="phone">
+            <span data-lang-text="en">Contact Phone</span>
+            <span data-lang-text="zh">联系电话</span>
+            <span data-lang-text="my">ဆက်သွယ်ရန် ဖုန်း</span>
+            <span class="required">*</span>
+          </label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" inputmode="tel" placeholder="+95 9 XXX XXXX" maxlength="20">
+        </div>
+
+        <!-- 2. 订单号 -->
+        <div class="form-section">
+          <label for="order_no">
+            <span data-lang-text="en">Order Number</span>
+            <span data-lang-text="zh">订单号</span>
+            <span data-lang-text="my">အော်ဒါ နံပါတ်</span>
+            <span class="optional" data-lang-text="zh">(可选)</span>
+            <span class="optional" data-lang-text="en">(optional)</span>
+            <span class="optional" data-lang-text="my">(ပါမသိ)</span>
+          </label>
+          <input type="text" id="order_no" name="order_no" autocomplete="off" placeholder="CC20260605..." maxlength="50">
+        </div>
+
+        <!-- 3. 投诉类型(大类)-->
+        <div class="form-section">
+          <label>
+            <span data-lang-text="en">Issue Type</span>
+            <span data-lang-text="zh">投诉类型</span>
+            <span data-lang-text="my">ပြဿနာ အမျိုးအစား</span>
+            <span class="required">*</span>
+          </label>
+          <div class="type-grid" id="typeGrid">
+            <div class="type-card" data-type="food">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M5 11v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"/></svg>
+              <div class="lbl">
+                <span data-lang-text="en">Food Quality</span>
+                <span data-lang-text="zh">菜品质量</span>
+                <span data-lang-text="my">အစားအသောက်</span>
+              </div>
+            </div>
+            <div class="type-card" data-type="delivery">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <div class="lbl">
+                <span data-lang-text="en">Delivery</span>
+                <span data-lang-text="zh">配送问题</span>
+                <span data-lang-text="my">ပို့ဆောင်ရေး</span>
+              </div>
+            </div>
+            <div class="type-card" data-type="merchant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5M5 9h14v11H5z"/><path d="M9 22V12h6v10"/></svg>
+              <div class="lbl">
+                <span data-lang-text="en">Merchant</span>
+                <span data-lang-text="zh">商家服务</span>
+                <span data-lang-text="my">ဆိုင်ဝန်ဆောင်မှု</span>
+              </div>
+            </div>
+            <div class="type-card" data-type="rider">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h3l1 4 2 1M14 6.5L10 17h5L9 7h-4"/></svg>
+              <div class="lbl">
+                <span data-lang-text="en">Rider</span>
+                <span data-lang-text="zh">骑手问题</span>
+                <span data-lang-text="my">ပို့သူ</span>
+              </div>
+            </div>
+            <div class="type-card" data-type="app">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+              <div class="lbl">
+                <span data-lang-text="en">App Issue</span>
+                <span data-lang-text="zh">App 问题</span>
+                <span data-lang-text="my">App ပြဿနာ</span>
+              </div>
+            </div>
+            <div class="type-card" data-type="other">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+              <div class="lbl">
+                <span data-lang-text="en">Other</span>
+                <span data-lang-text="zh">其他</span>
+                <span data-lang-text="my">အခြား</span>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" id="issueType" name="issue_type" value="">
+
+          <!-- 子选项动态展开区 -->
+          <div class="sub-options" id="subOptions">
+            <div class="sub-options-title">
+              <span data-lang-text="en">What happened? (Select all that apply)</span>
+              <span data-lang-text="zh">具体问题是什么?(可多选)</span>
+              <span data-lang-text="my">ဘာဖြစ်ခဲ့ပါသလဲ?(တစ်ခုထက်မက ရွေးနိုင်ပါသည်)</span>
+            </div>
+            <div class="sub-options-grid" id="subOptionsGrid">
+              <!-- JS 动态填充 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 详细描述 -->
+        <div class="form-section">
+          <label for="description">
+            <span data-lang-text="en">Tell us more</span>
+            <span data-lang-text="zh">详细描述</span>
+            <span data-lang-text="my">အသေးစိတ်ပြောပြပါ</span>
+            <span class="required">*</span>
+          </label>
+          <textarea id="description" name="description" required maxlength="1000" placeholder=""></textarea>
+          <div class="char-counter"><span id="charCount">0</span> / 1000</div>
+        </div>
+
+        <!-- 5. 图片上传 -->
+        <div class="form-section">
+          <label>
+            <span data-lang-text="en">Upload Photos</span>
+            <span data-lang-text="zh">上传照片</span>
+            <span data-lang-text="my">ဓာတ်ပုံ ထည့်ပါ</span>
+            <span class="optional" data-lang-text="zh">(可选,最多 5 张)</span>
+            <span class="optional" data-lang-text="en">(optional, up to 5)</span>
+            <span class="optional" data-lang-text="my">(ပါမသိ၊ ၅ ပုံအထိ)</span>
+          </label>
+          <div class="upload-area">
+            <div class="upload-grid" id="uploadGrid">
+              <label class="upload-slot" data-slot="0">
+                <input type="file" name="photo_1" accept="image/*" capture="environment" data-index="0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                <span class="upload-text" data-lang-text="zh">拍照/上传</span>
+                <span class="upload-text" data-lang-text="en">Photo</span>
+                <span class="upload-text" data-lang-text="my">ပုံ</span>
+              </label>
+              <label class="upload-slot" data-slot="1">
+                <input type="file" name="photo_2" accept="image/*" capture="environment" data-index="1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span class="upload-text" data-lang-text="zh">添加</span>
+                <span class="upload-text" data-lang-text="en">Add</span>
+                <span class="upload-text" data-lang-text="my">ထည့်</span>
+              </label>
+              <label class="upload-slot" data-slot="2">
+                <input type="file" name="photo_3" accept="image/*" capture="environment" data-index="2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span class="upload-text" data-lang-text="zh">添加</span>
+                <span class="upload-text" data-lang-text="en">Add</span>
+                <span class="upload-text" data-lang-text="my">ထည့်</span>
+              </label>
+              <label class="upload-slot" data-slot="3">
+                <input type="file" name="photo_4" accept="image/*" capture="environment" data-index="3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span class="upload-text" data-lang-text="zh">添加</span>
+                <span class="upload-text" data-lang-text="en">Add</span>
+                <span class="upload-text" data-lang-text="my">ထည့်</span>
+              </label>
+              <label class="upload-slot" data-slot="4">
+                <input type="file" name="photo_5" accept="image/*" capture="environment" data-index="4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span class="upload-text" data-lang-text="zh">添加</span>
+                <span class="upload-text" data-lang-text="en">Add</span>
+                <span class="upload-text" data-lang-text="my">ထည့်</span>
+              </label>
+            </div>
+            <div class="upload-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span data-lang-text="en">Photos help us resolve faster. Max 5 MB each.</span>
+              <span data-lang-text="zh">上传图片能帮客服更快定位问题(每张最大 5MB)</span>
+              <span data-lang-text="my">ဓာတ်ပုံများက ပိုမြန်စွာ ဖြေရှင်းနိုင်ပါသည်။(တစ်ပုံလျှင် ၅MB)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. 紧急程度 -->
+        <div class="form-section">
+          <label>
+            <span data-lang-text="en">Urgency Level</span>
+            <span data-lang-text="zh">紧急程度</span>
+            <span data-lang-text="my">အရေးပါမှု အဆင့်</span>
+            <span class="required">*</span>
+          </label>
+          <div class="urgency-grid" id="urgencyGrid">
+            <div class="urgency-card low" data-urgency="low">
+              <div class="emoji">😐</div>
+              <div class="lbl">
+                <span data-lang-text="en">Normal</span>
+                <span data-lang-text="zh">一般</span>
+                <span data-lang-text="my">ပုံမှန်</span>
+              </div>
+            </div>
+            <div class="urgency-card mid" data-urgency="medium">
+              <div class="emoji">😟</div>
+              <div class="lbl">
+                <span data-lang-text="en">Important</span>
+                <span data-lang-text="zh">重要</span>
+                <span data-lang-text="my">အရေးကြီး</span>
+              </div>
+            </div>
+            <div class="urgency-card high" data-urgency="high">
+              <div class="emoji">😡</div>
+              <div class="lbl">
+                <span data-lang-text="en">Urgent</span>
+                <span data-lang-text="zh">紧急</span>
+                <span data-lang-text="my">အရေးပေါ်</span>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" id="urgency" name="urgency" value="">
+        </div>
+
+        <!-- Hidden fields -->
+        <input type="hidden" id="subIssues" name="sub_issues" value="">
+        <input type="hidden" name="_subject" value="[Feedback] Customer Issue Report">
+        <input type="hidden" name="form_source" value="feedback.html">
+        <input type="hidden" id="formLang" name="form_language" value="zh">
+        <!-- Honeypot 防机器人 -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span id="submitText">
+            <span data-lang-text="en">Submit Feedback</span>
+            <span data-lang-text="zh">提交反馈</span>
+            <span data-lang-text="my">တုံ့ပြန်ချက် တင်ရန်</span>
+          </span>
+        </button>
+
+        <div class="form-error" id="formError">
+          <span data-lang-text="en">Submission failed. Please check your connection and try again.</span>
+          <span data-lang-text="zh">提交失败,请检查网络后重试。</span>
+          <span data-lang-text="my">တင်ခြင်း မအောင်မြင်ပါ။ ပြန်လည် စမ်းကြည့်ပါ။</span>
+        </div>
+
+        <div class="privacy-note">
+          <span data-lang-text="en">Your information is kept strictly confidential</span>
+          <span data-lang-text="zh">您的信息严格保密 · 仅用于解决您的问题</span>
+          <span data-lang-text="my">သင့်အချက်အလက်ကို လုံခြုံစွာ ထိန်းသိမ်းပါမည်</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Success state -->
+    <div class="success-state" id="successState">
+      <div class="success-icon">✓</div>
+      <h2>
+        <span data-lang-text="en">Feedback Received!</span>
+        <span data-lang-text="zh">反馈已收到!</span>
+        <span data-lang-text="my">တုံ့ပြန်ချက် လက်ခံရရှိပါသည်!</span>
+      </h2>
+      <p>
+        <span class="block-text" data-lang-text="en">Our team will contact you within 24 hours.<br>Thank you for helping us improve.</span>
+        <span class="block-text" data-lang-text="zh">我们会在 24 小时内联系您。<br>感谢您帮助我们改进。</span>
+        <span class="block-text" data-lang-text="my">၂၄ နာရီအတွင်း ဆက်သွယ်ပါမည်။<br>ကျေးဇူးတင်ပါသည်။</span>
+      </p>
+      <a href="index.html" class="home-btn">
+        <span data-lang-text="en">Back to Home</span>
+        <span data-lang-text="zh">返回首页</span>
+        <span data-lang-text="my">ပင်မစာမျက်နှာသို့ ပြန်သွားရန်</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <p>
+    &copy; 2026 Cloud City Food &middot;
+    <a href="index.html">
+      <span data-lang-text="en">Home</span>
+      <span data-lang-text="zh">首页</span>
+      <span data-lang-text="my">ပင်မ</span>
+    </a>
+    &middot;
+    <a href="legal.html">
+      <span data-lang-text="en">Legal</span>
+      <span data-lang-text="zh">条款</span>
+      <span data-lang-text="my">ဥပဒေ</span>
+    </a>
+    &middot;
+    <a href="mailto:cloudcitymm@gmail.com">cloudcitymm@gmail.com</a>
+  </p>
+</footer>
+
+<script>
+// ============================================================
+// 子选项数据库(三语)
+// ============================================================
+const SUB_OPTIONS = {
+  food: {
+    zh: ['食物太凉','不新鲜/变质','分量太少','与图片不符','漏餐/少菜','异物/有头发','其他'],
+    en: ['Food too cold','Not fresh','Portion too small','Looks different from photo','Missing items','Foreign objects','Other'],
+    my: ['အေးနေ','မလတ်ဆတ်','ပမာဏနည်း','ပုံနဲ့မတူ','ပစ္စည်းပျောက်','အညစ်အကြေး','အခြား']
+  },
+  delivery: {
+    zh: ['严重迟到','联系不上骑手','送错地址','包装破损','骑手未送达','其他'],
+    en: ['Severely late','Can\'t reach rider','Wrong address','Damaged packaging','Not delivered','Other'],
+    my: ['ကြီးကြီးနောက်ကျ','ပို့သူ မရ','လိပ်စာမှား','ထုပ်ပိုးပျက်','မရောက်ရှိ','အခြား']
+  },
+  merchant: {
+    zh: ['不接单','取消我的订单','服务态度差','出餐慢','拒绝特殊要求','其他'],
+    en: ['Refused to accept','Cancelled my order','Bad attitude','Slow preparation','Refused special request','Other'],
+    my: ['လက်မခံ','အော်ဒါ ပယ်ဖျက်','သဘောထားမကောင်း','ပြင်ဆင်မှု နှေး','အထူးတောင်းဆို ငြင်း','အခြား']
+  },
+  rider: {
+    zh: ['态度恶劣','安全驾驶问题','私拆食物','索要小费','不按要求联系','其他'],
+    en: ['Rude attitude','Unsafe driving','Tampered with food','Demanded tips','Did not contact as requested','Other'],
+    my: ['သဘောမကောင်း','မော်တော်ဆိုင်ကယ်စီးနည်း မလုံခြုံ','အစားအသောက် ဖောက်ထား','ထောက်ပံ့ကြေး တောင်း','မဆက်သွယ်','အခြား']
+  },
+  app: {
+    zh: ['无法下单','支付失败','App 闪退','找不到商家','优惠券问题','账号问题','其他'],
+    en: ['Can\'t place order','Payment failed','App crashes','Can\'t find merchant','Coupon issue','Account issue','Other'],
+    my: ['အော်ဒါ မရ','ပေးချေမှု ပျက်','App ပိတ်ပြိုင်','ဆိုင်ရှာမတွေ့','ကူပွန် ပြဿနာ','အကောင့် ပြဿနာ','အခြား']
+  },
+  other: {
+    zh: [],en: [],my: []
+  }
+};
+
+// ============================================================
+// 语言切换
+// ============================================================
+const langNames = {zh:'中文', en:'English', my:'မြန်မာ'};
+const pageTitles = {
+  en: 'Customer Feedback — Cloud City Food',
+  zh: '客户反馈 — Cloud City Food',
+  my: 'ဖောက်သည် တုံ့ပြန်ချက် — Cloud City Food'
+};
+
+function setLang(l){
+  document.body.setAttribute('data-lang', l);
+  document.documentElement.lang = l;
+  document.title = pageTitles[l] || pageTitles.en;
+  document.getElementById('currentLang').textContent = langNames[l];
+  document.getElementById('formLang').value = l;
+  document.querySelectorAll('.lang-option').forEach((opt,i) => {
+    opt.classList.toggle('active', ['en','zh','my'][i] === l);
+  });
+  document.getElementById('langDropdown').classList.remove('open');
+  // 更新文字描述的 placeholder
+  const desc = document.getElementById('description');
+  const phMap = {
+    zh: '请详细描述发生了什么、您希望我们如何处理...',
+    en: 'Please describe what happened and how you\'d like us to help...',
+    my: 'ဘာဖြစ်ခဲ့သလဲနဲ့ ဘယ်လို ကူညီစေချင်တယ် ပြောပြပါ...'
+  };
+  desc.placeholder = phMap[l] || phMap.en;
+  // 重新渲染当前已展开的子选项
+  const currentType = document.getElementById('issueType').value;
+  if (currentType) renderSubOptions(currentType, l);
+  try{ localStorage.setItem('cc_lang', l); }catch(e){}
+}
+
+function toggleLang(e){
+  if(e) e.stopPropagation();
+  document.getElementById('langDropdown').classList.toggle('open');
+}
+
+document.addEventListener('click', e => {
+  if(!e.target.closest('#langBtn') && !e.target.closest('#langDropdown')){
+    document.getElementById('langDropdown').classList.remove('open');
+  }
+});
+
+// Init language
+const urlParams = new URLSearchParams(window.location.search);
+const langParam = urlParams.get('lang');
+const savedLang = (()=>{try{return localStorage.getItem('cc_lang');}catch(e){return null;}})();
+if(langParam && ['en','zh','my'].includes(langParam)) setLang(langParam);
+else if(savedLang && ['en','zh','my'].includes(savedLang)) setLang(savedLang);
+else setLang('zh');
+
+// ============================================================
+// 投诉类型选择 + 子选项动态展开
+// ============================================================
+const typeCards = document.querySelectorAll('.type-card');
+const subOptionsBox = document.getElementById('subOptions');
+const subOptionsGrid = document.getElementById('subOptionsGrid');
+const issueTypeInput = document.getElementById('issueType');
+
+let selectedSubs = new Set();
+
+typeCards.forEach(card => {
+  card.addEventListener('click', () => {
+    // 取消所有,激活当前
+    typeCards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    const type = card.dataset.type;
+    issueTypeInput.value = type;
+    
+    // 清空已选子项
+    selectedSubs.clear();
+    updateSubIssuesInput();
+    
+    // 渲染子选项
+    const lang = document.body.getAttribute('data-lang') || 'zh';
+    renderSubOptions(type, lang);
+  });
+});
+
+function renderSubOptions(type, lang){
+  const options = (SUB_OPTIONS[type] && SUB_OPTIONS[type][lang]) || [];
+  if (options.length === 0){
+    subOptionsBox.classList.remove('visible');
+    return;
+  }
+  subOptionsGrid.innerHTML = options.map((opt, idx) => `
+    <label class="sub-check" data-value="${opt}">
+      <input type="checkbox" value="${opt}">
+      <span class="box"></span>
+      <span>${opt}</span>
+    </label>
+  `).join('');
+  subOptionsBox.classList.add('visible');
+  
+  // Bind change listeners
+  subOptionsGrid.querySelectorAll('.sub-check').forEach(label => {
+    label.addEventListener('click', e => {
+      e.preventDefault();
+      const value = label.dataset.value;
+      if (selectedSubs.has(value)) {
+        selectedSubs.delete(value);
+        label.classList.remove('checked');
+      } else {
+        selectedSubs.add(value);
+        label.classList.add('checked');
+      }
+      updateSubIssuesInput();
+    });
+  });
+}
+
+function updateSubIssuesInput(){
+  document.getElementById('subIssues').value = Array.from(selectedSubs).join(', ');
+}
+
+// ============================================================
+// 紧急程度选择
+// ============================================================
+const urgencyCards = document.querySelectorAll('.urgency-card');
+const urgencyInput = document.getElementById('urgency');
+urgencyCards.forEach(card => {
+  card.addEventListener('click', () => {
+    urgencyCards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    urgencyInput.value = card.dataset.urgency;
+  });
+});
+
+// ============================================================
+// 字数计数器
+// ============================================================
+const descTextarea = document.getElementById('description');
+const charCount = document.getElementById('charCount');
+descTextarea.addEventListener('input', () => {
+  charCount.textContent = descTextarea.value.length;
+  if (descTextarea.value.length > 900) charCount.style.color = '#E74C3C';
+  else charCount.style.color = '';
+});
+
+// ============================================================
+// 图片上传 + 预览
+// ============================================================
+const MAX_SIZE = 5 * 1024 * 1024; // 5MB
+const uploadSlots = document.querySelectorAll('.upload-slot');
+uploadSlots.forEach(slot => {
+  const input = slot.querySelector('input[type="file"]');
+  input.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (file.size > MAX_SIZE) {
+      alert((document.body.getAttribute('data-lang') === 'zh') 
+        ? '图片过大,请选择 5MB 以下的图片' 
+        : 'Image too large. Please select an image under 5MB.');
+      input.value = '';
+      return;
+    }
+    // 显示预览
+    const reader = new FileReader();
+    reader.onload = ev => {
+      slot.classList.add('has-image');
+      slot.innerHTML = `
+        <img src="${ev.target.result}" alt="">
+        <button type="button" class="remove-btn" data-slot-index="${slot.dataset.slot}">×</button>
+      `;
+      // Re-attach input (但是 hidden)
+      const newInput = document.createElement('input');
+      newInput.type = 'file';
+      newInput.name = input.name;
+      newInput.accept = 'image/*';
+      newInput.style.display = 'none';
+      // 用 DataTransfer 保留原文件
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      newInput.files = dt.files;
+      slot.appendChild(newInput);
+      
+      // 绑定移除按钮
+      slot.querySelector('.remove-btn').addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+        resetSlot(slot);
+      });
+    };
+    reader.readAsDataURL(file);
+  });
+});
+
+function resetSlot(slot){
+  const lang = document.body.getAttribute('data-lang') || 'zh';
+  const lblMap = {zh: '添加', en: 'Add', my: 'ထည့်'};
+  const idx = slot.dataset.slot;
+  slot.classList.remove('has-image');
+  slot.innerHTML = `
+    <input type="file" name="photo_${parseInt(idx)+1}" accept="image/*" capture="environment" data-index="${idx}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    <span class="upload-text" data-lang-text="zh">添加</span>
+    <span class="upload-text" data-lang-text="en">Add</span>
+    <span class="upload-text" data-lang-text="my">ထည့်</span>
+  `;
+  // 重新绑定 change
+  const newInput = slot.querySelector('input[type="file"]');
+  newInput.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (file.size > MAX_SIZE) {
+      alert(lang === 'zh' ? '图片过大,请选择 5MB 以下的图片' : 'Image too large. Please select an image under 5MB.');
+      newInput.value = '';
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = ev => {
+      slot.classList.add('has-image');
+      slot.innerHTML = `<img src="${ev.target.result}" alt=""><button type="button" class="remove-btn">×</button>`;
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      const hiddenInput = document.createElement('input');
+      hiddenInput.type = 'file';
+      hiddenInput.name = `photo_${parseInt(idx)+1}`;
+      hiddenInput.accept = 'image/*';
+      hiddenInput.style.display = 'none';
+      hiddenInput.files = dt.files;
+      slot.appendChild(hiddenInput);
+      slot.querySelector('.remove-btn').addEventListener('click', e2 => {
+        e2.preventDefault(); e2.stopPropagation();
+        resetSlot(slot);
+      });
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+// ============================================================
+// 表单提交
+// ============================================================
+const FORMSPREE_URL = 'https://formspree.io/f/mlgkkrdv';
+document.getElementById('feedbackForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const form = e.target;
+  const submitBtn = document.getElementById('submitBtn');
+  const submitText = document.getElementById('submitText');
+  const errorBox = document.getElementById('formError');
+  const lang = document.body.getAttribute('data-lang') || 'zh';
+  
+  // 校验:必须选了类型 + 紧急程度
+  if (!document.getElementById('issueType').value) {
+    alert(lang === 'zh' ? '请选择投诉类型' : lang === 'en' ? 'Please select an issue type' : 'ပြဿနာ အမျိုးအစား ရွေးပါ');
+    return;
+  }
+  if (!document.getElementById('urgency').value) {
+    alert(lang === 'zh' ? '请选择紧急程度' : lang === 'en' ? 'Please select urgency level' : 'အရေးပါမှု အဆင့် ရွေးပါ');
+    return;
+  }
+  
+  // 根据紧急程度更新邮件标题
+  const urgency = document.getElementById('urgency').value;
+  const issueType = document.getElementById('issueType').value;
+  const subjectPrefix = urgency === 'high' ? '🚨 [URGENT]' : urgency === 'medium' ? '⚠️ [Important]' : '📋';
+  const subjectField = form.querySelector('input[name="_subject"]');
+  subjectField.value = `${subjectPrefix} [Feedback] ${issueType.toUpperCase()} - Customer Complaint`;
+  
+  // 添加时间戳
+  if (!form.querySelector('input[name="submitted_at"]')) {
+    const ts = document.createElement('input');
+    ts.type = 'hidden';
+    ts.name = 'submitted_at';
+    ts.value = new Date().toISOString();
+    form.appendChild(ts);
+  } else {
+    form.querySelector('input[name="submitted_at"]').value = new Date().toISOString();
+  }
+  
+  const submittingText = {zh:'提交中...', en:'Submitting...', my:'တင်နေသည်...'};
+  submitBtn.disabled = true;
+  submitText.innerHTML = '<span class="spinner"></span> ' + (submittingText[lang] || submittingText.en);
+  errorBox.classList.remove('visible');
+  
+  try{
+    const formData = new FormData(form);
+    const response = await fetch(FORMSPREE_URL, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    
+    if(response.ok){
+      document.getElementById('formState').style.display = 'none';
+      document.getElementById('successState').classList.add('visible');
+      window.scrollTo({top:0,behavior:'smooth'});
+    } else {
+      throw new Error('Submission failed: ' + response.status);
+    }
+  } catch(err){
+    console.error('[Feedback] Submit error:', err);
+    errorBox.classList.add('visible');
+    submitBtn.disabled = false;
+    submitText.innerHTML = `
+      <span data-lang-text="en">Submit Feedback</span>
+      <span data-lang-text="zh">提交反馈</span>
+      <span data-lang-text="my">တုံ့ပြန်ချက် တင်ရန်</span>
+    `;
+  }
+});
+
+// Trigger initial placeholder via setLang for current lang
+setLang(document.body.getAttribute('data-lang') || 'zh');
+</script>
+
+</body>
+</html>
