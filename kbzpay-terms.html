@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>CloudCity Food Mini App — Terms and Conditions</title>
+
+<meta name="description" content="Terms and Conditions governing the use of the CloudCity Food Mini App available within the KBZPay application.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.cloudcitymm.com/kbzpay-terms.html">
+
+<meta name="theme-color" content="#8818B8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+<link rel="shortcut icon" href="icons/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YX4MBJ42F2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YX4MBJ42F2', { 'send_page_view': true, 'anonymize_ip': true });
+  window.ccTrack = function(eventName, params) {
+    try { if (typeof gtag === 'function') gtag('event', eventName, params || {}); } catch(e) {}
+  };
+</script>
+
+<style>
+:root{
+  --ink:#1D1D1F; --ink-2:#3a3a3c; --ink-3:#6e6e73; --ink-4:#86868b;
+  --rule:#D2D2D7; --rule-soft:#E8E8ED;
+  --bg:#FBFBFD; --bg-soft:#F5F5F7; --white:#fff;
+  --brand:#8818B8; --brand-deep:#5F0F82; --brand-soft:#F4E8FA;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color:var(--ink);background:var(--bg);min-height:100vh;
+  line-height:1.6;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased;
+}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--rule-soft);height:54px;display:flex;align-items:center}
+.nav-inner{width:100%;max-width:1100px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.nav-logo .mark{width:24px;height:24px;border-radius:6px;overflow:hidden;flex-shrink:0}
+.nav-logo .mark img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-logo .brand{font-weight:600;font-size:14px;letter-spacing:-0.01em;white-space:nowrap}
+.nav-back{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--ink-3);text-decoration:none;padding:6px 12px;border-radius:980px;transition:background 0.15s,color 0.15s}
+.nav-back:hover{background:var(--bg-soft);color:var(--ink)}
+
+/* HERO */
+.hero{max-width:760px;margin:0 auto;padding:56px 22px 32px;text-align:center}
+.hero-mark{width:64px;height:64px;border-radius:16px;margin:0 auto 20px;background:linear-gradient(135deg,var(--brand),var(--brand-deep));display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px -10px rgba(136,24,184,0.45)}
+.hero-mark svg{width:32px;height:32px;color:#fff}
+.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+.hero h1{font-size:clamp(26px,5vw,38px);font-weight:700;letter-spacing:-0.025em;line-height:1.15;margin-bottom:14px}
+.hero .effective-date{display:inline-block;font-size:13px;color:var(--ink-3);background:var(--bg-soft);padding:6px 14px;border-radius:980px;margin-bottom:20px}
+.hero .intro-text{text-align:left;font-size:14px;color:var(--ink-2);line-height:1.7;max-width:640px;margin:0 auto}
+.hero .intro-text p{margin-bottom:12px}
+.hero .intro-text strong{color:var(--ink)}
+
+/* LAYOUT: sidebar + content */
+.legal-layout{max-width:1100px;margin:0 auto;padding:0 22px 80px;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
+
+/* TOC SIDEBAR */
+.toc-sidebar{position:sticky;top:78px;background:#fff;border:1px solid var(--rule-soft);border-radius:16px;padding:18px;max-height:calc(100vh - 100px);overflow-y:auto}
+.toc-title{font-size:11px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;padding:0 8px}
+.toc-link{display:block;font-size:13px;color:var(--ink-3);text-decoration:none;padding:7px 8px;border-radius:8px;line-height:1.4;transition:background 0.12s,color 0.12s;margin-bottom:1px}
+.toc-link:hover{background:var(--bg-soft);color:var(--ink)}
+.toc-link.active{background:var(--brand-soft);color:var(--brand-deep);font-weight:600}
+
+/* CONTENT */
+.policy-article{background:#fff;border:1px solid var(--rule-soft);border-radius:20px;padding:8px 36px}
+.policy-section{padding:28px 0;border-bottom:1px solid var(--rule-soft)}
+.policy-section:last-child{border-bottom:none}
+.policy-section h3{font-size:19px;font-weight:600;letter-spacing:-0.015em;margin-bottom:14px;display:flex;align-items:baseline;gap:10px;scroll-margin-top:70px}
+.ch-num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;background:var(--brand);color:#fff;font-size:12px;font-weight:700;border-radius:7px;flex-shrink:0}
+.policy-section h4{font-size:14.5px;font-weight:600;color:var(--ink-2);margin:16px 0 6px}
+.policy-section p{font-size:14.5px;color:var(--ink-2);line-height:1.75;margin-bottom:10px}
+.policy-section p strong{color:var(--ink);font-weight:600}
+.policy-section ul{margin:8px 0 12px 0;padding-left:20px}
+.policy-section li{font-size:14.5px;color:var(--ink-2);line-height:1.7;margin-bottom:5px}
+.policy-section blockquote{background:var(--bg-soft);border-left:3px solid var(--brand);padding:12px 16px;margin:10px 0;border-radius:0 10px 10px 0;font-size:14px;color:var(--ink-2);line-height:1.7}
+
+/* FOOTER */
+footer{text-align:center;padding:32px 22px;font-size:12px;color:var(--ink-4);border-top:1px solid var(--rule-soft);background:rgba(255,255,255,0.6)}
+footer a{color:var(--ink-3);text-decoration:none}
+footer a:hover{color:var(--brand)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .legal-layout{grid-template-columns:1fr;gap:20px}
+  .toc-sidebar{position:static;max-height:none}
+  .policy-article{padding:8px 20px}
+}
+@media(max-width:540px){
+  .hero{padding:40px 18px 24px}
+  .hero h1{font-size:24px}
+  .policy-article{padding:8px 16px;border-radius:16px}
+  .policy-section h3{font-size:17px}
+  .nav-inner{padding:0 14px}
+}
+
+::selection{background:rgba(136,24,184,0.18);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="mark"><img src="data:image/png;base64,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" alt="CloudCityFood"></span>
+      <span class="brand">CloudCityFood</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <span>‹</span>
+      <span>Home</span>
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-mark">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  </div>
+  <div class="hero-eyebrow">Legal Document</div>
+  <h1>CloudCity Food Mini App<br>Terms and Conditions</h1>
+  <div class="effective-date">Effective Date: 13 July 2026</div>
+  <div class="intro-text">
+    <p><strong>Effective Date:</strong> 13 july 2026</p>
+<p>These Terms and Conditions ("Terms") govern access to and use of the CloudCity Food Mini App available within the KBZPay application ("Mini App").</p>
+<p>The Mini App is owned and operated by <strong>CLOUDCITY INTERNET SERVICE CO., LTD</strong> ("CloudCity Food", "CloudCity", "we", "us", or "our").</p>
+<p>By accessing or using the Mini App, placing an Order, making a payment, or using any Service, the Customer confirms that the Customer has read, understood, and agreed to these Terms, the applicable KBZPay Terms and Conditions, the CloudCity Privacy Policy, and any additional terms or policies displayed in the Mini App.</p>
+<p>If the Customer does not agree with these Terms, the Customer must stop using the Mini App.</p>
+  </div>
+</section>
+
+<div class="legal-layout">
+  <aside class="toc-sidebar">
+    <div class="toc-title">Table of Contents</div>
+    <a href="#ch1" class="toc-link" data-ch="1">1. DEFINITIONS</a><a href="#ch2" class="toc-link" data-ch="2">2. SERVICES PROVIDED</a><a href="#ch3" class="toc-link" data-ch="3">3. USER ELIGIBILITY AND ACCOUNT</a><a href="#ch4" class="toc-link" data-ch="4">4. MERCHANT, PRODUCT, AND SERVICE INFORMATION</a><a href="#ch5" class="toc-link" data-ch="5">5. PLACING AND CONFIRMING ORDERS</a><a href="#ch6" class="toc-link" data-ch="6">6. MINIMUM ORDER VALUE</a><a href="#ch7" class="toc-link" data-ch="7">7. SPECIAL INSTRUCTIONS AND ALLERGENS</a><a href="#ch8" class="toc-link" data-ch="8">8. PRICES, FEES, AND PAYMENTS</a><a href="#ch9" class="toc-link" data-ch="9">9. FOOD DELIVERY</a><a href="#ch10" class="toc-link" data-ch="10">10. STORE PICKUP</a><a href="#ch11" class="toc-link" data-ch="11">11. DELI</a><a href="#ch12" class="toc-link" data-ch="12">12. SAY BUY</a><a href="#ch13" class="toc-link" data-ch="13">13. TAXI SERVICE</a><a href="#ch14" class="toc-link" data-ch="14">14. MOBILE TOP-UP</a><a href="#ch15" class="toc-link" data-ch="15">15. CANCELLATION AND REFUNDS</a><a href="#ch16" class="toc-link" data-ch="16">16. CUSTOMER, MERCHANT, RIDER, AND CLOUDCITY RESPONSIBILITIES</a><a href="#ch17" class="toc-link" data-ch="17">17. RATINGS, REVIEWS, MESSAGES, AND NOTIFICATIONS</a><a href="#ch18" class="toc-link" data-ch="18">18. PERSONAL DATA AND PRIVACY</a><a href="#ch19" class="toc-link" data-ch="19">19. PROHIBITED USE</a><a href="#ch20" class="toc-link" data-ch="20">20. SERVICE AVAILABILITY, DISCLAIMER, AND LIMITATION OF LIABILITY</a><a href="#ch21" class="toc-link" data-ch="21">21. FORCE MAJEURE</a><a href="#ch22" class="toc-link" data-ch="22">22. INTELLECTUAL PROPERTY</a><a href="#ch23" class="toc-link" data-ch="23">23. SUSPENSION AND TERMINATION</a><a href="#ch24" class="toc-link" data-ch="24">24. AMENDMENTS</a><a href="#ch25" class="toc-link" data-ch="25">25. SEVERABILITY AND WAIVER</a><a href="#ch26" class="toc-link" data-ch="26">26. GOVERNING LAW AND DISPUTE RESOLUTION</a><a href="#ch27" class="toc-link" data-ch="27">27. LANGUAGE</a><a href="#ch28" class="toc-link" data-ch="28">28. CONTACT US</a>
+  </aside>
+
+  <article class="policy-article">
+    
+<section class="policy-section" id="ch1">
+  <h3><span class="ch-num">1</span>DEFINITIONS</h3>
+  <h4>1.1 "Customer" or "User"</h4>
+<p>Means an individual who accesses or uses the CloudCity Food Mini App or submits an Order or service request through the Mini App.</p>
+<h4>1.2 "Merchant"</h4>
+<p>Means a restaurant, food outlet, shop, service provider, or other business offering products or services through the Mini App.</p>
+<h4>1.3 "Rider" or "Driver"</h4>
+<p>Means a person assigned through the CloudCity platform to provide Food Delivery, Deli, Say Buy, or Taxi Service.</p>
+<h4>1.4 "Order"</h4>
+<p>Means a request submitted by a Customer through the Mini App for products or services.</p>
+<h4>1.5 "Mini App"</h4>
+<p>Means the CloudCity Food Mini App operating inside the KBZPay application.</p>
+<h4>1.6 "Food Delivery"</h4>
+<p>Means the ordering and delivery of food or other products from participating Merchants.</p>
+<h4>1.7 "Deli"</h4>
+<p>Means a delivery service through which a Rider collects and delivers permitted items between locations specified by the Customer.</p>
+<h4>1.8 "Say Buy"</h4>
+<p>Means a service through which a Rider purchases permitted products on behalf of the Customer and delivers them to the Customer.</p>
+<h4>1.9 "Taxi Service"</h4>
+<p>Means a ride-booking service that connects Customers with available Drivers.</p>
+<h4>1.10 "Store Pickup"</h4>
+<p>Means a service option under which the Customer collects an Order directly from the Merchant's location.</p>
+<h4>1.11 "Mobile Top-up"</h4>
+<p>Means the purchase of supported mobile phone credit through CloudCity Balance or another supported payment method displayed in the Mini App.</p>
+<h4>1.12 "CloudCity Balance"</h4>
+<p>Means the digital balance recorded in the Customer's CloudCity account and available for supported services.</p>
+<h4>1.13 "KBZPay"</h4>
+<p>Means the digital payment services provided by Kanbawza Bank Limited through the KBZPay application.</p>
+<h4>1.14 "Refund"</h4>
+<p>Means a full or partial repayment approved in connection with a cancelled, unavailable, incorrect, damaged, incomplete, duplicated, or otherwise unsatisfactory Order or transaction.</p>
+<h4>1.15 "Business Day"</h4>
+<p>Means a day other than Saturday, Sunday, a public holiday, or a bank holiday in Myanmar.</p>
+</section>
+
+<section class="policy-section" id="ch2">
+  <h3><span class="ch-num">2</span>SERVICES PROVIDED</h3>
+  <h4>2.1</h4>
+<p>CloudCity Food provides an online platform through which Customers may access the following services:</p>
+<ul><li>Food Delivery;</li><li>Store Pickup;</li><li>Deli;</li><li>Say Buy;</li><li>Taxi Service;</li><li>Mobile Top-up; and</li><li>other services that may be added from time to time.</li></ul>
+<h4>2.2</h4>
+<p>The primary purpose of the CloudCity Food Mini App is to allow Customers to browse nearby Merchants, view products and menus, place Orders, make payments, communicate with Merchants, and track Order progress directly within KBZPay.</p>
+<h4>2.3</h4>
+<p>Service availability may depend on:</p>
+<ul><li>the Customer's location;</li><li>supported service areas;</li><li>Merchant operating hours;</li><li>product availability;</li><li>Rider or Driver availability;</li><li>road and traffic conditions;</li><li>internet and telecommunications conditions;</li><li>system availability; and</li><li>other operational circumstances.</li></ul>
+<h4>2.4</h4>
+<p>CloudCity may add, modify, restrict, suspend, or discontinue any Service where reasonably necessary for operational, security, legal, technical, or commercial reasons.</p>
+</section>
+
+<section class="policy-section" id="ch3">
+  <h3><span class="ch-num">3</span>USER ELIGIBILITY AND ACCOUNT</h3>
+  <h4>3.1</h4>
+<p>Customers aged 18 or above may use the Mini App independently.</p>
+<p>Customers under 18 must use the Mini App with the permission and supervision of a parent or legal guardian. The parent or legal guardian shall be responsible for the Customer's use of the Services and any related payments.</p>
+<h4>3.2</h4>
+<p>Customers may access the Mini App through KBZPay authorization and may be required to provide additional information necessary for Order processing, payment, delivery, pickup, or customer support.</p>
+<h4>3.3</h4>
+<p>Customers must provide complete, accurate, truthful, and current information, including where applicable:</p>
+<ul><li>Customer name;</li><li>telephone number;</li><li>delivery address;</li><li>pickup address;</li><li>destination address;</li><li>map location;</li><li>Order details;</li><li>product details;</li><li>recipient information; and</li><li>other information required for the relevant Service.</li></ul>
+<h4>3.4</h4>
+<p>CloudCity, the Merchant, Rider, or Driver shall not be responsible for delay, service failure, loss, additional cost, or unsuccessful delivery caused by incorrect, incomplete, misleading, or outdated information provided by the Customer.</p>
+<h4>3.5</h4>
+<p>Customers are responsible for maintaining the security of their mobile devices, KBZPay accounts, and CloudCity accounts.</p>
+<h4>3.6</h4>
+<p>CloudCity will never ask a Customer to disclose the Customer's KBZPay PIN, OTP, or other confidential authentication information.</p>
+</section>
+
+<section class="policy-section" id="ch4">
+  <h3><span class="ch-num">4</span>MERCHANT, PRODUCT, AND SERVICE INFORMATION</h3>
+  <h4>4.1</h4>
+<p>Merchant information, menus, product descriptions, images, prices, stock availability, operating hours, preparation times, and related details may be provided or maintained by the Merchant.</p>
+<h4>4.2</h4>
+<p>CloudCity will take reasonable steps to maintain accurate Merchant and product information but does not guarantee that all information will always be complete, current, accurate, or error-free.</p>
+<h4>4.3</h4>
+<p>Products, services, prices, stock, operating hours, and estimated preparation times may change without prior notice.</p>
+<h4>4.4</h4>
+<p>Product images are for reference only. The actual product, packaging, portion size, colour, presentation, or appearance may differ.</p>
+<h4>4.5</h4>
+<p>Where a product becomes unavailable after an Order is submitted, CloudCity or the Merchant may:</p>
+<ul><li>contact the Customer;</li><li>suggest a substitute;</li><li>remove the unavailable item;</li><li>process a partial Refund;</li><li>adjust the Order with the Customer's approval; or</li><li>cancel the Order where fulfilment is not reasonably possible.</li></ul>
+</section>
+
+<section class="policy-section" id="ch5">
+  <h3><span class="ch-num">5</span>PLACING AND CONFIRMING ORDERS</h3>
+  <h4>5.1</h4>
+<p>Customers may browse Merchants, select products, choose product specifications and add-ons, add products to the shopping cart, enter Order remarks, select a delivery method, choose a payment method, and submit an Order through the Mini App.</p>
+<h4>5.2</h4>
+<p>Before confirming an Order, the Customer must review:</p>
+<ul><li>selected products or services;</li><li>quantity;</li><li>product specifications;</li><li>add-ons;</li><li>delivery or pickup information;</li><li>recipient information;</li><li>special instructions;</li><li>prices;</li><li>fees;</li><li>taxes, if applicable; and</li><li>the total payment amount.</li></ul>
+<h4>5.3</h4>
+<p>Submitting an Order or successfully completing payment does not necessarily mean that the Merchant has accepted the Order.</p>
+<h4>5.4</h4>
+<p>A Food Delivery Order is considered accepted for fulfilment only after the Merchant confirms the Order.</p>
+<h4>5.5</h4>
+<p>A Merchant may reject or cancel an Order due to:</p>
+<ul><li>the Merchant being closed;</li><li>product unavailability;</li><li>inability to fulfil special instructions;</li><li>delivery area limitations;</li><li>system errors;</li><li>obvious pricing errors;</li><li>operational difficulties;</li><li>suspected fraud or misuse; or</li><li>other reasonable circumstances.</li></ul>
+<h4>5.6</h4>
+<p>If payment is completed but an Order confirmation is not displayed, the Customer should first check the Order History before attempting another payment.</p>
+<h4>5.7</h4>
+<p>If the payment or Order status remains unclear, the Customer should contact CloudCity Customer Support.</p>
+</section>
+
+<section class="policy-section" id="ch6">
+  <h3><span class="ch-num">6</span>MINIMUM ORDER VALUE</h3>
+  <h4>6.1</h4>
+<p>Some Merchants may require a minimum Order value before an Order can be submitted.</p>
+<h4>6.2</h4>
+<p>The applicable minimum Order value will be displayed in the Mini App.</p>
+<h4>6.3</h4>
+<p>Where an Order does not meet the minimum Order value, the Customer may be required to add more products before proceeding.</p>
+</section>
+
+<section class="policy-section" id="ch7">
+  <h3><span class="ch-num">7</span>SPECIAL INSTRUCTIONS AND ALLERGENS</h3>
+  <h4>7.1</h4>
+<p>Customers may submit reasonable special instructions relating to matters such as:</p>
+<ul><li>spice level;</li><li>sugar level;</li><li>ice level;</li><li>ingredients;</li><li>packaging;</li><li>preparation;</li><li>delivery; and</li><li>other relevant requests.</li></ul>
+<h4>7.2</h4>
+<p>CloudCity and the Merchant will make reasonable efforts to fulfil special instructions but cannot guarantee that every request will be fulfilled.</p>
+<h4>7.3</h4>
+<p>Special instructions do not automatically create a right to cancellation, replacement, compensation, or Refund.</p>
+<h4>7.4</h4>
+<p>Customers with food allergies, dietary restrictions, medical conditions, religious requirements, or ingredient concerns should contact the Merchant before submitting the Order.</p>
+<h4>7.5</h4>
+<p>CloudCity does not guarantee that food or products are free from allergens, cross-contamination, or ingredients unsuitable for a particular Customer.</p>
+<h4>7.6</h4>
+<p>Food preparation, ingredients, food quality, food safety, and packaging are primarily the responsibility of the Merchant.</p>
+</section>
+
+<section class="policy-section" id="ch8">
+  <h3><span class="ch-num">8</span>PRICES, FEES, AND PAYMENTS</h3>
+  <h4>8.1</h4>
+<p>All prices will generally be displayed in Myanmar Kyat unless otherwise stated.</p>
+<h4>8.2</h4>
+<p>The total Order amount may include:</p>
+<ul><li>product price;</li><li>packaging fee;</li><li>delivery fee;</li><li>service fee;</li><li>tax, if applicable;</li><li>waiting fee;</li><li>cancellation fee;</li><li>toll or route-related charges for Taxi Service; and</li><li>other charges clearly displayed before confirmation.</li></ul>
+<h4>8.3</h4>
+<p>Prices, products, services, fees, and availability may change from time to time.</p>
+<h4>8.4</h4>
+<p>The price confirmed at checkout will generally apply, except in the case of an obvious pricing, system, or calculation error.</p>
+<h4>8.5</h4>
+<p>Supported payment methods may include:</p>
+<ul><li>KBZPay;</li><li>CloudCity Balance for supported Services; and</li><li>other payment methods displayed in the Mini App.</li></ul>
+<h4>8.6</h4>
+<p>For KBZPay payments, the Customer must maintain sufficient funds in the Customer's KBZPay account.</p>
+<h4>8.7</h4>
+<p>KBZPay payments are subject to applicable KBZPay Terms and Conditions, account limits, compliance requirements, security controls, and system availability.</p>
+<h4>8.8</h4>
+<p>CloudCity is not responsible for payment failure caused by insufficient balance, account restrictions, incorrect authentication, network interruption, KBZPay downtime, or other circumstances outside CloudCity's reasonable control.</p>
+</section>
+
+<section class="policy-section" id="ch9">
+  <h3><span class="ch-num">9</span>FOOD DELIVERY</h3>
+  <h4>9.1</h4>
+<p>After the Merchant accepts an Order, the Order may progress through the following statuses:</p>
+<ul><li>Merchant Accepted;</li><li>Preparing Food;</li><li>Food Ready;</li><li>Rider Assigned;</li><li>Rider Accepted;</li><li>Rider Arrived at Store;</li><li>Rider Picked Up;</li><li>Delivering;</li><li>Delivered; and</li><li>Completed.</li></ul>
+<h4>9.2</h4>
+<p>Estimated preparation and delivery times are for reference only and are not guaranteed.</p>
+<h4>9.3</h4>
+<p>Actual preparation and delivery times may be affected by:</p>
+<ul><li>Merchant preparation time;</li><li>traffic;</li><li>weather;</li><li>road conditions;</li><li>Rider availability;</li><li>Customer location;</li><li>delivery distance;</li><li>security restrictions;</li><li>incorrect address information;</li><li>network conditions; and</li><li>events outside reasonable control.</li></ul>
+<h4>9.4</h4>
+<p>The Customer must remain contactable and reasonably available to receive the Order.</p>
+<h4>9.5</h4>
+<p>If the Customer cannot be contacted, provides an incorrect address, refuses delivery, or fails to receive the Order within a reasonable period, the Order may be treated as completed, cancelled, or unsuccessful according to CloudCity's operational rules.</p>
+<h4>9.6</h4>
+<p>Additional delivery, return, waiting, or unsuccessful delivery charges may apply where the failure is caused by the Customer.</p>
+<h4>9.7</h4>
+<p>The Customer should inspect the Order as soon as reasonably possible and report any missing, incorrect, damaged, spilled, or materially defective item without unreasonable delay.</p>
+</section>
+
+<section class="policy-section" id="ch10">
+  <h3><span class="ch-num">10</span>STORE PICKUP</h3>
+  <h4>10.1</h4>
+<p>Where Store Pickup is available, the Customer must collect the Order from the selected Merchant location at the stated or agreed time.</p>
+<h4>10.2</h4>
+<p>The Customer may be required to present the Order number, confirmation, telephone number, or other identifying information.</p>
+<h4>10.3</h4>
+<p>CloudCity and the Merchant shall not be responsible for deterioration in food quality caused by unreasonable delay by the Customer in collecting the Order.</p>
+<h4>10.4</h4>
+<p>The Customer should inspect the Order before leaving the Merchant location and promptly report any visible issue.</p>
+</section>
+
+<section class="policy-section" id="ch11">
+  <h3><span class="ch-num">11</span>DELI</h3>
+  <h4>11.1</h4>
+<p>Deli allows the Customer to request pickup and delivery of permitted items between locations specified by the Customer.</p>
+<h4>11.2</h4>
+<p>The Customer must provide accurate and complete information, including:</p>
+<ul><li>pickup address;</li><li>delivery address;</li><li>sender information;</li><li>recipient information;</li><li>contact numbers;</li><li>item description;</li><li>size and quantity;</li><li>handling instructions; and</li><li>any relevant delivery requirements.</li></ul>
+<h4>11.3</h4>
+<p>Customers must not request the delivery of illegal, dangerous, prohibited, restricted, stolen, counterfeit, or hazardous items.</p>
+<h4>11.4</h4>
+<p>Prohibited items include, without limitation:</p>
+<ul><li>illegal drugs;</li><li>weapons;</li><li>ammunition;</li><li>explosives;</li><li>flammable materials;</li><li>hazardous chemicals;</li><li>restricted medicines;</li><li>stolen goods;</li><li>counterfeit goods;</li><li>human remains or body parts;</li><li>illegal wildlife products;</li><li>live animals where prohibited;</li><li>cash or high-value property unless expressly approved; and</li><li>any item prohibited by Myanmar law or CloudCity policy.</li></ul>
+<h4>11.5</h4>
+<p>CloudCity or the Rider may inspect, reject, or cancel a request where the item is unsafe, prohibited, incorrectly described, improperly packed, or not reasonably transportable.</p>
+<h4>11.6</h4>
+<p>The Customer is responsible for ensuring that items are safely and appropriately packaged before pickup.</p>
+<h4>11.7</h4>
+<p>If the Rider has already travelled to or arrived at the pickup location before the Customer cancels, or if the Service cannot be completed due to the Customer's actions, an unsuccessful-trip or cancellation fee may apply.</p>
+<h4>11.8</h4>
+<p>CloudCity may limit liability for fragile, perishable, improperly packaged, high-value, or sensitive items unless CloudCity expressly agreed to handle them.</p>
+</section>
+
+<section class="policy-section" id="ch12">
+  <h3><span class="ch-num">12</span>SAY BUY</h3>
+  <h4>12.1</h4>
+<p>Say Buy allows a Rider to purchase permitted products on behalf of the Customer and deliver them to the Customer.</p>
+<h4>12.2</h4>
+<p>The Customer must provide accurate information, including:</p>
+<ul><li>requested product;</li><li>quantity;</li><li>preferred shop;</li><li>acceptable substitute;</li><li>estimated budget;</li><li>delivery address; and</li><li>relevant purchase instructions.</li></ul>
+<h4>12.3</h4>
+<p>The final purchase cost may differ from the estimated amount due to:</p>
+<ul><li>shop prices;</li><li>stock availability;</li><li>substitutions;</li><li>quantity differences;</li><li>market price changes; or</li><li>other reasonable circumstances.</li></ul>
+<h4>12.4</h4>
+<p>The Rider may contact the Customer for approval where a substitute is required or where the actual price materially differs from the estimate.</p>
+<h4>12.5</h4>
+<p>CloudCity and the Rider may refuse to purchase illegal, prohibited, dangerous, age-restricted, regulated, or restricted products.</p>
+<h4>12.6</h4>
+<p>The Customer must remain contactable while the purchase is being completed.</p>
+<h4>12.7</h4>
+<p>An unsuccessful-trip, waiting, or cancellation fee may apply where the Rider has already started the Service and the failure is caused by:</p>
+<ul><li>incorrect information;</li><li>Customer cancellation;</li><li>the Customer being unreachable;</li><li>refusal to approve a reasonable price adjustment;</li><li>refusal to receive the purchased item; or</li><li>other circumstances attributable to the Customer.</li></ul>
+</section>
+
+<section class="policy-section" id="ch13">
+  <h3><span class="ch-num">13</span>TAXI SERVICE</h3>
+  <h4>13.1</h4>
+<p>Taxi Service enables Customers to request transportation between selected pickup and destination locations.</p>
+<h4>13.2</h4>
+<p>The Customer must provide accurate pickup and destination details and remain available at the pickup location.</p>
+<h4>13.3</h4>
+<p>Estimated fares and arrival times are for reference only.</p>
+<h4>13.4</h4>
+<p>The final fare may change due to:</p>
+<ul><li>route changes;</li><li>additional distance;</li><li>waiting time;</li><li>traffic;</li><li>tolls;</li><li>incorrect location information;</li><li>Customer-requested stops;</li><li>destination changes; or</li><li>other applicable charges.</li></ul>
+<h4>13.5</h4>
+<p>A cancellation or waiting fee may apply where:</p>
+<ul><li>the Driver has accepted the request;</li><li>the Driver has travelled toward the pickup location;</li><li>the Driver has arrived;</li><li>the Customer cannot be contacted;</li><li>the Customer fails to appear; or</li><li>the Customer cancels after the applicable free-cancellation period.</li></ul>
+<h4>13.6</h4>
+<p>Customers and Drivers must comply with applicable traffic, safety, conduct, and legal requirements.</p>
+<h4>13.7</h4>
+<p>CloudCity may suspend or cancel a trip where continuing the trip would create a safety, legal, or operational risk.</p>
+</section>
+
+<section class="policy-section" id="ch14">
+  <h3><span class="ch-num">14</span>MOBILE TOP-UP</h3>
+  <h4>14.1</h4>
+<p>Mobile Top-up is available only for supported mobile operators, telephone numbers, and denominations displayed in the Mini App.</p>
+<h4>14.2</h4>
+<p>Mobile Top-up may be paid using CloudCity Balance or another supported method displayed in the Mini App.</p>
+<h4>14.3</h4>
+<p>The Customer must carefully confirm:</p>
+<ul><li>mobile phone number;</li><li>mobile operator;</li><li>top-up amount; and</li><li>transaction details.</li></ul>
+<h4>14.4</h4>
+<p>A successfully completed Mobile Top-up generally cannot be cancelled or reversed where the Customer entered an incorrect phone number, selected an incorrect operator, or confirmed an incorrect amount.</p>
+<h4>14.5</h4>
+<p>If the Customer's balance is deducted but the top-up is not received, the Customer should contact CloudCity Customer Support for investigation.</p>
+<h4>14.6</h4>
+<p>Completion time may depend on the relevant telecommunications operator and technical system availability.</p>
+</section>
+
+<section class="policy-section" id="ch15">
+  <h3><span class="ch-num">15</span>CANCELLATION AND REFUNDS</h3>
+  <h4>15.1 Cancellation Before Merchant Acceptance</h4>
+<p>The Customer may request cancellation before the Merchant accepts a Food Delivery Order.</p>
+<p>Where payment has already been completed, an approved Refund will be processed to the Customer's original KBZPay account.</p>
+<h4>15.2 Cancellation After Merchant Acceptance</h4>
+<p>After the Merchant accepts the Order, cancellation and Refund eligibility will depend on:</p>
+<ul><li>the Merchant's preparation progress;</li><li>whether the product has been prepared;</li><li>whether a Rider has been assigned;</li><li>whether the Rider has started travelling;</li><li>the reason for cancellation;</li><li>the condition of the product;</li><li>costs already incurred; and</li><li>CloudCity's applicable cancellation and Refund policy.</li></ul>
+<p>A full Refund is not guaranteed after the Merchant begins preparation.</p>
+<h4>15.3 Merchant Cancellation</h4>
+<p>Where the Merchant cannot fulfil the Order, CloudCity may cancel the Order and arrange a full or partial Refund, as appropriate.</p>
+<h4>15.4 Partial Refund</h4>
+<p>A partial Refund may be processed where:</p>
+<ul><li>one or more items are unavailable;</li><li>an item is missing;</li><li>an incorrect item is delivered;</li><li>an item is damaged or spilled;</li><li>the quantity is incorrect; or</li><li>another partial Refund is approved by CloudCity.</li></ul>
+<h4>15.5 Refund Method</h4>
+<p>For Orders paid using KBZPay through the CloudCity Food Mini App, all approved full or partial Refunds will be processed automatically to the Customer's original KBZPay account through the <strong>KBZPay Refund API</strong>.</p>
+<h4>15.6 Refund Processing Time</h4>
+<p>Refund processing and crediting time may vary depending on:</p>
+<ul><li>KBZPay system processing;</li><li>technical conditions;</li><li>reconciliation;</li><li>compliance review;</li><li>banking procedures; and</li><li>other relevant operational processes.</li></ul>
+<h4>15.7 Duplicate Payment</h4>
+<p>Where a duplicate payment is confirmed, CloudCity will investigate the transaction and, where approved, process the duplicate amount through the applicable Refund method.</p>
+<h4>15.8 Deli, Say Buy, and Taxi Cancellation</h4>
+<p>Cancellation fees, waiting fees, or unsuccessful-trip fees may apply where a Rider or Driver has already accepted, started travelling, arrived, purchased goods, or incurred reasonable expenses.</p>
+</section>
+
+<section class="policy-section" id="ch16">
+  <h3><span class="ch-num">16</span>CUSTOMER, MERCHANT, RIDER, AND CLOUDCITY RESPONSIBILITIES</h3>
+  <h4>16.1 Customer Responsibilities</h4>
+<p>Customers must:</p>
+<ul><li>provide accurate and complete information;</li><li>review Orders before confirmation;</li><li>maintain sufficient funds;</li><li>remain contactable;</li><li>receive or collect Orders promptly;</li><li>use the Services lawfully;</li><li>avoid prohibited items;</li><li>treat Merchants, Riders, Drivers, and support staff respectfully;</li><li>avoid false Orders, fraud, abuse, threats, or harassment; and</li><li>comply with these Terms and applicable law.</li></ul>
+<h4>16.2 Merchant Responsibilities</h4>
+<p>Merchants are primarily responsible for:</p>
+<ul><li>food and product preparation;</li><li>food quality;</li><li>food safety;</li><li>ingredients;</li><li>packaging;</li><li>product descriptions;</li><li>stock availability;</li><li>pricing information;</li><li>licences and legal compliance; and</li><li>fulfilment of accepted Orders.</li></ul>
+<h4>16.3 Rider and Driver Responsibilities</h4>
+<p>Riders and Drivers are responsible for:</p>
+<ul><li>handling Orders with reasonable care;</li><li>following assigned routes where reasonably possible;</li><li>communicating appropriately;</li><li>complying with safety and legal requirements;</li><li>updating service status; and</li><li>completing accepted Services professionally.</li></ul>
+<h4>16.4 CloudCity Responsibilities</h4>
+<p>CloudCity is responsible for:</p>
+<ul><li>operating the platform;</li><li>transmitting Orders and service requests;</li><li>coordinating Merchant, Rider, and Driver operations;</li><li>providing Order and service status information;</li><li>managing supported payment and Refund processes;</li><li>handling customer service enquiries; and</li><li>maintaining the Mini App within reasonable operational limits.</li></ul>
+<h4>16.5 KBZPay Responsibilities</h4>
+<p>KBZPay provides:</p>
+<ul><li>the Mini App operating environment;</li><li>account authorization;</li><li>payment processing; and</li><li>related payment services.</li></ul>
+<p>KBZPay does not prepare food, supply products, operate Merchants, or directly perform CloudCity delivery, Deli, Say Buy, or Taxi Services.</p>
+</section>
+
+<section class="policy-section" id="ch17">
+  <h3><span class="ch-num">17</span>RATINGS, REVIEWS, MESSAGES, AND NOTIFICATIONS</h3>
+  <h4>17.1</h4>
+<p>Customers may be able to rate or review Merchants, Riders, Drivers, Orders, or Services.</p>
+<h4>17.2</h4>
+<p>Reviews must be honest, relevant, lawful, and based on genuine experience.</p>
+<h4>17.3</h4>
+<p>Customers must not submit:</p>
+<ul><li>false or misleading reviews;</li><li>threats;</li><li>harassment;</li><li>discrimination;</li><li>obscene or unlawful content;</li><li>private information belonging to another person;</li><li>spam; or</li><li>content infringing third-party rights.</li></ul>
+<h4>17.4</h4>
+<p>CloudCity may remove, restrict, or refuse content that violates these Terms or applicable law.</p>
+<h4>17.5</h4>
+<p>Customers may communicate with Merchants or CloudCity through supported chat or messaging features.</p>
+<h4>17.6</h4>
+<p>Communications may be recorded, stored, or reviewed for:</p>
+<ul><li>service quality;</li><li>dispute handling;</li><li>safety;</li><li>fraud prevention;</li><li>training;</li><li>compliance; and</li><li>legal requirements.</li></ul>
+<h4>17.7</h4>
+<p>CloudCity may send necessary service notifications relating to:</p>
+<ul><li>Order status;</li><li>payment status;</li><li>Merchant acceptance;</li><li>Rider or Driver status;</li><li>delivery progress;</li><li>cancellation;</li><li>Refund;</li><li>system updates; and</li><li>customer support.</li></ul>
+<h4>17.8</h4>
+<p>Promotional messages may be sent subject to applicable law and the Customer's communication preferences.</p>
+</section>
+
+<section class="policy-section" id="ch18">
+  <h3><span class="ch-num">18</span>PERSONAL DATA AND PRIVACY</h3>
+  <h4>18.1</h4>
+<p>CloudCity may collect and process information reasonably necessary to provide the Services, including:</p>
+<ul><li>name;</li><li>telephone number;</li><li>account identifier;</li><li>delivery address;</li><li>pickup address;</li><li>destination;</li><li>location information;</li><li>Order information;</li><li>payment status;</li><li>service history;</li><li>customer support communications;</li><li>device information; and</li><li>technical information.</li></ul>
+<h4>18.2</h4>
+<p>Information may be shared with KBZPay, Merchants, Riders, Drivers, service providers, and competent authorities where reasonably necessary for:</p>
+<ul><li>authentication;</li><li>payment processing;</li><li>Order fulfilment;</li><li>delivery;</li><li>Deli;</li><li>Say Buy;</li><li>Taxi Service;</li><li>customer support;</li><li>fraud prevention;</li><li>dispute resolution;</li><li>safety;</li><li>legal compliance; or</li><li>regulatory requirements.</li></ul>
+<h4>18.3</h4>
+<p>Only information reasonably necessary to complete the relevant Service should be shared with Merchants, Riders, or Drivers.</p>
+<h4>18.4</h4>
+<p>CloudCity will not ask Customers to disclose their KBZPay PIN or OTP.</p>
+<h4>18.5</h4>
+<p>The CloudCity Privacy Policy forms part of these Terms and must be read together with them.</p>
+</section>
+
+<section class="policy-section" id="ch19">
+  <h3><span class="ch-num">19</span>PROHIBITED USE</h3>
+  <p>Customers must not:</p>
+<p>    > permission;</p>
+<p>    > personnel;</p>
+<p>    > activity; or</p>
+<p>    > reputational risk.</p>
+<ul><li>use the Mini App for unlawful purposes;</li><li>place false, fraudulent, or abusive Orders;</li><li>misuse the Refund or cancellation process;</li><li>request transportation or purchase of prohibited goods;</li><li>interfere with the Mini App or its systems;</li><li>introduce malicious software;</li><li>attempt unauthorized access;</li><li>misuse another person's identity or account;</li><li>scrape, copy, or commercially exploit platform data without</li><li>threaten, harass, or abuse Merchants, Riders, Drivers, or support</li><li>manipulate ratings or reviews;</li><li>engage in money laundering, fraud, or other illegal financial</li><li>use the Services in a way that creates legal, safety, security, or</li></ul>
+<p>CloudCity may suspend, restrict, investigate, or terminate access where prohibited activity is reasonably suspected.</p>
+</section>
+
+<section class="policy-section" id="ch20">
+  <h3><span class="ch-num">20</span>SERVICE AVAILABILITY, DISCLAIMER, AND LIMITATION OF LIABILITY</h3>
+  <h4>20.1</h4>
+<p>The Mini App and Services are provided on an "as available" basis.</p>
+<h4>20.2</h4>
+<p>CloudCity does not guarantee that the Services will always be:</p>
+<ul><li>uninterrupted;</li><li>error-free;</li><li>available in every location;</li><li>free from delays;</li><li>free from technical faults; or</li><li>compatible with every device or network.</li></ul>
+<h4>20.3</h4>
+<p>Temporary interruptions may occur due to:</p>
+<ul><li>maintenance;</li><li>internet failure;</li><li>telecommunications failure;</li><li>power failure;</li><li>KBZPay interruption;</li><li>Merchant system interruption;</li><li>CloudCity system interruption;</li><li>traffic;</li><li>weather;</li><li>security events;</li><li>public emergencies; or</li><li>other circumstances outside reasonable control.</li></ul>
+<h4>20.4</h4>
+<p>To the extent permitted by applicable law, CloudCity shall not be liable for indirect, incidental, special, punitive, exemplary, or consequential loss arising from the Customer's use of the Mini App.</p>
+<h4>20.5</h4>
+<p>CloudCity is not the manufacturer or producer of Merchant products and does not independently guarantee the quality, ingredients, suitability, or safety of every product offered by a Merchant.</p>
+<h4>20.6</h4>
+<p>Nothing in these Terms excludes liability that cannot lawfully be excluded or limited.</p>
+</section>
+
+<section class="policy-section" id="ch21">
+  <h3><span class="ch-num">21</span>FORCE MAJEURE</h3>
+  <h4>21.1</h4>
+<p>CloudCity, KBZPay, Merchants, Riders, and Drivers shall not be responsible for failure, interruption, or delay caused by events beyond reasonable control.</p>
+<h4>21.2</h4>
+<p>Such events may include:</p>
+<ul><li>flood;</li><li>fire;</li><li>earthquake;</li><li>storm;</li><li>epidemic;</li><li>public health emergency;</li><li>war;</li><li>civil unrest;</li><li>terrorism;</li><li>government action;</li><li>sanctions;</li><li>embargoes;</li><li>strikes;</li><li>road closures;</li><li>internet failure;</li><li>telecommunications failure;</li><li>power failure;</li><li>system-wide technical failure; or</li><li>other comparable circumstances.</li></ul>
+<h4>21.3</h4>
+<p>Affected Services may be suspended, delayed, restricted, changed, or cancelled until normal operations can reasonably resume.</p>
+</section>
+
+<section class="policy-section" id="ch22">
+  <h3><span class="ch-num">22</span>INTELLECTUAL PROPERTY</h3>
+  <h4>22.1</h4>
+<p>All CloudCity names, logos, software, designs, text, graphics, images, content, trademarks, and related intellectual property are owned by or licensed to CloudCity.</p>
+<h4>22.2</h4>
+<p>KBZPay names, logos, trademarks, systems, and related intellectual property are owned by KBZ Bank or its licensors.</p>
+<h4>22.3</h4>
+<p>Customers may use the Mini App only for personal and lawful purposes.</p>
+<h4>22.4</h4>
+<p>Customers may not, without prior written permission:</p>
+<ul><li>copy;</li><li>reproduce;</li><li>distribute;</li><li>modify;</li><li>sell;</li><li>sublicense;</li><li>reverse engineer;</li><li>scrape;</li><li>commercially exploit; or</li><li>create derivative works from protected content or systems.</li></ul>
+</section>
+
+<section class="policy-section" id="ch23">
+  <h3><span class="ch-num">23</span>SUSPENSION AND TERMINATION</h3>
+  <p>CloudCity may suspend, restrict, or terminate a Customer's access where:</p>
+<p>    > promotions;</p>
+<p>    > reputational risk.</p>
+<ul><li>the Customer breaches these Terms;</li><li>fraud or illegal activity is suspected;</li><li>the Customer misuses payments, cancellations, Refunds, or</li><li>false or misleading information is provided;</li><li>the Customer threatens the safety of another person;</li><li>required by law, regulation, KBZPay, or a competent authority;</li><li>the account creates a security risk; or</li><li>continued access creates material operational, legal, or</li></ul>
+<p>Termination does not affect:</p>
+<ul><li>completed transactions;</li><li>outstanding payments;</li><li>liabilities;</li><li>pending investigations; or</li><li>provisions intended to survive termination.</li></ul>
+</section>
+
+<section class="policy-section" id="ch24">
+  <h3><span class="ch-num">24</span>AMENDMENTS</h3>
+  <h4>24.1</h4>
+<p>CloudCity may update these Terms due to changes in:</p>
+<ul><li>Services;</li><li>business operations;</li><li>payment arrangements;</li><li>technology;</li><li>KBZPay requirements;</li><li>safety standards;</li><li>laws;</li><li>regulations; or</li><li>compliance obligations.</li></ul>
+<h4>24.2</h4>
+<p>Updated Terms will become effective when published in the Mini App or on the CloudCity website, unless another effective date is stated.</p>
+<h4>24.3</h4>
+<p>Continued use of the Mini App after the effective date constitutes acceptance of the updated Terms.</p>
+<h4>24.4</h4>
+<p>If the Customer does not agree with the updated Terms, the Customer must stop using the Mini App.</p>
+</section>
+
+<section class="policy-section" id="ch25">
+  <h3><span class="ch-num">25</span>SEVERABILITY AND WAIVER</h3>
+  <h4>25.1</h4>
+<p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions will continue in full force to the extent permitted by law.</p>
+<h4>25.2</h4>
+<p>Failure or delay by CloudCity to enforce any right or provision shall not constitute a waiver of that right or provision.</p>
+</section>
+
+<section class="policy-section" id="ch26">
+  <h3><span class="ch-num">26</span>GOVERNING LAW AND DISPUTE RESOLUTION</h3>
+  <h4>26.1</h4>
+<p>These Terms shall be governed by and interpreted in accordance with the laws of the Republic of the Union of Myanmar.</p>
+<h4>26.2</h4>
+<p>Customers should first contact CloudCity Customer Support regarding any complaint or dispute.</p>
+<h4>26.3</h4>
+<p>CloudCity and the Customer shall attempt to resolve disputes in good faith through discussion.</p>
+<h4>26.4</h4>
+<p>Where a dispute cannot be resolved amicably, it shall be submitted to the competent courts of Myanmar, subject to applicable law.</p>
+</section>
+
+<section class="policy-section" id="ch27">
+  <h3><span class="ch-num">27</span>LANGUAGE</h3>
+  <blockquote>These Terms and Conditions may be provided in English, Myanmar, Chinese, or other supported languages. In the event of any inconsistency, conflict, or discrepancy between the English version and any translated version, the English version shall prevail.</blockquote>
+</section>
+
+<section class="policy-section" id="ch28">
+  <h3><span class="ch-num">28</span>CONTACT US</h3>
+  <p>For questions, Order assistance, cancellations, Refunds, complaints, or other service matters, please contact:</p>
+<p><strong>CloudCity Food Customer Support</strong></p>
+<p><strong>Company:</strong> CLOUDCITY INTERNET SERVICE CO., LTD <strong>Address:</strong> 38D Street (Between 56th & 57th Street), Ye Mon Taung Ward, Maha Aung Mye Township, Mandalay, Myanmar <strong>Customer Service Phone:</strong> 09 782 099 992 <strong>Customer Service Email:</strong> yinduasan680@gmail.com <strong>In-App Support:</strong> Available through the CloudCity Food Mini App</p>
+<p>For KBZPay account or payment-account-related matters:</p>
+<p><strong>KBZPay Hotline:</strong> 09 96996 3211 <strong>KBZPay Email:</strong> query@kbzpay.com</p>
+</section>
+
+  </article>
+</div>
+
+<footer>
+  <p>&copy; 2026 CloudCityFood · CLOUDCITY INTERNET SERVICE CO., LTD ·
+    <a href="index.html">Home</a> ·
+    <a href="legal.html">Website Terms</a>
+  </p>
+</footer>
+
+<script>
+// Highlight active TOC link on scroll
+const sections = document.querySelectorAll('.policy-section');
+const tocLinks = document.querySelectorAll('.toc-link');
+
+function updateActiveTOC() {
+  let current = '';
+  sections.forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top <= 120) current = sec.id;
+  });
+  tocLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+}
+window.addEventListener('scroll', updateActiveTOC, { passive: true });
+updateActiveTOC();
+</script>
+
+</body>
+</html>
