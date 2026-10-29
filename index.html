@@ -37,6 +37,43 @@
 <meta name="twitter:description" content="Takeout, Say-Buy, Local Delivery, and Moto Taxi — your city services in one app.">
 <meta name="twitter:image" content="https://www.cloudcitymm.com/icons/icon-512.png">
 
+<!-- Structured data (JSON-LD) for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.cloudcitymm.com/#organization",
+      "name": "CloudCityFood",
+      "url": "https://www.cloudcitymm.com/",
+      "logo": "https://www.cloudcitymm.com/icons/icon-512.png",
+      "image": "https://www.cloudcitymm.com/icons/icon-512.png",
+      "description": "Instant delivery platform serving Mandalay and Lashio, Myanmar — takeout, Say-Buy, local delivery, and moto taxi.",
+      "email": "cloudcitymm@gmail.com",
+      "telephone": "09782099992",
+      "areaServed": [
+        { "@type": "City", "name": "Mandalay" },
+        { "@type": "City", "name": "Lashio" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MM",
+        "addressRegion": "Mandalay"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.cloudcitymm.com/#website",
+      "url": "https://www.cloudcitymm.com/",
+      "name": "CloudCityFood",
+      "inLanguage": ["en", "zh", "my"],
+      "publisher": { "@id": "https://www.cloudcitymm.com/#organization" }
+    }
+  ]
+}
+</script>
+
 <!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#8818B8" media="(prefers-color-scheme: light)">
@@ -318,7 +355,7 @@ footer{
 .foot-top{padding-bottom:24px;border-bottom:1px solid var(--rule-soft);font-size:12px;color:var(--ink-3)}
 .foot-top a{color:var(--ink-2);text-decoration:none}
 .foot-top a:hover{color:var(--link);text-decoration:underline}
-.foot-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:24px 0;border-bottom:1px solid var(--rule-soft)}
+.foot-cols{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;padding:24px 0;border-bottom:1px solid var(--rule-soft)}
 .foot-col h5{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:12px;letter-spacing:-0.005em}
 .foot-col ul{list-style:none}
 .foot-col li{margin-bottom:8px}
@@ -346,6 +383,7 @@ section[id],header[id]{scroll-margin-top:60px}
 
 /* ===== 平板 / 中屏(≤ 900px)===== */
 @media(max-width:900px){
+  .foot-cols{grid-template-columns:repeat(3,1fr)}
   .nav-links{display:none}
   .split,.about{grid-template-columns:1fr;gap:40px}
   .tiles{grid-template-columns:1fr}
@@ -376,6 +414,7 @@ section[id],header[id]{scroll-margin-top:60px}
 
 /* ===== 手机大屏(≤ 540px)===== */
 @media(max-width:540px){
+  .foot-cols{grid-template-columns:repeat(2,1fr)}
   .fgrid,.cgrid{grid-template-columns:1fr}
   .merchant-perks{grid-template-columns:1fr}
   .numbers{grid-template-columns:repeat(3,1fr);gap:12px}
@@ -638,7 +677,7 @@ body[data-lang="my"] .merchant-cta p{
       <li><a href="#features" data-i18n="nav_features">特性</a></li>
       <li><a href="#merchant" data-i18n="nav_merchant">商家</a></li>
       <li><a href="#about" data-i18n="nav_about">关于</a></li>
-      <li><a href="legal.html" data-i18n="nav_legal">条款</a></li>
+      <li><a href="terms.html" data-i18n="nav_legal">条款</a></li>
     </ul>
     <div class="nav-right">
       <button class="lang-btn" id="langBtn" onclick="toggleLang(event)">
@@ -953,7 +992,7 @@ body[data-lang="my"] .merchant-cta p{
         <p data-i18n="dl_p">iOS 与 Android 双端,随时随地点单。</p>
       </div>
       <div class="dl-row">
-        <a href="https://apps.apple.com/app/id6758687924" target="_blank" rel="noopener" id="dlIosBtn" class="dl">
+        <a href="https://apps.apple.com/app/id6758687924" target="_blank" rel="noopener" id="dlIosBtn2" class="dl">
           <svg viewBox="0 0 814 1000"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.7 0 663 0 541.8c0-207.5 135.4-317.3 269-317.3 71 0 130.5 46.4 175 46.4 42.8 0 109.2-49 190.5-49 30.6 0 108.2 2.6 168.2 79.6z"/></svg>
           <span class="lbl"><small data-i18n="dl_apple_s2">Download on the</small><strong>App Store</strong></span>
         </a>
@@ -1001,9 +1040,8 @@ body[data-lang="my"] .merchant-cta p{
         <h5 data-i18n="fc4">条款</h5>
         <ul>
           <li><a href="terms.html" data-i18n="fl_tc">服务条款</a></li>
-          <li><a href="legal.html?tab=user-agreement" data-i18n="fl12">用户协议</a></li>
-          <li><a href="legal.html?tab=merchant-agreement" data-i18n="fl13">商家协议</a></li>
-          <li><a href="legal.html?tab=rider-agreement" data-i18n="fl14">骑手协议</a></li>
+          <li><a href="merchant-agreement.html" data-i18n="fl13">商家协议</a></li>
+          <li><a href="rider-agreement.html" data-i18n="fl14">骑手协议</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -1012,6 +1050,12 @@ body[data-lang="my"] .merchant-cta p{
           <li><a href="user-privacy.html" data-i18n="fl_pu">用户隐私政策</a></li>
           <li><a href="merchant-privacy.html" data-i18n="fl_pm">商家隐私政策</a></li>
           <li><a href="rider-privacy.html" data-i18n="fl_pr">骑手隐私政策</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="fc6">账户</h5>
+        <ul>
+          <li><a href="delete-account.html" data-i18n="fl_del">账户注销</a></li>
         </ul>
       </div>
     </div>
@@ -1074,7 +1118,7 @@ const I18N = {
     fl1:'外卖', fl2:'帮买', fl3:'跑腿', fl4:'打摩托',
     fl5:'iOS 下载', fl6:'Google Play',
     fl7:'关于我们', fl8:'联系我们', fl9:'商家入驻', fl10:'骑手招募',
-    fl_fb:'客户反馈', fl_tc:'服务条款', fl12:'用户协议', fl13:'商家协议', fl14:'骑手协议', fl_pu:'用户隐私政策', fl_pm:'商家隐私政策', fl_pr:'骑手隐私政策',
+    fc6:'账户', fl_del:'账户注销', fl_fb:'客户反馈', fl_tc:'服务条款', fl12:'用户协议', fl13:'商家协议', fl14:'骑手协议', fl_pu:'用户隐私政策', fl_pm:'商家隐私政策', fl_pr:'骑手隐私政策',
     fb1:'Copyright © 2026 CloudCityFood. 保留所有权利。',
   },
   en: {
@@ -1127,7 +1171,7 @@ const I18N = {
     fl1:'Takeout', fl2:'Say Buy', fl3:'Delivery', fl4:'Moto Taxi',
     fl5:'iOS', fl6:'Google Play',
     fl7:'About', fl8:'Contact', fl9:'For Merchants', fl10:'For Riders',
-    fl_fb:'Feedback', fl_tc:'Terms & Conditions', fl12:'User Agreement', fl13:'Merchant Agreement', fl14:'Rider Agreement', fl_pu:'User Privacy Policy', fl_pm:'Merchant Privacy Policy', fl_pr:'Rider Privacy Policy',
+    fc6:'Account', fl_del:'Delete Account', fl_fb:'Feedback', fl_tc:'Terms & Conditions', fl12:'User Agreement', fl13:'Merchant Agreement', fl14:'Rider Agreement', fl_pu:'User Privacy Policy', fl_pm:'Merchant Privacy Policy', fl_pr:'Rider Privacy Policy',
     fb1:'Copyright © 2026 CloudCityFood. All rights reserved.',
   },
   my: {
@@ -1180,7 +1224,7 @@ const I18N = {
     fl1:'Takeout', fl2:'ဝယ်ပေး', fl3:'ဒယ်လီ', fl4:'Moto Taxi',
     fl5:'iOS', fl6:'Google Play',
     fl7:'အကြောင်း', fl8:'ဆက်သွယ်ရန်', fl9:'ဆိုင်ရှင်များ', fl10:'Rider များ',
-    fl_fb:'တုံ့ပြန်ချက်', fl_tc:'ဝန်ဆောင်မှု စည်းကမ်းချက်', fl12:'သုံးစွဲသူ', fl13:'ဆိုင်ရှင်', fl14:'Rider သဘောတူညီချက်', fl_pu:'သုံးစွဲသူ ကိုယ်ရေးမူဝါဒ', fl_pm:'ဆိုင်ရှင် ကိုယ်ရေးမူဝါဒ', fl_pr:'Rider ကိုယ်ရေးမူဝါဒ',
+    fc6:'အကောင့်', fl_del:'အကောင့်ဖျက်ရန်', fl_fb:'တုံ့ပြန်ချက်', fl_tc:'ဝန်ဆောင်မှု စည်းကမ်းချက်', fl12:'သုံးစွဲသူ', fl13:'ဆိုင်ရှင်', fl14:'Rider သဘောတူညီချက်', fl_pu:'သုံးစွဲသူ ကိုယ်ရေးမူဝါဒ', fl_pm:'ဆိုင်ရှင် ကိုယ်ရေးမူဝါဒ', fl_pr:'Rider ကိုယ်ရေးမူဝါဒ',
     fb1:'Copyright © 2026 CloudCityFood. မူပိုင်ခွင့် အားလုံး လက်ဝယ်ထား။',
   }
 };

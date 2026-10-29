@@ -2,7 +2,7 @@
 // Provides offline support and faster repeat-visit loads.
 // Version is bumped to invalidate old caches when content changes.
 
-const CACHE_VERSION = 'cloudcity-v1.2026.07.13';
+const CACHE_VERSION = 'cloudcity-v1.2026.10.29';
 const RUNTIME_CACHE = 'cloudcity-runtime-v1';
 
 // Core files to pre-cache (the app shell)
@@ -10,9 +10,16 @@ const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/legal.html',
+  '/rider-agreement.html',
+  '/merchant-agreement.html',
   '/merchant-apply.html',
   '/feedback.html',
   '/terms.html',
+  '/user-privacy.html',
+  '/merchant-privacy.html',
+  '/rider-privacy.html',
+  '/delete-account.html',
+  '/404.html',
   '/rider-apply.html',
   '/manifest.json',
   '/icons/icon-192.png',

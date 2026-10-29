@@ -1,6 +1,6 @@
-# Cloud City Food 官网 v4 — 部署说明 / Deployment Guide
+# Cloud City Food 官网 — 部署说明 / Deployment Guide
 
-> 📅 版本日期:2026-01-27
+> 📅 版本日期:2026-10-29
 > 📦 内容:静态网站 + PWA + SEO 完整包
 > 🌐 目标域名:www.cloudcitymm.com
 
@@ -24,21 +24,37 @@ Cloud City Food 官网 + 法律文件页的完整静态网站,包含:
 
 ```
 cloudcity-website/
-├── index.html          # 主页(部署时建议改名为 index.html)
-├── legal.html         # 法律文件页
-├── manifest.json                   # PWA 配置(必须放根目录)
-├── service-worker.js               # 离线缓存逻辑(必须放根目录)
-├── sitemap.xml                     # 站点地图(给 Google)
-├── robots.txt                      # 爬虫规则(给 Google)
-└── icons/
-    ├── favicon.ico                 # 浏览器标签页图标
-    ├── icon-32.png ~ icon-512.png  # PWA 各尺寸图标
-    ├── icon-192-maskable.png       # Android 自适应图标
-    ├── icon-512-maskable.png       # Android 自适应图标
-    └── icon-512.svg                # 矢量图标(现代浏览器优先用)
+├── index.html               # 主页
+├── terms.html               # 服务条款(三语)
+├── merchant-agreement.html  # 商家协议(三语)
+├── rider-agreement.html     # 骑手协议(三语)
+├── user-privacy.html        # 用户隐私政策(三语)
+├── merchant-privacy.html    # 商家隐私政策(三语)
+├── rider-privacy.html       # 骑手隐私政策(三语)
+├── kbzpay-terms.html        # KBZPay 小程序条款(英/缅,noindex)
+├── delete-account.html      # 账户注销说明(三语,Google Play 数据删除要求)
+├── legal.html               # 旧链接跳转页 -> terms / 两个协议页
+├── merchant-apply.html      # 商家入驻申请
+├── rider-apply.html         # 骑手招募申请
+├── feedback.html            # 客户反馈(含语音上传)
+├── 404.html                 # 品牌 404 页(logo 内嵌 base64)
+├── manifest.json            # PWA 配置(必须放根目录)
+├── service-worker.js        # 离线缓存逻辑(必须放根目录)
+├── sitemap.xml              # 站点地图
+├── robots.txt               # 爬虫规则
+├── icons/                   # favicon 与各尺寸/maskable 图标(必须是文件夹)
+└── screenshots/             # PWA 截图
 ```
 
-**所有 13 个图标共 ~120KB,两个 HTML 共 ~265KB,SEO/PWA 配置共 ~9KB。整站约 400KB。**
+> ⚠️ 用 GitHub 网页"Upload files"上传时会把文件夹压平,`icons/` 会变成一个空文件。请用 git 推送,或在网页里逐个文件夹拖入。
+
+## 🔁 更新内容时的检查清单
+
+1. 新增页面:同时更新 `sitemap.xml` 和 `service-worker.js` 的 `PRECACHE_URLS`。
+2. 每次改动内容:升级 `service-worker.js` 里的 `CACHE_VERSION`,否则老访客会看到旧页面。
+3. 修改 HTML 后检查 `<div>` 开闭是否配平。
+4. 三语页面中,缅甸语未完整的内容不要发布。
+5. 推送到 `main` 后 GitHub Pages 会自动重新发布。
 
 ---
 

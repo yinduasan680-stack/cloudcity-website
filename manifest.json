@@ -107,7 +107,7 @@
       "name": "Become a Rider",
       "short_name": "Rider",
       "description": "Join Cloud City Food as a rider",
-      "url": "/legal.html?tab=rider-agreement",
+      "url": "/rider-apply.html",
       "icons": [
         {
           "src": "icons/icon-192.png",
