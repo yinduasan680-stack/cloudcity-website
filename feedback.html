@@ -154,6 +154,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop
 .upload-slot img{width:100%;height:100%;object-fit:cover}
 .upload-slot .remove-btn{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.7);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;z-index:2;-webkit-tap-highlight-color:transparent}
 .upload-hint{font-size:11px;color:var(--ink-4);margin-top:8px;line-height:1.5;display:flex;align-items:flex-start;gap:5px}
+.audio-upload{position:relative;display:flex;align-items:center;gap:10px;padding:14px 16px;border:2px dashed var(--rule);border-radius:10px;background:var(--bg-soft);cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent}
+.audio-upload:hover{border-color:var(--brand);background:var(--brand-soft)}
+.audio-upload.has-file{border-style:solid;border-color:var(--brand);background:var(--brand-soft)}
+.audio-upload input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer}
+.audio-upload>svg{width:22px;height:22px;color:var(--ink-3);flex-shrink:0}
+.audio-upload.has-file>svg{color:var(--brand)}
+.audio-upload .upload-text{font-size:14px;color:var(--ink-2);font-weight:500}
+.audio-file-name{font-size:12.5px;color:var(--brand);font-weight:500;margin-left:auto;max-width:45%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .upload-hint svg{flex-shrink:0;margin-top:1px}
 
 /* URGENCY(紧急程度)*/
@@ -510,6 +518,34 @@ img{max-width:100%;height:auto}
           </div>
         </div>
 
+        <!-- 5b. 录音上传 -->
+        <div class="form-section">
+          <label>
+            <span data-lang-text="en">Upload Voice Recording</span>
+            <span data-lang-text="zh">上传录音</span>
+            <span data-lang-text="my">အသံဖိုင် တင်ရန်</span>
+            <span class="optional" data-lang-text="zh">(可选,1 个音频文件)</span>
+            <span class="optional" data-lang-text="en">(optional, 1 audio file)</span>
+            <span class="optional" data-lang-text="my">(ပါမသိ၊ အသံဖိုင် ၁ ခု)</span>
+          </label>
+          <div class="upload-area">
+            <label class="audio-upload" id="audioUploadLabel">
+              <input type="file" name="voice_recording" accept="audio/*" id="voiceInput" onchange="(function(i){var n=document.getElementById('audioFileName');if(i.files&&i.files[0]){n.textContent=i.files[0].name;document.getElementById('audioUploadLabel').classList.add('has-file');}else{n.textContent='';document.getElementById('audioUploadLabel').classList.remove('has-file');}})(this)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              <span class="upload-text" data-lang-text="zh">选择录音文件</span>
+              <span class="upload-text" data-lang-text="en">Choose audio file</span>
+              <span class="upload-text" data-lang-text="my">အသံဖိုင် ရွေးပါ</span>
+              <span class="audio-file-name" id="audioFileName"></span>
+            </label>
+            <div class="upload-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span data-lang-text="en">Record on your phone, then upload here. Max 25 MB.</span>
+              <span data-lang-text="zh">先在手机上录好,再选择文件上传(最大 25MB)</span>
+              <span data-lang-text="my">ဖုန်းတွင် အသံသွင်းပြီး ဤနေရာတွင် တင်ပါ။ (အများဆုံး ၂၅MB)</span>
+            </div>
+          </div>
+        </div>
+
         <!-- 6. 紧急程度 -->
         <div class="form-section">
           <label>
@@ -609,7 +645,7 @@ img{max-width:100%;height:auto}
       <span data-lang-text="my">ပင်မ</span>
     </a>
     &middot;
-    <a href="legal.html">
+    <a href="terms.html">
       <span data-lang-text="en">Legal</span>
       <span data-lang-text="zh">条款</span>
       <span data-lang-text="my">ဥပဒေ</span>

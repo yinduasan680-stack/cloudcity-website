@@ -5,7 +5,7 @@
   <!-- Homepage - top priority, updated frequently -->
   <url>
     <loc>https://www.cloudcitymm.com/</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/" />
@@ -14,49 +14,33 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cloudcitymm.com/" />
   </url>
 
-  <!-- Legal documents page (default = privacy policy tab) -->
-  <url>
-    <loc>https://www.cloudcitymm.com/legal</loc>
-    <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/legal" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/legal?lang=zh" />
-    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/legal?lang=my" />
-  </url>
+  
 
-  <!-- Privacy Policy direct link -->
-  <url>
-    <loc>https://www.cloudcitymm.com/legal?tab=privacy</loc>
-    <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  
 
-  <!-- User Agreement direct link -->
-  <url>
-    <loc>https://www.cloudcitymm.com/legal?tab=user-agreement</loc>
-    <lastmod>2026-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  
 
-  <!-- Merchant Agreement direct link (high value: drives merchant signup) -->
+  <!-- Merchant Agreement standalone page (high value: drives merchant signup) -->
   <url>
-    <loc>https://www.cloudcitymm.com/legal?tab=merchant-agreement</loc>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://www.cloudcitymm.com/merchant-agreement.html</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/merchant-agreement.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/merchant-agreement.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/merchant-agreement.html?lang=my" />
   </url>
 
-  <!-- Rider Agreement direct link (high value: drives rider signup) -->
+  <!-- Rider Agreement standalone page (high value: drives rider signup) -->
   <url>
-    <loc>https://www.cloudcitymm.com/legal?tab=rider-agreement</loc>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://www.cloudcitymm.com/rider-agreement.html</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/rider-agreement.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/rider-agreement.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/rider-agreement.html?lang=my" />
   </url>
-
 
   <!-- Merchant Application standalone page(销售/地推分享专用)-->
   <url>
@@ -69,7 +53,6 @@
     <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/merchant-apply.html?lang=my" />
   </url>
 
-
   <!-- Customer Feedback standalone page -->
   <url>
     <loc>https://www.cloudcitymm.com/feedback.html</loc>
@@ -80,7 +63,6 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/feedback.html?lang=zh" />
     <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/feedback.html?lang=my" />
   </url>
-
 
   <!-- Rider Recruitment standalone page -->
   <url>
@@ -93,13 +75,52 @@
     <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/rider-apply.html?lang=my" />
   </url>
 
-
   <!-- CloudCity Platform Terms and Conditions -->
   <url>
     <loc>https://www.cloudcitymm.com/terms.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cloudcitymm.com/user-privacy.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/user-privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/user-privacy.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/user-privacy.html?lang=my" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cloudcitymm.com/user-privacy.html" />
+  </url>
+
+  <url>
+    <loc>https://www.cloudcitymm.com/merchant-privacy.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/merchant-privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/merchant-privacy.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/merchant-privacy.html?lang=my" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cloudcitymm.com/merchant-privacy.html" />
+  </url>
+
+  <url>
+    <loc>https://www.cloudcitymm.com/rider-privacy.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/rider-privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/rider-privacy.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/rider-privacy.html?lang=my" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cloudcitymm.com/rider-privacy.html" />
+  </url>
+
+  <url>
+    <loc>https://www.cloudcitymm.com/delete-account.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

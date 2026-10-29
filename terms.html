@@ -4,30 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Terms and Conditions — CloudCityFood</title>
-
 <meta name="description" content="Terms and Conditions governing the use of the CloudCity platform, including the website, mobile application, and mobile web services provided by CLOUDCITY INTERNET SERVICE CO., LTD.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.cloudcitymm.com/terms.html">
-
+<link rel="alternate" hreflang="en" href="https://www.cloudcitymm.com/terms.html">
+<link rel="alternate" hreflang="zh" href="https://www.cloudcitymm.com/terms.html?lang=zh">
+<link rel="alternate" hreflang="my" href="https://www.cloudcitymm.com/terms.html?lang=my">
+<link rel="alternate" hreflang="x-default" href="https://www.cloudcitymm.com/terms.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="CloudCity Terms and Conditions">
+<meta property="og:title" content="CloudCityFood Terms and Conditions">
 <meta property="og:description" content="Terms and Conditions for the CloudCity platform — website, App, and mobile web.">
 <meta property="og:url" content="https://www.cloudcitymm.com/terms.html">
 <meta property="og:image" content="https://www.cloudcitymm.com/icons/icon-512.png">
-
 <meta name="theme-color" content="#8818B8">
-<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="format-detection" content="telephone=no">
-
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
 <link rel="shortcut icon" href="icons/favicon.ico">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YX4MBJ42F2"></script>
@@ -36,50 +34,51 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YX4MBJ42F2', { 'send_page_view': true, 'anonymize_ip': true });
-  window.ccTrack = function(eventName, params) {
-    try { if (typeof gtag === 'function') gtag('event', eventName, params || {}); } catch(e) {}
-  };
 </script>
 
 <style>
 :root{
   --ink:#1D1D1F; --ink-2:#3a3a3c; --ink-3:#6e6e73; --ink-4:#86868b;
-  --rule:#D2D2D7; --rule-soft:#E8E8ED;
-  --bg:#FBFBFD; --bg-soft:#F5F5F7; --white:#fff;
+  --rule-soft:#E8E8ED; --bg:#FBFBFD; --bg-soft:#F5F5F7;
   --brand:#8818B8; --brand-deep:#5F0F82; --brand-soft:#F4E8FA;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color:var(--ink);background:var(--bg);min-height:100vh;
-  line-height:1.6;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased;
-}
+body{font-family:'Inter','Noto Sans SC','Noto Sans Myanmar',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:var(--bg);min-height:100vh;line-height:1.6;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Inter',sans-serif}
+body[data-lang="my"]{font-family:'Noto Sans Myanmar','Inter',sans-serif}
 
 nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--rule-soft);height:54px;display:flex;align-items:center}
 .nav-inner{width:100%;max-width:1100px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:0}
 .nav-logo .mark{width:24px;height:24px;border-radius:6px;overflow:hidden;flex-shrink:0}
-.nav-logo .mark img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-logo .mark img{width:100%;height:100%;object-fit:contain;display:block}
 .nav-logo .brand{font-weight:600;font-size:14px;letter-spacing:-0.01em;white-space:nowrap}
-.nav-back{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--ink-3);text-decoration:none;padding:6px 12px;border-radius:980px;transition:background 0.15s,color 0.15s}
+.nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.nav-back{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--ink-3);text-decoration:none;padding:6px 12px;border-radius:980px;transition:background .15s,color .15s}
 .nav-back:hover{background:var(--bg-soft);color:var(--ink)}
+.lang-wrap{position:relative}
+.lang-btn{background:transparent;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:980px;font-family:inherit;font-size:13px;color:var(--ink-2);transition:background .15s}
+.lang-btn:hover{background:var(--bg-soft)}
+.lang-dropdown{position:absolute;top:calc(100% + 4px);right:0;background:#fff;border-radius:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.15),0 0 0 1px var(--rule-soft);padding:6px;min-width:130px;display:none;z-index:101}
+.lang-dropdown.open{display:block}
+.lang-option{display:flex;align-items:center;width:100%;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--ink-2);background:transparent;border:none;font-family:inherit;text-align:left;transition:background .12s,color .12s;min-height:36px}
+.lang-option:hover{background:var(--bg-soft);color:var(--ink)}
+.lang-option.active{color:var(--brand);font-weight:600}
 
-.hero{max-width:760px;margin:0 auto;padding:56px 22px 32px;text-align:center}
-.hero-mark{width:64px;height:64px;border-radius:16px;margin:0 auto 20px;background:linear-gradient(135deg,var(--brand),var(--brand-deep));display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px -10px rgba(136,24,184,0.45)}
+.hero{max-width:760px;margin:0 auto;padding:56px 22px 24px;text-align:center}
+.hero-mark{width:64px;height:64px;border-radius:16px;margin:0 auto 20px;background:linear-gradient(135deg,var(--brand),var(--brand-deep));display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px -10px rgba(136,24,184,.45)}
 .hero-mark svg{width:32px;height:32px;color:#fff}
-.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
 .hero h1{font-size:clamp(26px,5vw,38px);font-weight:700;letter-spacing:-0.025em;line-height:1.15;margin-bottom:14px}
-.hero .effective-date{display:inline-block;font-size:13px;color:var(--ink-3);background:var(--bg-soft);padding:6px 14px;border-radius:980px;margin-bottom:20px}
-.hero .intro-text{text-align:left;font-size:14px;color:var(--ink-2);line-height:1.7;max-width:640px;margin:0 auto}
-.hero .intro-text p{margin-bottom:12px}
-.hero .intro-text strong{color:var(--ink)}
+.hero .effective-date{display:inline-block;font-size:13px;color:var(--ink-3);background:var(--bg-soft);padding:6px 14px;border-radius:980px}
+.hero-intro-text{max-width:760px;margin:0 auto;padding:0 22px;text-align:left;font-size:14px;color:var(--ink-2);line-height:1.7}
+.hero-intro-text p{margin-bottom:12px}
 
-.legal-layout{max-width:1100px;margin:0 auto;padding:0 22px 80px;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
-
+.legal-layout{max-width:1100px;margin:0 auto;padding:24px 22px 80px;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
 .toc-sidebar{position:sticky;top:78px;background:#fff;border:1px solid var(--rule-soft);border-radius:16px;padding:18px;max-height:calc(100vh - 100px);overflow-y:auto}
-.toc-title{font-size:11px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;padding:0 8px}
-.toc-link{display:block;font-size:13px;color:var(--ink-3);text-decoration:none;padding:7px 8px;border-radius:8px;line-height:1.4;transition:background 0.12s,color 0.12s;margin-bottom:1px}
+.toc-title{font-size:11px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding:0 8px}
+.toc-link{display:block;font-size:13px;color:var(--ink-3);text-decoration:none;padding:7px 8px;border-radius:8px;line-height:1.4;transition:background .12s,color .12s;margin-bottom:1px}
 .toc-link:hover{background:var(--bg-soft);color:var(--ink)}
 .toc-link.active{background:var(--brand-soft);color:var(--brand-deep);font-weight:600}
 
@@ -90,12 +89,20 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop
 .ch-num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;background:var(--brand);color:#fff;font-size:12px;font-weight:700;border-radius:7px;flex-shrink:0}
 .policy-section h4{font-size:14.5px;font-weight:600;color:var(--ink-2);margin:16px 0 6px}
 .policy-section p{font-size:14.5px;color:var(--ink-2);line-height:1.75;margin-bottom:10px}
-.policy-section p strong{color:var(--ink);font-weight:600}
-.policy-section ul{margin:8px 0 12px 0;padding-left:20px}
+.policy-section ul{margin:8px 0 12px;padding-left:20px}
 .policy-section li{font-size:14.5px;color:var(--ink-2);line-height:1.7;margin-bottom:5px}
-.policy-section blockquote{background:var(--bg-soft);border-left:3px solid var(--brand);padding:12px 16px;margin:10px 0;border-radius:0 10px 10px 0;font-size:14px;color:var(--ink-2);line-height:1.7}
 
-footer{text-align:center;padding:32px 22px;font-size:12px;color:var(--ink-4);border-top:1px solid var(--rule-soft);background:rgba(255,255,255,0.6)}
+/* 缅文排版修正 */
+body[data-lang="my"] .policy-section h3,
+body[data-lang="my"] .policy-section h4{line-height:1.5;letter-spacing:0}
+body[data-lang="my"] .policy-section p,
+body[data-lang="my"] .policy-section li,
+body[data-lang="my"] .hero-intro-text p{line-height:1.8;letter-spacing:0}
+
+.lang-version{display:none}
+.lang-version.active{display:block}
+
+footer{text-align:center;padding:32px 22px;font-size:12px;color:var(--ink-4);border-top:1px solid var(--rule-soft);background:rgba(255,255,255,.6)}
 footer a{color:var(--ink-3);text-decoration:none}
 footer a:hover{color:var(--brand)}
 
@@ -105,17 +112,17 @@ footer a:hover{color:var(--brand)}
   .policy-article{padding:8px 20px}
 }
 @media(max-width:540px){
-  .hero{padding:40px 18px 24px}
+  .hero{padding:40px 18px 20px}
   .hero h1{font-size:24px}
   .policy-article{padding:8px 16px;border-radius:16px}
   .policy-section h3{font-size:17px}
   .nav-inner{padding:0 14px}
+  .nav-back span:not(.arrow){display:none}
 }
-
-::selection{background:rgba(136,24,184,0.18);color:var(--ink)}
+::selection{background:rgba(136,24,184,.18);color:var(--ink)}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <nav>
   <div class="nav-inner">
@@ -123,10 +130,25 @@ footer a:hover{color:var(--brand)}
       <span class="mark"><img src="data:image/png;base64,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" alt="CloudCityFood"></span>
       <span class="brand">CloudCityFood</span>
     </a>
-    <a href="index.html" class="nav-back">
-      <span>&lsaquo;</span>
-      <span>Home</span>
-    </a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-back">
+        <span class="arrow">&lsaquo;</span>
+        <span data-lang-text="en">Home</span>
+        <span data-lang-text="zh">首页</span>
+        <span data-lang-text="my">ပင်မ</span>
+      </a>
+      <div class="lang-wrap">
+        <button class="lang-btn" id="langBtn" onclick="toggleLang(event)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="currentLang">English</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-option active" onclick="setLang('en')">English</button>
+          <button class="lang-option" onclick="setLang('zh')">中文</button>
+          <button class="lang-option" onclick="setLang('my')">မြန်မာ</button>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -134,77 +156,84 @@ footer a:hover{color:var(--brand)}
   <div class="hero-mark">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
   </div>
-  <div class="hero-eyebrow">Legal Document</div>
-  <h1>CloudCity Terms and Conditions</h1>
-  <div class="effective-date">Effective Date: 13 July 2026</div>
-  <div class="intro-text">
-    <p><strong>Effective Date:</strong> 13 July 2026</p>
-<p>These Terms and Conditions (“Terms”) govern access to and use of the CloudCity platform, including the CloudCity website at <strong>www.cloudcitymm.com</strong>, the CloudCity mobile application, mobile web / H5 pages, and any other channel, feature, or service that CloudCity may launch from time to time (together, the “Platform”).</p>
-<p>The Platform is owned and operated by <strong>CLOUDCITY INTERNET SERVICE CO., LTD</strong> (“CloudCity”, “we”, “us”, or “our”), a company providing local lifestyle services in Myanmar.</p>
-<p>By creating an account, browsing the Platform, placing an Order, making a payment, or otherwise using any Service, you (“Customer”, “you”, or “your”) confirm that you have read, understood, and agreed to be bound by these Terms, our Privacy Policy, our Refund Policy, and any additional guidelines, policies, or notices posted on the Platform.</p>
-<p>If you do not agree with these Terms, you must not access or use the Platform.</p>
-<p>These Terms apply to your general use of the CloudCity platform across all channels. Where you access certain services through a third-party channel, such as a mini-program operated within a partner application, the terms and conditions of that mini-program shall apply in addition to, and together with, these Terms in relation to your use of that specific channel.</p>
+  <div class="hero-eyebrow">
+    <span data-lang-text="en">Legal Document</span>
+    <span data-lang-text="zh">法律文件</span>
+    <span data-lang-text="my">ဥပဒေဆိုင်ရာ စာရွက်စာတမ်း</span>
+  </div>
+  <h1>
+    <span data-lang-text="en">CloudCity Terms and Conditions</span>
+    <span data-lang-text="zh">CloudCity 条款与条件</span>
+    <span data-lang-text="my">CloudCity စည်းကမ်းချက်များ</span>
+  </h1>
+  <div class="effective-date">
+    <span data-lang-text="en">Effective Date: 21 July 2026</span>
+    <span data-lang-text="zh">生效日期:2026 年 7 月 21 日</span>
+    <span data-lang-text="my">စတင်အာဏာတည်သည့်ရက်: ၂၀၂၆ ဇူလိုင် ၂၁</span>
   </div>
 </section>
 
-<div class="legal-layout">
-  <aside class="toc-sidebar">
-    <div class="toc-title">Table of Contents</div>
-    <a href="#ch1" class="toc-link" data-ch="1">1. DEFINITIONS</a><a href="#ch2" class="toc-link" data-ch="2">2. USER ELIGIBILITY</a><a href="#ch3" class="toc-link" data-ch="3">3. USER ACCOUNT</a><a href="#ch4" class="toc-link" data-ch="4">4. PLATFORM SERVICES</a><a href="#ch5" class="toc-link" data-ch="5">5. ORDERS</a><a href="#ch6" class="toc-link" data-ch="6">6. FOOD DELIVERY</a><a href="#ch7" class="toc-link" data-ch="7">7. STORE PICKUP</a><a href="#ch8" class="toc-link" data-ch="8">8. DELI SERVICE</a><a href="#ch9" class="toc-link" data-ch="9">9. SAY BUY SERVICE</a><a href="#ch10" class="toc-link" data-ch="10">10. TAXI SERVICE</a><a href="#ch11" class="toc-link" data-ch="11">11. MOBILE TOP-UP</a><a href="#ch12" class="toc-link" data-ch="12">12. CLOUDCITY BALANCE</a><a href="#ch13" class="toc-link" data-ch="13">13. PRICES AND PAYMENTS</a><a href="#ch14" class="toc-link" data-ch="14">14. CANCELLATION</a><a href="#ch15" class="toc-link" data-ch="15">15. REFUND POLICY</a><a href="#ch16" class="toc-link" data-ch="16">16. MERCHANT RESPONSIBILITIES</a><a href="#ch17" class="toc-link" data-ch="17">17. CUSTOMER RESPONSIBILITIES</a><a href="#ch18" class="toc-link" data-ch="18">18. CLOUDCITY RESPONSIBILITIES</a><a href="#ch19" class="toc-link" data-ch="19">19. REVIEWS AND RATINGS</a><a href="#ch20" class="toc-link" data-ch="20">20. PRIVACY</a><a href="#ch21" class="toc-link" data-ch="21">21. PROHIBITED ACTIVITIES</a><a href="#ch22" class="toc-link" data-ch="22">22. INTELLECTUAL PROPERTY</a><a href="#ch23" class="toc-link" data-ch="23">23. DISCLAIMER</a><a href="#ch24" class="toc-link" data-ch="24">24. LIMITATION OF LIABILITY</a><a href="#ch25" class="toc-link" data-ch="25">25. FORCE MAJEURE</a><a href="#ch26" class="toc-link" data-ch="26">26. SUSPENSION OR TERMINATION</a><a href="#ch27" class="toc-link" data-ch="27">27. AMENDMENTS</a><a href="#ch28" class="toc-link" data-ch="28">28. SEVERABILITY AND WAIVER</a><a href="#ch29" class="toc-link" data-ch="29">29. GOVERNING LAW AND DISPUTE RESOLUTION</a><a href="#ch30" class="toc-link" data-ch="30">30. CONTACT US</a>
-  </aside>
 
-  <article class="policy-article">
-    
-<section class="policy-section" id="ch1">
+<div class="lang-version active" data-lang-version="en">
+  <div class="hero-intro-text"><p>These Terms and Conditions (“Terms”) govern access to and use of the CloudCity platform, including the CloudCity website at www.cloudcitymm.com, the CloudCity mobile application, mobile web / H5 pages, and any other channel, feature, or service that CloudCity may launch from time to time (together, the “Platform”).</p>
+<p>The Platform is owned and operated by CLOUDCITY INTERNET SERVICE CO., LTD (“CloudCity”, “we”, “us”, or “our”), a company providing local lifestyle services in Myanmar.</p>
+<p>By creating an account, browsing the Platform, placing an Order, making a payment, or otherwise using any Service, you (“Customer”, “you”, or “your”) confirm that you have read, understood, and agreed to be bound by these Terms, our Privacy Policy, our Refund Policy, and any additional guidelines, policies, or notices posted on the Platform.</p>
+<p>If you do not agree with these Terms, you must not access or use the Platform.</p>
+<p>These Terms apply to your general use of the CloudCity platform across all channels. Where you access certain services through a third-party channel, such as a mini-program operated within a partner application, the terms and conditions of that mini-program shall apply in addition to, and together with, these Terms in relation to your use of that specific channel.</p></div>
+  <div class="legal-layout">
+    <aside class="toc-sidebar">
+      <div class="toc-title" data-toc-title="en"></div>
+      <a href="#chen1" class="toc-link">1. DEFINITIONS</a><a href="#chen2" class="toc-link">2. USER ELIGIBILITY</a><a href="#chen3" class="toc-link">3. USER ACCOUNT</a><a href="#chen4" class="toc-link">4. PLATFORM SERVICES</a><a href="#chen5" class="toc-link">5. ORDERS</a><a href="#chen6" class="toc-link">6. FOOD DELIVERY</a><a href="#chen7" class="toc-link">7. STORE PICKUP</a><a href="#chen8" class="toc-link">8. DELI SERVICE</a><a href="#chen9" class="toc-link">9. SAY BUY SERVICE</a><a href="#chen10" class="toc-link">10. TAXI SERVICE</a><a href="#chen11" class="toc-link">11. MOBILE TOP-UP</a><a href="#chen12" class="toc-link">12. CLOUDCITY BALANCE</a><a href="#chen13" class="toc-link">13. PRICES AND PAYMENTS</a><a href="#chen14" class="toc-link">14. CANCELLATION</a><a href="#chen15" class="toc-link">15. REFUND POLICY</a><a href="#chen16" class="toc-link">16. MERCHANT RESPONSIBILITIES</a><a href="#chen17" class="toc-link">17. CUSTOMER RESPONSIBILITIES</a><a href="#chen18" class="toc-link">18. CLOUDCITY RESPONSIBILITIES</a><a href="#chen19" class="toc-link">19. REVIEWS AND RATINGS</a><a href="#chen20" class="toc-link">20. PRIVACY</a><a href="#chen21" class="toc-link">21. PROHIBITED ACTIVITIES</a><a href="#chen22" class="toc-link">22. INTELLECTUAL PROPERTY</a><a href="#chen23" class="toc-link">23. DISCLAIMER</a><a href="#chen24" class="toc-link">24. LIMITATION OF LIABILITY</a><a href="#chen25" class="toc-link">25. FORCE MAJEURE</a><a href="#chen26" class="toc-link">26. SUSPENSION OR TERMINATION</a><a href="#chen27" class="toc-link">27. AMENDMENTS</a><a href="#chen28" class="toc-link">28. SEVERABILITY AND WAIVER</a><a href="#chen29" class="toc-link">29. GOVERNING LAW AND DISPUTE RESOLUTION</a><a href="#chen30" class="toc-link">30. CONTACT US</a>
+    </aside>
+    <article class="policy-article">
+<section class="policy-section" id="chen1">
   <h3><span class="ch-num">1</span>DEFINITIONS</h3>
-  
-<h4>1.1 &quot;Platform&quot;</h4>
+  <p>1.1 "Platform"</p>
 <p>Means the CloudCity website, mobile application, mobile web (H5) pages, and any other digital channel through which CloudCity Services are made available.</p>
-<h4>1.2 &quot;Customer&quot; or &quot;User&quot;</h4>
+<p>1.2 "Customer" or "User"</p>
 <p>Means any individual who registers for, accesses, or uses the Platform, including browsing, placing an Order, or making a payment.</p>
-<h4>1.3 &quot;Merchant&quot;</h4>
+<p>1.3 "Merchant"</p>
 <p>Means a restaurant, shop, service provider, or other business that offers products or services to Customers through the Platform.</p>
-<h4>1.4 &quot;Rider&quot; or &quot;Driver&quot;</h4>
+<p>1.4 "Rider" or "Driver"</p>
 <p>Means an independent service provider engaged through the CloudCity platform to perform Food Delivery, Deli, Say Buy, or Taxi Service.</p>
-<h4>1.5 &quot;Order&quot;</h4>
+<p>1.5 "Order"</p>
 <p>Means any request submitted by a Customer through the Platform for the purchase of products or the provision of services.</p>
-<h4>1.6 &quot;Services&quot;</h4>
+<p>1.6 "Services"</p>
 <p>Means Food Delivery, Store Pickup, Deli, Say Buy, Taxi Service, Mobile Top-up, and any other service made available through the Platform from time to time.</p>
-<h4>1.7 &quot;CloudCity Balance&quot;</h4>
-<p>Means the digital wallet balance maintained within a Customer&rsquo;s CloudCity account, which may be funded, used for payment, and credited with approved refunds as described in these Terms.</p>
-<h4>1.8 &quot;Order Value&quot;</h4>
+<p>1.7 "CloudCity Balance"</p>
+<p>Means a closed-loop platform balance maintained within a Customer's CloudCity Account and usable only for eligible CloudCity Services. CloudCity Balance may be funded through payment methods supported by CloudCity, including KBZPay, bank transfer, cash, or other approved methods, and may also be credited with refunds, promotions, or adjustments. CloudCity Balance does not bear interest, is not transferable between Customers, and is not redeemable or withdrawable as cash except where expressly permitted by CloudCity or required by applicable law.</p>
+<p>1.8 "Order Value"</p>
 <p>Means the total price of the products or services in an Order, exclusive of delivery fees, service fees, and applicable taxes unless stated otherwise.</p>
-<h4>1.9 &quot;Business Day&quot;</h4>
+<p>1.9 "Business Day"</p>
 <p>Means a day other than a Saturday, Sunday, or public holiday in Myanmar.</p>
-<h4>1.10 &quot;Third-Party Channel&quot;</h4>
-<p>Means any application, mini-program, or platform operated by a partner of CloudCity through which certain CloudCity Services may also be made available to Customers, subject to that partner&rsquo;s own applicable terms.</p>
-
+<p>1.10 "Third-Party Channel"</p>
+<p>Means any application, mini-program, or platform operated by a partner of CloudCity through which certain CloudCity Services may also be made available to Customers, subject to that partner's own applicable terms.</p>
 </section>
 
-<section class="policy-section" id="ch2">
+<section class="policy-section" id="chen2">
   <h3><span class="ch-num">2</span>USER ELIGIBILITY</h3>
-  
-<p>2.1 You must be at least 18 years of age to create an account and use the Platform in your own capacity. If you are under 18, you may only use the Platform under the supervision and with the consent of a parent or legal guardian, who shall be fully responsible for your use of the Services and any related payments.</p>
-<p>2.2 By using the Platform, you represent and warrant that you have the legal capacity to enter into a binding contract under the laws of Myanmar and that all information you provide is true, accurate, and complete.</p>
+  <p>2.1 Only individuals who are at least eighteen (18) years of age may independently register an Account. A person under eighteen (18) years of age may use the Services only through the Account of a parent or legal guardian and under that account holder's direct supervision. The account holder shall be responsible for all Orders, payments, use of the Services, and contractual obligations arising from such use.</p>
+<p>2.2 By registering an Account, the account holder represents and warrants that they have the legal capacity to enter into a binding contract under the laws of Myanmar and that all information provided to CloudCity is true, accurate, complete, and up to date.</p>
 <p>2.3 CloudCity reserves the right to refuse registration, suspend, or terminate any account where eligibility requirements are not met or where false information has been provided.</p>
-
 </section>
 
-<section class="policy-section" id="ch3">
+<section class="policy-section" id="chen3">
   <h3><span class="ch-num">3</span>USER ACCOUNT</h3>
-  
-<p>3.1 To access certain Services, you may be required to register for a CloudCity account by providing information such as your name, phone number, and delivery address.</p>
+  <p>3.1 To access certain Services, you may be required to register for a CloudCity account by providing information such as your name, phone number, and delivery address.</p>
 <p>3.2 You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify CloudCity immediately of any unauthorized use of your account.</p>
 <p>3.3 You agree to keep your account information accurate, complete, and up to date at all times.</p>
 <p>3.4 CloudCity may suspend or close an account that is inactive, fraudulent, or used in violation of these Terms.</p>
 <p>3.5 You may only maintain one active account unless otherwise permitted by CloudCity.</p>
-
+<h4>Account Deletion</h4>
+<p>3.6 You may request the deletion of your Account at any time through the App by selecting Settings -&gt; Account -&gt; Delete Account, or by contacting CloudCity Customer Service.</p>
+<p>3.7 Upon receipt of a valid Account deletion request, CloudCity will delete or anonymize the Customer's Personal Data within a reasonable period. However, Order records, transaction records, and other information that must be retained for tax, accounting, legal, regulatory, audit, fraud-prevention, or dispute-resolution purposes will be retained for the period required by applicable law or for as long as reasonably necessary to fulfil the relevant obligation.</p>
+<p>3.8 Account deletion is final and cannot be reversed. Any unused CloudCity Balance remaining in the Account at the time of deletion will be handled in accordance with Clause 12.5 of these Terms. The Customer is advised to use or otherwise properly deal with any remaining CloudCity Balance before submitting an Account deletion request.</p>
+<p>3.9 Following the deletion of your Account, CloudCity may continue to retain and use anonymized or aggregated data that can no longer be used to identify you, for the purposes of data analysis, service improvement, and related statistical activities.</p>
 </section>
 
-<section class="policy-section" id="ch4">
+<section class="policy-section" id="chen4">
   <h3><span class="ch-num">4</span>PLATFORM SERVICES</h3>
-  
-<p>4.1 CloudCity provides an online platform through which Customers may access the following Services:</p>
+  <p>4.1 CloudCity provides an online platform through which Customers may access the following Services:</p>
 <ul>
 <li>Food Delivery;</li>
 <li>Store Pickup;</li>
@@ -215,130 +244,116 @@ footer a:hover{color:var(--brand)}
 <li>CloudCity Balance; and</li>
 <li>other Services that CloudCity may introduce from time to time.</li>
 </ul>
-<p>4.2 Food Delivery is the primary business of CloudCity. Other Services are provided to complement the Platform&rsquo;s role as a local lifestyle service provider in Myanmar.</p>
+<p>4.2 Food Delivery is the primary business of CloudCity. Other Services are provided to complement the Platform's role as a local lifestyle service provider in Myanmar.</p>
 <p>4.3 CloudCity acts as an intermediary platform that connects Customers with independent Merchants and Riders. CloudCity does not itself prepare, manufacture, or sell the products offered by Merchants, and does not itself operate the vehicles used to provide Taxi Service.</p>
 <p>4.4 Service availability may vary depending on location, supported service areas, Merchant operating hours, product availability, Rider or Driver availability, weather and road conditions, telecommunications conditions, and other operational circumstances.</p>
-<p>4.5 CloudCity may add, modify, restrict, suspend, or discontinue any Service where reasonably necessary for operational, security, legal, technical, or commercial reasons, with or without prior notice.</p>
-
+<p>4.5 CloudCity may add, modify, restrict, suspend, or discontinue any Service where reasonably necessary for operational, security, legal, technical, or commercial reasons, with or without prior notice. Any such change will not affect CloudCity's obligations relating to Orders confirmed before the change, including applicable payment, refund, and CloudCity Balance settlement obligations.</p>
 </section>
 
-<section class="policy-section" id="ch5">
+<section class="policy-section" id="chen5">
   <h3><span class="ch-num">5</span>ORDERS</h3>
-  
-<p>5.1 A Customer places an Order by selecting products or services through the Platform, confirming Order details, and completing payment through an available payment method.</p>
-<p>5.2 An Order is not deemed confirmed until it has been accepted by the relevant Merchant, Rider, or Driver, as applicable. CloudCity reserves the right to reject or cancel any Order at its discretion, including where product information is inaccurate, where fraud is suspected, or where the Order cannot reasonably be fulfilled.</p>
+  <p>5.1 A Customer places an Order by selecting the relevant products or Services, reviewing and confirming the Order details, selecting an available payment method, and submitting the Order through the Platform.</p>
+<p>5.2 An Order is not deemed confirmed until it has been accepted by the relevant Merchant, Rider, or Driver, as applicable. CloudCity may reject or cancel an Order only on reasonable and identifiable grounds, including inaccurate product information, product unavailability, suspected fraud, safety concerns, payment failure, or circumstances that prevent the Order from being reasonably fulfilled. Where a prepaid Order is rejected or cancelled through no fault of the Customer, the Customer will be entitled to a refund in accordance with Section 15.</p>
 <p>5.3 You are responsible for reviewing your Order details, including items, quantities, delivery address, and special instructions, before submitting payment.</p>
 <p>5.4 CloudCity may set a minimum Order Value for certain Services or Merchants. Orders below the applicable minimum may not be accepted, or may be subject to an additional small-order fee.</p>
-
 </section>
 
-<section class="policy-section" id="ch6">
+<section class="policy-section" id="chen6">
   <h3><span class="ch-num">6</span>FOOD DELIVERY</h3>
-  
-<p>6.1 Food Delivery allows a Customer to order food or other products from a participating Merchant for delivery to a specified address by a Rider.</p>
-<p>6.2 Estimated delivery times shown on the Platform are approximate and may vary due to Merchant preparation time, Rider availability, weather, traffic, or other factors beyond CloudCity&rsquo;s control.</p>
+  <p>6.1 Food Delivery allows a Customer to order food or other products from a participating Merchant for delivery to a specified address by a Rider.</p>
+<p>6.2 Estimated delivery times shown on the Platform are approximate and may vary due to Merchant preparation time, Rider availability, weather, traffic, or other factors beyond CloudCity's control.</p>
 <p>6.3 The Customer must provide an accurate delivery address and be reasonably available to receive the Order. Where a Customer cannot be reached or is unavailable at the delivery location, additional fees or Order cancellation may apply.</p>
 <p>6.4 Product images, descriptions, and prices are provided by Merchants. While CloudCity encourages Merchants to keep such information accurate, CloudCity does not guarantee that all listings are free from error.</p>
-
 </section>
 
-<section class="policy-section" id="ch7">
+<section class="policy-section" id="chen7">
   <h3><span class="ch-num">7</span>STORE PICKUP</h3>
-  
-<p>7.1 Store Pickup allows a Customer to place an Order through the Platform and collect it directly from the Merchant&rsquo;s location.</p>
+  <p>7.1 Store Pickup allows a Customer to place an Order through the Platform and collect it directly from the Merchant's location.</p>
 <p>7.2 The Customer is responsible for collecting the Order within the timeframe specified by the Merchant, or, where no timeframe is specified, within a reasonable period after receiving notice that the Order is ready. Orders not collected within a reasonable period may be cancelled, and refund eligibility will be assessed in accordance with the Refund Policy.</p>
 <p>7.3 The Customer should be prepared to show their Order confirmation, a reference code, or other reasonable proof of purchase to the Merchant upon collection.</p>
 <p>7.4 CloudCity is not responsible for the condition of an Order once it has been collected by the Customer, except where the Order was defective, incomplete, or incorrect at the time of collection due to the fault of the Merchant.</p>
-
 </section>
 
-<section class="policy-section" id="ch8">
+<section class="policy-section" id="chen8">
   <h3><span class="ch-num">8</span>DELI SERVICE</h3>
-  
-<p>8.1 Deli is a service through which a Rider collects and delivers permitted items between locations specified by the Customer, other than food items purchased from a Merchant through the Platform.</p>
+  <p>8.1 Deli is a service through which a Rider collects and delivers permitted items between locations specified by the Customer, other than food items purchased from a Merchant through the Platform.</p>
 <p>8.2 The Customer must accurately describe the item(s) to be collected and delivered, including approximate size, weight, and any handling instructions.</p>
 <p>8.3 CloudCity and its Riders reserve the right to refuse the collection or delivery of any item that is illegal, dangerous, prohibited under applicable law, or otherwise unsuitable for transport.</p>
 <p>8.4 The Customer is responsible for ensuring that the item(s) are lawfully owned or possessed and may be lawfully transported.</p>
-
 </section>
 
-<section class="policy-section" id="ch9">
+<section class="policy-section" id="chen9">
   <h3><span class="ch-num">9</span>SAY BUY SERVICE</h3>
-  
-<p>9.1 Say Buy is a service through which a Rider purchases permitted products on behalf of the Customer, based on the Customer&rsquo;s instructions, and delivers them to the Customer.</p>
+  <p>9.1 Say Buy is a service through which a Rider purchases permitted products on behalf of the Customer, based on the Customer's instructions, and delivers them to the Customer.</p>
 <p>9.2 As the exact availability and price of the requested items cannot always be confirmed in advance, the final amount payable may differ from the estimated amount shown at the time of Order placement. Any difference will be settled in accordance with the payment method used.</p>
-<p>9.3 CloudCity and the Rider are not responsible for the quality, suitability, or condition of products purchased through Say Buy where such products are purchased in accordance with the Customer&rsquo;s instructions.</p>
-
+<p>9.3 Where products are purchased in accordance with the Customer's clear and accurate instructions, the relevant seller shall remain responsible for the inherent quality, safety, legality, suitability, and condition of those products. However, this shall not exclude responsibility for purchasing an incorrect item, failing to follow the Customer's confirmed instructions, losing or mishandling an item, or causing contamination, deterioration, or damage while the item is under the possession or control of CloudCity or the Rider.</p>
+<p>9.4 The Customer shall inspect the products upon receipt and report any missing, incorrect, damaged, or materially non-conforming item to CloudCity Customer Support within the applicable complaint period, together with reasonable supporting information.</p>
 </section>
 
-<section class="policy-section" id="ch10">
+<section class="policy-section" id="chen10">
   <h3><span class="ch-num">10</span>TAXI SERVICE</h3>
-  
-<p>10.1 Taxi Service is a ride-booking service that connects Customers with available Drivers for point-to-point transportation.</p>
+  <p>10.1 Taxi Service is a ride-booking service that connects Customers with available Drivers for point-to-point transportation.</p>
 <p>10.2 Fares are calculated based on distance, time, demand, and other relevant factors, and are displayed to the Customer prior to confirming a ride request where reasonably possible.</p>
 <p>10.3 Drivers providing Taxi Service through the Platform are independent service providers and are not employees or agents of CloudCity. CloudCity does not own or operate the vehicles used to provide Taxi Service.</p>
 <p>10.4 Customers must comply with reasonable safety instructions and behave respectfully towards Drivers. CloudCity reserves the right to suspend accounts that engage in unsafe, abusive, or unlawful conduct during a ride.</p>
-
 </section>
 
-<section class="policy-section" id="ch11">
+<section class="policy-section" id="chen11">
   <h3><span class="ch-num">11</span>MOBILE TOP-UP</h3>
-  
-<p>11.1 Mobile Top-up allows a Customer to purchase mobile phone credit for a supported telecommunications provider through the Platform, using CloudCity Balance or another supported payment method.</p>
+  <p>11.1 Mobile Top-up allows a Customer to purchase mobile phone credit for a supported telecommunications provider through the Platform, using CloudCity Balance or another supported payment method.</p>
 <p>11.2 The Customer is responsible for entering the correct mobile phone number and selecting the correct telecommunications provider and denomination before confirming a Mobile Top-up purchase. CloudCity is not responsible for top-ups delivered to an incorrect number entered by the Customer.</p>
 <p>11.3 Mobile Top-up transactions are generally processed automatically and, once successfully completed, cannot be reversed or refunded, except where required by applicable law or due to a verified technical error on the part of CloudCity or its telecommunications partner.</p>
-<p>11.4 Where a Mobile Top-up transaction fails after payment has been deducted due to a technical error, CloudCity will investigate the matter and, where appropriate, credit the affected amount to the Customer&rsquo;s CloudCity Balance.</p>
+<p>11.4 Where a Mobile Top-up transaction fails after payment has been deducted due to a technical error, CloudCity will investigate the matter and, where appropriate, credit the affected amount to the Customer's CloudCity Balance.</p>
 <p>11.5 CloudCity is not responsible for the internal policies, credit validity periods, or service quality of the telecommunications provider whose credit is purchased through Mobile Top-up.</p>
-
 </section>
 
-<section class="policy-section" id="ch12">
+<section class="policy-section" id="chen12">
   <h3><span class="ch-num">12</span>CLOUDCITY BALANCE</h3>
-  
-<p>12.1 CloudCity Balance is a digital wallet feature that allows a Customer to store funds within their CloudCity account for use across supported Services.</p>
-<p>12.2 CloudCity Balance may be funded through supported payment methods displayed on the Platform, and may also be credited with approved refunds in accordance with the Refund Policy set out in these Terms.</p>
+  <p>12.1 CloudCity Balance is a closed-loop platform balance maintained within a Customer's CloudCity Account and usable only to pay for eligible CloudCity Services. It is not a bank account and does not bear interest.</p>
+<p>12.2 CloudCity Balance may be funded through payment methods supported by CloudCity, including KBZPay, bank transfer, cash, or other approved methods, and may be retained in the Account for future use. CloudCity Balance may also be credited with approved refunds, promotions, or adjustments in accordance with these Terms.</p>
 <p>12.3 CloudCity Balance is non-interest bearing and may only be used to pay for Services on the Platform. Unless otherwise permitted by CloudCity or required by applicable law, CloudCity Balance is not transferable to another account, is not redeemable for cash, and is not withdrawable to a bank account or other external payment method.</p>
 <p>12.4 CloudCity may impose reasonable limits on the amount of CloudCity Balance that may be held or used within a given period.</p>
-<p>12.5 In the event of prolonged account inactivity, suspected fraud, or account closure, CloudCity reserves the right to review, suspend, or, where legally permissible, forfeit unused CloudCity Balance, subject to applicable law and reasonable prior notice where practicable.</p>
-
+<p>12.5 In the event of prolonged account inactivity, suspected fraud, unauthorized activity, a payment dispute, or Account suspension or closure, CloudCity may temporarily restrict or freeze the use of the affected CloudCity Balance while conducting a reasonable investigation. Any lawful and undisputed remaining balance shall be handled in accordance with the applicable refund or balance settlement process. CloudCity shall not forfeit or permanently retain a Customer's lawful and undisputed balance solely because of Account inactivity, suspension, or closure.</p>
+<p>12.6 CloudCity will maintain transaction records showing additions to, deductions from, refunds to, and adjustments of a Customer's CloudCity Balance.</p>
+<p>12.7 The Customer shall promptly notify CloudCity of any unauthorized or incorrect CloudCity Balance transaction. CloudCity may temporarily restrict the affected amount while conducting a reasonable investigation.</p>
+<p>12.8 Any manual cash or bank-transfer top-up shall become available only after CloudCity has verified receipt of the relevant funds. CloudCity may request reasonable proof of payment where necessary.</p>
+<p>12.9 CloudCity may correct a manifest accounting, system, duplicate-credit, or technical error affecting CloudCity Balance, provided that CloudCity maintains a record of the correction and gives the affected Customer a reasonable explanation.</p>
 </section>
 
-<section class="policy-section" id="ch13">
+<section class="policy-section" id="chen13">
   <h3><span class="ch-num">13</span>PRICES AND PAYMENTS</h3>
-  
-<p>13.1 All prices displayed on the Platform are set by Merchants (for products) or by CloudCity (for delivery, service, and platform fees) and are shown in Myanmar Kyat (MMK) unless otherwise stated.</p>
+  <p>13.1 All prices displayed on the Platform are set by Merchants (for products) or by CloudCity (for delivery, service, and platform fees) and are shown in Myanmar Kyat (MMK) unless otherwise stated.</p>
 <p>13.2 Prices may include delivery fees, service fees, small-order fees, and applicable taxes, which will be shown to the Customer before Order confirmation.</p>
 <p>13.3 Payment may be made through CloudCity Balance, supported third-party payment methods (including mobile payment applications), or cash on delivery where available. CloudCity reserves the right to add, remove, or restrict available payment methods at any time.</p>
 <p>13.4 The Customer authorizes CloudCity and its payment partners to process payment for confirmed Orders through the selected payment method.</p>
-<p>13.5 CloudCity is not responsible for delays or failures in payment processing caused by third-party payment providers, banks, or telecommunications networks.</p>
-
+<p>13.5 CloudCity shall not be responsible for delays or failures caused solely by third-party payment providers, banks, or telecommunications networks where the cause is outside CloudCity's reasonable control. CloudCity will, however, provide reasonable assistance in verifying the transaction and will process or facilitate the appropriate refund, reversal, or balance adjustment where payment has been deducted but the relevant Order or Service has not been successfully completed.</p>
 </section>
 
-<section class="policy-section" id="ch14">
+<section class="policy-section" id="chen14">
   <h3><span class="ch-num">14</span>CANCELLATION</h3>
-  
-<p>14.1 A Customer may cancel an Order before it has been accepted or prepared by the Merchant, or before a Rider or Driver has been dispatched, subject to the specific conditions of the relevant Service.</p>
-<p>14.2 Cancellation after a Merchant has begun preparing an Order, or after a Rider or Driver has been dispatched or has commenced the trip, may not be permitted, or may be subject to a cancellation fee to compensate the Merchant, Rider, or Driver for costs already incurred.</p>
-<p>14.3 CloudCity, a Merchant, or a Rider/Driver may cancel an Order in circumstances including but not limited to product unavailability, inability to reach the Customer, unsafe conditions, or suspected fraudulent activity. Where CloudCity, the Merchant, or the Rider/Driver cancels an Order through no fault of the Customer, the Customer will generally be eligible for a refund in accordance with the Refund Policy.</p>
-
+  <p>14.1 A Customer may cancel an Order before it has been accepted or prepared by the Merchant, or before a Rider or Driver has been dispatched, subject to the specific conditions of the relevant Service.</p>
+<p>14.2 Where a Merchant has already commenced preparation of an Order, or where a Rider or Driver has already been dispatched or has commenced providing the relevant Service, cancellation may be refused or a reasonable cancellation fee may apply. Any applicable cancellation condition, fee amount, or method of calculation shall be disclosed to the Customer before the Order is confirmed. A cancellation fee shall be limited to costs that have actually and reasonably been incurred in connection with the cancelled Order. No cancellation fee shall apply where the cancellation results from a technical error attributable to the Platform, duplicate Order creation, Merchant unavailability, material delay or failure by the Merchant or Rider/Driver, or any other circumstance not attributable to the Customer.</p>
+<p>14.3 Upon request, CloudCity will provide the Customer with a reasonable explanation of the basis on which any cancellation fee was charged.</p>
+<p>14.4 CloudCity, a Merchant, or a Rider/Driver may cancel an Order on reasonable grounds, including product unavailability, inability to reach the Customer, unsafe conditions, payment failure, or suspected fraudulent activity. Where an Order is cancelled through no fault of the Customer, any prepaid amount shall be refunded in accordance with Section 15.</p>
 </section>
 
-<section class="policy-section" id="ch15">
+<section class="policy-section" id="chen15">
   <h3><span class="ch-num">15</span>REFUND POLICY</h3>
-  
-<p>15.1 Where an Order is cancelled, unavailable, incorrect, damaged, incomplete, or otherwise unsatisfactory through no fault of the Customer, and the Customer is determined to be eligible for a refund following review by CloudCity, the refunded amount will be credited to the Customer&rsquo;s <strong>CloudCity Balance</strong>.</p>
-<p>15.2 This applies regardless of the original payment method used for the Order, including payments made by CloudCity Balance, supported third-party payment methods, mobile payment applications, or cash on delivery.</p>
-<p>15.3 Amounts credited to CloudCity Balance under this Refund Policy may be used to pay for any Service available on the Platform, subject to the terms governing CloudCity Balance set out in these Terms.</p>
-<p>15.4 CloudCity reserves the right to review each refund request individually and to determine, in its reasonable discretion, whether a refund is warranted, taking into account evidence provided by the Customer, the Merchant, and the Rider/Driver, as applicable.</p>
-<p>15.5 Refund requests should be submitted through the Platform, in-app support, or CloudCity Customer Support within a reasonable period after the relevant Order, and should include relevant details such as the Order number and a description of the issue.</p>
-<p>15.6 CloudCity aims to process eligible refunds to CloudCity Balance promptly following approval, and in any event within a reasonable number of Business Days.</p>
-
+  <p>15.1 Where an Order is cancelled, unavailable, incorrect, damaged, incomplete, or otherwise unsatisfactory through no fault of the Customer, the Customer may be eligible for a full or partial refund following review by CloudCity in accordance with this Section.</p>
+<p>15.2 Refunds for prepaid Orders will be processed according to the payment method used: (a) payments made using CloudCity Balance will be credited back to the Customer's CloudCity Balance; (b) payments made through KBZPay or another supported third-party prepaid payment method will be refunded to the original payment method where technically available; and (c) where a refund to the original payment method is not technically available, the refunded amount may be credited to CloudCity Balance or settled through another agreed method only with the Customer's consent.</p>
+<p>15.3 Cash on Delivery ("COD") Orders are not paid in advance and are therefore not subject to a balance refund process. If a COD Order is cancelled before delivery, the Customer shall not be required to make any payment. If an Order contains unavailable, missing, incorrect, or otherwise affected items, the Customer shall pay only the amount payable for the items actually delivered and accepted at the time of receipt.</p>
+<p>15.4 Any amount credited to CloudCity Balance under this Refund Policy may be used only for eligible Services available on the Platform and remains subject to Section 12.</p>
+<p>15.5 CloudCity will review each refund request using reasonable and objective criteria, including the Order status, payment records, photographic or documentary evidence, communications between the parties, Merchant records, and Rider or Driver records, as applicable.</p>
+<p>15.6 Refund or remedy requests relating to missing, incorrect, damaged, spoiled, or incomplete food Orders should normally be submitted within twenty-four (24) hours after delivery or collection. Requests relating to duplicate charges, payment errors, failed Mobile Top-up transactions, or other payment-related matters should normally be submitted within seven (7) calendar days after the relevant transaction. These periods shall not prevent a Customer from submitting a complaint concerning a food-safety issue, latent defect, unauthorized transaction, fraud, or other matter that could not reasonably have been discovered within the ordinary complaint period.</p>
+<p>15.7 A refund or remedy request shall be submitted through the Platform, in-app support, or CloudCity Customer Support and shall include the Order number, a description of the issue, and any reasonably available supporting evidence. CloudCity may request additional information where reasonably necessary to verify the request.</p>
+<p>15.8 CloudCity will acknowledge receipt of a refund request and review the information submitted by the Customer, Merchant, and Rider or Driver, as applicable. The Customer will be informed of the outcome and the principal reasons for the decision within a reasonable processing period.</p>
+<p>15.9 If a refund request is rejected, the Customer may request one further internal review by providing additional relevant information or explaining why the original decision should be reconsidered.</p>
+<p>15.10 CloudCity will process an approved refund promptly and within a reasonable number of Business Days, subject to the processing time of the relevant bank, payment provider, or telecommunications network. Where the refund is credited to CloudCity Balance, the credit will be made promptly after approval.</p>
 </section>
 
-<section class="policy-section" id="ch16">
+<section class="policy-section" id="chen16">
   <h3><span class="ch-num">16</span>MERCHANT RESPONSIBILITIES</h3>
-  
-<p>16.1 Merchants are independent businesses responsible for the products and services they offer through the Platform, including but not limited to:</p>
+  <p>16.1 Merchants are independent businesses responsible for the products and services they offer through the Platform, including but not limited to:</p>
 <ul>
 <li>food quality and hygiene;</li>
 <li>accuracy of ingredients and allergen information;</li>
@@ -348,53 +363,45 @@ footer a:hover{color:var(--brand)}
 </ul>
 <p>16.2 Merchants are responsible for maintaining any licenses, permits, or registrations required by applicable law to operate their business and to sell their products or services.</p>
 <p>16.3 CloudCity may remove, suspend, or restrict a Merchant that fails to meet reasonable quality, safety, or conduct standards, or that receives repeated valid complaints from Customers.</p>
-
 </section>
 
-<section class="policy-section" id="ch17">
+<section class="policy-section" id="chen17">
   <h3><span class="ch-num">17</span>CUSTOMER RESPONSIBILITIES</h3>
-  
-<p>17.1 Customers are responsible for providing accurate Order, delivery, and payment information.</p>
+  <p>17.1 Customers are responsible for providing accurate Order, delivery, and payment information.</p>
 <p>17.2 Customers must treat Merchants, Riders, Drivers, and CloudCity staff with respect, and must not engage in abusive, threatening, discriminatory, or unlawful behaviour.</p>
 <p>17.3 Customers are responsible for verifying the contents of an Order upon receipt and for promptly reporting any issue through the Platform or Customer Support.</p>
 <p>17.4 Customers must not misuse the Platform, including by submitting false claims, abusing the Refund Policy, or engaging in fraudulent payment activity.</p>
-
 </section>
 
-<section class="policy-section" id="ch18">
+<section class="policy-section" id="chen18">
   <h3><span class="ch-num">18</span>CLOUDCITY RESPONSIBILITIES</h3>
-  
-<p>18.1 CloudCity operates the Platform as an intermediary connecting Customers with Merchants and Riders/Drivers. CloudCity does not manufacture, prepare, or directly control the products sold by Merchants.</p>
+  <p>18.1 CloudCity operates the Platform as an intermediary connecting Customers with Merchants and Riders/Drivers. CloudCity does not manufacture, prepare, or directly control the products sold by Merchants.</p>
 <p>18.2 Responsibility for food quality, ingredients, food safety, product accuracy, and packaging rests with the relevant Merchant, as set out in Section 16 above.</p>
 <p>18.3 CloudCity will use reasonable efforts to facilitate a smooth experience across the Platform, including reasonable efforts to select and monitor Merchants and Riders/Drivers, provide customer support, and address legitimate complaints in a timely manner.</p>
 <p>18.4 CloudCity will handle Customer data in accordance with its Privacy Policy and applicable law.</p>
-
 </section>
 
-<section class="policy-section" id="ch19">
+<section class="policy-section" id="chen19">
   <h3><span class="ch-num">19</span>REVIEWS AND RATINGS</h3>
-  
-<p>19.1 CloudCity may allow Customers to rate and review Merchants, Riders, and Drivers following completion of an Order.</p>
+  <p>19.1 CloudCity may allow Customers to rate and review Merchants, Riders, and Drivers following completion of an Order.</p>
 <p>19.2 Reviews must be honest, relevant, and must not contain false, defamatory, abusive, discriminatory, or unlawful content, and must not disclose the personal data of any third party without their consent.</p>
 <p>19.3 By submitting a review, the Customer grants CloudCity a non-exclusive, royalty-free, worldwide licence to display, reproduce, and use the review content on the Platform and in related marketing materials, in each case in a manner consistent with the Privacy Policy.</p>
-<p>19.4 CloudCity reserves the right to moderate, edit for length or clarity, or remove any review that violates these Terms or applicable law, and to suspend the account of a Customer who repeatedly submits abusive or fraudulent reviews.</p>
-<p>19.5 CloudCity may use ratings and reviews to monitor and improve the quality of Merchants and Riders/Drivers on the Platform, including through internal performance scoring that may affect a Merchant&rsquo;s or Rider&rsquo;s/Driver&rsquo;s continued participation on the Platform.</p>
-
+<p>19.4 CloudCity may moderate, restrict, or remove any review that violates these Terms or applicable law, including reviews containing false, defamatory, abusive, threatening, discriminatory, unlawful, irrelevant, promotional, or privacy-infringing content. CloudCity may make non-material edits for formatting, spelling, length, or clarity, provided that such edits do not materially change the meaning, context, or opinion expressed by the Customer.</p>
+<p>19.5 A Customer may contact CloudCity Customer Support to request an internal review of the removal or restriction of content submitted by that Customer.</p>
+<p>19.6 CloudCity may use ratings and reviews to monitor and improve the quality of Merchants and Riders/Drivers on the Platform, including through internal performance scoring that may affect a Merchant's or Rider's/Driver's continued participation on the Platform.</p>
 </section>
 
-<section class="policy-section" id="ch20">
+<section class="policy-section" id="chen20">
   <h3><span class="ch-num">20</span>PRIVACY</h3>
-  
-<p>20.1 CloudCity collects and processes personal data in connection with your use of the Platform, including account information, Order history, location data, and payment-related information, in accordance with our Privacy Policy.</p>
-<p>20.2 By using the Platform, you consent to the collection, use, and disclosure of your personal data as described in the Privacy Policy, including sharing relevant Order information with Merchants and Riders/Drivers as necessary to fulfil your Order.</p>
-<p>20.3 CloudCity will take reasonable technical and organizational measures to protect your personal data, but cannot guarantee absolute security of data transmitted over the internet.</p>
-
+  <p>20.1 CloudCity collects, uses, stores, shares, and otherwise processes Personal Data in accordance with the CloudCity Privacy Policy, which is incorporated into these Terms by reference and is made available through the Platform.</p>
+<p>20.2 The Privacy Policy explains the categories of Personal Data collected by CloudCity, the purposes for which such data is processed, the parties with whom such data may be shared, the applicable retention periods, and the rights and choices available to Customers.</p>
+<p>20.3 Where Personal Data is required for the performance of an Order or Service, relevant information may be shared with the applicable Merchant, Rider, Driver, payment service provider, or other service provider only to the extent reasonably necessary to complete the relevant transaction or provide the Service.</p>
+<p>20.4 In the event of any inconsistency between these Terms and the Privacy Policy concerning the processing of Personal Data, the Privacy Policy shall apply to the extent of that inconsistency. These Terms shall continue to govern Orders, payments, refunds, Account use, and other aspects of the Services.</p>
 </section>
 
-<section class="policy-section" id="ch21">
+<section class="policy-section" id="chen21">
   <h3><span class="ch-num">21</span>PROHIBITED ACTIVITIES</h3>
-  
-<p>21.1 You must not use the Platform to:</p>
+  <p>21.1 You must not use the Platform to:</p>
 <ul>
 <li>violate any applicable law or regulation in Myanmar;</li>
 <li>submit false, misleading, or fraudulent information;</li>
@@ -406,124 +413,787 @@ footer a:hover{color:var(--brand)}
 <li>circumvent, disable, or otherwise interfere with any security-related features of the Platform.</li>
 </ul>
 <p>21.2 CloudCity reserves the right to investigate suspected violations and to suspend or terminate any account involved in prohibited activity, without prejudice to any other remedy available to CloudCity under applicable law.</p>
-
 </section>
 
-<section class="policy-section" id="ch22">
+<section class="policy-section" id="chen22">
   <h3><span class="ch-num">22</span>INTELLECTUAL PROPERTY</h3>
-  
-<p>22.1 All content on the Platform, including but not limited to the CloudCity name, logo, trademarks, graphics, text, software, user interface, and design, is the property of CloudCity or its licensors and is protected under applicable intellectual property laws in Myanmar and internationally.</p>
+  <p>22.1 All content on the Platform, including but not limited to the CloudCity name, logo, trademarks, graphics, text, software, user interface, and design, is the property of CloudCity or its licensors and is protected under applicable intellectual property laws in Myanmar and internationally.</p>
 <p>22.2 You are granted a limited, non-exclusive, non-transferable, revocable licence to access and use the Platform for personal, non-commercial purposes in accordance with these Terms. No other rights are granted to you by implication, estoppel, or otherwise.</p>
-<p>22.3 You must not copy, reproduce, modify, distribute, publicly display, reverse-engineer, or create derivative works from any part of the Platform without CloudCity&rsquo;s prior written consent, except to the extent expressly permitted by applicable law.</p>
+<p>22.3 You must not copy, reproduce, modify, distribute, publicly display, reverse-engineer, or create derivative works from any part of the Platform without CloudCity's prior written consent, except to the extent expressly permitted by applicable law.</p>
 <p>22.4 Any feedback, suggestions, or ideas you submit to CloudCity regarding the Platform may be used by CloudCity without restriction or compensation to you.</p>
-
 </section>
 
-<section class="policy-section" id="ch23">
+<section class="policy-section" id="chen23">
   <h3><span class="ch-num">23</span>DISCLAIMER</h3>
-  
-<p>23.1 The Platform is provided on an &quot;as is&quot; and &quot;as available&quot; basis. To the fullest extent permitted by applicable law, CloudCity makes no warranty, express or implied, regarding the availability, accuracy, reliability, timeliness, or fitness for a particular purpose of the Platform or the Services.</p>
-<p>23.2 CloudCity does not guarantee that the Platform will be uninterrupted, error-free, or secure at all times, and is not responsible for delays or failures caused by factors outside its reasonable control, including third-party payment providers, telecommunications networks, device compatibility issues, and Force Majeure events.</p>
-<p>23.3 CloudCity does not warrant or guarantee the quality, safety, legality, or suitability of products or services offered by Merchants, or the conduct, qualifications, or reliability of Riders and Drivers, beyond the reasonable onboarding and monitoring measures described in these Terms.</p>
-<p>23.4 Nothing in this Section shall exclude or limit any warranty or right that cannot lawfully be excluded or limited under the laws of Myanmar.</p>
-
+  <p>23.1 The Platform and Services are provided on an "as available" basis. CloudCity does not warrant that the Platform will be continuously available, uninterrupted, or entirely free from technical errors.</p>
+<p>23.2 Information relating to products, ingredients, prices, availability, preparation, and Merchant operating hours is generally supplied by the relevant Merchant. CloudCity will use reasonable efforts to require Merchants to maintain accurate information but does not independently manufacture or prepare Merchant products.</p>
+<p>23.3 Nothing in these Terms excludes responsibility arising from CloudCity's own acts or omissions, including its payment processing, Order administration, customer support, operation of the Platform, handling of CloudCity Balance, or any other activity under CloudCity's reasonable control.</p>
+<p>23.4 The allocation of responsibility between CloudCity, Merchants, Riders, Drivers, and third-party service providers does not affect any mandatory right or remedy available to a Customer.</p>
+<p>23.5 Where CloudCity becomes aware of a credible safety issue, serious Merchant misconduct, or repeated valid complaints, CloudCity may investigate, restrict the relevant listing or Service, suspend the Merchant or Rider, and take other reasonable corrective action.</p>
 </section>
 
-<section class="policy-section" id="ch24">
+<section class="policy-section" id="chen24">
   <h3><span class="ch-num">24</span>LIMITATION OF LIABILITY</h3>
-  
-<p>24.1 To the fullest extent permitted by applicable law, CloudCity&rsquo;s aggregate liability to a Customer arising out of or in connection with the use of the Platform shall not exceed the total amount paid by the Customer for the Order giving rise to the claim.</p>
-<p>24.2 CloudCity shall not be liable for any indirect, incidental, special, or consequential loss or damage, including loss of profit, loss of data, or loss of opportunity, arising from the use of, or inability to use, the Platform.</p>
-<p>24.3 This limitation does not apply to liability arising from CloudCity&rsquo;s gross negligence, wilful misconduct, or fraud, or to any liability that cannot lawfully be limited or excluded under applicable law.</p>
-
+  <p>24.1 Subject to this Section and to the fullest extent permitted by applicable law, CloudCity shall be responsible only for direct and reasonably foreseeable loss or damage that is proven to have resulted from CloudCity's breach of these Terms, negligence, or wrongful act or omission.</p>
+<p>24.2 CloudCity shall not be liable for indirect, incidental, special, punitive, or consequential loss, including loss of profit, loss of business opportunity, or loss of anticipated savings, unless such loss cannot lawfully be excluded or was directly caused by CloudCity's wilful misconduct or gross negligence.</p>
+<p>24.3 Nothing in these Terms excludes or limits liability for: (a) death or personal injury caused by negligence; (b) fraud, fraudulent misrepresentation, wilful misconduct, or gross negligence; (c) unauthorized, duplicate, or incorrect charges caused by CloudCity; (d) unlawful handling of CloudCity Balance or Customer funds; (e) breach of confidentiality or Personal Data obligations for which liability cannot lawfully be excluded; or (f) any mandatory consumer right, refund, remedy, or compensation that cannot lawfully be excluded or limited.</p>
+<p>24.4 CloudCity shall not be responsible for loss caused solely by inaccurate information supplied by the Customer, a Merchant, or a third-party provider, except to the extent that CloudCity knew or reasonably should have known that the information was materially incorrect and failed to take reasonable action.</p>
 </section>
 
-<section class="policy-section" id="ch25">
+<section class="policy-section" id="chen25">
   <h3><span class="ch-num">25</span>FORCE MAJEURE</h3>
-  
-<p>25.1 CloudCity shall not be liable for any failure or delay in performing its obligations under these Terms where such failure or delay results from circumstances beyond its reasonable control (a &quot;Force Majeure Event&quot;), including but not limited to natural disasters, extreme weather, fire, flood, war, civil unrest, acts of terrorism, government action or restriction, epidemic or pandemic, power or telecommunications failure, internet service disruption, or labour disputes.</p>
+  <p>25.1 CloudCity shall not be liable for any failure or delay in performing its obligations under these Terms where such failure or delay results from circumstances beyond its reasonable control (a "Force Majeure Event"), including but not limited to natural disasters, extreme weather, fire, flood, war, civil unrest, acts of terrorism, government action or restriction, epidemic or pandemic, power or telecommunications failure, internet service disruption, or labour disputes.</p>
 <p>25.2 During a Force Majeure Event, CloudCity may suspend, limit, restrict service areas for, or modify affected Services and will use reasonable efforts to notify Customers of any significant disruption through the Platform or other reasonable means.</p>
-<p>25.3 If a Force Majeure Event prevents the fulfilment of an Order that has already been paid for, the Customer will generally be eligible for a refund to CloudCity Balance in accordance with the Refund Policy, unless the affected Service has already been substantially performed.</p>
-
+<p>25.3 If a Force Majeure Event prevents an Order or Service that has already been paid for from being performed in full, the Customer shall be entitled to a refund for the unperformed portion in accordance with Section 15. Where the Order or Service has been partially or substantially performed before the Force Majeure Event occurred, CloudCity may deduct only the reasonable value of the portion that was actually completed and shall refund the remaining eligible amount.</p>
+<p>25.4 CloudCity shall maintain reasonable records of Orders affected by a Force Majeure Event and will use reasonable efforts to notify affected Customers of service suspension, cancellation, or refund arrangements.</p>
 </section>
 
-<section class="policy-section" id="ch26">
+<section class="policy-section" id="chen26">
   <h3><span class="ch-num">26</span>SUSPENSION OR TERMINATION</h3>
-  
-<p>26.1 CloudCity may suspend or terminate a Customer&rsquo;s account and access to the Platform, with or without prior notice, where the Customer breaches these Terms, engages in fraudulent or abusive conduct, or where required by applicable law.</p>
-<p>26.2 A Customer may close their account at any time by contacting CloudCity Customer Support. Closure of an account does not affect any obligations or liabilities accrued prior to closure.</p>
-<p>26.3 Upon suspension or termination, any unused CloudCity Balance will be treated in accordance with Section 12.5 of these Terms.</p>
-
+  <p>26.1 CloudCity may immediately restrict or suspend an Account, with or without prior notice, where CloudCity reasonably suspects fraud, unauthorized payment activity, account compromise, unlawful conduct, abuse, a serious safety or security risk, repeated false refund claims, or conduct that may cause material harm to a Customer, Merchant, Rider, Driver, CloudCity, or a third party.</p>
+<p>26.2 For a non-serious or remediable breach of these Terms, CloudCity will normally provide the Customer with notice of the breach and a reasonable opportunity to correct it before permanently terminating the Account.</p>
+<p>26.3 Where reasonably practicable, CloudCity will inform the Customer of the general reason for an Account restriction, suspension, or termination, unless providing that information is prohibited, would create a security risk, or would materially prejudice an investigation.</p>
+<p>26.4 A Customer may request an internal review of an Account suspension or termination by contacting CloudCity Customer Support and providing relevant information.</p>
+<p>26.5 A Customer may request Account deletion in accordance with Clauses 3.6 to 3.9. Account deletion, suspension, or termination shall not affect any right, obligation, payment, refund, complaint, dispute, or liability that arose before the effective date of such action.</p>
+<p>26.6 Any unused CloudCity Balance remaining in a suspended, terminated, or deleted Account shall be restricted, reviewed, refunded, restored, or otherwise settled in accordance with Sections 12 and 15. CloudCity shall not permanently forfeit a lawful and undisputed balance solely because an Account has been suspended or terminated.</p>
 </section>
 
-<section class="policy-section" id="ch27">
+<section class="policy-section" id="chen27">
   <h3><span class="ch-num">27</span>AMENDMENTS</h3>
-  
-<p>27.1 CloudCity may update these Terms from time to time to reflect changes in its Services, business operations, payment arrangements, technology, safety standards, or applicable laws and regulations.</p>
-<p>27.2 Updated Terms will become effective when published on the Platform, unless a different effective date is stated.</p>
-<p>27.3 Continued use of the Platform after the effective date of updated Terms constitutes acceptance of those Terms. If you do not agree with the updated Terms, you must stop using the Platform.</p>
-
-<blockquote>These Terms and Conditions may be provided in English, Myanmar, Chinese, or other supported languages. In the event of any inconsistency, conflict, or discrepancy between the English version and any translated version, the English version shall prevail.</blockquote>
-
+  <p>27.1 CloudCity may update these Terms from time to time to reflect changes in its Services, business operations, payment arrangements, technology, safety standards, or applicable laws and regulations.</p>
+<p>27.2 CloudCity will provide reasonable advance notice of any material amendment affecting fees, payment methods, payment or refund arrangements, CloudCity Balance, Customer obligations, Personal Data use, dispute resolution, or Account suspension or termination. Non-material amendments may take effect upon publication on the Platform or on another stated effective date. An amendment may take effect immediately where reasonably necessary for legal, regulatory, security, fraud-prevention, or urgent operational reasons.</p>
+<p>27.3 Amendments will not apply retroactively to the price, payment, refund eligibility, or other material terms of an Order confirmed before the effective date of the amendment, unless required by law or expressly agreed by the Customer. Continued use of the Platform after the effective date of the updated Terms constitutes acceptance of the updated Terms. If the Customer does not agree, the Customer must stop using the Platform and may request Account deletion in accordance with Section 3.</p>
+<p>27.4 CloudCity may retain electronic records demonstrating the Customer's acceptance of these Terms, including the version of the Terms presented, the date and time of acceptance, the relevant Account identifier, and the Customer's affirmative action, such as selecting an acceptance checkbox or submitting an Order after the Terms have been displayed.</p>
+<p>These Terms and Conditions may be provided in English, Myanmar, Chinese, or other supported languages. In the event of any inconsistency, conflict, or discrepancy between the English version and any translated version, the English version shall prevail.</p>
 </section>
 
-<section class="policy-section" id="ch28">
+<section class="policy-section" id="chen28">
   <h3><span class="ch-num">28</span>SEVERABILITY AND WAIVER</h3>
-  
-<p>28.1 If any provision of these Terms is found to be invalid, illegal, or unenforceable under applicable law, the remaining provisions shall continue in full force and effect to the fullest extent permitted by law.</p>
+  <p>28.1 If any provision of these Terms is found to be invalid, illegal, or unenforceable under applicable law, the remaining provisions shall continue in full force and effect to the fullest extent permitted by law.</p>
 <p>28.2 No failure or delay by CloudCity in exercising any right under these Terms shall operate as a waiver of that right, nor shall any single or partial exercise of a right preclude any other or further exercise of that right.</p>
-
 </section>
 
-<section class="policy-section" id="ch29">
+<section class="policy-section" id="chen29">
   <h3><span class="ch-num">29</span>GOVERNING LAW AND DISPUTE RESOLUTION</h3>
-  
-<p>29.1 These Terms shall be governed by, and construed in accordance with, the laws of the Republic of the Union of Myanmar.</p>
+  <p>29.1 These Terms shall be governed by, and construed in accordance with, the laws of the Republic of the Union of Myanmar.</p>
 <p>29.2 Customers should first contact CloudCity Customer Support regarding any complaint or dispute arising from these Terms or the use of the Platform.</p>
 <p>29.3 CloudCity and the Customer shall use reasonable efforts to resolve any dispute amicably through good-faith discussion.</p>
 <p>29.4 Where a dispute cannot be resolved amicably within a reasonable period, it shall be submitted to the competent courts of Myanmar, subject to applicable law.</p>
-
 </section>
 
-<section class="policy-section" id="ch30">
+<section class="policy-section" id="chen30">
   <h3><span class="ch-num">30</span>CONTACT US</h3>
-  
-<p>For questions, Order assistance, cancellations, refunds, complaints, or any other matter relating to these Terms or the Platform, please contact:</p>
-<p><strong>CloudCity Customer Support</strong></p>
-<p><strong>Company:</strong> CLOUDCITY INTERNET SERVICE CO., LTD<br>
-<strong>Website:</strong> www.cloudcitymm.com<br>
-<strong>Address:</strong> 38D Street (Between 56th &amp; 57th Street), Ye Mon Taung Ward, Maha Aung Mye Township, Mandalay, Myanmar<br>
-<strong>Customer Service Phone:</strong> 09 782 099 992<br>
-<strong>Customer Service Email:</strong> yinduasan680@gmail.com</p>
-
+  <p>For questions, Order assistance, cancellations, refunds, complaints, or any other matter relating to these Terms or the Platform, please contact:</p>
+<h4>CloudCity Customer Support</h4>
+<p>Company: CLOUDCITY INTERNET SERVICE CO., LTD
+Website: www.cloudcitymm.com
+Address: 38D Street (Between 56th &amp; 57th Street), Ye Mon Taung Ward, Maha Aung Mye Township, Mandalay, Myanmar
+Customer Service Phone: 09 782 099 992 | Email: yinduasan680@gmail.com</p>
+</section>
+</article>
+  </div>
+</div>
+<div class="lang-version" data-lang-version="zh">
+  <div class="hero-intro-text"><p>本《条款与条件》（以下简称“本条款”）适用于对 CloudCity 平台的访问和使用，包括 CloudCity 网站（www.cloudcitymm.com）、CloudCity 移动应用程序、移动网页／H5 页面，以及 CloudCity 可能不时推出的任何其他渠道、功能或服务（合称“平台”）。</p>
+<p>本平台由 CLOUDCITY INTERNET SERVICE CO., LTD（以下简称“CloudCity”“我们”或“本公司”）拥有并运营。CloudCity 是一家在缅甸提供本地生活服务的公司。</p>
+<p>您（以下简称“用户”或“您”）通过创建账户、浏览平台、提交订单、进行付款或以其他方式使用任何服务，即确认您已阅读、理解并同意受本条款、我们的《隐私政策》《退款政策》，以及平台公布的任何其他指南、政策或通知的约束。</p>
+<p>如您不同意本条款，请勿访问或使用本平台。</p>
+<p>本条款适用于您通过所有渠道对 CloudCity 平台的一般使用。如您通过第三方渠道访问特定服务，例如在合作伙伴应用程序内运行的小程序，则就您对该特定渠道的使用而言，该小程序的条款与条件应与本条款一并适用，并作为本条款的补充。</p></div>
+  <div class="legal-layout">
+    <aside class="toc-sidebar">
+      <div class="toc-title" data-toc-title="zh"></div>
+      <a href="#chzh1" class="toc-link">1. 定义</a><a href="#chzh2" class="toc-link">2. 用户资格</a><a href="#chzh3" class="toc-link">3. 用户账户</a><a href="#chzh4" class="toc-link">4. 平台服务</a><a href="#chzh5" class="toc-link">5. 订单</a><a href="#chzh6" class="toc-link">6. 外卖配送</a><a href="#chzh7" class="toc-link">7. 到店自取</a><a href="#chzh8" class="toc-link">8. 同城帮送服务</a><a href="#chzh9" class="toc-link">9. 同城帮买服务</a><a href="#chzh10" class="toc-link">10. 打车服务</a><a href="#chzh11" class="toc-link">11. 话费充值</a><a href="#chzh12" class="toc-link">12. 云城余额</a><a href="#chzh13" class="toc-link">13. 价格与付款</a><a href="#chzh14" class="toc-link">14. 取消</a><a href="#chzh15" class="toc-link">15. 退款政策</a><a href="#chzh16" class="toc-link">16. 商家责任</a><a href="#chzh17" class="toc-link">17. 用户责任</a><a href="#chzh18" class="toc-link">18. CLOUDCITY 的责任</a><a href="#chzh19" class="toc-link">19. 评分与评论</a><a href="#chzh20" class="toc-link">20. 隐私</a><a href="#chzh21" class="toc-link">21. 禁止行为</a><a href="#chzh22" class="toc-link">22. 知识产权</a><a href="#chzh23" class="toc-link">23. 免责声明</a><a href="#chzh24" class="toc-link">24. 责任限制</a><a href="#chzh25" class="toc-link">25. 不可抗力</a><a href="#chzh26" class="toc-link">26. 暂停或终止</a><a href="#chzh27" class="toc-link">27. 条款修改</a><a href="#chzh28" class="toc-link">28. 可分割性与权利放弃</a><a href="#chzh29" class="toc-link">29. 适用法律与争议解决</a><a href="#chzh30" class="toc-link">30. 联系我们</a>
+    </aside>
+    <article class="policy-article">
+<section class="policy-section" id="chzh1">
+  <h3><span class="ch-num">1</span>定义</h3>
+  <p>1.1 “平台”</p>
+<p>指 CloudCity 网站、移动应用程序、移动网页（H5）页面，以及 CloudCity 通过其提供服务的任何其他数字渠道。</p>
+<p>1.2 “客户”或“用户”</p>
+<p>指注册、访问或使用平台的任何个人，包括浏览平台、提交订单或进行付款的个人。</p>
+<p>1.3 “商家”</p>
+<p>指通过平台向用户提供商品或服务的餐厅、商店、服务提供者或其他经营主体。</p>
+<p>1.4 “骑手”或“司机”</p>
+<p>指通过 CloudCity 平台承接外卖配送、同城帮送、同城帮买或打车服务的独立服务提供者。</p>
+<p>1.5 “订单”</p>
+<p>指用户通过平台提交的购买商品或获得服务的任何请求。</p>
+<p>1.6 “服务”</p>
+<p>指外卖配送、到店自取、同城帮送、同城帮买、打车服务、话费充值，以及平台不时提供的任何其他服务。</p>
+<p>1.7 “CloudCity Balance（云城余额）”</p>
+<p>指保存在用户 CloudCity 账户内、仅可用于符合条件的 CloudCity 服务的封闭式平台余额。云城余额可通过 CloudCity 支持的付款方式充值，包括 KBZPay、银行转账、现金或其他获准方式，也可通过退款、促销或调整入账。云城余额不计利息，不得在用户之间转让，且不得兑换或提取为现金，但 CloudCity 明确允许或适用法律另有要求的除外。</p>
+<p>1.8 “订单金额”</p>
+<p>指订单内商品或服务的价格总额；除非另有说明，该金额不包括配送费、服务费及适用税费。</p>
+<p>1.9 “工作日”</p>
+<p>指缅甸境内除星期六、星期日及公共假日以外的日期。</p>
+<p>1.10 “第三方渠道”</p>
+<p>指由 CloudCity 合作伙伴运营的任何应用程序、小程序或平台，用户可通过该等渠道使用部分 CloudCity 服务，并须同时遵守该合作伙伴适用的条款。</p>
 </section>
 
-  </article>
-</div>
+<section class="policy-section" id="chzh2">
+  <h3><span class="ch-num">2</span>用户资格</h3>
+  <p>2.1 只有年满十八（18）周岁的个人方可独立注册账户。未满十八（18）周岁的人士只能通过其父母或法定监护人的账户，并在该账户持有人的直接监督下使用服务。账户持有人应对由此产生的全部订单、付款、服务使用行为及合同义务承担责任。</p>
+<p>2.2 账户持有人注册账户，即声明并保证其依照缅甸法律具备订立具有约束力合同的法律行为能力，并保证向 CloudCity 提供的全部信息真实、准确、完整且为最新信息。</p>
+<p>2.3 如不符合资格要求或提供虚假信息，CloudCity 有权拒绝注册、暂停或终止相关账户。</p>
+</section>
 
+<section class="policy-section" id="chzh3">
+  <h3><span class="ch-num">3</span>用户账户</h3>
+  <p>3.1 为使用部分服务，您可能需要提供姓名、电话号码及配送地址等信息，注册 CloudCity 账户。</p>
+<p>3.2 您有责任对账户凭证予以保密，并对您账户项下发生的所有活动负责。如发现账户被未经授权使用，您必须立即通知 CloudCity。</p>
+<p>3.3 您同意始终确保账户信息准确、完整并及时更新。</p>
+<p>3.4 对于长期未使用、涉及欺诈或以违反本条款方式使用的账户，CloudCity 可予以暂停或关闭。</p>
+<p>3.5 除非 CloudCity 另行允许，您仅可持有一个有效账户。</p>
+<h4>账户注销</h4>
+<p>3.6 您可随时在 App 内依次选择“设置 → 账户 → 注销账户”，或联系 CloudCity 客户服务申请注销账户。</p>
+<p>3.7 CloudCity 收到有效的账户注销申请后，将在合理期限内删除用户的个人数据或对其进行匿名化处理。但是，为履行税务、会计、法律、监管、审计、反欺诈或争议解决义务而必须保留的订单记录、交易记录及其他信息，将按照适用法律要求的期限，或在履行相关义务所合理必要的期限内予以保存。</p>
+<p>3.8 账户注销为最终操作，且不可撤销。注销时账户内任何未使用的云城余额，将依照本条款第12.5条处理。建议用户在提交账户注销申请前，先使用或以其他适当方式处理剩余的云城余额。</p>
+<p>3.9 账户注销后，CloudCity 可继续保留和使用已无法识别您身份的匿名化数据或汇总数据，用于数据分析、服务改进及相关统计活动。</p>
+</section>
+
+<section class="policy-section" id="chzh4">
+  <h3><span class="ch-num">4</span>平台服务</h3>
+  <p>4.1 CloudCity 提供在线平台，用户可通过该平台使用以下服务：</p>
+<ul>
+<li>外卖配送；</li>
+<li>到店自取；</li>
+<li>同城帮送；</li>
+<li>同城帮买；</li>
+<li>打车服务；</li>
+<li>话费充值；</li>
+<li>云城余额；以及</li>
+<li>CloudCity 可能不时推出的其他服务。</li>
+</ul>
+<p>4.2 外卖配送是 CloudCity 的主要业务。其他服务用于补充平台作为缅甸本地生活服务提供者的功能。</p>
+<p>4.3 CloudCity 作为中介平台，连接用户与独立商家及骑手。CloudCity 不自行制作、生产或销售商家提供的商品，也不自行拥有或运营用于提供打车服务的车辆。</p>
+<p>4.4 服务可用性可能因所在地点、支持的服务区域、商家营业时间、商品库存、骑手或司机可用情况、天气与道路状况、通信条件及其他运营情况而有所不同。</p>
+<p>4.5 如因运营、安全、法律、技术或商业原因而有合理必要，CloudCity 可在提前通知或不提前通知的情况下新增、修改、限制、暂停或停止任何服务。任何此类变更均不影响 CloudCity 对变更前已经确认的订单所承担的义务，包括适用的付款、退款及云城余额结算义务。</p>
+</section>
+
+<section class="policy-section" id="chzh5">
+  <h3><span class="ch-num">5</span>订单</h3>
+  <p>5.1 用户通过选择相关商品或服务、审阅并确认订单详情、选择可用的付款方式，并通过平台提交订单，即完成下单。</p>
+<p>5.2 订单在相关商家、骑手或司机（视情况而定）接受前，不视为已经确认。CloudCity 仅可基于合理且可明确识别的理由拒绝或取消订单，包括商品信息不准确、商品无法供应、涉嫌欺诈、安全风险、付款失败，或存在导致订单无法被合理履行的情形。如预付订单并非因用户过错而被拒绝或取消，用户有权依照第15条获得退款。</p>
+<p>5.3 在提交付款前，您有责任核对订单详情，包括商品、数量、配送地址及特别说明。</p>
+<p>5.4 CloudCity 可针对特定服务或商家设置最低订单金额。低于适用最低金额的订单可能不被接受，或可能需要支付额外的小额订单费。</p>
+</section>
+
+<section class="policy-section" id="chzh6">
+  <h3><span class="ch-num">6</span>外卖配送</h3>
+  <p>6.1 外卖配送允许用户向参与平台的商家订购食品或其他商品，并由骑手配送至指定地址。</p>
+<p>6.2 平台显示的预计送达时间仅为估算时间，可能因商家备餐时间、骑手可用情况、天气、交通或其他超出 CloudCity 控制范围的因素而发生变化。</p>
+<p>6.3 用户必须提供准确的配送地址，并在合理范围内保持可联系及可收货状态。如无法联系用户，或用户未在配送地点接收订单，可能产生额外费用或导致订单取消。</p>
+<p>6.4 商品图片、描述及价格由商家提供。CloudCity 会鼓励商家保持相关信息准确，但不保证所有商品信息均不存在错误。</p>
+</section>
+
+<section class="policy-section" id="chzh7">
+  <h3><span class="ch-num">7</span>到店自取</h3>
+  <p>7.1 到店自取允许用户通过平台提交订单，并直接前往商家地点领取订单。</p>
+<p>7.2 用户有责任在商家指定的期限内领取订单；如商家未指定期限，用户应在收到订单已备妥通知后的合理时间内领取。未在合理时间内领取的订单可能被取消，退款资格将依照退款政策进行评估。</p>
+<p>7.3 用户领取订单时，应准备向商家出示订单确认信息、取货码或其他合理的购买凭证。</p>
+<p>7.4 用户领取订单后，CloudCity 不对订单后续状况负责；但如订单在领取时已因商家过错存在瑕疵、不完整或错误，则不在此限。</p>
+</section>
+
+<section class="policy-section" id="chzh8">
+  <h3><span class="ch-num">8</span>同城帮送服务</h3>
+  <p>8.1 同城帮送是指骑手在用户指定的地点之间取送获准运输物品的服务，但不包括用户通过平台向商家购买的食品。</p>
+<p>8.2 用户必须准确说明需要取送的物品，包括大致尺寸、重量及任何搬运或处理要求。</p>
+<p>8.3 对于违法、危险、适用法律禁止运输或其他不适合运输的物品，CloudCity 及其骑手有权拒绝取件或配送。</p>
+<p>8.4 用户有责任确保相关物品为其合法所有或合法占有，且依法可以运输。</p>
+</section>
+
+<section class="policy-section" id="chzh9">
+  <h3><span class="ch-num">9</span>同城帮买服务</h3>
+  <p>9.1 同城帮买是指骑手根据用户指示代为购买获准商品，并将商品配送给用户的服务。</p>
+<p>9.2 由于所需商品的实际库存和价格不一定能提前确认，最终应付金额可能与下单时显示的估算金额不同。任何差额均按照所使用的付款方式进行结算。</p>
+<p>9.3 如商品是根据用户清楚且准确的指示购买，相关销售者仍应对商品本身的质量、安全性、合法性、适用性及状况负责。但是，本条不排除因购买错误商品、未遵循用户已确认的指示、物品遗失或处理不当，或物品在 CloudCity 或骑手占有或控制期间受到污染、变质或损坏而产生的责任。</p>
+<p>9.4 用户应在收货时检查商品，并在适用的投诉期限内，将任何缺失、错误、损坏或与约定存在重大不符的商品连同合理的证明资料报告给 CloudCity 客户服务。</p>
+</section>
+
+<section class="policy-section" id="chzh10">
+  <h3><span class="ch-num">10</span>打车服务</h3>
+  <p>10.1 打车服务是一项叫车服务，用于连接用户与可接单的司机，以提供点到点运输。</p>
+<p>10.2 车费根据距离、时间、需求及其他相关因素计算；在合理可行的情况下，车费将在用户确认叫车请求前向用户显示。</p>
+<p>10.3 通过平台提供打车服务的司机是独立服务提供者，并非 CloudCity 的员工或代理人。CloudCity 不拥有或运营用于提供打车服务的车辆。</p>
+<p>10.4 用户必须遵守合理的安全指示，并尊重司机。对于在乘车过程中从事不安全、辱骂、滥用或违法行为的账户，CloudCity 有权予以暂停。</p>
+</section>
+
+<section class="policy-section" id="chzh11">
+  <h3><span class="ch-num">11</span>话费充值</h3>
+  <p>11.1 话费充值允许用户通过平台，使用云城余额或其他受支持的付款方式，购买受支持通信运营商的手机话费。</p>
+<p>11.2 用户在确认购买话费充值前，有责任输入正确的手机号码，并选择正确的通信运营商及充值面额。对于因用户输入错误号码而充入该错误号码的话费，CloudCity 不承担责任。</p>
+<p>11.3 话费充值交易通常由系统自动处理，一旦充值成功，不得撤销或退款；但适用法律另有要求，或经核实属于 CloudCity 或其通信合作伙伴的技术错误的除外。</p>
+<p>11.4 如因技术错误导致款项已被扣除但话费充值失败，CloudCity 将调查相关情况，并在适当情况下将受影响金额退回用户的云城余额。</p>
+<p>11.5 CloudCity 不对通过话费充值购买其话费的通信运营商内部政策、话费有效期或服务质量承担责任。</p>
+</section>
+
+<section class="policy-section" id="chzh12">
+  <h3><span class="ch-num">12</span>云城余额</h3>
+  <p>12.1 云城余额是保存在用户 CloudCity 账户内、仅可用于支付符合条件的 CloudCity 服务的封闭式平台余额。云城余额不是银行账户，且不计利息。</p>
+<p>12.2 云城余额可通过 CloudCity 支持的付款方式充值，包括 KBZPay、银行转账、现金或其他获准方式，并可保存在账户内供日后使用。云城余额也可根据本条款通过已批准的退款、促销或调整入账。</p>
+<p>12.3 云城余额不计利息，且仅可用于支付平台上的服务。除非 CloudCity 另行允许或适用法律另有要求，云城余额不得转入其他账户，不得兑换为现金，也不得提取至银行账户或其他外部付款方式。</p>
+<p>12.4 CloudCity 可对用户在特定期间内可持有或使用的云城余额金额设置合理限制。</p>
+<p>12.5 如账户长期不活跃、涉嫌欺诈、存在未经授权的活动或付款争议，或账户被暂停或关闭，CloudCity 可在进行合理调查期间，暂时限制或冻结受影响的云城余额。任何合法且不存在争议的剩余余额，应按照适用的退款或余额结算流程处理。CloudCity 不得仅因账户不活跃、被暂停或被关闭而没收或永久保留用户合法且不存在争议的余额。</p>
+<p>12.6 CloudCity 将保存显示用户云城余额充值、扣除、退款入账及调整情况的交易记录。</p>
+<p>12.7 用户应及时通知 CloudCity 任何未经授权或不正确的云城余额交易。CloudCity 可在进行合理调查期间暂时限制受影响的金额。</p>
+<p>12.8 任何人工现金充值或银行转账充值，只有在 CloudCity 核实收到相关款项后方可使用。必要时，CloudCity 可要求用户提供合理的付款证明。</p>
+<p>12.9 CloudCity 可纠正影响云城余额的明显会计错误、系统错误、重复入账错误或技术错误，但 CloudCity 应保存纠正记录，并向受影响的用户作出合理说明。</p>
+</section>
+
+<section class="policy-section" id="chzh13">
+  <h3><span class="ch-num">13</span>价格与付款</h3>
+  <p>13.1 除非另有说明，平台显示的所有价格均由商家（商品价格）或 CloudCity（配送费、服务费及平台费用）设定，并以缅甸元（MMK）显示。</p>
+<p>13.2 价格可能包括配送费、服务费、小额订单费及适用税费，该等费用将在订单确认前向用户显示。</p>
+<p>13.3 用户可通过云城余额、受支持的第三方付款方式（包括移动支付应用程序），或在可用时通过货到付款方式付款。CloudCity 有权随时新增、删除或限制可用的付款方式。</p>
+<p>13.4 用户授权 CloudCity 及其支付合作伙伴，通过用户选择的付款方式处理已确认订单的付款。</p>
+<p>13.5 如延迟或失败完全由第三方支付服务提供商、银行或通信网络造成，且原因超出 CloudCity 的合理控制范围，CloudCity 不承担责任。但是，如款项已被扣除，而相关订单或服务未能成功完成，CloudCity 将提供合理协助以核实交易，并处理或协助完成适当的退款、撤销交易或余额调整。</p>
+</section>
+
+<section class="policy-section" id="chzh14">
+  <h3><span class="ch-num">14</span>取消</h3>
+  <p>14.1 在商家接受或开始准备订单之前，或在骑手或司机被派出之前，用户可根据相关服务的具体条件取消订单。</p>
+<p>14.2 如商家已开始准备订单，或骑手或司机已被派出或已开始提供相关服务，平台可拒绝取消，或收取合理的取消费。任何适用的取消条件、费用金额或计算方式，均应在订单确认前向用户披露。取消费仅限于与被取消订单相关、已经实际且合理发生的成本。如取消是由于平台技术错误、订单重复创建、商家无法履约、商家或骑手／司机发生重大延误或未履约，或其他不可归责于用户的情形所致，则不得收取取消费。</p>
+<p>14.3 经用户要求，CloudCity 将就收取任何取消费的依据向用户作出合理说明。</p>
+<p>14.4 CloudCity、商家或骑手／司机可基于合理理由取消订单，包括商品无法供应、无法联系用户、存在不安全情况、付款失败或涉嫌欺诈活动。如订单并非因用户过错而被取消，任何预付款项均应依照第15条予以退还。</p>
+</section>
+
+<section class="policy-section" id="chzh15">
+  <h3><span class="ch-num">15</span>退款政策</h3>
+  <p>15.1 如订单并非因用户过错而被取消、无法供应、出现错误、损坏、不完整或存在其他不令人满意的情况，CloudCity 根据本条审核后，用户可能有资格获得全额或部分退款。</p>
+<p>15.2 预付订单的退款将根据原付款方式处理：（a）使用云城余额支付的款项，将退回用户的云城余额；（b）通过 KBZPay 或其他受支持的第三方预付付款方式支付的款项，在技术上可行时，将退回原付款方式；（c）如技术上无法退回原付款方式，只有在取得用户同意后，退款金额方可退入云城余额，或通过双方同意的其他方式结算。</p>
+<p>15.3 货到付款（“COD”）订单未提前付款，因此不适用余额退款流程。如 COD 订单在配送前被取消，用户无需支付任何款项。如订单中存在无法供应、缺失、错误或其他受影响的商品，用户在收货时仅需按照实际送达并接受的商品支付相应金额。</p>
+<p>15.4 根据本退款政策退入云城余额的任何款项，仅可用于平台提供的符合条件的服务，并继续受第12条约束。</p>
+<p>15.5 CloudCity 将根据合理且客观的标准审核每项退款申请，包括订单状态、付款记录、照片或文件证据、各方之间的沟通记录、商家记录，以及骑手或司机记录（视情况而定）。</p>
+<p>15.6 与食品订单缺失、错误、损坏、变质或不完整有关的退款或补救申请，通常应在配送或取货后二十四（24）小时内提交。与重复扣款、付款错误、话费充值失败或其他付款事项有关的申请，通常应在相关交易发生后七（7）个自然日内提交。上述期限不妨碍用户就食品安全问题、隐藏瑕疵、未经授权的交易、欺诈，或在一般投诉期限内无法被合理发现的其他事项提交投诉。</p>
+<p>15.7 退款或补救申请应通过平台、App 内客服或 CloudCity 客户服务提交，并应包含订单编号、问题说明及用户可合理取得的支持证据。为核实申请而有合理必要时，CloudCity 可要求提供补充信息。</p>
+<p>15.8 CloudCity 将确认收到退款申请，并审核用户、商家及骑手或司机（视情况而定）提交的信息。CloudCity 将在合理的处理期限内，将处理结果及作出决定的主要理由告知用户。</p>
+<p>15.9 如退款申请被拒绝，用户可通过提供其他相关信息，或说明原决定应被重新考虑的理由，申请一次进一步的内部复核。</p>
+<p>15.10 CloudCity 将在退款获批准后及时处理，并在合理数量的工作日内完成，但具体到账时间受相关银行、支付服务提供商或通信网络的处理时间影响。如退款退入云城余额，CloudCity 将在批准后及时完成入账。</p>
+</section>
+
+<section class="policy-section" id="chzh16">
+  <h3><span class="ch-num">16</span>商家责任</h3>
+  <p>16.1 商家为独立经营主体，应对其通过平台提供的商品和服务负责，包括但不限于：</p>
+<ul>
+<li>食品质量与卫生；</li>
+<li>配料及过敏原信息的准确性；</li>
+<li>食品安全及遵守适用的卫生规定；</li>
+<li>商品描述、价格及库存信息的准确性；以及</li>
+<li>适合配送或自取的妥善包装。</li>
+</ul>
+<p>16.2 商家有责任持续持有适用法律要求的、用于经营其业务及销售商品或服务的任何许可证、许可或登记。</p>
+<p>16.3 如商家未达到合理的质量、安全或行为标准，或多次收到用户提出的有效投诉，CloudCity 可将该商家移除、暂停或限制其使用平台。</p>
+</section>
+
+<section class="policy-section" id="chzh17">
+  <h3><span class="ch-num">17</span>用户责任</h3>
+  <p>17.1 用户有责任提供准确的订单、配送及付款信息。</p>
+<p>17.2 用户必须尊重商家、骑手、司机及 CloudCity 工作人员，不得从事辱骂、威胁、歧视或违法行为。</p>
+<p>17.3 用户有责任在收货时核对订单内容，并通过平台或客户服务及时报告任何问题。</p>
+<p>17.4 用户不得滥用平台，包括提交虚假申请、滥用退款政策或从事欺诈性付款活动。</p>
+</section>
+
+<section class="policy-section" id="chzh18">
+  <h3><span class="ch-num">18</span>CLOUDCITY 的责任</h3>
+  <p>18.1 CloudCity 作为中介运营平台，连接用户与商家及骑手／司机。CloudCity 不生产、制作或直接控制商家销售的商品。</p>
+<p>18.2 如上文第16条所述，食品质量、配料、食品安全、商品准确性及包装责任由相关商家承担。</p>
+<p>18.3 CloudCity 将作出合理努力，以促进平台各项服务顺畅进行，包括合理筛选和监督商家及骑手／司机、提供客户支持，并及时处理正当投诉。</p>
+<p>18.4 CloudCity 将依照其《隐私政策》及适用法律处理用户数据。</p>
+</section>
+
+<section class="policy-section" id="chzh19">
+  <h3><span class="ch-num">19</span>评分与评论</h3>
+  <p>19.1 订单完成后，CloudCity 可允许用户对商家、骑手及司机进行评分和评论。</p>
+<p>19.2 评论必须真实且与相关服务有关，不得包含虚假、诽谤、辱骂、歧视或违法内容，也不得在未经第三方同意的情况下披露其个人数据。</p>
+<p>19.3 用户提交评论，即授予 CloudCity 一项非独占、免版税、全球范围的许可，允许 CloudCity 以符合《隐私政策》的方式，在平台及相关营销材料中展示、复制和使用评论内容。</p>
+<p>19.4 CloudCity 可审核、限制或删除任何违反本条款或适用法律的评论，包括含有虚假、诽谤、辱骂、威胁、歧视、违法、无关、推广或侵犯隐私内容的评论。CloudCity 可为格式、拼写、篇幅或清晰度进行非实质性编辑，但该等编辑不得实质改变用户表达的含义、语境或观点。</p>
+<p>19.5 用户可联系 CloudCity 客户服务，申请对其所提交内容被删除或限制的决定进行内部复核。</p>
+<p>19.6 CloudCity 可使用评分和评论监督并改进平台上商家及骑手／司机的服务质量，包括通过内部绩效评分决定商家或骑手／司机能否继续参与平台。</p>
+</section>
+
+<section class="policy-section" id="chzh20">
+  <h3><span class="ch-num">20</span>隐私</h3>
+  <p>20.1 CloudCity 根据《CloudCity 隐私政策》收集、使用、存储、共享及以其他方式处理个人数据。该隐私政策通过引用纳入本条款，并可通过平台查阅。</p>
+<p>20.2 《隐私政策》说明 CloudCity 收集的个人数据类别、处理该等数据的目的、可能与其共享数据的主体、适用的保存期限，以及用户享有的权利和可作出的选择。</p>
+<p>20.3 如履行订单或提供服务需要使用个人数据，相关信息仅可在完成有关交易或提供服务所合理必要的范围内，与适用的商家、骑手、司机、支付服务提供商或其他服务提供商共享。</p>
+<p>20.4 如本条款与《隐私政策》在个人数据处理方面存在任何不一致，应在不一致的范围内以《隐私政策》为准。本条款继续适用于订单、付款、退款、账户使用及服务的其他方面。</p>
+</section>
+
+<section class="policy-section" id="chzh21">
+  <h3><span class="ch-num">21</span>禁止行为</h3>
+  <p>21.1 您不得利用平台从事以下行为：</p>
+<ul>
+<li>违反缅甸任何适用法律或法规；</li>
+<li>提交虚假、误导性或欺诈性信息；</li>
+<li>干扰或破坏平台的运营、安全性或完整性；</li>
+<li>未经授权，使用自动化方式（包括机器人程序、数据抓取工具或类似工具）访问平台或提取平台数据；</li>
+<li>冒充任何个人或实体，或虚假陈述您与任何个人或实体的关系；</li>
+<li>骚扰、威胁或辱骂商家、骑手、司机或 CloudCity 工作人员；</li>
+<li>订购、要求运输或试图运输任何违法、危险或禁止的物品；或</li>
+<li>规避、禁用或以其他方式干扰平台的任何安全相关功能。</li>
+</ul>
+<p>21.2 CloudCity 有权调查涉嫌违规行为，并暂停或终止涉及禁止行为的任何账户，且不影响 CloudCity 根据适用法律享有的任何其他救济。</p>
+</section>
+
+<section class="policy-section" id="chzh22">
+  <h3><span class="ch-num">22</span>知识产权</h3>
+  <p>22.1 平台上的全部内容，包括但不限于 CloudCity 名称、标识、商标、图形、文字、软件、用户界面及设计，均为 CloudCity 或其许可方的财产，并受缅甸及国际适用知识产权法律保护。</p>
+<p>22.2 CloudCity 授予您一项有限的、非独占的、不可转让且可撤销的许可，允许您依照本条款出于个人、非商业目的访问和使用平台。除上述许可外，不因默示、禁止反言或其他方式向您授予任何其他权利。</p>
+<p>22.3 未经 CloudCity 事先书面同意，您不得复制、再制作、修改、分发、公开展示、反向工程平台的任何部分，或据此创作衍生作品；适用法律明确允许的范围除外。</p>
+<p>22.4 您向 CloudCity 提交的关于平台的任何反馈、建议或想法，CloudCity 均可不受限制地使用，且无需向您支付任何补偿。</p>
+</section>
+
+<section class="policy-section" id="chzh23">
+  <h3><span class="ch-num">23</span>免责声明</h3>
+  <p>23.1 平台及服务按“现有可用”基础提供。CloudCity 不保证平台将持续可用、不中断或完全不存在技术错误。</p>
+<p>23.2 与商品、配料、价格、库存、制作及商家营业时间有关的信息，通常由相关商家提供。CloudCity 将作出合理努力，要求商家保持信息准确，但 CloudCity 不自行生产或制作商家商品。</p>
+<p>23.3 本条款的任何内容均不排除因 CloudCity 自身作为或不作为而产生的责任，包括付款处理、订单管理、客户支持、平台运营、云城余额处理，或 CloudCity 合理控制范围内的任何其他活动。</p>
+<p>23.4 CloudCity、商家、骑手、司机及第三方服务提供商之间的责任分配，不影响用户享有的任何强制性权利或救济。</p>
+<p>23.5 如 CloudCity 获悉可信的安全问题、商家严重不当行为或多次有效投诉，CloudCity 可进行调查、限制相关商品信息或服务、暂停商家或骑手，并采取其他合理的纠正措施。</p>
+</section>
+
+<section class="policy-section" id="chzh24">
+  <h3><span class="ch-num">24</span>责任限制</h3>
+  <p>24.1 在遵守本条并在适用法律允许的最大范围内，CloudCity 仅对经证明因 CloudCity 违反本条款、存在过失或实施不当作为或不作为而造成的直接且可合理预见的损失或损害承担责任。</p>
+<p>24.2 CloudCity 不对间接、附带、特殊、惩罚性或后果性损失承担责任，包括利润损失、商业机会损失或预期节省损失；但法律不允许排除该等损失，或该等损失由 CloudCity 的故意不当行为或重大过失直接造成的除外。</p>
+<p>24.3 本条款的任何内容均不排除或限制以下责任：（a）因过失造成的死亡或人身伤害；（b）欺诈、欺诈性虚假陈述、故意不当行为或重大过失；（c）由 CloudCity 造成的未经授权、重复或错误扣款；（d）违法处理云城余额或用户资金；（e）违反依法不得排除责任的保密义务或个人数据义务；或（f）依法不得排除或限制的任何强制性消费者权利、退款、救济或赔偿。</p>
+<p>24.4 对于完全因用户、商家或第三方服务提供商提供的不准确信息而造成的损失，CloudCity 不承担责任；但 CloudCity 已知或按合理标准应当知道该信息存在重大错误，且未采取合理措施的范围除外。</p>
+</section>
+
+<section class="policy-section" id="chzh25">
+  <h3><span class="ch-num">25</span>不可抗力</h3>
+  <p>25.1 如 CloudCity 因超出其合理控制范围的情形（以下简称“不可抗力事件”）而未能履行或延迟履行本条款项下义务，CloudCity 不承担责任。不可抗力事件包括但不限于自然灾害、极端天气、火灾、洪水、战争、社会动乱、恐怖主义行为、政府行为或限制、传染病或大流行病、电力或通信故障、互联网服务中断或劳资纠纷。</p>
+<p>25.2 不可抗力事件发生期间，CloudCity 可暂停、限制受影响的服务、限制服务区域或修改相关服务，并将通过平台或其他合理方式，尽合理努力通知用户任何重大中断。</p>
+<p>25.3 如不可抗力事件导致已经付款的订单或服务无法全部履行，用户有权依照第15条就未履行部分获得退款。如在不可抗力事件发生前，订单或服务已部分履行或实质履行，CloudCity 仅可扣除实际完成部分的合理价值，并应退还其余符合退款条件的金额。</p>
+<p>25.4 CloudCity 将对受不可抗力事件影响的订单保存合理记录，并尽合理努力将服务暂停、取消或退款安排通知受影响用户。</p>
+</section>
+
+<section class="policy-section" id="chzh26">
+  <h3><span class="ch-num">26</span>暂停或终止</h3>
+  <p>26.1 如 CloudCity 有合理理由怀疑存在欺诈、未经授权的付款活动、账户被盗用、违法行为、滥用行为、严重安全或安保风险、反复提出虚假退款申请，或可能对用户、商家、骑手、司机、CloudCity 或第三方造成重大损害的行为，CloudCity 可在提前通知或不提前通知的情况下，立即限制或暂停相关账户。</p>
+<p>26.2 对于不严重或可以补救的违反本条款行为，CloudCity 通常会在永久终止账户前通知用户有关违规行为，并给予合理的改正机会。</p>
+<p>26.3 在合理可行的情况下，CloudCity 将向用户说明限制、暂停或终止账户的一般理由；但如提供该信息被禁止、会造成安全风险或会对调查造成重大不利影响，则不在此限。</p>
+<p>26.4 用户可联系 CloudCity 客户服务并提供相关信息，申请对账户暂停或终止决定进行内部复核。</p>
+<p>26.5 用户可依照第3.6条至第3.9条申请注销账户。账户注销、暂停或终止，不影响在该等措施生效前已经产生的任何权利、义务、付款、退款、投诉、争议或责任。</p>
+<p>26.6 被暂停、终止或注销的账户内剩余的任何未使用云城余额，应依照第12条及第15条予以限制、审核、退款、恢复或以其他方式结算。CloudCity 不得仅因账户被暂停或终止，而永久没收合法且不存在争议的余额。</p>
+</section>
+
+<section class="policy-section" id="chzh27">
+  <h3><span class="ch-num">27</span>条款修改</h3>
+  <p>27.1 CloudCity 可不时更新本条款，以反映服务、业务运营、付款安排、技术、安全标准或适用法律法规的变化。</p>
+<p>27.2 如重大修改会影响费用、付款方式、付款或退款安排、云城余额、用户义务、个人数据使用、争议解决或账户暂停或终止，CloudCity 将提前给予合理通知。非重大修改可自平台公布之日或另行说明的生效日期起生效。如因法律、监管、安全、反欺诈或紧急运营原因而有合理必要，修改可立即生效。</p>
+<p>27.3 除非法律要求或用户明确同意，修改不追溯适用于修改生效日前已经确认订单的价格、付款、退款资格或其他重要条款。用户在更新后的条款生效后继续使用平台，即视为接受更新后的条款。如用户不同意，应停止使用平台，并可依照第3条申请注销账户。</p>
+<p>27.4 CloudCity 可保存证明用户接受本条款的电子记录，包括向用户展示的条款版本、接受日期和时间、相关账户识别信息，以及用户作出的确认行为，例如勾选接受框，或在条款已展示后提交订单。</p>
+<p>本《条款与条件》可提供英文、缅文、中文或其他受支持语言版本。如英文版本与任何翻译版本之间存在任何不一致、冲突或差异，应以英文版本为准。</p>
+</section>
+
+<section class="policy-section" id="chzh28">
+  <h3><span class="ch-num">28</span>可分割性与权利放弃</h3>
+  <p>28.1 如本条款任何规定根据适用法律被认定为无效、违法或不可执行，其余规定仍应在法律允许的最大范围内保持完全有效。</p>
+<p>28.2 CloudCity 未行使或延迟行使本条款项下任何权利，不构成对该权利的放弃；对某项权利的一次或部分行使，也不妨碍对该权利或任何其他权利的再次或进一步行使。</p>
+</section>
+
+<section class="policy-section" id="chzh29">
+  <h3><span class="ch-num">29</span>适用法律与争议解决</h3>
+  <p>29.1 本条款受缅甸联邦共和国法律管辖，并依其解释。</p>
+<p>29.2 对于因本条款或使用平台而产生的任何投诉或争议，用户应首先联系 CloudCity 客户服务。</p>
+<p>29.3 CloudCity 与用户应通过诚信协商，尽合理努力友好解决任何争议。</p>
+<p>29.4 如争议在合理期限内无法友好解决，则应在遵守适用法律的前提下，提交缅甸有管辖权的法院处理。</p>
+</section>
+
+<section class="policy-section" id="chzh30">
+  <h3><span class="ch-num">30</span>联系我们</h3>
+  <h4>如对本条款或平台有任何问题，或需要订单协助、取消、退款、投诉或处理其他事项，请通过以下方式联系我们：</h4>
+<h4>CloudCity 客户服务</h4>
+<p>公司：CLOUDCITY INTERNET SERVICE CO., LTD
+网站：www.cloudcitymm.com
+地址：缅甸曼德勒市马哈昂梅镇区 Ye Mon Taung Ward，38D Street（56街与57街之间）
+客户服务电话：09 782 099 992｜电子邮箱：yinduasan680@gmail.com</p>
+</section>
+</article>
+  </div>
+</div>
+<div class="lang-version" data-lang-version="my">
+  <div class="hero-intro-text"><p>ဤစည်းကမ်းချက်များနှင့် သတ်မှတ်ချက်များ (ဤနောက်တွင် “စည်းကမ်းချက်များ” ဟု ရည်ညွှန်းမည်) သည် www.cloudcitymm.com ရှိ CloudCity ဝဘ်ဆိုက်၊ CloudCity မိုဘိုင်းအက်ပ်၊ မိုဘိုင်းဝဘ်/H5 စာမျက်နှာများနှင့် CloudCity က အခါအားလျော်စွာ စတင်ပေးအပ်နိုင်သည့် အခြားချန်နယ်၊ လုပ်ဆောင်ချက် သို့မဟုတ် ဝန်ဆောင်မှုအားလုံး (စုစုပေါင်းအားဖြင့် “ပလက်ဖောင်း”) ကို ဝင်ရောက်အသုံးပြုခြင်းနှင့် အသုံးပြုခြင်းတို့အပေါ် အကျိုးသက်ရောက်သည်။</p>
+<p>ပလက်ဖောင်းကို မြန်မာနိုင်ငံတွင် ဒေသတွင်းလူနေမှုဆိုင်ရာ ဝန်ဆောင်မှုများ ပေးအပ်နေသည့် CLOUDCITY INTERNET SERVICE CO., LTD (“CloudCity”၊ “ကျွန်ုပ်တို့” သို့မဟုတ် “ကုမ္ပဏီ”) က ပိုင်ဆိုင်၍ စီမံလည်ပတ်သည်။</p>
+<p>သင် (“အသုံးပြုသူ” သို့မဟုတ် “သင်”) သည် အကောင့်တစ်ခုဖွင့်ခြင်း၊ ပလက်ဖောင်းကို ကြည့်ရှုခြင်း၊ မှာယူမှုတင်သွင်းခြင်း၊ ငွေပေးချေခြင်း သို့မဟုတ် ဝန်ဆောင်မှုတစ်ရပ်ရပ်ကို အခြားနည်းလမ်းဖြင့် အသုံးပြုခြင်းအားဖြင့် ဤစည်းကမ်းချက်များ၊ ကျွန်ုပ်တို့၏ ကိုယ်ရေးကိုယ်တာမူဝါဒ၊ ငွေပြန်အမ်းခြင်းမူဝါဒနှင့် ပလက်ဖောင်းပေါ်တွင် ထုတ်ပြန်ထားသည့် အခြားလမ်းညွှန်ချက်၊ မူဝါဒ သို့မဟုတ် အသိပေးချက်များကို ဖတ်ရှုနားလည်ပြီး လိုက်နာရန် သဘောတူကြောင်း အတည်ပြုသည်။</p>
+<p>ဤစည်းကမ်းချက်များကို သဘောမတူပါက ပလက်ဖောင်းကို ဝင်ရောက်ခြင်း သို့မဟုတ် အသုံးပြုခြင်း မပြုရပါ။</p>
+<p>ဤစည်းကမ်းချက်များသည် ချန်နယ်အားလုံးမှတစ်ဆင့် CloudCity ပလက်ဖောင်းကို ယေဘုယျအသုံးပြုခြင်းအပေါ် သက်ရောက်သည်။ မိတ်ဖက်အက်ပ်အတွင်း လည်ပတ်သည့် mini-program ကဲ့သို့သော တတိယပုဂ္ဂိုလ်ချန်နယ်မှတစ်ဆင့် သတ်မှတ်ဝန်ဆောင်မှုတစ်ရပ်ကို အသုံးပြုပါက ယင်းချန်နယ်ကို အသုံးပြုမှုနှင့်စပ်လျဉ်း၍ ထို mini-program ၏ စည်းကမ်းချက်များသည် ဤစည်းကမ်းချက်များနှင့်အတူ ထပ်မံ၍ သက်ရောက်မည်။</p></div>
+  <div class="legal-layout">
+    <aside class="toc-sidebar">
+      <div class="toc-title" data-toc-title="my"></div>
+      <a href="#chmy1" class="toc-link">1. အဓိပ္ပာယ်ဖွင့်ဆိုချက်များ</a><a href="#chmy2" class="toc-link">2. အသုံးပြုသူအရည်အချင်း</a><a href="#chmy3" class="toc-link">3. အသုံးပြုသူအကောင့်</a><a href="#chmy4" class="toc-link">4. ပလက်ဖောင်းဝန်ဆောင်မှုများ</a><a href="#chmy5" class="toc-link">5. မှာယူမှုများ</a><a href="#chmy6" class="toc-link">6. အစားအသောက်ပို့ဆောင်ရေး</a><a href="#chmy7" class="toc-link">7. ဆိုင်တွင် ကိုယ်တိုင်လာရောက်ယူခြင်း</a><a href="#chmy8" class="toc-link">8. Deli ပစ္စည်းပို့ဆောင်ရေးဝန်ဆောင်မှု</a><a href="#chmy9" class="toc-link">9. Say Buy ကိုယ်စားဝယ်ယူပေးသည့်ဝန်ဆောင်မှု</a><a href="#chmy10" class="toc-link">10. အငှားယာဉ်ဝန်ဆောင်မှု</a><a href="#chmy11" class="toc-link">11. မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်း</a><a href="#chmy12" class="toc-link">12. CloudCity လက်ကျန်ငွေ</a><a href="#chmy13" class="toc-link">13. ဈေးနှုန်းနှင့် ငွေပေးချေမှု</a><a href="#chmy14" class="toc-link">14. ပယ်ဖျက်ခြင်း</a><a href="#chmy15" class="toc-link">15. ငွေပြန်အမ်းခြင်းမူဝါဒ</a><a href="#chmy16" class="toc-link">16. ကုန်သည်၏ တာဝန်များ</a><a href="#chmy17" class="toc-link">17. အသုံးပြုသူ၏ တာဝန်များ</a><a href="#chmy18" class="toc-link">18. CLOUDCITY ၏ တာဝန်များ</a><a href="#chmy19" class="toc-link">19. အဆင့်သတ်မှတ်ချက်များနှင့် သုံးသပ်ချက်များ</a><a href="#chmy20" class="toc-link">20. ကိုယ်ရေးကိုယ်တာအချက်အလက်</a><a href="#chmy21" class="toc-link">21. တားမြစ်ထားသော လုပ်ရပ်များ</a><a href="#chmy22" class="toc-link">22. ဉာဏပစ္စည်းမူပိုင်ခွင့်</a><a href="#chmy23" class="toc-link">23. အာမခံချက်ကင်းလွတ်ကြောင်း ဖော်ပြချက်</a><a href="#chmy24" class="toc-link">24. တာဝန်ယူမှုကန့်သတ်ချက်</a><a href="#chmy25" class="toc-link">25. မလွန်ဆန်နိုင်သော အခြေအနေ</a><a href="#chmy26" class="toc-link">26. ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်း</a><a href="#chmy27" class="toc-link">27. စည်းကမ်းချက်များ ပြင်ဆင်ခြင်း</a><a href="#chmy28" class="toc-link">28. ပြဋ္ဌာန်းချက်များ၏ သီးခြားအကျိုးသက်ရောက်မှုနှင့် အခွင့်အရေးစွန့်လွှတ်ခြင်း</a><a href="#chmy29" class="toc-link">29. အုပ်ချုပ်သည့်ဥပဒေနှင့် အငြင်းပွားမှုဖြေရှင်းခြင်း</a><a href="#chmy30" class="toc-link">30. ဆက်သွယ်ရန်</a>
+    </aside>
+    <article class="policy-article">
+<section class="policy-section" id="chmy1">
+  <h3><span class="ch-num">1</span>အဓိပ္ပာယ်ဖွင့်ဆိုချက်များ</h3>
+  <p>1.1 “ပလက်ဖောင်း”</p>
+<p>CloudCity ဝန်ဆောင်မှုများကို ရရှိအသုံးပြုနိုင်သည့် CloudCity ဝဘ်ဆိုက်၊ မိုဘိုင်းအက်ပ်၊ မိုဘိုင်းဝဘ် (H5) စာမျက်နှာများနှင့် အခြားဒစ်ဂျစ်တယ်ချန်နယ်တစ်ရပ်ရပ်ကို ဆိုလိုသည်။</p>
+<p>1.2 “ဖောက်သည်” သို့မဟုတ် “အသုံးပြုသူ”</p>
+<p>ပလက်ဖောင်းတွင် မှတ်ပုံတင်ခြင်း၊ ဝင်ရောက်ခြင်း သို့မဟုတ် အသုံးပြုခြင်း ပြုသည့် မည်သည့်ပုဂ္ဂိုလ်ကိုမဆို ဆိုလိုပြီး ပလက်ဖောင်းကို ကြည့်ရှုသူ၊ မှာယူမှုတင်သွင်းသူ သို့မဟုတ် ငွေပေးချေသူတို့ ပါဝင်သည်။</p>
+<p>1.3 “ကုန်သည်”</p>
+<p>ပလက်ဖောင်းမှတစ်ဆင့် အသုံးပြုသူများထံ ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှုများ ပေးအပ်သည့် စားသောက်ဆိုင်၊ ဆိုင်၊ ဝန်ဆောင်မှုပေးသူ သို့မဟုတ် အခြားစီးပွားရေးလုပ်ငန်းတစ်ရပ်ရပ်ကို ဆိုလိုသည်။</p>
+<p>1.4 “ပို့ဆောင်သူ” သို့မဟုတ် “ယာဉ်မောင်း”</p>
+<p>CloudCity ပလက်ဖောင်းမှတစ်ဆင့် အစားအသောက်ပို့ဆောင်ရေး၊ Deli၊ Say Buy သို့မဟုတ် အငှားယာဉ်ဝန်ဆောင်မှုကို ဆောင်ရွက်ပေးရန် ချိတ်ဆက်ထားသည့် လွတ်လပ်သော ဝန်ဆောင်မှုပေးသူကို ဆိုလိုသည်။</p>
+<p>1.5 “မှာယူမှု”</p>
+<p>ကုန်ပစ္စည်းဝယ်ယူရန် သို့မဟုတ် ဝန်ဆောင်မှုရယူရန် အသုံးပြုသူက ပလက်ဖောင်းမှတစ်ဆင့် တင်သွင်းသည့် တောင်းဆိုချက်တစ်ရပ်ရပ်ကို ဆိုလိုသည်။</p>
+<p>1.6 “ဝန်ဆောင်မှုများ”</p>
+<p>အစားအသောက်ပို့ဆောင်ရေး၊ ဆိုင်တွင် ကိုယ်တိုင်လာရောက်ယူခြင်း၊ Deli၊ Say Buy၊ အငှားယာဉ်ဝန်ဆောင်မှု၊ မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်းနှင့် ပလက်ဖောင်းက အခါအားလျော်စွာ ပေးအပ်သည့် အခြားဝန်ဆောင်မှုတစ်ရပ်ရပ်ကို ဆိုလိုသည်။</p>
+<p>1.7 “CloudCity လက်ကျန်ငွေ”</p>
+<p>အသုံးပြုသူ၏ CloudCity အကောင့်အတွင်း ထိန်းသိမ်းထားပြီး အရည်အချင်းပြည့်မီသော CloudCity ဝန်ဆောင်မှုများအတွက်သာ အသုံးပြုနိုင်သည့် ပလက်ဖောင်းအတွင်း ကန့်သတ်အသုံးပြုနိုင်သော လက်ကျန်ငွေ (closed-loop platform balance) ကို ဆိုလိုသည်။ CloudCity လက်ကျန်ငွေကို KBZPay၊ ဘဏ်ငွေလွှဲခြင်း၊ ငွေသား သို့မဟုတ် အခြားခွင့်ပြုထားသောနည်းလမ်းများအပါအဝင် CloudCity က လက်ခံပံ့ပိုးသည့် ငွေပေးချေမှုနည်းလမ်းများဖြင့် ဖြည့်သွင်းနိုင်ပြီး အတည်ပြုထားသော ငွေပြန်အမ်းမှု၊ အရောင်းမြှင့်တင်ရေးအကျိုးခံစားခွင့် သို့မဟုတ် စာရင်းပြင်ဆင်မှုများမှလည်း ထည့်သွင်းနိုင်သည်။ CloudCity လက်ကျန်ငွေအပေါ် အတိုးမရရှိပါ၊ အသုံးပြုသူများအကြား လွှဲပြောင်း၍မရပါ၊ ထို့ပြင် CloudCity က အတိအလင်းခွင့်ပြုထားခြင်း သို့မဟုတ် သက်ဆိုင်ရာဥပဒေအရ လိုအပ်ခြင်းမရှိပါက ငွေသားအဖြစ် ပြန်လည်လဲလှယ်ခြင်း သို့မဟုတ် ထုတ်ယူခြင်း မပြုနိုင်ပါ။</p>
+<p>1.8 “မှာယူမှုတန်ဖိုး”</p>
+<p>အခြားသတ်မှတ်ထားခြင်းမရှိပါက ပို့ဆောင်ခ၊ ဝန်ဆောင်ခနှင့် သက်ဆိုင်ရာအခွန်အခများ မပါဝင်သည့် မှာယူမှုအတွင်းရှိ ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှုများ၏ စုစုပေါင်းဈေးနှုန်းကို ဆိုလိုသည်။</p>
+<p>1.9 “အလုပ်လုပ်ရက်”</p>
+<p>မြန်မာနိုင်ငံတွင် စနေနေ့၊ တနင်္ဂနွေနေ့ သို့မဟုတ် အများပြည်သူရုံးပိတ်ရက် မဟုတ်သော နေ့တစ်နေ့ကို ဆိုလိုသည်။</p>
+<p>1.10 “တတိယပုဂ္ဂိုလ်ချန်နယ်”</p>
+<p>CloudCity ၏ မိတ်ဖက်တစ်ဦးက စီမံလည်ပတ်သည့် အက်ပ်၊ mini-program သို့မဟုတ် ပလက်ဖောင်းတစ်ရပ်ရပ်ကို ဆိုလိုပြီး အသုံးပြုသူများသည် ယင်းချန်နယ်မှတစ်ဆင့် CloudCity ဝန်ဆောင်မှုအချို့ကို အသုံးပြုနိုင်သော်လည်း မိတ်ဖက်၏ သက်ဆိုင်ရာစည်းကမ်းချက်များကိုလည်း လိုက်နာရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy2">
+  <h3><span class="ch-num">2</span>အသုံးပြုသူအရည်အချင်း</h3>
+  <p>2.1 အသက် 18 နှစ်ပြည့်ပြီးသူတစ်ဦးသာ အကောင့်ကို လွတ်လပ်စွာ မှတ်ပုံတင်နိုင်သည်။ အသက် 18 နှစ်မပြည့်သေးသူသည် မိဘ သို့မဟုတ် တရားဝင်အုပ်ထိန်းသူ၏ အကောင့်မှတစ်ဆင့်၊ အကောင့်ပိုင်ရှင်၏ တိုက်ရိုက်ကြီးကြပ်မှုအောက်တွင်သာ ဝန်ဆောင်မှုများကို အသုံးပြုနိုင်သည်။ ယင်းအသုံးပြုမှုမှ ဖြစ်ပေါ်သည့် မှာယူမှုများ၊ ငွေပေးချေမှုများ၊ ဝန်ဆောင်မှုအသုံးပြုမှုနှင့် စာချုပ်ဆိုင်ရာတာဝန်များအားလုံးအတွက် အကောင့်ပိုင်ရှင်က တာဝန်ယူရမည်။</p>
+<p>2.2 အကောင့်ကို မှတ်ပုံတင်ခြင်းအားဖြင့် အကောင့်ပိုင်ရှင်သည် မြန်မာနိုင်ငံ၏ ဥပဒေများအရ ဥပဒေအရ ချုပ်နှောင်အကျိုးသက်ရောက်သော စာချုပ်တစ်ရပ် ချုပ်ဆိုရန် ဥပဒေဆိုင်ရာ အရည်အချင်းရှိကြောင်းနှင့် CloudCity ထံ ပေးအပ်သည့် အချက်အလက်အားလုံးသည် မှန်ကန်၊ တိကျ၊ ပြည့်စုံပြီး နောက်ဆုံးအခြေအနေနှင့်ကိုက်ညီကြောင်း ထုတ်ဖော်အတည်ပြု၍ အာမခံသည်။</p>
+<p>2.3 အရည်အချင်းလိုအပ်ချက်များနှင့် မကိုက်ညီခြင်း သို့မဟုတ် မမှန်ကန်သော အချက်အလက်များ ပေးအပ်ထားခြင်းရှိပါက CloudCity သည် မှတ်ပုံတင်ခြင်းကို ငြင်းပယ်ခြင်း၊ အကောင့်ကို ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်း ပြုနိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy3">
+  <h3><span class="ch-num">3</span>အသုံးပြုသူအကောင့်</h3>
+  <p>3.1 ဝန်ဆောင်မှုအချို့ကို အသုံးပြုရန် သင့်အမည်၊ ဖုန်းနံပါတ်နှင့် ပို့ဆောင်ရမည့်လိပ်စာ စသည့် အချက်အလက်များ ပေးအပ်၍ CloudCity အကောင့်တစ်ခု မှတ်ပုံတင်ရန် လိုအပ်နိုင်သည်။</p>
+<p>3.2 သင့်အကောင့်ဝင်ရောက်အသုံးပြုရန် အထောက်အထားများကို လျှို့ဝှက်ထားရန်နှင့် သင့်အကောင့်အောက်တွင် ဖြစ်ပေါ်သော လုပ်ဆောင်ချက်အားလုံးအတွက် သင်တာဝန်ရှိသည်။ သင့်အကောင့်ကို ခွင့်ပြုချက်မရှိဘဲ အသုံးပြုနေကြောင်း သိရှိပါက CloudCity ကို ချက်ချင်းအကြောင်းကြားရမည်။</p>
+<p>3.3 သင့်အကောင့်အချက်အလက်များကို အမြဲတမ်း မှန်ကန်၊ ပြည့်စုံပြီး နောက်ဆုံးအခြေအနေနှင့်ကိုက်ညီအောင် ထိန်းသိမ်းရန် သင်သဘောတူသည်။</p>
+<p>3.4 အချိန်ကြာမြင့်စွာ အသုံးမပြုသည့်၊ လိမ်လည်မှုနှင့် ဆက်စပ်သည့် သို့မဟုတ် ဤစည်းကမ်းချက်များကို ချိုးဖောက်၍ အသုံးပြုသည့် အကောင့်တစ်ခုကို CloudCity သည် ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် ပိတ်သိမ်းခြင်း ပြုနိုင်သည်။</p>
+<p>3.5 CloudCity က အခြားနည်းဖြင့် ခွင့်ပြုထားခြင်းမရှိပါက သင်သည် အသက်ဝင်နေသော အကောင့်တစ်ခုသာ ထိန်းသိမ်းနိုင်သည်။</p>
+<h4>အကောင့်ဖျက်သိမ်းခြင်း</h4>
+<p>3.6 သင်သည် App အတွင်း Settings -&gt; Account -&gt; Delete Account ကို ရွေးချယ်ခြင်းဖြင့်ဖြစ်စေ၊ CloudCity ဖောက်သည်ဝန်ဆောင်မှုသို့ ဆက်သွယ်ခြင်းဖြင့်ဖြစ်စေ အကောင့်ဖျက်သိမ်းရန် အချိန်မရွေး တောင်းဆိုနိုင်သည်။</p>
+<p>3.7 တရားဝင်သော အကောင့်ဖျက်သိမ်းရေးတောင်းဆိုချက်ကို လက်ခံရရှိပြီးနောက် CloudCity သည် အသုံးပြုသူ၏ ကိုယ်ရေးကိုယ်တာအချက်အလက်များကို ကျိုးကြောင်းဆီလျော်သော အချိန်ကာလအတွင်း ဖျက်ပစ်ခြင်း သို့မဟုတ် အမည်မဖော်နိုင်အောင် ပြုပြင်ခြင်း ပြုမည်။ သို့ရာတွင် အခွန်၊ စာရင်းကိုင်၊ ဥပဒေ၊ စည်းမျဉ်းကြီးကြပ်ရေး၊ စာရင်းစစ်၊ လိမ်လည်မှုကာကွယ်ရေး သို့မဟုတ် အငြင်းပွားမှုဖြေရှင်းရေး ရည်ရွယ်ချက်များအတွက် ထိန်းသိမ်းထားရန် လိုအပ်သည့် မှာယူမှုမှတ်တမ်းများ၊ ငွေလွှဲမှတ်တမ်းများနှင့် အခြားအချက်အလက်များကို သက်ဆိုင်ရာဥပဒေအရ လိုအပ်သည့်ကာလအထိ သို့မဟုတ် သက်ဆိုင်ရာတာဝန်ကို ဖြည့်ဆည်းရန် ကျိုးကြောင်းဆီလျော်စွာ လိုအပ်သည့်ကာလအထိ ထိန်းသိမ်းထားမည်။</p>
+<p>3.8 အကောင့်ဖျက်သိမ်းခြင်းသည် အပြီးသတ်ဖြစ်ပြီး ပြန်လည်ရုပ်သိမ်း၍မရပါ။ ဖျက်သိမ်းသည့်အချိန်တွင် အကောင့်အတွင်း ကျန်ရှိနေသည့် အသုံးမပြုရသေးသော CloudCity လက်ကျန်ငွေကို ဤစည်းကမ်းချက်များ၏ အပိုဒ် 12.5 နှင့်အညီ ဆောင်ရွက်မည်။ အကောင့်ဖျက်သိမ်းရန် တောင်းဆိုချက် မတင်သွင်းမီ ကျန်ရှိသည့် CloudCity လက်ကျန်ငွေကို အသုံးပြုခြင်း သို့မဟုတ် အခြားသင့်လျော်သောနည်းဖြင့် စီမံဆောင်ရွက်ထားရန် အသုံးပြုသူအား အကြံပြုသည်။</p>
+<p>3.9 အကောင့်ဖျက်သိမ်းပြီးနောက် CloudCity သည် သင့်ကို မည်သူမည်ဝါဖြစ်ကြောင်း ခွဲခြားသတ်မှတ်၍ မရတော့သည့် အမည်မဖော်နိုင်အောင် ပြုပြင်ထားသော ဒေတာ သို့မဟုတ် စုစည်းထားသော ဒေတာကို ဒေတာခွဲခြမ်းစိတ်ဖြာခြင်း၊ ဝန်ဆောင်မှုတိုးတက်ကောင်းမွန်စေခြင်းနှင့် ဆက်စပ်စာရင်းအင်းလုပ်ငန်းများအတွက် ဆက်လက်ထိန်းသိမ်း၍ အသုံးပြုနိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy4">
+  <h3><span class="ch-num">4</span>ပလက်ဖောင်းဝန်ဆောင်မှုများ</h3>
+  <p>4.1 CloudCity သည် အသုံးပြုသူများက အောက်ပါဝန်ဆောင်မှုများကို ရယူအသုံးပြုနိုင်သည့် အွန်လိုင်းပလက်ဖောင်းတစ်ခု ပေးအပ်သည် -</p>
+<ul>
+<li>အစားအသောက်ပို့ဆောင်ရေး၊</li>
+<li>ဆိုင်တွင် ကိုယ်တိုင်လာရောက်ယူခြင်း၊</li>
+<li>Deli၊</li>
+<li>Say Buy၊</li>
+<li>အငှားယာဉ်ဝန်ဆောင်မှု၊</li>
+<li>မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်း၊</li>
+<li>CloudCity လက်ကျန်ငွေ၊ နှင့်</li>
+<li>CloudCity က အခါအားလျော်စွာ စတင်ပေးအပ်နိုင်သည့် အခြားဝန်ဆောင်မှုများ။</li>
+</ul>
+<p>4.2 အစားအသောက်ပို့ဆောင်ရေးသည် CloudCity ၏ အဓိကလုပ်ငန်းဖြစ်သည်။ အခြားဝန်ဆောင်မှုများသည် မြန်မာနိုင်ငံရှိ ဒေသတွင်းလူနေမှုဆိုင်ရာ ဝန်ဆောင်မှုပေးသူအဖြစ် ပလက်ဖောင်း၏ အခန်းကဏ္ဍကို ဖြည့်စွက်ရန် ပေးအပ်ခြင်းဖြစ်သည်။</p>
+<p>4.3 CloudCity သည် အသုံးပြုသူများကို လွတ်လပ်သော ကုန်သည်များနှင့် ပို့ဆောင်သူများနှင့် ချိတ်ဆက်ပေးသည့် ကြားခံပလက်ဖောင်းအဖြစ် ဆောင်ရွက်သည်။ CloudCity သည် ကုန်သည်များပေးအပ်သည့် ကုန်ပစ္စည်းများကို ကိုယ်တိုင်ပြင်ဆင်ခြင်း၊ ထုတ်လုပ်ခြင်း သို့မဟုတ် ရောင်းချခြင်း မပြုသကဲ့သို့ အငှားယာဉ်ဝန်ဆောင်မှုအတွက် အသုံးပြုသည့် ယာဉ်များကိုလည်း ကိုယ်တိုင်စီမံမောင်းနှင်ခြင်း မပြုပါ။</p>
+<p>4.4 ဝန်ဆောင်မှုရရှိနိုင်မှုသည် တည်နေရာ၊ ပံ့ပိုးသည့်ဝန်ဆောင်မှုဧရိယာ၊ ကုန်သည်၏ ဖွင့်လှစ်ချိန်၊ ကုန်ပစ္စည်းရရှိနိုင်မှု၊ ပို့ဆောင်သူ သို့မဟုတ် ယာဉ်မောင်းရရှိနိုင်မှု၊ ရာသီဥတုနှင့် လမ်းအခြေအနေ၊ ဆက်သွယ်ရေးအခြေအနေနှင့် အခြားလုပ်ငန်းလည်ပတ်မှုအခြေအနေများအပေါ် မူတည်၍ ကွဲပြားနိုင်သည်။</p>
+<p>4.5 လုပ်ငန်းလည်ပတ်မှု၊ လုံခြုံရေး၊ ဥပဒေ၊ နည်းပညာ သို့မဟုတ် စီးပွားရေးအကြောင်းရင်းများကြောင့် ကျိုးကြောင်းဆီလျော်စွာ လိုအပ်ပါက CloudCity သည် ကြိုတင်အသိပေးခြင်း ရှိစေကာမူ မရှိစေကာမူ ဝန်ဆောင်မှုတစ်ရပ်ရပ်ကို ထည့်သွင်းခြင်း၊ ပြင်ဆင်ခြင်း၊ ကန့်သတ်ခြင်း၊ ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် ရပ်စဲခြင်း ပြုနိုင်သည်။ ယင်းပြောင်းလဲမှုသည် ပြောင်းလဲမှုမတိုင်မီ အတည်ပြုပြီးသော မှာယူမှုများနှင့်စပ်လျဉ်းသည့် CloudCity ၏ ငွေပေးချေမှု၊ ငွေပြန်အမ်းမှုနှင့် CloudCity လက်ကျန်ငွေရှင်းလင်းမှုဆိုင်ရာ တာဝန်များကို မထိခိုက်စေရပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy5">
+  <h3><span class="ch-num">5</span>မှာယူမှုများ</h3>
+  <p>5.1 အသုံးပြုသူသည် သက်ဆိုင်ရာ ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှုကို ရွေးချယ်ခြင်း၊ မှာယူမှုအသေးစိတ်ကို စစ်ဆေးအတည်ပြုခြင်း၊ ရရှိနိုင်သော ငွေပေးချေမှုနည်းလမ်းကို ရွေးချယ်ခြင်းနှင့် ပလက်ဖောင်းမှတစ်ဆင့် မှာယူမှုတင်သွင်းခြင်းဖြင့် မှာယူမှုတစ်ရပ် ပြုလုပ်သည်။</p>
+<p>5.2 သက်ဆိုင်ရာ ကုန်သည်၊ ပို့ဆောင်သူ သို့မဟုတ် ယာဉ်မောင်းက လက်ခံခြင်းမပြုမီ မှာယူမှုကို အတည်ပြုပြီးဟု မယူဆရပါ။ CloudCity သည် ကုန်ပစ္စည်းအချက်အလက်မမှန်ကန်ခြင်း၊ ကုန်ပစ္စည်းမရရှိနိုင်ခြင်း၊ လိမ်လည်မှုသံသယရှိခြင်း၊ လုံခြုံရေးစိုးရိမ်ရခြင်း၊ ငွေပေးချေမှုမအောင်မြင်ခြင်း သို့မဟုတ် မှာယူမှုကို ကျိုးကြောင်းဆီလျော်စွာ ဖြည့်ဆည်းမပေးနိုင်သည့် အခြေအနေများအပါအဝင် ကျိုးကြောင်းဆီလျော်ပြီး ခွဲခြားသတ်မှတ်နိုင်သော အကြောင်းပြချက်များအပေါ်သာ အခြေခံ၍ မှာယူမှုကို ငြင်းပယ်ခြင်း သို့မဟုတ် ပယ်ဖျက်ခြင်း ပြုနိုင်သည်။ အသုံးပြုသူ၏ အပြစ်မရှိဘဲ ကြိုတင်ငွေပေးချေထားသော မှာယူမှုကို ငြင်းပယ်ခြင်း သို့မဟုတ် ပယ်ဖျက်ခြင်း ဖြစ်ပါက အသုံးပြုသူသည် အပိုဒ် 15 နှင့်အညီ ငွေပြန်အမ်းခွင့်ရှိသည်။</p>
+<p>5.3 ငွေပေးချေမှု မတင်သွင်းမီ ကုန်ပစ္စည်း၊ အရေအတွက်၊ ပို့ဆောင်ရမည့်လိပ်စာနှင့် အထူးညွှန်ကြားချက်များအပါအဝင် မှာယူမှုအသေးစိတ်ကို စစ်ဆေးရန် သင်တာဝန်ရှိသည်။</p>
+<p>5.4 CloudCity သည် ဝန်ဆောင်မှု သို့မဟုတ် ကုန်သည်အချို့အတွက် အနည်းဆုံးမှာယူမှုတန်ဖိုး သတ်မှတ်နိုင်သည်။ သက်ဆိုင်ရာအနည်းဆုံးတန်ဖိုးအောက်ရှိ မှာယူမှုများကို လက်မခံနိုင်သကဲ့သို့ အပိုအသေးစားမှာယူမှုခ ကောက်ခံနိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy6">
+  <h3><span class="ch-num">6</span>အစားအသောက်ပို့ဆောင်ရေး</h3>
+  <p>6.1 အစားအသောက်ပို့ဆောင်ရေးဝန်ဆောင်မှုသည် အသုံးပြုသူအား ပါဝင်သည့်ကုန်သည်ထံမှ အစားအသောက် သို့မဟုတ် အခြားကုန်ပစ္စည်းများကို မှာယူ၍ ပို့ဆောင်သူက သတ်မှတ်လိပ်စာသို့ ပို့ဆောင်ပေးနိုင်စေသည်။</p>
+<p>6.2 ပလက်ဖောင်းတွင် ဖော်ပြထားသော ခန့်မှန်းပို့ဆောင်ချိန်သည် ခန့်မှန်းချက်သာဖြစ်ပြီး ကုန်သည်၏ ပြင်ဆင်ချိန်၊ ပို့ဆောင်သူရရှိနိုင်မှု၊ ရာသီဥတု၊ ယာဉ်ကြောအခြေအနေ သို့မဟုတ် CloudCity ၏ ထိန်းချုပ်မှုအပြင်ဘက်ရှိ အခြားအကြောင်းရင်းများကြောင့် ပြောင်းလဲနိုင်သည်။</p>
+<p>6.3 အသုံးပြုသူသည် မှန်ကန်သော ပို့ဆောင်ရမည့်လိပ်စာကို ပေးအပ်ရမည်ဖြစ်ပြီး မှာယူမှုကို လက်ခံရရှိရန် ကျိုးကြောင်းဆီလျော်စွာ ဆက်သွယ်၍ရနိုင်သော အခြေအနေတွင် ရှိရမည်။ အသုံးပြုသူကို ဆက်သွယ်၍မရခြင်း သို့မဟုတ် ပို့ဆောင်သည့်နေရာတွင် မှာယူမှုကို လက်ခံရယူရန် မရှိခြင်းကြောင့် အပိုဝန်ဆောင်ခ ကောက်ခံခြင်း သို့မဟုတ် မှာယူမှု ပယ်ဖျက်ခြင်း ဖြစ်နိုင်သည်။</p>
+<p>6.4 ကုန်ပစ္စည်းပုံများ၊ ဖော်ပြချက်များနှင့် ဈေးနှုန်းများကို ကုန်သည်များက ပေးအပ်သည်။ CloudCity သည် ကုန်သည်များအား ယင်းအချက်အလက်များကို မှန်ကန်စွာ ထိန်းသိမ်းရန် တိုက်တွန်းသော်လည်း ဖော်ပြချက်အားလုံးတွင် အမှားကင်းကြောင်း အာမခံခြင်းမပြုပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy7">
+  <h3><span class="ch-num">7</span>ဆိုင်တွင် ကိုယ်တိုင်လာရောက်ယူခြင်း</h3>
+  <p>7.1 ဆိုင်တွင် ကိုယ်တိုင်လာရောက်ယူခြင်းသည် အသုံးပြုသူအား ပလက်ဖောင်းမှတစ်ဆင့် မှာယူမှုတင်သွင်းပြီး ကုန်သည်၏ နေရာတွင် တိုက်ရိုက်လာရောက်လက်ခံယူနိုင်စေသည်။</p>
+<p>7.2 အသုံးပြုသူသည် ကုန်သည်က သတ်မှတ်ထားသော အချိန်ကာလအတွင်း မှာယူမှုကို လက်ခံယူရန် တာဝန်ရှိသည်။ အချိန်ကာလမသတ်မှတ်ထားပါက မှာယူမှုအဆင်သင့်ဖြစ်ကြောင်း အသိပေးချက်ရရှိပြီးနောက် ကျိုးကြောင်းဆီလျော်သော အချိန်အတွင်း လက်ခံယူရမည်။ ကျိုးကြောင်းဆီလျော်သော အချိန်အတွင်း လာရောက်လက်ခံယူခြင်းမရှိသည့် မှာယူမှုကို ပယ်ဖျက်နိုင်ပြီး ငွေပြန်အမ်းခွင့်ကို ငွေပြန်အမ်းခြင်းမူဝါဒနှင့်အညီ စိစစ်မည်။</p>
+<p>7.3 မှာယူမှုကို လက်ခံယူချိန်တွင် ကုန်သည်ထံ မှာယူမှုအတည်ပြုချက်၊ ရည်ညွှန်းကုဒ် သို့မဟုတ် အခြားကျိုးကြောင်းဆီလျော်သော ဝယ်ယူမှုအထောက်အထားကို ပြသရန် အသုံးပြုသူက ပြင်ဆင်ထားရမည်။</p>
+<p>7.4 အသုံးပြုသူက မှာယူမှုကို လက်ခံယူပြီးနောက် ယင်း၏နောက်ပိုင်းအခြေအနေအတွက် CloudCity တွင် တာဝန်မရှိပါ။ သို့ရာတွင် လက်ခံယူချိန်၌ ကုန်သည်၏ အပြစ်ကြောင့် မှာယူမှုတွင် ချို့ယွင်းချက်ရှိခြင်း၊ မပြည့်စုံခြင်း သို့မဟုတ် မှားယွင်းခြင်း ရှိနေပါက ယင်းကင်းလွတ်ချက် မသက်ဆိုင်ပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy8">
+  <h3><span class="ch-num">8</span>Deli ပစ္စည်းပို့ဆောင်ရေးဝန်ဆောင်မှု</h3>
+  <p>8.1 Deli သည် အသုံးပြုသူက သတ်မှတ်ထားသော နေရာများအကြား ပို့ဆောင်သူက ခွင့်ပြုထားသော ပစ္စည်းများကို သွားရောက်ယူဆောင်၍ ပို့ဆောင်ပေးသည့် ဝန်ဆောင်မှုဖြစ်ပြီး ပလက်ဖောင်းမှတစ်ဆင့် ကုန်သည်ထံမှ ဝယ်ယူသော အစားအသောက်ပစ္စည်းများ မပါဝင်ပါ။</p>
+<p>8.2 အသုံးပြုသူသည် သွားရောက်ယူဆောင်၍ ပို့ဆောင်ရမည့် ပစ္စည်းများကို အကြမ်းဖျင်းအရွယ်အစား၊ အလေးချိန်နှင့် ကိုင်တွယ်ပုံဆိုင်ရာ ညွှန်ကြားချက်များအပါအဝင် မှန်ကန်စွာ ဖော်ပြရမည်။</p>
+<p>8.3 တရားမဝင်သော၊ အန္တရာယ်ရှိသော၊ သက်ဆိုင်ရာဥပဒေအရ တားမြစ်ထားသော သို့မဟုတ် သယ်ယူပို့ဆောင်ရန် မသင့်လျော်သော ပစ္စည်းတစ်ရပ်ရပ်ကို CloudCity နှင့် ၎င်း၏ပို့ဆောင်သူများက လက်ခံယူခြင်း သို့မဟုတ် ပို့ဆောင်ခြင်းကို ငြင်းပယ်နိုင်သည်။</p>
+<p>8.4 ပစ္စည်းများကို တရားဝင်ပိုင်ဆိုင်ထားခြင်း သို့မဟုတ် တရားဝင်လက်ဝယ်ထားခြင်းရှိကြောင်းနှင့် ဥပဒေအရ သယ်ယူပို့ဆောင်နိုင်ကြောင်း သေချာစေရန် အသုံးပြုသူက တာဝန်ယူရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy9">
+  <h3><span class="ch-num">9</span>Say Buy ကိုယ်စားဝယ်ယူပေးသည့်ဝန်ဆောင်မှု</h3>
+  <p>9.1 Say Buy သည် အသုံးပြုသူ၏ ညွှန်ကြားချက်များအရ ခွင့်ပြုထားသော ကုန်ပစ္စည်းများကို ပို့ဆောင်သူက အသုံးပြုသူကိုယ်စား ဝယ်ယူပြီး အသုံးပြုသူထံ ပို့ဆောင်ပေးသည့် ဝန်ဆောင်မှုဖြစ်သည်။</p>
+<p>9.2 တောင်းဆိုထားသော ကုန်ပစ္စည်းများ၏ အမှန်တကယ်ရရှိနိုင်မှုနှင့် ဈေးနှုန်းကို အမြဲတမ်း ကြိုတင်အတည်ပြု၍မရနိုင်သဖြင့် နောက်ဆုံးပေးချေရမည့်ပမာဏသည် မှာယူချိန်တွင် ဖော်ပြထားသော ခန့်မှန်းပမာဏနှင့် ကွာခြားနိုင်သည်။ ကွာခြားချက်ကို အသုံးပြုထားသည့် ငွေပေးချေမှုနည်းလမ်းနှင့်အညီ ရှင်းလင်းမည်။</p>
+<p>9.3 ကုန်ပစ္စည်းများကို အသုံးပြုသူ၏ ရှင်းလင်းတိကျသော ညွှန်ကြားချက်များနှင့်အညီ ဝယ်ယူထားပါက သက်ဆိုင်ရာရောင်းချသူသည် ယင်းကုန်ပစ္စည်းများ၏ မူလအရည်အသွေး၊ ဘေးကင်းလုံခြုံမှု၊ တရားဝင်ဖြစ်မှု၊ သင့်လျော်မှုနှင့် အခြေအနေတို့အတွက် ဆက်လက်တာဝန်ရှိသည်။ သို့ရာတွင် မှားယွင်းသောပစ္စည်း ဝယ်ယူခြင်း၊ အသုံးပြုသူအတည်ပြုထားသော ညွှန်ကြားချက်များကို မလိုက်နာခြင်း၊ ပစ္စည်းပျောက်ဆုံးခြင်း သို့မဟုတ် မသင့်လျော်စွာ ကိုင်တွယ်ခြင်း၊ သို့မဟုတ် ပစ္စည်းသည် CloudCity သို့မဟုတ် ပို့ဆောင်သူ၏ လက်ဝယ် သို့မဟုတ် ထိန်းချုပ်မှုအောက်တွင် ရှိစဉ် ညစ်ညမ်းခြင်း၊ ပျက်စီးယိုယွင်းခြင်း သို့မဟုတ် ထိခိုက်ပျက်စီးခြင်းအတွက် တာဝန်ကို ဤအပိုဒ်က ဖယ်ရှားခြင်းမပြုပါ။</p>
+<p>9.4 အသုံးပြုသူသည် ကုန်ပစ္စည်းများကို လက်ခံရရှိချိန်တွင် စစ်ဆေးရမည်ဖြစ်ပြီး ပျောက်ဆုံးခြင်း၊ မှားယွင်းခြင်း၊ ပျက်စီးခြင်း သို့မဟုတ် သဘောတူထားသည့်အချက်နှင့် အဓိကအားဖြင့် မကိုက်ညီခြင်းရှိပါက သက်ဆိုင်ရာတိုင်ကြားမှုကာလအတွင်း ကျိုးကြောင်းဆီလျော်သော အထောက်အထားများနှင့်တကွ CloudCity ဖောက်သည်ဝန်ဆောင်မှုသို့ အကြောင်းကြားရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy10">
+  <h3><span class="ch-num">10</span>အငှားယာဉ်ဝန်ဆောင်မှု</h3>
+  <p>10.1 အငှားယာဉ်ဝန်ဆောင်မှုသည် အသုံးပြုသူများအား နေရာတစ်ခုမှ အခြားနေရာတစ်ခုသို့ သယ်ယူပို့ဆောင်ပေးနိုင်သည့် ရရှိနိုင်သော ယာဉ်မောင်းများနှင့် ချိတ်ဆက်ပေးသည့် ယာဉ်ခေါ်ယူရေးဝန်ဆောင်မှုဖြစ်သည်။</p>
+<p>10.2 ယာဉ်စီးခကို အကွာအဝေး၊ ကြာချိန်၊ ဝယ်လိုအားနှင့် အခြားသက်ဆိုင်ရာအချက်များအပေါ် အခြေခံ၍ တွက်ချက်မည်ဖြစ်ပြီး ကျိုးကြောင်းဆီလျော်စွာ ဆောင်ရွက်နိုင်သည့်အခါ အသုံးပြုသူက ယာဉ်ခေါ်ယူမှုကို အတည်မပြုမီ ဖော်ပြပေးမည်။</p>
+<p>10.3 ပလက်ဖောင်းမှတစ်ဆင့် အငှားယာဉ်ဝန်ဆောင်မှု ပေးအပ်သည့် ယာဉ်မောင်းများသည် လွတ်လပ်သော ဝန်ဆောင်မှုပေးသူများဖြစ်ပြီး CloudCity ၏ ဝန်ထမ်းများ သို့မဟုတ် ကိုယ်စားလှယ်များ မဟုတ်ပါ။ CloudCity သည် အငှားယာဉ်ဝန်ဆောင်မှုတွင် အသုံးပြုသည့် ယာဉ်များကို ပိုင်ဆိုင်ခြင်း သို့မဟုတ် စီမံလည်ပတ်ခြင်း မပြုပါ။</p>
+<p>10.4 အသုံးပြုသူများသည် ကျိုးကြောင်းဆီလျော်သော ဘေးကင်းရေးညွှန်ကြားချက်များကို လိုက်နာပြီး ယာဉ်မောင်းများအား လေးစားစွာ ဆက်ဆံရမည်။ ခရီးစဉ်အတွင်း ဘေးအန္တရာယ်ဖြစ်စေနိုင်သော၊ ရိုင်းပျသော၊ အလွဲသုံးစားပြုသော သို့မဟုတ် တရားမဝင်သော အပြုအမူများ ပြုလုပ်သည့် အကောင့်ကို CloudCity က ယာယီရပ်ဆိုင်းနိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy11">
+  <h3><span class="ch-num">11</span>မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်း</h3>
+  <p>11.1 မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်းဝန်ဆောင်မှုသည် အသုံးပြုသူအား CloudCity လက်ကျန်ငွေ သို့မဟုတ် အခြားလက်ခံပံ့ပိုးထားသော ငွေပေးချေမှုနည်းလမ်းကို အသုံးပြု၍ ပလက်ဖောင်းမှတစ်ဆင့် လက်ခံပံ့ပိုးထားသော ဆက်သွယ်ရေးအော်ပရေတာ၏ ဖုန်းငွေကို ဝယ်ယူနိုင်စေသည်။</p>
+<p>11.2 အသုံးပြုသူသည် မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်းကို အတည်မပြုမီ မှန်ကန်သော ဖုန်းနံပါတ်ကို ဖြည့်သွင်းပြီး မှန်ကန်သော ဆက်သွယ်ရေးအော်ပရေတာနှင့် ငွေဖြည့်ပမာဏကို ရွေးချယ်ရန် တာဝန်ရှိသည်။ အသုံးပြုသူက မှားယွင်းစွာ ဖြည့်သွင်းထားသော ဖုန်းနံပါတ်သို့ ငွေဖြည့်ပေးပြီးဖြစ်ပါက CloudCity တွင် တာဝန်မရှိပါ။</p>
+<p>11.3 မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်း လွှဲပြောင်းမှုများကို ပုံမှန်အားဖြင့် စနစ်က အလိုအလျောက် ဆောင်ရွက်ပေးပြီး အောင်မြင်စွာ ပြီးစီးသွားပါက ပြန်လည်ရုပ်သိမ်းခြင်း သို့မဟုတ် ငွေပြန်အမ်းခြင်း မပြုနိုင်ပါ။ သို့ရာတွင် သက်ဆိုင်ရာဥပဒေအရ လိုအပ်သည့်ကိစ္စ သို့မဟုတ် CloudCity သို့မဟုတ် ၎င်း၏ဆက်သွယ်ရေးမိတ်ဖက်၏ အတည်ပြုနိုင်သော နည်းပညာပိုင်းဆိုင်ရာ အမှားကြောင့် ဖြစ်ပေါ်သည့်ကိစ္စ မပါဝင်ပါ။</p>
+<p>11.4 နည်းပညာပိုင်းဆိုင်ရာ အမှားကြောင့် ငွေဖြတ်တောက်ပြီးသော်လည်း မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်း မအောင်မြင်ပါက CloudCity သည် ယင်းအခြေအနေကို စုံစမ်းစစ်ဆေးပြီး သင့်လျော်ပါက သက်ရောက်မှုရှိသော ငွေပမာဏကို အသုံးပြုသူ၏ CloudCity လက်ကျန်ငွေသို့ ပြန်လည်ထည့်သွင်းပေးမည်။</p>
+<p>11.5 မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်းမှ ဝယ်ယူထားသည့် ဖုန်းငွေနှင့်သက်ဆိုင်သော ဆက်သွယ်ရေးအော်ပရေတာ၏ အတွင်းပိုင်းမူဝါဒများ၊ ဖုန်းငွေသက်တမ်း သို့မဟုတ် ဝန်ဆောင်မှုအရည်အသွေးအတွက် CloudCity တွင် တာဝန်မရှိပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy12">
+  <h3><span class="ch-num">12</span>CloudCity လက်ကျန်ငွေ</h3>
+  <p>12.1 CloudCity လက်ကျန်ငွေသည် အသုံးပြုသူ၏ CloudCity အကောင့်အတွင်း ထိန်းသိမ်းထားပြီး အရည်အချင်းပြည့်မီသော CloudCity ဝန်ဆောင်မှုများအတွက်သာ ပေးချေရန် အသုံးပြုနိုင်သည့် ပလက်ဖောင်းအတွင်း ကန့်သတ်အသုံးပြုနိုင်သော လက်ကျန်ငွေဖြစ်သည်။ CloudCity လက်ကျန်ငွေသည် ဘဏ်အကောင့်မဟုတ်သည့်အပြင် အတိုးမရရှိပါ။</p>
+<p>12.2 CloudCity လက်ကျန်ငွေကို KBZPay၊ ဘဏ်ငွေလွှဲခြင်း၊ ငွေသား သို့မဟုတ် အခြားခွင့်ပြုထားသောနည်းလမ်းများအပါအဝင် CloudCity က လက်ခံပံ့ပိုးသည့် ငွေပေးချေမှုနည်းလမ်းများဖြင့် ဖြည့်သွင်းနိုင်ပြီး နောင်အသုံးပြုရန် အကောင့်အတွင်း ထိန်းသိမ်းထားနိုင်သည်။ ဤစည်းကမ်းချက်များနှင့်အညီ အတည်ပြုထားသော ငွေပြန်အမ်းမှု၊ အရောင်းမြှင့်တင်ရေးအကျိုးခံစားခွင့် သို့မဟုတ် စာရင်းပြင်ဆင်မှုများမှလည်း CloudCity လက်ကျန်ငွေသို့ ထည့်သွင်းနိုင်သည်။</p>
+<p>12.3 CloudCity လက်ကျန်ငွေအပေါ် အတိုးမရရှိဘဲ ပလက်ဖောင်းပေါ်ရှိ ဝန်ဆောင်မှုများအတွက်သာ အသုံးပြုနိုင်သည်။ CloudCity က အခြားနည်းဖြင့် ခွင့်ပြုထားခြင်း သို့မဟုတ် သက်ဆိုင်ရာဥပဒေအရ လိုအပ်ခြင်းမရှိပါက CloudCity လက်ကျန်ငွေကို အခြားအကောင့်သို့ လွှဲပြောင်းခြင်း၊ ငွေသားအဖြစ် ပြန်လည်လဲလှယ်ခြင်း သို့မဟုတ် ဘဏ်အကောင့် သို့မဟုတ် အခြားပြင်ပငွေပေးချေမှုနည်းလမ်းသို့ ထုတ်ယူခြင်း မပြုနိုင်ပါ။</p>
+<p>12.4 အသုံးပြုသူတစ်ဦးက သတ်မှတ်ကာလတစ်ခုအတွင်း ထိန်းသိမ်းနိုင်သည့် သို့မဟုတ် အသုံးပြုနိုင်သည့် CloudCity လက်ကျန်ငွေပမာဏအပေါ် CloudCity က ကျိုးကြောင်းဆီလျော်သော ကန့်သတ်ချက်များ သတ်မှတ်နိုင်သည်။</p>
+<p>12.5 အကောင့်ကို ကာလကြာရှည်အသုံးမပြုခြင်း၊ လိမ်လည်မှုသံသယရှိခြင်း၊ ခွင့်ပြုချက်မရှိသော လုပ်ဆောင်ချက် သို့မဟုတ် ငွေပေးချေမှုအငြင်းပွားချက် ရှိခြင်း၊ သို့မဟုတ် အကောင့်ကို ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် ပိတ်သိမ်းခြင်း ဖြစ်ပါက CloudCity သည် ကျိုးကြောင်းဆီလျော်သော စုံစမ်းစစ်ဆေးမှု ပြုလုပ်နေစဉ် သက်ရောက်မှုရှိသော CloudCity လက်ကျန်ငွေကို ယာယီကန့်သတ်ခြင်း သို့မဟုတ် ခေတ္တရပ်တန့်ထားခြင်း ပြုနိုင်သည်။ တရားဝင်ပြီး အငြင်းပွားမှုမရှိသော ကျန်လက်ကျန်ငွေကို သက်ဆိုင်ရာ ငွေပြန်အမ်းခြင်း သို့မဟုတ် လက်ကျန်ငွေရှင်းလင်းခြင်းလုပ်ငန်းစဉ်နှင့်အညီ ဆောင်ရွက်ရမည်။ အကောင့်ကို အသုံးမပြုခြင်း၊ ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် ပိတ်သိမ်းခြင်းတစ်ခုတည်းကို အကြောင်းပြု၍ အသုံးပြုသူ၏ တရားဝင်ပြီး အငြင်းပွားမှုမရှိသော လက်ကျန်ငွေကို CloudCity က သိမ်းယူခြင်း သို့မဟုတ် အပြီးတိုင်ထိန်းသိမ်းထားခြင်း မပြုရပါ။</p>
+<p>12.6 အသုံးပြုသူ၏ CloudCity လက်ကျန်ငွေသို့ ထည့်သွင်းခြင်း၊ ဖြတ်တောက်ခြင်း၊ ငွေပြန်အမ်း၍ ထည့်သွင်းခြင်းနှင့် စာရင်းပြင်ဆင်ခြင်းတို့ကို ဖော်ပြသည့် လွှဲပြောင်းမှုမှတ်တမ်းများကို CloudCity က ထိန်းသိမ်းထားမည်။</p>
+<p>12.7 ခွင့်ပြုချက်မရှိသော သို့မဟုတ် မမှန်ကန်သော CloudCity လက်ကျန်ငွေလွှဲပြောင်းမှုတစ်ရပ်ရပ်ကို အသုံးပြုသူက CloudCity ထံ အချိန်မီ အကြောင်းကြားရမည်။ CloudCity သည် ကျိုးကြောင်းဆီလျော်သော စုံစမ်းစစ်ဆေးမှု ပြုလုပ်နေစဉ် သက်ရောက်မှုရှိသော ငွေပမာဏကို ယာယီကန့်သတ်နိုင်သည်။</p>
+<p>12.8 လူကိုယ်တိုင်ပြုလုပ်သော ငွေသားဖြည့်သွင်းမှု သို့မဟုတ် ဘဏ်ငွေလွှဲဖြည့်သွင်းမှုသည် သက်ဆိုင်ရာငွေကို လက်ခံရရှိကြောင်း CloudCity က စစ်ဆေးအတည်ပြုပြီးနောက်မှသာ အသုံးပြုနိုင်မည်။ လိုအပ်ပါက CloudCity သည် ကျိုးကြောင်းဆီလျော်သော ငွေပေးချေမှုအထောက်အထားကို တောင်းခံနိုင်သည်။</p>
+<p>12.9 CloudCity လက်ကျန်ငွေကို သက်ရောက်စေသော ထင်ရှားသည့် စာရင်းကိုင်အမှား၊ စနစ်အမှား၊ နှစ်ကြိမ်ထည့်သွင်းမိသည့်အမှား သို့မဟုတ် နည်းပညာပိုင်းဆိုင်ရာအမှားကို CloudCity က ပြင်ဆင်နိုင်သည်။ သို့ရာတွင် CloudCity သည် ပြင်ဆင်မှုမှတ်တမ်းကို ထိန်းသိမ်းပြီး သက်ရောက်မှုရှိသော အသုံးပြုသူထံ ကျိုးကြောင်းဆီလျော်သော ရှင်းလင်းချက်ပေးရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy13">
+  <h3><span class="ch-num">13</span>ဈေးနှုန်းနှင့် ငွေပေးချေမှု</h3>
+  <p>13.1 အခြားသတ်မှတ်ထားခြင်းမရှိပါက ပလက်ဖောင်းပေါ်တွင် ဖော်ပြသည့် ဈေးနှုန်းအားလုံးကို ကုန်ပစ္စည်းများအတွက် ကုန်သည်များက သတ်မှတ်ပြီး ပို့ဆောင်ခ၊ ဝန်ဆောင်ခနှင့် ပလက်ဖောင်းအခများအတွက် CloudCity က သတ်မှတ်သည်။ ယင်းဈေးနှုန်းများကို မြန်မာကျပ် (MMK) ဖြင့် ဖော်ပြမည်။</p>
+<p>13.2 ဈေးနှုန်းတွင် ပို့ဆောင်ခ၊ ဝန်ဆောင်ခ၊ အသေးစားမှာယူမှုအခနှင့် သက်ဆိုင်ရာအခွန်အခများ ပါဝင်နိုင်ပြီး ယင်းအခများကို မှာယူမှုအတည်မပြုမီ အသုံးပြုသူထံ ဖော်ပြပေးမည်။</p>
+<p>13.3 အသုံးပြုသူသည် CloudCity လက်ကျန်ငွေ၊ မိုဘိုင်းငွေပေးချေမှုအက်ပ်များအပါအဝင် လက်ခံပံ့ပိုးထားသော တတိယပုဂ္ဂိုလ်ငွေပေးချေမှုနည်းလမ်းများ သို့မဟုတ် ရရှိနိုင်သည့်အခါ ပစ္စည်းလက်ခံရရှိချိန်တွင် ငွေပေးချေသည့်နည်းလမ်းဖြင့် ပေးချေနိုင်သည်။ CloudCity သည် ရရှိနိုင်သော ငွေပေးချေမှုနည်းလမ်းများကို အချိန်မရွေး ထည့်သွင်းခြင်း၊ ဖယ်ရှားခြင်း သို့မဟုတ် ကန့်သတ်ခြင်း ပြုနိုင်သည်။</p>
+<p>13.4 အသုံးပြုသူသည် ရွေးချယ်ထားသော ငွေပေးချေမှုနည်းလမ်းမှတစ်ဆင့် အတည်ပြုပြီးသော မှာယူမှုများအတွက် ငွေပေးချေမှုကို CloudCity နှင့် ၎င်း၏ငွေပေးချေမှုမိတ်ဖက်များက ဆောင်ရွက်ရန် ခွင့်ပြုသည်။</p>
+<p>13.5 နှောင့်နှေးမှု သို့မဟုတ် မအောင်မြင်မှုသည် တတိယပုဂ္ဂိုလ်ငွေပေးချေမှုဝန်ဆောင်မှုပေးသူ၊ ဘဏ် သို့မဟုတ် ဆက်သွယ်ရေးကွန်ရက်ကြောင့်သာ ဖြစ်ပေါ်ပြီး CloudCity ၏ ကျိုးကြောင်းဆီလျော်သော ထိန်းချုပ်မှုအပြင်ဘက်တွင် ရှိပါက CloudCity တွင် တာဝန်မရှိပါ။ သို့ရာတွင် ငွေဖြတ်တောက်ပြီးဖြစ်သော်လည်း သက်ဆိုင်ရာမှာယူမှု သို့မဟုတ် ဝန်ဆောင်မှု မအောင်မြင်ပါက CloudCity သည် လွှဲပြောင်းမှုကို စစ်ဆေးအတည်ပြုရန် ကျိုးကြောင်းဆီလျော်သော အကူအညီပေးပြီး သင့်လျော်သော ငွေပြန်အမ်းခြင်း၊ လွှဲပြောင်းမှု ပြန်လည်ရုပ်သိမ်းခြင်း သို့မဟုတ် လက်ကျန်ငွေပြင်ဆင်ခြင်းကို ဆောင်ရွက်ခြင်း သို့မဟုတ် ကူညီဆောင်ရွက်ခြင်း ပြုမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy14">
+  <h3><span class="ch-num">14</span>ပယ်ဖျက်ခြင်း</h3>
+  <p>14.1 ကုန်သည်က မှာယူမှုကို လက်ခံခြင်း သို့မဟုတ် စတင်ပြင်ဆင်ခြင်းမပြုမီ၊ သို့မဟုတ် ပို့ဆောင်သူ သို့မဟုတ် ယာဉ်မောင်းကို တာဝန်ပေးစေလွှတ်ခြင်းမပြုမီ သက်ဆိုင်ရာဝန်ဆောင်မှု၏ သတ်မှတ်ချက်များနှင့်အညီ အသုံးပြုသူက မှာယူမှုကို ပယ်ဖျက်နိုင်သည်။</p>
+<p>14.2 ကုန်သည်က မှာယူမှုကို စတင်ပြင်ဆင်ပြီးဖြစ်ပါက သို့မဟုတ် ပို့ဆောင်သူ သို့မဟုတ် ယာဉ်မောင်းကို တာဝန်ပေးစေလွှတ်ပြီးဖြစ်ပါက သို့မဟုတ် သက်ဆိုင်ရာဝန်ဆောင်မှုကို စတင်ပေးအပ်ပြီးဖြစ်ပါက ပယ်ဖျက်ခြင်းကို ငြင်းပယ်နိုင်သည် သို့မဟုတ် ကျိုးကြောင်းဆီလျော်သော ပယ်ဖျက်ခ ကောက်ခံနိုင်သည်။ သက်ဆိုင်သော ပယ်ဖျက်မှုအခြေအနေ၊ အခပမာဏ သို့မဟုတ် တွက်ချက်နည်းကို မှာယူမှုအတည်မပြုမီ အသုံးပြုသူထံ ဖော်ပြရမည်။ ပယ်ဖျက်ခသည် ပယ်ဖျက်ထားသော မှာယူမှုနှင့် ဆက်စပ်၍ အမှန်တကယ်နှင့် ကျိုးကြောင်းဆီလျော်စွာ ဖြစ်ပေါ်ပြီးသော ကုန်ကျစရိတ်အတိုင်းအတာအထိသာ ဖြစ်ရမည်။ ပယ်ဖျက်မှုသည် ပလက်ဖောင်း၏ နည်းပညာပိုင်းဆိုင်ရာအမှား၊ မှာယူမှုနှစ်ကြိမ်ဖန်တီးမိခြင်း၊ ကုန်သည်က ဆောင်ရွက်မပေးနိုင်ခြင်း၊ ကုန်သည် သို့မဟုတ် ပို့ဆောင်သူ/ယာဉ်မောင်း၏ အရေးပါသော နှောင့်နှေးမှု သို့မဟုတ် ဆောင်ရွက်မပေးမှု၊ သို့မဟုတ် အသုံးပြုသူ၏ အပြစ်မဟုတ်သော အခြားအခြေအနေကြောင့် ဖြစ်ပါက ပယ်ဖျက်ခ မကောက်ခံရပါ။</p>
+<p>14.3 အသုံးပြုသူက တောင်းဆိုပါက CloudCity သည် ပယ်ဖျက်ခ ကောက်ခံသည့်အကြောင်းရင်းကို ကျိုးကြောင်းဆီလျော်စွာ ရှင်းလင်းပေးမည်။</p>
+<p>14.4 ကုန်ပစ္စည်းမရရှိနိုင်ခြင်း၊ အသုံးပြုသူကို ဆက်သွယ်၍မရခြင်း၊ ဘေးမကင်းသောအခြေအနေရှိခြင်း၊ ငွေပေးချေမှုမအောင်မြင်ခြင်း သို့မဟုတ် လိမ်လည်မှုသံသယရှိခြင်းတို့အပါအဝင် ကျိုးကြောင်းဆီလျော်သော အကြောင်းပြချက်ဖြင့် CloudCity၊ ကုန်သည် သို့မဟုတ် ပို့ဆောင်သူ/ယာဉ်မောင်းက မှာယူမှုကို ပယ်ဖျက်နိုင်သည်။ မှာယူမှုကို အသုံးပြုသူ၏ အပြစ်မရှိဘဲ ပယ်ဖျက်ပါက ကြိုတင်ပေးချေထားသော ငွေများကို အပိုဒ် 15 နှင့်အညီ ပြန်အမ်းရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy15">
+  <h3><span class="ch-num">15</span>ငွေပြန်အမ်းခြင်းမူဝါဒ</h3>
+  <p>15.1 အသုံးပြုသူ၏ အပြစ်မရှိဘဲ မှာယူမှု ပယ်ဖျက်ခြင်း၊ မရရှိနိုင်ခြင်း၊ မှားယွင်းခြင်း၊ ပျက်စီးခြင်း၊ မပြည့်စုံခြင်း သို့မဟုတ် အခြားမကျေနပ်ဖွယ်အခြေအနေ ဖြစ်ပေါ်ပါက ဤအပိုဒ်အရ CloudCity က စစ်ဆေးပြီးနောက် အသုံးပြုသူသည် အပြည့်အဝ သို့မဟုတ် တစ်စိတ်တစ်ပိုင်း ငွေပြန်အမ်းခွင့် ရရှိနိုင်သည်။</p>
+<p>15.2 ကြိုတင်ငွေပေးချေထားသော မှာယူမှုများအတွက် ငွေပြန်အမ်းခြင်းကို မူလငွေပေးချေမှုနည်းလမ်းအလိုက် ဆောင်ရွက်မည် - (က) CloudCity လက်ကျန်ငွေဖြင့် ပေးချေထားသော ငွေကို အသုံးပြုသူ၏ CloudCity လက်ကျန်ငွေသို့ ပြန်လည်ထည့်သွင်းမည်၊ (ခ) KBZPay သို့မဟုတ် အခြားလက်ခံပံ့ပိုးထားသော တတိယပုဂ္ဂိုလ် ကြိုတင်ငွေပေးချေမှုနည်းလမ်းဖြင့် ပေးချေထားသော ငွေကို နည်းပညာအရ ဆောင်ရွက်နိုင်ပါက မူလငွေပေးချေမှုနည်းလမ်းသို့ ပြန်အမ်းမည်၊ (ဂ) မူလငွေပေးချေမှုနည်းလမ်းသို့ နည်းပညာအရ ပြန်အမ်း၍မရပါက အသုံးပြုသူ၏ သဘောတူညီချက်ရရှိပြီးမှသာ ငွေပြန်အမ်းပမာဏကို CloudCity လက်ကျန်ငွေသို့ ထည့်သွင်းခြင်း သို့မဟုတ် နှစ်ဖက်သဘောတူထားသော အခြားနည်းလမ်းဖြင့် ရှင်းလင်းခြင်း ပြုနိုင်သည်။</p>
+<p>15.3 ပစ္စည်းလက်ခံရရှိချိန်တွင် ငွေပေးချေသည့် (“COD”) မှာယူမှုများတွင် ကြိုတင်ငွေပေးချေထားခြင်းမရှိသဖြင့် လက်ကျန်ငွေသို့ ပြန်အမ်းသည့်လုပ်ငန်းစဉ် မသက်ဆိုင်ပါ။ COD မှာယူမှုကို ပို့ဆောင်ခြင်းမပြုမီ ပယ်ဖျက်ပါက အသုံးပြုသူသည် မည်သည့်ငွေကိုမျှ ပေးချေရန်မလိုပါ။ မှာယူမှုတွင် မရရှိနိုင်သော၊ ပျောက်ဆုံးသော၊ မှားယွင်းသော သို့မဟုတ် အခြားသက်ရောက်မှုရှိသော ပစ္စည်းများ ပါရှိပါက အသုံးပြုသူသည် လက်ခံရရှိချိန်တွင် အမှန်တကယ် ပို့ဆောင်ရရှိပြီး လက်ခံထားသော ပစ္စည်းများအတွက်သာ ကျသင့်ငွေကို ပေးချေရမည်။</p>
+<p>15.4 ဤငွေပြန်အမ်းခြင်းမူဝါဒအရ CloudCity လက်ကျန်ငွေသို့ ထည့်သွင်းထားသော ငွေပမာဏကို ပလက်ဖောင်းပေါ်ရှိ အရည်အချင်းပြည့်မီသော ဝန်ဆောင်မှုများအတွက်သာ အသုံးပြုနိုင်ပြီး အပိုဒ် 12 ၏ သတ်မှတ်ချက်များ ဆက်လက်သက်ရောက်သည်။</p>
+<p>15.5 CloudCity သည် မှာယူမှုအခြေအနေ၊ ငွေပေးချေမှုမှတ်တမ်း၊ ဓာတ်ပုံ သို့မဟုတ် စာရွက်စာတမ်းအထောက်အထား၊ သက်ဆိုင်သူများအကြား ဆက်သွယ်မှုမှတ်တမ်း၊ ကုန်သည်၏မှတ်တမ်းနှင့် သက်ဆိုင်ပါက ပို့ဆောင်သူ သို့မဟုတ် ယာဉ်မောင်း၏မှတ်တမ်းတို့အပါအဝင် ကျိုးကြောင်းဆီလျော်ပြီး ရည်ရွယ်ချက်ပေါ်မူတည်သော စံနှုန်းများအရ ငွေပြန်အမ်းတောင်းဆိုချက်တစ်ခုချင်းစီကို စစ်ဆေးမည်။</p>
+<p>15.6 အစားအသောက်မှာယူမှုတွင် ပစ္စည်းပျောက်ဆုံးခြင်း၊ မှားယွင်းခြင်း၊ ပျက်စီးခြင်း၊ ပုပ်သိုးခြင်း သို့မဟုတ် မပြည့်စုံခြင်းနှင့် သက်ဆိုင်သော ငွေပြန်အမ်းခြင်း သို့မဟုတ် ဖြေရှင်းပေးရန် တောင်းဆိုချက်ကို ပုံမှန်အားဖြင့် ပို့ဆောင်ခြင်း သို့မဟုတ် လာရောက်ယူခြင်းပြီးနောက် နှစ်ဆယ့်လေး (24) နာရီအတွင်း တင်သွင်းရမည်။ နှစ်ကြိမ်ငွေဖြတ်တောက်ခြင်း၊ ငွေပေးချေမှုအမှား၊ မိုဘိုင်းဖုန်းငွေဖြည့်ခြင်း မအောင်မြင်ခြင်း သို့မဟုတ် အခြားငွေပေးချေမှုကိစ္စများနှင့် သက်ဆိုင်သော တောင်းဆိုချက်ကို ပုံမှန်အားဖြင့် သက်ဆိုင်ရာလွှဲပြောင်းမှု ပြုလုပ်ပြီးနောက် ပြက္ခဒိန်ရက် ခုနစ် (7) ရက်အတွင်း တင်သွင်းရမည်။ အထက်ပါကာလများသည် အစားအသောက်ဘေးကင်းရေးပြဿနာ၊ ဖုံးကွယ်နေသော ချို့ယွင်းချက်၊ ခွင့်ပြုချက်မရှိသော လွှဲပြောင်းမှု၊ လိမ်လည်မှု သို့မဟုတ် ပုံမှန်တိုင်ကြားမှုကာလအတွင်း ကျိုးကြောင်းဆီလျော်စွာ မတွေ့ရှိနိုင်သော အခြားကိစ္စတစ်ရပ်အပေါ် တိုင်ကြားခွင့်ကို မတားဆီးပါ။</p>
+<p>15.7 ငွေပြန်အမ်းခြင်း သို့မဟုတ် ဖြေရှင်းပေးရန် တောင်းဆိုချက်ကို ပလက်ဖောင်း၊ App အတွင်းရှိ အကူအညီဝန်ဆောင်မှု သို့မဟုတ် CloudCity ဖောက်သည်ဝန်ဆောင်မှုမှတစ်ဆင့် တင်သွင်းရမည်ဖြစ်ပြီး မှာယူမှုနံပါတ်၊ ပြဿနာဖော်ပြချက်နှင့် အသုံးပြုသူက ကျိုးကြောင်းဆီလျော်စွာ ရရှိနိုင်သော အထောက်အထားများ ပါဝင်ရမည်။ တောင်းဆိုချက်ကို စစ်ဆေးရန် ကျိုးကြောင်းဆီလျော်စွာ လိုအပ်ပါက CloudCity က ထပ်ဆောင်းအချက်အလက်များ တောင်းခံနိုင်သည်။</p>
+<p>15.8 CloudCity သည် ငွေပြန်အမ်းတောင်းဆိုချက်ကို လက်ခံရရှိကြောင်း အတည်ပြုပြီး အသုံးပြုသူ၊ ကုန်သည်နှင့် သက်ဆိုင်ပါက ပို့ဆောင်သူ သို့မဟုတ် ယာဉ်မောင်းက တင်ပြသော အချက်အလက်များကို စစ်ဆေးမည်။ CloudCity သည် ကျိုးကြောင်းဆီလျော်သော ဆောင်ရွက်ချိန်အတွင်း ဆုံးဖြတ်ချက်ရလဒ်နှင့် ဆုံးဖြတ်ချက်ချမှတ်ရသည့် အဓိကအကြောင်းရင်းများကို အသုံးပြုသူထံ အသိပေးမည်။</p>
+<p>15.9 ငွေပြန်အမ်းတောင်းဆိုချက်ကို ငြင်းပယ်ပါက အသုံးပြုသူသည် ထပ်ဆောင်းသက်ဆိုင်ရာအချက်အလက် ပေးအပ်ခြင်း သို့မဟုတ် မူလဆုံးဖြတ်ချက်ကို ပြန်လည်စဉ်းစားသင့်သည့်အကြောင်းရင်း ရှင်းပြခြင်းဖြင့် အတွင်းပိုင်းပြန်လည်သုံးသပ်မှု တစ်ကြိမ် တောင်းဆိုနိုင်သည်။</p>
+<p>15.10 ငွေပြန်အမ်းခြင်းကို အတည်ပြုပြီးနောက် CloudCity သည် အချိန်မီ ဆောင်ရွက်ပြီး ကျိုးကြောင်းဆီလျော်သော အလုပ်လုပ်ရက်အရေအတွက်အတွင်း အပြီးသတ်မည်။ သို့ရာတွင် အမှန်တကယ် ငွေရောက်ရှိချိန်သည် သက်ဆိုင်ရာဘဏ်၊ ငွေပေးချေမှုဝန်ဆောင်မှုပေးသူ သို့မဟုတ် ဆက်သွယ်ရေးကွန်ရက်၏ ဆောင်ရွက်ချိန်အပေါ် မူတည်နိုင်သည်။ CloudCity လက်ကျန်ငွေသို့ ပြန်အမ်းပါက အတည်ပြုပြီးနောက် အချိန်မီ ထည့်သွင်းပေးမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy16">
+  <h3><span class="ch-num">16</span>ကုန်သည်၏ တာဝန်များ</h3>
+  <p>16.1 ကုန်သည်များသည် လွတ်လပ်သော စီးပွားရေးလုပ်ငန်းများဖြစ်ပြီး ပလက်ဖောင်းမှတစ်ဆင့် မိမိတို့ပေးအပ်သည့် ကုန်ပစ္စည်းနှင့် ဝန်ဆောင်မှုများအတွက် တာဝန်ယူရမည်။ ယင်းတွင် အောက်ပါတို့ပါဝင်သော်လည်း ယင်းတို့ဖြင့်သာ ကန့်သတ်မထားပါ -</p>
+<ul>
+<li>အစားအသောက်အရည်အသွေးနှင့် သန့်ရှင်းရေး၊</li>
+<li>ပါဝင်ပစ္စည်းများနှင့် ဓာတ်မတည့်မှုဖြစ်စေနိုင်သော အချက်အလက်များ၏ မှန်ကန်တိကျမှု၊</li>
+<li>အစားအသောက်ဘေးကင်းရေးနှင့် သက်ဆိုင်ရာကျန်းမာရေးဆိုင်ရာ စည်းမျဉ်းများကို လိုက်နာခြင်း၊</li>
+<li>ကုန်ပစ္စည်းဖော်ပြချက်၊ ဈေးနှုန်းနှင့် ရရှိနိုင်မှုအချက်အလက်များ၏ မှန်ကန်တိကျမှု၊ နှင့်</li>
+<li>ပို့ဆောင်ခြင်း သို့မဟုတ် ကိုယ်တိုင်လာရောက်ယူခြင်းအတွက် သင့်လျော်စွာ ထုပ်ပိုးခြင်း။</li>
+</ul>
+<p>16.2 ကုန်သည်များသည် မိမိတို့၏ စီးပွားရေးလုပ်ငန်း လည်ပတ်ရန်နှင့် ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှုများ ရောင်းချရန် သက်ဆိုင်ရာဥပဒေအရ လိုအပ်သော လိုင်စင်၊ ခွင့်ပြုချက် သို့မဟုတ် မှတ်ပုံတင်ခြင်းများကို ဆက်လက်သက်တမ်းရှိအောင် ထိန်းသိမ်းရန် တာဝန်ရှိသည်။</p>
+<p>16.3 ကုန်သည်တစ်ဦးသည် ကျိုးကြောင်းဆီလျော်သော အရည်အသွေး၊ ဘေးကင်းရေး သို့မဟုတ် အပြုအမူစံနှုန်းများနှင့် မကိုက်ညီပါက သို့မဟုတ် အသုံးပြုသူများထံမှ ခိုင်လုံသော တိုင်ကြားချက်များကို ထပ်ခါတလဲလဲ ရရှိပါက CloudCity သည် ယင်းကုန်သည်ကို ပလက်ဖောင်းမှ ဖယ်ရှားခြင်း၊ ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အသုံးပြုခွင့်ကန့်သတ်ခြင်း ပြုနိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy17">
+  <h3><span class="ch-num">17</span>အသုံးပြုသူ၏ တာဝန်များ</h3>
+  <p>17.1 အသုံးပြုသူများသည် မှန်ကန်သော မှာယူမှု၊ ပို့ဆောင်မှုနှင့် ငွေပေးချေမှုအချက်အလက်များ ပေးအပ်ရန် တာဝန်ရှိသည်။</p>
+<p>17.2 အသုံးပြုသူများသည် ကုန်သည်များ၊ ပို့ဆောင်သူများ၊ ယာဉ်မောင်းများနှင့် CloudCity ဝန်ထမ်းများအား လေးစားစွာ ဆက်ဆံရမည်ဖြစ်ပြီး ရိုင်းပျခြင်း၊ ခြိမ်းခြောက်ခြင်း၊ ခွဲခြားဆက်ဆံခြင်း သို့မဟုတ် တရားမဝင်သော အပြုအမူများ မပြုရပါ။</p>
+<p>17.3 အသုံးပြုသူများသည် မှာယူမှုကို လက်ခံရရှိချိန်တွင် ပါဝင်ပစ္စည်းများကို စစ်ဆေးရန်နှင့် ပြဿနာတစ်ရပ်ရပ်ကို ပလက်ဖောင်း သို့မဟုတ် ဖောက်သည်ဝန်ဆောင်မှုမှတစ်ဆင့် အချိန်မီ အကြောင်းကြားရန် တာဝန်ရှိသည်။</p>
+<p>17.4 အသုံးပြုသူများသည် မှားယွင်းသော တောင်းဆိုချက်များတင်သွင်းခြင်း၊ ငွေပြန်အမ်းခြင်းမူဝါဒကို အလွဲသုံးစားပြုခြင်း သို့မဟုတ် လိမ်လည်သည့် ငွေပေးချေမှုလုပ်ဆောင်ချက်များ ပြုလုပ်ခြင်းအပါအဝင် ပလက်ဖောင်းကို အလွဲသုံးစား မပြုရပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy18">
+  <h3><span class="ch-num">18</span>CLOUDCITY ၏ တာဝန်များ</h3>
+  <p>18.1 CloudCity သည် အသုံးပြုသူများကို ကုန်သည်များနှင့် ပို့ဆောင်သူ/ယာဉ်မောင်းများနှင့် ချိတ်ဆက်ပေးသည့် ကြားခံအဖြစ် ပလက်ဖောင်းကို စီမံလည်ပတ်သည်။ CloudCity သည် ကုန်သည်များရောင်းချသည့် ကုန်ပစ္စည်းများကို ထုတ်လုပ်ခြင်း၊ ပြင်ဆင်ခြင်း သို့မဟုတ် တိုက်ရိုက်ထိန်းချုပ်ခြင်း မပြုပါ။</p>
+<p>18.2 အထက်ပါအပိုဒ် 16 တွင် ဖော်ပြထားသည့်အတိုင်း အစားအသောက်အရည်အသွေး၊ ပါဝင်ပစ္စည်းများ၊ အစားအသောက်ဘေးကင်းရေး၊ ကုန်ပစ္စည်းမှန်ကန်မှုနှင့် ထုပ်ပိုးမှုတို့အတွက် သက်ဆိုင်ရာကုန်သည်က တာဝန်ယူရမည်။</p>
+<p>18.3 CloudCity သည် ပလက်ဖောင်းပေါ်ရှိ ဝန်ဆောင်မှုများ ချောမွေ့စွာ ဆောင်ရွက်နိုင်ရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှုများ ပြုမည်။ ယင်းတွင် ကုန်သည်များနှင့် ပို့ဆောင်သူ/ယာဉ်မောင်းများကို ကျိုးကြောင်းဆီလျော်စွာ စိစစ်ရွေးချယ်ခြင်းနှင့် စောင့်ကြည့်ခြင်း၊ ဖောက်သည်ဝန်ဆောင်မှုပေးခြင်းနှင့် ခိုင်လုံသော တိုင်ကြားချက်များကို အချိန်မီ ဖြေရှင်းခြင်းတို့ ပါဝင်သည်။</p>
+<p>18.4 CloudCity သည် အသုံးပြုသူဒေတာကို ၎င်း၏ ကိုယ်ရေးကိုယ်တာမူဝါဒနှင့် သက်ဆိုင်ရာဥပဒေအရ ကိုင်တွယ်ဆောင်ရွက်မည်။</p>
+</section>
+
+<section class="policy-section" id="chmy19">
+  <h3><span class="ch-num">19</span>အဆင့်သတ်မှတ်ချက်များနှင့် သုံးသပ်ချက်များ</h3>
+  <p>19.1 မှာယူမှု ပြီးစီးပြီးနောက် CloudCity သည် အသုံးပြုသူများအား ကုန်သည်များ၊ ပို့ဆောင်သူများနှင့် ယာဉ်မောင်းများကို အဆင့်သတ်မှတ်၍ သုံးသပ်ချက်ရေးသားခွင့် ပေးနိုင်သည်။</p>
+<p>19.2 သုံးသပ်ချက်များသည် မှန်ကန်ပြီး သက်ဆိုင်ရာဝန်ဆောင်မှုနှင့် ဆက်စပ်ရမည်။ မှားယွင်းသော၊ အသရေဖျက်သော၊ ရိုင်းပျသော၊ ခွဲခြားဆက်ဆံသော သို့မဟုတ် တရားမဝင်သော အကြောင်းအရာများ မပါဝင်ရသကဲ့သို့ တတိယပုဂ္ဂိုလ်၏ သဘောတူညီချက်မရှိဘဲ ၎င်း၏ ကိုယ်ရေးကိုယ်တာအချက်အလက်များကိုလည်း မဖော်ပြရပါ။</p>
+<p>19.3 အသုံးပြုသူက သုံးသပ်ချက်တင်သွင်းခြင်းအားဖြင့် CloudCity အား ကိုယ်ရေးကိုယ်တာမူဝါဒနှင့် ကိုက်ညီသော နည်းလမ်းဖြင့် ပလက်ဖောင်းနှင့် ဆက်စပ်အရောင်းမြှင့်တင်ရေးပစ္စည်းများတွင် ယင်းသုံးသပ်ချက်ကို ဖော်ပြခြင်း၊ ပြန်လည်ထုတ်လုပ်ခြင်းနှင့် အသုံးပြုခြင်းအတွက် အထူးမဟုတ်သော၊ မူပိုင်ခပေးရန်မလိုသော၊ ကမ္ဘာတစ်ဝန်းသက်ရောက်သော ခွင့်ပြုချက်တစ်ရပ် ပေးအပ်သည်။</p>
+<p>19.4 CloudCity သည် ဤစည်းကမ်းချက်များ သို့မဟုတ် သက်ဆိုင်ရာဥပဒေကို ချိုးဖောက်သည့် သုံးသပ်ချက်တစ်ရပ်ရပ်ကို စိစစ်ခြင်း၊ ကန့်သတ်ခြင်း သို့မဟုတ် ဖယ်ရှားခြင်း ပြုနိုင်သည်။ ယင်းတွင် မှားယွင်းသော၊ အသရေဖျက်သော၊ ရိုင်းပျသော၊ ခြိမ်းခြောက်သော၊ ခွဲခြားဆက်ဆံသော၊ တရားမဝင်သော၊ မသက်ဆိုင်သော၊ ကြော်ငြာမြှင့်တင်သော သို့မဟုတ် ကိုယ်ရေးကိုယ်တာအခွင့်အရေးချိုးဖောက်သော အကြောင်းအရာများ ပါဝင်သည့် သုံးသပ်ချက်များ ပါဝင်သည်။ CloudCity သည် ပုံစံ၊ စာလုံးပေါင်း၊ အရှည် သို့မဟုတ် ရှင်းလင်းမှုအတွက် အဓိကအဓိပ္ပာယ်မပြောင်းလဲသည့် ပြင်ဆင်မှုများ ပြုနိုင်သော်လည်း ယင်းပြင်ဆင်မှုများသည် အသုံးပြုသူဖော်ပြထားသော အဓိပ္ပာယ်၊ ဆက်စပ်အကြောင်းအရာ သို့မဟုတ် သဘောထားကို အဓိကအားဖြင့် မပြောင်းလဲစေရပါ။</p>
+<p>19.5 အသုံးပြုသူသည် မိမိတင်သွင်းထားသော အကြောင်းအရာကို ဖယ်ရှားခြင်း သို့မဟုတ် ကန့်သတ်ခြင်းဆိုင်ရာ ဆုံးဖြတ်ချက်ကို အတွင်းပိုင်းပြန်လည်သုံးသပ်ပေးရန် CloudCity ဖောက်သည်ဝန်ဆောင်မှုသို့ ဆက်သွယ်တောင်းဆိုနိုင်သည်။</p>
+<p>19.6 CloudCity သည် ပလက်ဖောင်းပေါ်ရှိ ကုန်သည်များနှင့် ပို့ဆောင်သူ/ယာဉ်မောင်းများ၏ ဝန်ဆောင်မှုအရည်အသွေးကို စောင့်ကြည့်၍ တိုးတက်ကောင်းမွန်စေရန် အဆင့်သတ်မှတ်ချက်များနှင့် သုံးသပ်ချက်များကို အသုံးပြုနိုင်သည်။ ယင်းတွင် ကုန်သည် သို့မဟုတ် ပို့ဆောင်သူ/ယာဉ်မောင်းက ပလက်ဖောင်းတွင် ဆက်လက်ပါဝင်နိုင်မှုကို သက်ရောက်စေနိုင်သော အတွင်းပိုင်းစွမ်းဆောင်ရည်အမှတ်ပေးစနစ်လည်း ပါဝင်နိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy20">
+  <h3><span class="ch-num">20</span>ကိုယ်ရေးကိုယ်တာအချက်အလက်</h3>
+  <p>20.1 CloudCity သည် ကိုယ်ရေးကိုယ်တာအချက်အလက်များကို CloudCity ကိုယ်ရေးကိုယ်တာမူဝါဒနှင့်အညီ စုဆောင်းခြင်း၊ အသုံးပြုခြင်း၊ သိမ်းဆည်းခြင်း၊ မျှဝေခြင်းနှင့် အခြားနည်းဖြင့် ကိုင်တွယ်ဆောင်ရွက်ခြင်း ပြုသည်။ ယင်းကိုယ်ရေးကိုယ်တာမူဝါဒကို ရည်ညွှန်းထည့်သွင်းခြင်းဖြင့် ဤစည်းကမ်းချက်များ၏ အစိတ်အပိုင်းအဖြစ် သတ်မှတ်ပြီး ပလက်ဖောင်းမှတစ်ဆင့် ကြည့်ရှုနိုင်သည်။</p>
+<p>20.2 ကိုယ်ရေးကိုယ်တာမူဝါဒတွင် CloudCity က စုဆောင်းသည့် ကိုယ်ရေးကိုယ်တာအချက်အလက်အမျိုးအစားများ၊ ယင်းအချက်အလက်များကို ကိုင်တွယ်ဆောင်ရွက်ရသည့် ရည်ရွယ်ချက်များ၊ မျှဝေနိုင်သည့် ပုဂ္ဂိုလ် သို့မဟုတ် အဖွဲ့အစည်းများ၊ သက်ဆိုင်ရာသိမ်းဆည်းကာလများနှင့် အသုံးပြုသူများရရှိသည့် အခွင့်အရေးများနှင့် ရွေးချယ်နိုင်မှုများကို ဖော်ပြထားသည်။</p>
+<p>20.3 မှာယူမှုကို ဖြည့်ဆည်းရန် သို့မဟုတ် ဝန်ဆောင်မှုပေးရန် ကိုယ်ရေးကိုယ်တာအချက်အလက် လိုအပ်ပါက သက်ဆိုင်ရာအချက်အလက်ကို ယင်းလွှဲပြောင်းမှု အပြီးသတ်ရန် သို့မဟုတ် ဝန်ဆောင်မှုပေးရန် ကျိုးကြောင်းဆီလျော်စွာ လိုအပ်သည့်အတိုင်းအတာအထိသာ သက်ဆိုင်ရာကုန်သည်၊ ပို့ဆောင်သူ၊ ယာဉ်မောင်း၊ ငွေပေးချေမှုဝန်ဆောင်မှုပေးသူ သို့မဟုတ် အခြားဝန်ဆောင်မှုပေးသူနှင့် မျှဝေနိုင်သည်။</p>
+<p>20.4 ကိုယ်ရေးကိုယ်တာအချက်အလက် ကိုင်တွယ်ဆောင်ရွက်ခြင်းနှင့်စပ်လျဉ်း၍ ဤစည်းကမ်းချက်များနှင့် ကိုယ်ရေးကိုယ်တာမူဝါဒအကြား မကိုက်ညီမှုရှိပါက မကိုက်ညီသည့်အတိုင်းအတာအထိ ကိုယ်ရေးကိုယ်တာမူဝါဒက အဓိကသက်ရောက်မည်။ မှာယူမှု၊ ငွေပေးချေမှု၊ ငွေပြန်အမ်းမှု၊ အကောင့်အသုံးပြုမှုနှင့် ဝန်ဆောင်မှု၏ အခြားကဏ္ဍများအပေါ် ဤစည်းကမ်းချက်များ ဆက်လက်သက်ရောက်မည်။</p>
+</section>
+
+<section class="policy-section" id="chmy21">
+  <h3><span class="ch-num">21</span>တားမြစ်ထားသော လုပ်ရပ်များ</h3>
+  <p>21.1 သင်သည် ပလက်ဖောင်းကို အသုံးပြု၍ အောက်ပါလုပ်ရပ်များ မပြုရပါ -</p>
+<ul>
+<li>မြန်မာနိုင်ငံရှိ သက်ဆိုင်ရာဥပဒေ သို့မဟုတ် စည်းမျဉ်းတစ်ရပ်ရပ်ကို ချိုးဖောက်ခြင်း၊</li>
+<li>မှားယွင်းသော၊ လွဲမှားစေသော သို့မဟုတ် လိမ်လည်သည့် အချက်အလက်များ တင်သွင်းခြင်း၊</li>
+<li>ပလက်ဖောင်း၏ လည်ပတ်မှု၊ လုံခြုံရေး သို့မဟုတ် ပြည့်စုံမှန်ကန်မှုကို ဝင်ရောက်နှောင့်ယှက်ခြင်း သို့မဟုတ် ပျက်စီးစေခြင်း၊</li>
+<li>ခွင့်ပြုချက်မရှိဘဲ အလိုအလျောက်နည်းလမ်းများ (bot၊ scraper သို့မဟုတ် အလားတူကိရိယာများအပါအဝင်) ကို အသုံးပြု၍ ပလက်ဖောင်းကို ဝင်ရောက်ခြင်း သို့မဟုတ် ဒေတာထုတ်ယူခြင်း၊</li>
+<li>မည်သည့်ပုဂ္ဂိုလ် သို့မဟုတ် အဖွဲ့အစည်းကိုမဆို အယောင်ဆောင်ခြင်း သို့မဟုတ် ယင်းပုဂ္ဂိုလ် သို့မဟုတ် အဖွဲ့အစည်းနှင့် မိမိ၏ဆက်နွယ်မှုကို မှားယွင်းစွာ ဖော်ပြခြင်း၊</li>
+<li>ကုန်သည်၊ ပို့ဆောင်သူ၊ ယာဉ်မောင်း သို့မဟုတ် CloudCity ဝန်ထမ်းများအား နှောင့်ယှက်ခြင်း၊ ခြိမ်းခြောက်ခြင်း သို့မဟုတ် ရိုင်းပျစွာ ဆက်ဆံခြင်း၊</li>
+<li>တရားမဝင်သော၊ အန္တရာယ်ရှိသော သို့မဟုတ် တားမြစ်ထားသော ပစ္စည်းတစ်ရပ်ရပ်ကို မှာယူခြင်း၊ သယ်ယူပို့ဆောင်ရန် တောင်းဆိုခြင်း သို့မဟုတ် သယ်ယူပို့ဆောင်ရန် ကြိုးပမ်းခြင်း၊ သို့မဟုတ်</li>
+<li>ပလက်ဖောင်း၏ လုံခြုံရေးဆိုင်ရာ လုပ်ဆောင်ချက်တစ်ရပ်ရပ်ကို ရှောင်ရှားခြင်း၊ အသုံးမပြုနိုင်အောင် ပြုလုပ်ခြင်း သို့မဟုတ် အခြားနည်းဖြင့် ဝင်ရောက်နှောင့်ယှက်ခြင်း။</li>
+</ul>
+<p>21.2 CloudCity သည် ချိုးဖောက်မှုသံသယရှိသည့်ကိစ္စများကို စုံစမ်းစစ်ဆေးနိုင်ပြီး တားမြစ်ထားသော လုပ်ရပ်တွင် ပါဝင်သည့် အကောင့်တစ်ခုကို ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်း ပြုနိုင်သည်။ ယင်းသည် သက်ဆိုင်ရာဥပဒေအရ CloudCity ရရှိနိုင်သည့် အခြားကုစားခွင့်တစ်ရပ်ရပ်ကို မထိခိုက်စေရပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy22">
+  <h3><span class="ch-num">22</span>ဉာဏပစ္စည်းမူပိုင်ခွင့်</h3>
+  <p>22.1 CloudCity အမည်၊ လိုဂို၊ ကုန်အမှတ်တံဆိပ်၊ ဂရပ်ဖစ်၊ စာသား၊ ဆော့ဖ်ဝဲ၊ အသုံးပြုသူမျက်နှာပြင်နှင့် ဒီဇိုင်းအပါအဝင် ပလက်ဖောင်းပေါ်ရှိ အကြောင်းအရာအားလုံးသည် CloudCity သို့မဟုတ် ၎င်း၏ခွင့်ပြုသူများ၏ ပိုင်ဆိုင်မှုဖြစ်ပြီး မြန်မာနိုင်ငံနှင့် အပြည်ပြည်ဆိုင်ရာ သက်ဆိုင်ရာ ဉာဏပစ္စည်းမူပိုင်ခွင့်ဥပဒေများဖြင့် ကာကွယ်ထားသည်။</p>
+<p>22.2 ဤစည်းကမ်းချက်များနှင့်အညီ ပုဂ္ဂိုလ်ရေး၊ စီးပွားရေးမဟုတ်သော ရည်ရွယ်ချက်အတွက် ပလက်ဖောင်းကို ဝင်ရောက်အသုံးပြုရန် CloudCity က သင့်အား ကန့်သတ်ထားသော၊ အထူးမဟုတ်သော၊ လွှဲပြောင်း၍မရသော၊ ပြန်လည်ရုပ်သိမ်းနိုင်သော ခွင့်ပြုချက်တစ်ရပ် ပေးအပ်သည်။ အထက်ပါခွင့်ပြုချက်မှအပ သွယ်ဝိုက်သဘော၊ အခွင့်အရေးပိတ်ပင်မှု သို့မဟုတ် အခြားနည်းဖြင့် မည်သည့်အခွင့်အရေးမျှ သင့်အား ပေးအပ်ခြင်းမရှိပါ။</p>
+<p>22.3 သက်ဆိုင်ရာဥပဒေက အတိအလင်း ခွင့်ပြုထားသည့်အတိုင်းအတာမှအပ CloudCity ၏ ကြိုတင်စာဖြင့် သဘောတူညီချက်မရှိဘဲ ပလက်ဖောင်း၏ အစိတ်အပိုင်းတစ်ရပ်ရပ်ကို မိတ္တူကူးခြင်း၊ ပြန်လည်ထုတ်လုပ်ခြင်း၊ ပြင်ဆင်ခြင်း၊ ဖြန့်ဝေခြင်း၊ အများပြည်သူရှေ့ပြသခြင်း၊ reverse engineering ပြုလုပ်ခြင်း သို့မဟုတ် ဆင်းသက်လာသောဖန်တီးမှုများ ပြုလုပ်ခြင်း မပြုရပါ။</p>
+<p>22.4 ပလက်ဖောင်းနှင့်စပ်လျဉ်း၍ သင်က CloudCity ထံ ပေးပို့သော တုံ့ပြန်ချက်၊ အကြံပြုချက် သို့မဟုတ် အယူအဆတစ်ရပ်ရပ်ကို CloudCity က ကန့်သတ်ချက်မရှိ အသုံးပြုနိုင်ပြီး သင့်အား လျော်ကြေးပေးရန် မလိုပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy23">
+  <h3><span class="ch-num">23</span>အာမခံချက်ကင်းလွတ်ကြောင်း ဖော်ပြချက်</h3>
+  <p>23.1 ပလက်ဖောင်းနှင့် ဝန်ဆောင်မှုများကို “ရရှိနိုင်သည့်အခြေအနေအတိုင်း” ပေးအပ်သည်။ CloudCity သည် ပလက်ဖောင်းကို အမြဲတမ်းရရှိနိုင်မည်၊ ပြတ်တောက်မှုမရှိမည် သို့မဟုတ် နည်းပညာပိုင်းဆိုင်ရာအမှား လုံးဝကင်းမည်ဟု အာမခံခြင်းမပြုပါ။</p>
+<p>23.2 ကုန်ပစ္စည်း၊ ပါဝင်ပစ္စည်း၊ ဈေးနှုန်း၊ ရရှိနိုင်မှု၊ ပြင်ဆင်ထုတ်လုပ်မှုနှင့် ကုန်သည်၏ဖွင့်လှစ်ချိန်နှင့်သက်ဆိုင်သော အချက်အလက်များကို ပုံမှန်အားဖြင့် သက်ဆိုင်ရာကုန်သည်က ပေးအပ်သည်။ CloudCity သည် ကုန်သည်များအား အချက်အလက်မှန်ကန်စွာ ထိန်းသိမ်းရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှု ပြုမည်ဖြစ်သော်လည်း ကုန်သည်၏ကုန်ပစ္စည်းကို ကိုယ်တိုင်ထုတ်လုပ်ခြင်း သို့မဟုတ် ပြင်ဆင်ခြင်း မပြုပါ။</p>
+<p>23.3 ငွေပေးချေမှုဆောင်ရွက်ခြင်း၊ မှာယူမှုစီမံခန့်ခွဲခြင်း၊ ဖောက်သည်ဝန်ဆောင်မှုပေးခြင်း၊ ပလက်ဖောင်းလည်ပတ်ခြင်း၊ CloudCity လက်ကျန်ငွေကို ကိုင်တွယ်ခြင်း သို့မဟုတ် CloudCity ၏ ကျိုးကြောင်းဆီလျော်သော ထိန်းချုပ်မှုအောက်ရှိ အခြားလုပ်ဆောင်ချက်တစ်ရပ်ရပ်အပါအဝင် CloudCity ကိုယ်တိုင်၏ ပြုလုပ်မှု သို့မဟုတ် ပျက်ကွက်မှုကြောင့် ဖြစ်ပေါ်သော တာဝန်ကို ဤစည်းကမ်းချက်များ၏ မည်သည့်ပြဋ္ဌာန်းချက်ကမျှ ဖယ်ရှားခြင်းမပြုပါ။</p>
+<p>23.4 CloudCity၊ ကုန်သည်များ၊ ပို့ဆောင်သူများ၊ ယာဉ်မောင်းများနှင့် တတိယပုဂ္ဂိုလ်ဝန်ဆောင်မှုပေးသူများအကြား တာဝန်ခွဲဝေသတ်မှတ်ခြင်းသည် အသုံးပြုသူရရှိသည့် မဖြစ်မနေသက်ရောက်သော အခွင့်အရေး သို့မဟုတ် ကုစားခွင့်တစ်ရပ်ရပ်ကို မထိခိုက်စေရပါ။</p>
+<p>23.5 CloudCity သည် ယုံကြည်စိတ်ချရသော ဘေးကင်းရေးပြဿနာ၊ ကုန်သည်၏ အရေးကြီးသော မသင့်လျော်သည့်အပြုအမူ သို့မဟုတ် ထပ်ခါတလဲလဲ ခိုင်လုံသော တိုင်ကြားချက်များကို သိရှိပါက စုံစမ်းစစ်ဆေးခြင်း၊ သက်ဆိုင်ရာကုန်ပစ္စည်းဖော်ပြချက် သို့မဟုတ် ဝန်ဆောင်မှုကို ကန့်သတ်ခြင်း၊ ကုန်သည် သို့မဟုတ် ပို့ဆောင်သူကို ယာယီရပ်ဆိုင်းခြင်းနှင့် အခြားကျိုးကြောင်းဆီလျော်သော ပြင်ဆင်ဆောင်ရွက်ချက်များ ပြုလုပ်နိုင်သည်။</p>
+</section>
+
+<section class="policy-section" id="chmy24">
+  <h3><span class="ch-num">24</span>တာဝန်ယူမှုကန့်သတ်ချက်</h3>
+  <p>24.1 ဤအပိုဒ်ကို လိုက်နာပြီး သက်ဆိုင်ရာဥပဒေအရ ခွင့်ပြုထားသည့် အများဆုံးအတိုင်းအတာအထိ CloudCity သည် ဤစည်းကမ်းချက်များကို ချိုးဖောက်ခြင်း၊ ပေါ့ဆခြင်း သို့မဟုတ် မသင့်လျော်သော ပြုလုပ်မှု သို့မဟုတ် ပျက်ကွက်မှုကြောင့် ဖြစ်ပေါ်ကြောင်း သက်သေပြနိုင်သော တိုက်ရိုက်နှင့် ကျိုးကြောင်းဆီလျော်စွာ ကြိုတင်မျှော်မှန်းနိုင်သည့် ဆုံးရှုံးမှု သို့မဟုတ် ထိခိုက်နစ်နာမှုအတွက်သာ တာဝန်ယူမည်။</p>
+<p>24.2 CloudCity သည် အမြတ်ဆုံးရှုံးမှု၊ စီးပွားရေးအခွင့်အလမ်းဆုံးရှုံးမှု သို့မဟုတ် မျှော်မှန်းထားသော ချွေတာမှုဆုံးရှုံးမှုအပါအဝင် သွယ်ဝိုက်သော၊ ဆက်စပ်ဖြစ်ပေါ်သော၊ အထူး၊ အပြစ်ပေးသဘော သို့မဟုတ် အကျိုးဆက်ဖြစ်သော ဆုံးရှုံးမှုအတွက် တာဝန်မရှိပါ။ သို့ရာတွင် ယင်းဆုံးရှုံးမှုကို ဥပဒေအရ ဖယ်ရှား၍မရခြင်း သို့မဟုတ် CloudCity ၏ ရည်ရွယ်ချက်ရှိသော မသင့်လျော်သည့်အပြုအမူ သို့မဟုတ် အလွန်အမင်းပေါ့ဆမှုကြောင့် တိုက်ရိုက်ဖြစ်ပေါ်ခြင်း မပါဝင်ပါ။</p>
+<p>24.3 ဤစည်းကမ်းချက်များ၏ မည်သည့်ပြဋ္ဌာန်းချက်ကမျှ အောက်ပါတာဝန်များကို ဖယ်ရှားခြင်း သို့မဟုတ် ကန့်သတ်ခြင်း မပြုပါ - (က) ပေါ့ဆမှုကြောင့် သေဆုံးခြင်း သို့မဟုတ် ကိုယ်ခန္ဓာထိခိုက်ဒဏ်ရာရခြင်း၊ (ခ) လိမ်လည်မှု၊ လိမ်လည်သည့် မမှန်ကန်ဖော်ပြချက်၊ ရည်ရွယ်ချက်ရှိသော မသင့်လျော်သည့်အပြုအမူ သို့မဟုတ် အလွန်အမင်းပေါ့ဆမှု၊ (ဂ) CloudCity ကြောင့် ဖြစ်ပေါ်သော ခွင့်ပြုချက်မရှိသည့်၊ နှစ်ကြိမ် သို့မဟုတ် မှားယွင်းသည့် ငွေဖြတ်တောက်မှု၊ (ဃ) CloudCity လက်ကျန်ငွေ သို့မဟုတ် အသုံးပြုသူ၏ ငွေကြေးကို တရားမဝင်စွာ ကိုင်တွယ်ခြင်း၊ (င) ဥပဒေအရ တာဝန်ဖယ်ရှား၍မရသော လျှို့ဝှက်ထိန်းသိမ်းရေးတာဝန် သို့မဟုတ် ကိုယ်ရေးကိုယ်တာအချက်အလက်ဆိုင်ရာ တာဝန်ကို ချိုးဖောက်ခြင်း၊ သို့မဟုတ် (စ) ဥပဒေအရ ဖယ်ရှားခြင်း သို့မဟုတ် ကန့်သတ်ခြင်း မပြုနိုင်သော မဖြစ်မနေသက်ရောက်သော အသုံးပြုသူအခွင့်အရေး၊ ငွေပြန်အမ်းမှု၊ ကုစားခွင့် သို့မဟုတ် လျော်ကြေးတစ်ရပ်ရပ်။</p>
+<p>24.4 အသုံးပြုသူ၊ ကုန်သည် သို့မဟုတ် တတိယပုဂ္ဂိုလ်ဝန်ဆောင်မှုပေးသူက ပေးအပ်သော မမှန်ကန်သည့်အချက်အလက်ကြောင့်သာ ဖြစ်ပေါ်သော ဆုံးရှုံးမှုအတွက် CloudCity တွင် တာဝန်မရှိပါ။ သို့ရာတွင် ယင်းအချက်အလက်သည် အရေးပါစွာ မှားယွင်းကြောင်း CloudCity က သိရှိထားခြင်း သို့မဟုတ် ကျိုးကြောင်းဆီလျော်စွာ သိရှိသင့်ခြင်းရှိသော်လည်း ကျိုးကြောင်းဆီလျော်သော ဆောင်ရွက်ချက် မပြုလုပ်သည့်အတိုင်းအတာအထိ ယင်းကင်းလွတ်ချက် မသက်ဆိုင်ပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy25">
+  <h3><span class="ch-num">25</span>မလွန်ဆန်နိုင်သော အခြေအနေ</h3>
+  <p>25.1 CloudCity ၏ ကျိုးကြောင်းဆီလျော်သော ထိန်းချုပ်မှုအပြင်ဘက်ရှိ အခြေအနေတစ်ရပ် (“မလွန်ဆန်နိုင်သော အခြေအနေ”) ကြောင့် ဤစည်းကမ်းချက်များအရ တာဝန်များကို မဆောင်ရွက်နိုင်ခြင်း သို့မဟုတ် နှောင့်နှေးခြင်း ဖြစ်ပါက CloudCity တွင် တာဝန်မရှိပါ။ ယင်းအခြေအနေတွင် သဘာဝဘေးအန္တရာယ်၊ အလွန်ပြင်းထန်သော ရာသီဥတု၊ မီးလောင်မှု၊ ရေကြီးမှု၊ စစ်ပွဲ၊ လူမှုရေးမငြိမ်မသက်မှု၊ အကြမ်းဖက်လုပ်ရပ်၊ အစိုးရ၏ ဆောင်ရွက်ချက် သို့မဟုတ် ကန့်သတ်ချက်၊ ကူးစက်ရောဂါ သို့မဟုတ် ကပ်ရောဂါ၊ လျှပ်စစ် သို့မဟုတ် ဆက်သွယ်ရေးချို့ယွင်းမှု၊ အင်တာနက်ဝန်ဆောင်မှု ပြတ်တောက်မှု သို့မဟုတ် အလုပ်သမားအငြင်းပွားမှုတို့ ပါဝင်သော်လည်း ယင်းတို့ဖြင့်သာ ကန့်သတ်မထားပါ။</p>
+<p>25.2 မလွန်ဆန်နိုင်သော အခြေအနေ ဖြစ်ပွားနေစဉ် CloudCity သည် သက်ရောက်မှုရှိသော ဝန်ဆောင်မှုများကို ယာယီရပ်ဆိုင်းခြင်း၊ ကန့်သတ်ခြင်း၊ ဝန်ဆောင်မှုဧရိယာကို ကန့်သတ်ခြင်း သို့မဟုတ် ပြင်ဆင်ခြင်း ပြုနိုင်ပြီး အရေးပါသော ပြတ်တောက်မှုတစ်ရပ်ရပ်ကို ပလက်ဖောင်း သို့မဟုတ် အခြားကျိုးကြောင်းဆီလျော်သော နည်းလမ်းမှတစ်ဆင့် အသုံးပြုသူများထံ အသိပေးရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှု ပြုမည်။</p>
+<p>25.3 မလွန်ဆန်နိုင်သော အခြေအနေကြောင့် ငွေပေးချေပြီးသော မှာယူမှု သို့မဟုတ် ဝန်ဆောင်မှုကို အပြည့်အဝ ဆောင်ရွက်၍မရပါက အသုံးပြုသူသည် မဆောင်ရွက်ရသေးသော အပိုင်းအတွက် အပိုဒ် 15 နှင့်အညီ ငွေပြန်အမ်းခွင့်ရှိသည်။ မလွန်ဆန်နိုင်သော အခြေအနေ မဖြစ်ပွားမီ မှာယူမှု သို့မဟုတ် ဝန်ဆောင်မှု၏ တစ်စိတ်တစ်ပိုင်း သို့မဟုတ် အဓိကအစိတ်အပိုင်းကို ဆောင်ရွက်ပြီးဖြစ်ပါက CloudCity သည် အမှန်တကယ် ဆောင်ရွက်ပြီးသော အပိုင်း၏ ကျိုးကြောင်းဆီလျော်သော တန်ဖိုးကိုသာ နုတ်ယူနိုင်ပြီး ကျန်ရှိသော ငွေပြန်အမ်းခွင့်ရှိသည့် ပမာဏကို ပြန်အမ်းရမည်။</p>
+<p>25.4 CloudCity သည် မလွန်ဆန်နိုင်သော အခြေအနေကြောင့် သက်ရောက်မှုရှိသော မှာယူမှုများ၏ ကျိုးကြောင်းဆီလျော်သော မှတ်တမ်းများကို ထိန်းသိမ်းပြီး ဝန်ဆောင်မှုယာယီရပ်ဆိုင်းခြင်း၊ ပယ်ဖျက်ခြင်း သို့မဟုတ် ငွေပြန်အမ်းခြင်းအစီအစဉ်များကို သက်ရောက်မှုရှိသော အသုံးပြုသူများထံ အသိပေးရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှု ပြုမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy26">
+  <h3><span class="ch-num">26</span>ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်း</h3>
+  <p>26.1 လိမ်လည်မှု၊ ခွင့်ပြုချက်မရှိသော ငွေပေးချေမှုလုပ်ဆောင်ချက်၊ အကောင့်ခိုးယူအသုံးပြုမှု၊ တရားမဝင်သောအပြုအမူ၊ အလွဲသုံးစားပြုမှု၊ ပြင်းထန်သော ဘေးကင်းရေး သို့မဟုတ် လုံခြုံရေးအန္တရာယ်၊ မှားယွင်းသော ငွေပြန်အမ်းတောင်းဆိုချက်များကို ထပ်ခါတလဲလဲ တင်သွင်းမှု သို့မဟုတ် အသုံးပြုသူ၊ ကုန်သည်၊ ပို့ဆောင်သူ၊ ယာဉ်မောင်း၊ CloudCity သို့မဟုတ် တတိယပုဂ္ဂိုလ်အား အရေးပါသော ထိခိုက်နစ်နာမှု ဖြစ်စေနိုင်သည့် အပြုအမူရှိကြောင်း CloudCity တွင် ကျိုးကြောင်းဆီလျော်သော သံသယရှိပါက ကြိုတင်အသိပေးခြင်း ရှိစေကာမူ မရှိစေကာမူ သက်ဆိုင်ရာအကောင့်ကို ချက်ချင်း ကန့်သတ်ခြင်း သို့မဟုတ် ယာယီရပ်ဆိုင်းခြင်း ပြုနိုင်သည်။</p>
+<p>26.2 ပြင်းထန်မှုမရှိသော သို့မဟုတ် ပြင်ဆင်ကုစားနိုင်သော ဤစည်းကမ်းချက်များ ချိုးဖောက်မှုအတွက် CloudCity သည် ပုံမှန်အားဖြင့် အကောင့်ကို အပြီးသတ်ပိတ်သိမ်းခြင်းမပြုမီ အသုံးပြုသူထံ ချိုးဖောက်မှုအကြောင်း အသိပေးပြီး ပြင်ဆင်ရန် ကျိုးကြောင်းဆီလျော်သော အခွင့်အရေးပေးမည်။</p>
+<p>26.3 ကျိုးကြောင်းဆီလျော်စွာ ဆောင်ရွက်နိုင်သည့်အခါ CloudCity သည် အကောင့်ကန့်သတ်ခြင်း၊ ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်း၏ ယေဘုယျအကြောင်းရင်းကို အသုံးပြုသူထံ အသိပေးမည်။ သို့ရာတွင် ယင်းအချက်အလက်ပေးခြင်းကို တားမြစ်ထားခြင်း၊ လုံခြုံရေးအန္တရာယ်ဖြစ်စေနိုင်ခြင်း သို့မဟုတ် စုံစမ်းစစ်ဆေးမှုကို အရေးပါစွာ ထိခိုက်စေနိုင်ခြင်းရှိပါက အသိပေးရန် မလိုပါ။</p>
+<p>26.4 အသုံးပြုသူသည် CloudCity ဖောက်သည်ဝန်ဆောင်မှုသို့ ဆက်သွယ်၍ သက်ဆိုင်ရာအချက်အလက်များ ပေးအပ်ခြင်းဖြင့် အကောင့်ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်းဆိုင်ရာ ဆုံးဖြတ်ချက်ကို အတွင်းပိုင်းပြန်လည်သုံးသပ်ပေးရန် တောင်းဆိုနိုင်သည်။</p>
+<p>26.5 အသုံးပြုသူသည် အပိုဒ် 3.6 မှ 3.9 နှင့်အညီ အကောင့်ဖျက်သိမ်းရန် တောင်းဆိုနိုင်သည်။ အကောင့်ဖျက်သိမ်းခြင်း၊ ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်းသည် ယင်းဆောင်ရွက်ချက် အကျိုးသက်ရောက်မည့်နေ့မတိုင်မီ ပေါ်ပေါက်ပြီးသော အခွင့်အရေး၊ တာဝန်၊ ငွေပေးချေမှု၊ ငွေပြန်အမ်းမှု၊ တိုင်ကြားချက်၊ အငြင်းပွားမှု သို့မဟုတ် တာဝန်ယူမှုတစ်ရပ်ရပ်ကို မထိခိုက်စေရပါ။</p>
+<p>26.6 ယာယီရပ်ဆိုင်းထားသော၊ အပြီးသတ်ပိတ်သိမ်းထားသော သို့မဟုတ် ဖျက်သိမ်းထားသော အကောင့်အတွင်း ကျန်ရှိသည့် အသုံးမပြုရသေးသော CloudCity လက်ကျန်ငွေကို အပိုဒ် 12 နှင့် 15 နှင့်အညီ ကန့်သတ်ခြင်း၊ စစ်ဆေးခြင်း၊ ငွေပြန်အမ်းခြင်း၊ ပြန်လည်အသုံးပြုခွင့်ပေးခြင်း သို့မဟုတ် အခြားနည်းဖြင့် ရှင်းလင်းခြင်း ပြုရမည်။ အကောင့်ကို ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်းတစ်ခုတည်းကြောင့် တရားဝင်ပြီး အငြင်းပွားမှုမရှိသော လက်ကျန်ငွေကို CloudCity က အပြီးတိုင်သိမ်းယူခြင်း မပြုရပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy27">
+  <h3><span class="ch-num">27</span>စည်းကမ်းချက်များ ပြင်ဆင်ခြင်း</h3>
+  <p>27.1 CloudCity သည် ဝန်ဆောင်မှုများ၊ စီးပွားရေးလုပ်ငန်းလည်ပတ်မှု၊ ငွေပေးချေမှုအစီအစဉ်များ၊ နည်းပညာ၊ ဘေးကင်းရေးစံနှုန်းများ သို့မဟုတ် သက်ဆိုင်ရာဥပဒေနှင့် စည်းမျဉ်းများ၏ ပြောင်းလဲမှုကို ထင်ဟပ်စေရန် ဤစည်းကမ်းချက်များကို အခါအားလျော်စွာ ပြင်ဆင်နိုင်သည်။</p>
+<p>27.2 အခ၊ ငွေပေးချေမှုနည်းလမ်း၊ ငွေပေးချေမှု သို့မဟုတ် ငွေပြန်အမ်းမှုအစီအစဉ်၊ CloudCity လက်ကျန်ငွေ၊ အသုံးပြုသူ၏တာဝန်၊ ကိုယ်ရေးကိုယ်တာအချက်အလက်အသုံးပြုမှု၊ အငြင်းပွားမှုဖြေရှင်းခြင်း သို့မဟုတ် အကောင့်ယာယီရပ်ဆိုင်းခြင်း သို့မဟုတ် အပြီးသတ်ပိတ်သိမ်းခြင်းကို သက်ရောက်စေသော အရေးပါသည့်ပြင်ဆင်မှုများအတွက် CloudCity သည် ကျိုးကြောင်းဆီလျော်သော ကြိုတင်အသိပေးမှု ပေးမည်။ အရေးမကြီးသော ပြင်ဆင်မှုများသည် ပလက်ဖောင်းတွင် ထုတ်ပြန်သည့်နေ့ သို့မဟုတ် သီးခြားဖော်ပြထားသော အကျိုးသက်ရောက်သည့်နေ့မှ စတင်အကျိုးသက်ရောက်နိုင်သည်။ ဥပဒေ၊ စည်းမျဉ်းကြီးကြပ်ရေး၊ လုံခြုံရေး၊ လိမ်လည်မှုကာကွယ်ရေး သို့မဟုတ် အရေးပေါ်လုပ်ငန်းလည်ပတ်မှုအကြောင်းရင်းကြောင့် ကျိုးကြောင်းဆီလျော်စွာ လိုအပ်ပါက ပြင်ဆင်မှုသည် ချက်ချင်းအကျိုးသက်ရောက်နိုင်သည်။</p>
+<p>27.3 ဥပဒေအရ လိုအပ်ခြင်း သို့မဟုတ် အသုံးပြုသူက အတိအလင်း သဘောတူခြင်းမရှိပါက ပြင်ဆင်မှုသည် ယင်းပြင်ဆင်မှုအကျိုးသက်ရောက်မည့်နေ့မတိုင်မီ အတည်ပြုပြီးသော မှာယူမှု၏ ဈေးနှုန်း၊ ငွေပေးချေမှု၊ ငွေပြန်အမ်းခွင့် သို့မဟုတ် အခြားအရေးပါသော သတ်မှတ်ချက်များအပေါ် နောက်ကြောင်းပြန်၍ မသက်ရောက်ပါ။ ပြင်ဆင်ထားသော စည်းကမ်းချက်များ အကျိုးသက်ရောက်ပြီးနောက် ပလက်ဖောင်းကို ဆက်လက်အသုံးပြုခြင်းသည် ယင်းပြင်ဆင်ထားသော စည်းကမ်းချက်များကို လက်ခံခြင်းဖြစ်သည်။ အသုံးပြုသူက သဘောမတူပါက ပလက်ဖောင်းအသုံးပြုမှုကို ရပ်တန့်ပြီး အပိုဒ် 3 နှင့်အညီ အကောင့်ဖျက်သိမ်းရန် တောင်းဆိုနိုင်သည်။</p>
+<p>27.4 CloudCity သည် အသုံးပြုသူက ဤစည်းကမ်းချက်များကို လက်ခံကြောင်း သက်သေပြသည့် အီလက်ထရွန်နစ်မှတ်တမ်းများကို ထိန်းသိမ်းနိုင်သည်။ ယင်းတွင် အသုံးပြုသူထံ ပြသထားသော စည်းကမ်းချက်ဗားရှင်း၊ လက်ခံသည့်နေ့နှင့်အချိန်၊ သက်ဆိုင်ရာအကောင့်ခွဲခြားသတ်မှတ်ချက်နှင့် လက်ခံကြောင်း အမှန်ခြစ်ခြင်း သို့မဟုတ် စည်းကမ်းချက်များပြသပြီးနောက် မှာယူမှုတင်သွင်းခြင်းကဲ့သို့ အသုံးပြုသူ၏ အတည်ပြုလုပ်ဆောင်ချက်တို့ ပါဝင်နိုင်သည်။</p>
+<p>ဤစည်းကမ်းချက်များနှင့် သတ်မှတ်ချက်များကို အင်္ဂလိပ်၊ မြန်မာ၊ တရုတ် သို့မဟုတ် အခြားလက်ခံပံ့ပိုးထားသော ဘာသာစကားများဖြင့် ပေးအပ်နိုင်သည်။ အင်္ဂလိပ်ဘာသာဗားရှင်းနှင့် ဘာသာပြန်ဗားရှင်းတစ်ရပ်ရပ်အကြား မကိုက်ညီမှု၊ ပဋိပက္ခ သို့မဟုတ် ကွာခြားချက်ရှိပါက အင်္ဂလိပ်ဘာသာဗားရှင်းကို အတည်ပြုမူအဖြစ် ယူရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy28">
+  <h3><span class="ch-num">28</span>ပြဋ္ဌာန်းချက်များ၏ သီးခြားအကျိုးသက်ရောက်မှုနှင့် အခွင့်အရေးစွန့်လွှတ်ခြင်း</h3>
+  <p>28.1 ဤစည်းကမ်းချက်များပါ ပြဋ္ဌာန်းချက်တစ်ရပ်ရပ်ကို သက်ဆိုင်ရာဥပဒေအရ အကျိုးမရှိ၊ တရားမဝင် သို့မဟုတ် အကောင်အထည်ဖော်၍မရဟု ဆုံးဖြတ်ပါက ကျန်ပြဋ္ဌာန်းချက်များသည် ဥပဒေအရ ခွင့်ပြုထားသည့် အများဆုံးအတိုင်းအတာအထိ အပြည့်အဝ ဆက်လက်အကျိုးသက်ရောက်မည်။</p>
+<p>28.2 CloudCity က ဤစည်းကမ်းချက်များအရ အခွင့်အရေးတစ်ရပ်ရပ်ကို မကျင့်သုံးခြင်း သို့မဟုတ် ကျင့်သုံးရန် နှောင့်နှေးခြင်းသည် ယင်းအခွင့်အရေးကို စွန့်လွှတ်ခြင်းဟု မယူဆရပါ။ အခွင့်အရေးတစ်ရပ်ကို တစ်ကြိမ် သို့မဟုတ် တစ်စိတ်တစ်ပိုင်း ကျင့်သုံးခြင်းသည် ယင်းအခွင့်အရေး သို့မဟုတ် အခြားအခွင့်အရေးကို ထပ်မံ သို့မဟုတ် နောက်ထပ်ကျင့်သုံးခြင်းကို မတားဆီးပါ။</p>
+</section>
+
+<section class="policy-section" id="chmy29">
+  <h3><span class="ch-num">29</span>အုပ်ချုပ်သည့်ဥပဒေနှင့် အငြင်းပွားမှုဖြေရှင်းခြင်း</h3>
+  <p>29.1 ဤစည်းကမ်းချက်များကို ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံတော်၏ ဥပဒေများဖြင့် အုပ်ချုပ်ပြီး ယင်းဥပဒေများနှင့်အညီ အဓိပ္ပာယ်ဖွင့်ဆိုရမည်။</p>
+<p>29.2 ဤစည်းကမ်းချက်များ သို့မဟုတ် ပလက်ဖောင်းအသုံးပြုမှုကြောင့် ဖြစ်ပေါ်သော တိုင်ကြားချက် သို့မဟုတ် အငြင်းပွားမှုတစ်ရပ်ရပ်အတွက် အသုံးပြုသူသည် ပထမဦးစွာ CloudCity ဖောက်သည်ဝန်ဆောင်မှုသို့ ဆက်သွယ်ရမည်။</p>
+<p>29.3 CloudCity နှင့် အသုံးပြုသူသည် ရိုးသားစွာ ဆွေးနွေးညှိနှိုင်းခြင်းဖြင့် အငြင်းပွားမှုတစ်ရပ်ရပ်ကို ချစ်ကြည်စွာ ဖြေရှင်းရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှု ပြုရမည်။</p>
+<p>29.4 အငြင်းပွားမှုကို ကျိုးကြောင်းဆီလျော်သော ကာလအတွင်း ချစ်ကြည်စွာ ဖြေရှင်း၍မရပါက သက်ဆိုင်ရာဥပဒေကို လိုက်နာလျက် မြန်မာနိုင်ငံရှိ စီရင်ပိုင်ခွင့်ရှိသော တရားရုံးများသို့ တင်ပြရမည်။</p>
+</section>
+
+<section class="policy-section" id="chmy30">
+  <h3><span class="ch-num">30</span>ဆက်သွယ်ရန်</h3>
+  <p>ဤစည်းကမ်းချက်များ သို့မဟုတ် ပလက်ဖောင်းနှင့်စပ်လျဉ်းသော မေးခွန်း၊ မှာယူမှုအကူအညီ၊ ပယ်ဖျက်ခြင်း၊ ငွေပြန်အမ်းခြင်း၊ တိုင်ကြားချက် သို့မဟုတ် အခြားကိစ္စတစ်ရပ်ရပ်အတွက် အောက်ပါနည်းလမ်းများဖြင့် ဆက်သွယ်ပါ -</p>
+<h4>CloudCity ဖောက်သည်ဝန်ဆောင်မှု</h4>
+<p>ကုမ္ပဏီ - CLOUDCITY INTERNET SERVICE CO., LTD
+ဝဘ်ဆိုက် - www.cloudcitymm.com
+လိပ်စာ - အမှတ် 38D လမ်း၊ 56 လမ်းနှင့် 57 လမ်းကြား၊ ရဲမွန်တောင်ရပ်ကွက်၊ မဟာအောင်မြေမြို့နယ်၊ မန္တလေးမြို့၊ မြန်မာနိုင်ငံ
+ဖောက်သည်ဝန်ဆောင်မှုဖုန်း - 09 782 099 992 | အီးမေးလ် - yinduasan680@gmail.com</p>
+</section>
+</article>
+  </div>
+</div>
 <footer>
   <p>&copy; 2026 CloudCityFood &middot; CLOUDCITY INTERNET SERVICE CO., LTD &middot;
-    <a href="index.html">Home</a> &middot;
-    <a href="legal.html">Privacy &amp; Other Agreements</a>
+    <a href="index.html"><span data-lang-text="en">Home</span><span data-lang-text="zh">首页</span><span data-lang-text="my">ပင်မ</span></a>
   </p>
 </footer>
 
 <script>
-const sections = document.querySelectorAll('.policy-section');
-const tocLinks = document.querySelectorAll('.toc-link');
-function updateActiveTOC() {
-  let current = '';
-  sections.forEach(sec => {
-    const rect = sec.getBoundingClientRect();
-    if (rect.top <= 120) current = sec.id;
-  });
-  tocLinks.forEach(link => {
-    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-  });
-}
-window.addEventListener('scroll', updateActiveTOC, { passive: true });
-updateActiveTOC();
-</script>
+const langNames = { en:'English', zh:'中文', my:'မြန်မာ' };
+const pageTitles = {
+  en:'Terms and Conditions — CloudCityFood',
+  zh:'条款与条件 — CloudCityFood',
+  my:'စည်းကမ်းချက်များ — CloudCityFood'
+};
+const tocTitles = { en:'Table of Contents', zh:'目录', my:'မာတိကာ' };
 
+function setLang(l){
+  document.body.setAttribute('data-lang', l);
+  document.documentElement.lang = l;
+  document.title = pageTitles[l] || pageTitles.en;
+  document.getElementById('currentLang').textContent = langNames[l];
+  const codes = ['en','zh','my'];
+  document.querySelectorAll('.lang-option').forEach((opt,i) => {
+    opt.classList.toggle('active', codes[i] === l);
+  });
+  document.querySelectorAll('[data-lang-text]').forEach(el => {
+    el.style.display = el.getAttribute('data-lang-text') === l ? '' : 'none';
+  });
+  document.getElementById('langDropdown').classList.remove('open');
+  document.querySelectorAll('.lang-version').forEach(v => {
+    v.classList.toggle('active', v.getAttribute('data-lang-version') === l);
+  });
+  document.querySelectorAll('[data-toc-title]').forEach(el => {
+    if (el.getAttribute('data-toc-title') === l) el.textContent = tocTitles[l];
+  });
+  window.scrollTo({top:0});
+  try{ localStorage.setItem('cc_lang', l); }catch(e){}
+  updateActiveTOC();
+}
+
+function toggleLang(e){
+  if(e) e.stopPropagation();
+  document.getElementById('langDropdown').classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  if(!e.target.closest('#langBtn') && !e.target.closest('#langDropdown')){
+    document.getElementById('langDropdown').classList.remove('open');
+  }
+});
+
+const urlLang = new URLSearchParams(location.search).get('lang');
+const savedLang = (()=>{try{return localStorage.getItem('cc_lang');}catch(e){return null;}})();
+setLang(['en','zh','my'].includes(urlLang) ? urlLang : (['en','zh','my'].includes(savedLang) ? savedLang : 'en'));
+
+function updateActiveTOC(){
+  const v = document.querySelector('.lang-version.active');
+  if(!v) return;
+  const secs = v.querySelectorAll('.policy-section');
+  const links = v.querySelectorAll('.toc-link');
+  let cur = '';
+  secs.forEach(s => { if(s.getBoundingClientRect().top <= 120) cur = s.id; });
+  links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
+}
+window.addEventListener('scroll', updateActiveTOC, { passive:true });
+</script>
 </body>
 </html>

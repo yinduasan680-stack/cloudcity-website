@@ -4,641 +4,585 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>CloudCity Food Mini App — Terms and Conditions</title>
-
-<meta name="description" content="Terms and Conditions governing the use of the CloudCity Food Mini App available within the KBZPay application.">
+<meta name="description" content="Terms and Conditions for the CloudCity Food Mini App on KBZPay.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="https://www.cloudcitymm.com/kbzpay-terms.html">
-
 <meta name="theme-color" content="#8818B8">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="format-detection" content="telephone=no">
-
-<link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
 <link rel="shortcut icon" href="icons/favicon.ico">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YX4MBJ42F2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YX4MBJ42F2', { 'send_page_view': true, 'anonymize_ip': true });
-  window.ccTrack = function(eventName, params) {
-    try { if (typeof gtag === 'function') gtag('event', eventName, params || {}); } catch(e) {}
-  };
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#1D1D1F; --ink-2:#3a3a3c; --ink-3:#6e6e73; --ink-4:#86868b;
-  --rule:#D2D2D7; --rule-soft:#E8E8ED;
-  --bg:#FBFBFD; --bg-soft:#F5F5F7; --white:#fff;
+  --rule-soft:#E8E8ED; --bg:#FBFBFD; --bg-soft:#F5F5F7;
   --brand:#8818B8; --brand-deep:#5F0F82; --brand-soft:#F4E8FA;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color:var(--ink);background:var(--bg);min-height:100vh;
-  line-height:1.6;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased;
-}
-
-/* NAV */
+body{font-family:'Inter','Noto Sans Myanmar',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:var(--bg);min-height:100vh;line-height:1.6;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+body[data-lang="my"]{font-family:'Noto Sans Myanmar','Inter',sans-serif}
 nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--rule-soft);height:54px;display:flex;align-items:center}
 .nav-inner{width:100%;max-width:1100px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:0}
 .nav-logo .mark{width:24px;height:24px;border-radius:6px;overflow:hidden;flex-shrink:0}
-.nav-logo .mark img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-logo .mark img{width:100%;height:100%;object-fit:contain;display:block}
 .nav-logo .brand{font-weight:600;font-size:14px;letter-spacing:-0.01em;white-space:nowrap}
-.nav-back{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--ink-3);text-decoration:none;padding:6px 12px;border-radius:980px;transition:background 0.15s,color 0.15s}
-.nav-back:hover{background:var(--bg-soft);color:var(--ink)}
-
-/* HERO */
-.hero{max-width:760px;margin:0 auto;padding:56px 22px 32px;text-align:center}
-.hero-mark{width:64px;height:64px;border-radius:16px;margin:0 auto 20px;background:linear-gradient(135deg,var(--brand),var(--brand-deep));display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px -10px rgba(136,24,184,0.45)}
+.lang-wrap{position:relative}
+.lang-btn{background:transparent;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:980px;font-family:inherit;font-size:13px;color:var(--ink-2);transition:background .15s}
+.lang-btn:hover{background:var(--bg-soft)}
+.lang-dropdown{position:absolute;top:calc(100% + 4px);right:0;background:#fff;border-radius:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.15),0 0 0 1px var(--rule-soft);padding:6px;min-width:130px;display:none;z-index:101}
+.lang-dropdown.open{display:block}
+.lang-option{display:flex;align-items:center;width:100%;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--ink-2);background:transparent;border:none;font-family:inherit;text-align:left;transition:background .12s;min-height:36px}
+.lang-option:hover{background:var(--bg-soft);color:var(--ink)}
+.lang-option.active{color:var(--brand);font-weight:600}
+.hero{max-width:760px;margin:0 auto;padding:56px 22px 24px;text-align:center}
+.hero-mark{width:64px;height:64px;border-radius:16px;margin:0 auto 20px;background:linear-gradient(135deg,var(--brand),var(--brand-deep));display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px -10px rgba(136,24,184,.45)}
 .hero-mark svg{width:32px;height:32px;color:#fff}
-.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
-.hero h1{font-size:clamp(26px,5vw,38px);font-weight:700;letter-spacing:-0.025em;line-height:1.15;margin-bottom:14px}
-.hero .effective-date{display:inline-block;font-size:13px;color:var(--ink-3);background:var(--bg-soft);padding:6px 14px;border-radius:980px;margin-bottom:20px}
-.hero .intro-text{text-align:left;font-size:14px;color:var(--ink-2);line-height:1.7;max-width:640px;margin:0 auto}
-.hero .intro-text p{margin-bottom:12px}
-.hero .intro-text strong{color:var(--ink)}
-
-/* LAYOUT: sidebar + content */
-.legal-layout{max-width:1100px;margin:0 auto;padding:0 22px 80px;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
-
-/* TOC SIDEBAR */
+.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.hero h1{font-size:clamp(24px,5vw,34px);font-weight:700;letter-spacing:-0.025em;line-height:1.15;margin-bottom:14px}
+body[data-lang="my"] .hero h1{line-height:1.5}
+.hero .effective-date{display:inline-block;font-size:13px;color:var(--ink-3);background:var(--bg-soft);padding:6px 14px;border-radius:980px}
+.hero-intro-text{max-width:1100px;margin:0 auto;padding:0 22px 8px;text-align:left;font-size:13.5px;color:var(--ink-2);line-height:1.7}
+.legal-layout{max-width:1100px;margin:0 auto;padding:24px 22px 80px;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
 .toc-sidebar{position:sticky;top:78px;background:#fff;border:1px solid var(--rule-soft);border-radius:16px;padding:18px;max-height:calc(100vh - 100px);overflow-y:auto}
-.toc-title{font-size:11px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;padding:0 8px}
-.toc-link{display:block;font-size:13px;color:var(--ink-3);text-decoration:none;padding:7px 8px;border-radius:8px;line-height:1.4;transition:background 0.12s,color 0.12s;margin-bottom:1px}
+.toc-title{font-size:11px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding:0 8px}
+.toc-link{display:block;font-size:12.5px;color:var(--ink-3);text-decoration:none;padding:6px 8px;border-radius:8px;line-height:1.4;transition:background .12s;margin-bottom:1px}
 .toc-link:hover{background:var(--bg-soft);color:var(--ink)}
 .toc-link.active{background:var(--brand-soft);color:var(--brand-deep);font-weight:600}
-
-/* CONTENT */
+body[data-lang="my"] .toc-link{line-height:1.6}
 .policy-article{background:#fff;border:1px solid var(--rule-soft);border-radius:20px;padding:8px 36px}
-.policy-section{padding:28px 0;border-bottom:1px solid var(--rule-soft)}
+.policy-section{padding:24px 0;border-bottom:1px solid var(--rule-soft)}
 .policy-section:last-child{border-bottom:none}
-.policy-section h3{font-size:19px;font-weight:600;letter-spacing:-0.015em;margin-bottom:14px;display:flex;align-items:baseline;gap:10px;scroll-margin-top:70px}
+.policy-section h3{font-size:17px;font-weight:600;letter-spacing:-0.015em;margin-bottom:14px;display:flex;align-items:baseline;gap:10px;scroll-margin-top:70px}
 .ch-num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;background:var(--brand);color:#fff;font-size:12px;font-weight:700;border-radius:7px;flex-shrink:0}
-.policy-section h4{font-size:14.5px;font-weight:600;color:var(--ink-2);margin:16px 0 6px}
-.policy-section p{font-size:14.5px;color:var(--ink-2);line-height:1.75;margin-bottom:10px}
-.policy-section p strong{color:var(--ink);font-weight:600}
-.policy-section ul{margin:8px 0 12px 0;padding-left:20px}
-.policy-section li{font-size:14.5px;color:var(--ink-2);line-height:1.7;margin-bottom:5px}
-.policy-section blockquote{background:var(--bg-soft);border-left:3px solid var(--brand);padding:12px 16px;margin:10px 0;border-radius:0 10px 10px 0;font-size:14px;color:var(--ink-2);line-height:1.7}
-
-/* FOOTER */
-footer{text-align:center;padding:32px 22px;font-size:12px;color:var(--ink-4);border-top:1px solid var(--rule-soft);background:rgba(255,255,255,0.6)}
-footer a{color:var(--ink-3);text-decoration:none}
-footer a:hover{color:var(--brand)}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .legal-layout{grid-template-columns:1fr;gap:20px}
-  .toc-sidebar{position:static;max-height:none}
-  .policy-article{padding:8px 20px}
-}
-@media(max-width:540px){
-  .hero{padding:40px 18px 24px}
-  .hero h1{font-size:24px}
-  .policy-article{padding:8px 16px;border-radius:16px}
-  .policy-section h3{font-size:17px}
-  .nav-inner{padding:0 14px}
-}
-
-::selection{background:rgba(136,24,184,0.18);color:var(--ink)}
+.policy-section p{font-size:14px;color:var(--ink-2);line-height:1.75;margin-bottom:10px}
+.policy-section p.sub-clause{padding-left:6px}
+body[data-lang="my"] .policy-section h3{line-height:1.5}
+body[data-lang="my"] .policy-section p{line-height:1.85}
+.lang-version{display:none}
+.lang-version.active{display:block}
+footer{text-align:center;padding:32px 22px;font-size:12px;color:var(--ink-4);border-top:1px solid var(--rule-soft);background:rgba(255,255,255,.6)}
+@media(max-width:900px){.legal-layout{grid-template-columns:1fr;gap:20px}.toc-sidebar{position:static;max-height:none}.policy-article{padding:8px 20px}}
+@media(max-width:540px){.hero{padding:40px 18px 20px}.policy-article{padding:8px 16px;border-radius:16px}.nav-inner{padding:0 14px}}
+::selection{background:rgba(136,24,184,.18);color:var(--ink)}
 </style>
 </head>
-<body>
-
+<body data-lang="en">
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
       <span class="mark"><img src="data:image/png;base64,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" alt="CloudCityFood"></span>
       <span class="brand">CloudCityFood</span>
     </a>
-    <a href="index.html" class="nav-back">
-      <span>‹</span>
-      <span>Home</span>
-    </a>
+    <div class="lang-wrap">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang(event)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span id="currentLang">English</span>
+      </button>
+      <div class="lang-dropdown" id="langDropdown">
+        <button class="lang-option active" onclick="setLang('en')">English</button>
+        <button class="lang-option" onclick="setLang('my')">မြန်မာ</button>
+      </div>
+    </div>
   </div>
 </nav>
-
 <section class="hero">
   <div class="hero-mark">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
   </div>
-  <div class="hero-eyebrow">Legal Document</div>
-  <h1>CloudCity Food Mini App<br>Terms and Conditions</h1>
-  <div class="effective-date">Effective Date: 13 July 2026</div>
-  <div class="intro-text">
-    <p><strong>Effective Date:</strong> 13 july 2026</p>
-<p>These Terms and Conditions ("Terms") govern access to and use of the CloudCity Food Mini App available within the KBZPay application ("Mini App").</p>
-<p>The Mini App is owned and operated by <strong>CLOUDCITY INTERNET SERVICE CO., LTD</strong> ("CloudCity Food", "CloudCity", "we", "us", or "our").</p>
-<p>By accessing or using the Mini App, placing an Order, making a payment, or using any Service, the Customer confirms that the Customer has read, understood, and agreed to these Terms, the applicable KBZPay Terms and Conditions, the CloudCity Privacy Policy, and any additional terms or policies displayed in the Mini App.</p>
-<p>If the Customer does not agree with these Terms, the Customer must stop using the Mini App.</p>
+  <div class="hero-eyebrow">KBZPay · Mini App</div>
+  <h1>
+    <span data-lang-text="en">CloudCity Food Mini App<br>Terms and Conditions</span>
+    <span data-lang-text="my">CloudCity Food ဝန်ဆောင်မှု<br>စည်းမျဉ်းစည်းကမ်းများ</span>
+  </h1>
+  <div class="effective-date">
+    <span data-lang-text="en">Effective Date: 13 August 2026</span>
+    <span data-lang-text="my">စတင်အာဏာတည်သည့်ရက်: ၂၀၂၆ သြဂုတ် ၁၃</span>
   </div>
 </section>
 
-<div class="legal-layout">
-  <aside class="toc-sidebar">
-    <div class="toc-title">Table of Contents</div>
-    <a href="#ch1" class="toc-link" data-ch="1">1. DEFINITIONS</a><a href="#ch2" class="toc-link" data-ch="2">2. SERVICES PROVIDED</a><a href="#ch3" class="toc-link" data-ch="3">3. USER ELIGIBILITY AND ACCOUNT</a><a href="#ch4" class="toc-link" data-ch="4">4. MERCHANT, PRODUCT, AND SERVICE INFORMATION</a><a href="#ch5" class="toc-link" data-ch="5">5. PLACING AND CONFIRMING ORDERS</a><a href="#ch6" class="toc-link" data-ch="6">6. MINIMUM ORDER VALUE</a><a href="#ch7" class="toc-link" data-ch="7">7. SPECIAL INSTRUCTIONS AND ALLERGENS</a><a href="#ch8" class="toc-link" data-ch="8">8. PRICES, FEES, AND PAYMENTS</a><a href="#ch9" class="toc-link" data-ch="9">9. FOOD DELIVERY</a><a href="#ch10" class="toc-link" data-ch="10">10. STORE PICKUP</a><a href="#ch11" class="toc-link" data-ch="11">11. DELI</a><a href="#ch12" class="toc-link" data-ch="12">12. SAY BUY</a><a href="#ch13" class="toc-link" data-ch="13">13. TAXI SERVICE</a><a href="#ch14" class="toc-link" data-ch="14">14. MOBILE TOP-UP</a><a href="#ch15" class="toc-link" data-ch="15">15. CANCELLATION AND REFUNDS</a><a href="#ch16" class="toc-link" data-ch="16">16. CUSTOMER, MERCHANT, RIDER, AND CLOUDCITY RESPONSIBILITIES</a><a href="#ch17" class="toc-link" data-ch="17">17. RATINGS, REVIEWS, MESSAGES, AND NOTIFICATIONS</a><a href="#ch18" class="toc-link" data-ch="18">18. PERSONAL DATA AND PRIVACY</a><a href="#ch19" class="toc-link" data-ch="19">19. PROHIBITED USE</a><a href="#ch20" class="toc-link" data-ch="20">20. SERVICE AVAILABILITY, DISCLAIMER, AND LIMITATION OF LIABILITY</a><a href="#ch21" class="toc-link" data-ch="21">21. FORCE MAJEURE</a><a href="#ch22" class="toc-link" data-ch="22">22. INTELLECTUAL PROPERTY</a><a href="#ch23" class="toc-link" data-ch="23">23. SUSPENSION AND TERMINATION</a><a href="#ch24" class="toc-link" data-ch="24">24. AMENDMENTS</a><a href="#ch25" class="toc-link" data-ch="25">25. SEVERABILITY AND WAIVER</a><a href="#ch26" class="toc-link" data-ch="26">26. GOVERNING LAW AND DISPUTE RESOLUTION</a><a href="#ch27" class="toc-link" data-ch="27">27. LANGUAGE</a><a href="#ch28" class="toc-link" data-ch="28">28. CONTACT US</a>
-  </aside>
-
-  <article class="policy-article">
-    
-<section class="policy-section" id="ch1">
+<div class="lang-version active" data-lang-version="en">
+  <div class="hero-intro-text"><p>These “Terms and Conditions” are set for User (“You” “You” “Your” “Yours”) who are going to use CloudCity Food (''Mini App”) or Merchant ("CloudCity Food”) in KBZPay App. Those who use CloudCity FoodMini App shall follow the rules in these Terms and Conditions. By accessing CloudCity Food App in the KBZPay Blue App and obtaining the CloudCity Food App (Mini App) Service, it is considered that Users have read, understood and accepted the Terms and Conditions, including the policies and additional Terms and Conditions available Mini App or available by hyperlink. In the case of directly or indirectly harming Users’ interests including Users’ personal information due to ignorance of Users in registering to get this Service, CloudCity Food App (Mini App) Payment Agency of KBZ (KBZPay), CloudCity Food and its members shall not be held to any liability. Terms and Conditions to get CloudCity Food (Mini App) Service are as follows:</p></div>
+  <div class="legal-layout">
+    <aside class="toc-sidebar">
+      <div class="toc-title">Contents</div>
+      <a href="#kbz-en-1" class="toc-link">1. DEFINITIONS</a><a href="#kbz-en-2" class="toc-link">2. OBTAINING AND USING CLOUDCITY FOOD (MINI APP)</a><a href="#kbz-en-3" class="toc-link">3. SERVICES OF CLOUDCITY FOOD</a><a href="#kbz-en-4" class="toc-link">4. FOOD DELIVERY SERVICE USER RESPONSIBILITIES</a><a href="#kbz-en-5" class="toc-link">5. ERRAND SERVICE USER RESPONSIBILITIES</a><a href="#kbz-en-6" class="toc-link">6. SAY BUY SERVICE USER RESPONSIBILITIES</a><a href="#kbz-en-7" class="toc-link">7. MOTORCYCLE TAXI SERVICE USER RESPONSIBILITIES</a><a href="#kbz-en-8" class="toc-link">8. MERCHANT’S RIGHT</a><a href="#kbz-en-9" class="toc-link">9. SERVICE CANCELLATION &amp; REFUND POLICY</a><a href="#kbz-en-10" class="toc-link">10. MEMBERSHIP REGISTRATION</a><a href="#kbz-en-11" class="toc-link">11. TERMINATION, SUSPENDING AND CANCELLATION OF S</a><a href="#kbz-en-12" class="toc-link">12. SENDING NOTIFICATIONS</a><a href="#kbz-en-13" class="toc-link">13. LIMITATIONS</a><a href="#kbz-en-14" class="toc-link">14. INDEMNITY</a><a href="#kbz-en-15" class="toc-link">15. REPRESENTATION AND WARRANTIES</a><a href="#kbz-en-16" class="toc-link">16. INTELLECTUAL PROPERTY RIGHTS</a><a href="#kbz-en-17" class="toc-link">17. DISCLAIMER</a><a href="#kbz-en-18" class="toc-link">18. FORCE MAJEURE</a><a href="#kbz-en-19" class="toc-link">19. NOTIFICATION</a><a href="#kbz-en-20" class="toc-link">20. AMENDMENT</a><a href="#kbz-en-21" class="toc-link">21. SEVERABILITY</a><a href="#kbz-en-22" class="toc-link">22. ASSIGNMENT</a><a href="#kbz-en-23" class="toc-link">23. GOVERNING LAW AND DISPUTE RESOLUTION</a><a href="#kbz-en-24" class="toc-link">24. WAIVER</a><a href="#kbz-en-25" class="toc-link">25. LANGUAGE</a><a href="#kbz-en-26" class="toc-link">26. CUSTOMER CONTACT</a>
+    </aside>
+    <article class="policy-article">
+<section class="policy-section" id="kbz-en-1">
   <h3><span class="ch-num">1</span>DEFINITIONS</h3>
-  <h4>1.1 "Customer" or "User"</h4>
-<p>Means an individual who accesses or uses the CloudCity Food Mini App or submits an Order or service request through the Mini App.</p>
-<h4>1.2 "Merchant"</h4>
-<p>Means a restaurant, food outlet, shop, service provider, or other business offering products or services through the Mini App.</p>
-<h4>1.3 "Rider" or "Driver"</h4>
-<p>Means a person assigned through the CloudCity platform to provide Food Delivery, Deli, Say Buy, or Taxi Service.</p>
-<h4>1.4 "Order"</h4>
-<p>Means a request submitted by a Customer through the Mini App for products or services.</p>
-<h4>1.5 "Mini App"</h4>
-<p>Means the CloudCity Food Mini App operating inside the KBZPay application.</p>
-<h4>1.6 "Food Delivery"</h4>
-<p>Means the ordering and delivery of food or other products from participating Merchants.</p>
-<h4>1.7 "Deli"</h4>
-<p>Means a delivery service through which a Rider collects and delivers permitted items between locations specified by the Customer.</p>
-<h4>1.8 "Say Buy"</h4>
-<p>Means a service through which a Rider purchases permitted products on behalf of the Customer and delivers them to the Customer.</p>
-<h4>1.9 "Taxi Service"</h4>
-<p>Means a ride-booking service that connects Customers with available Drivers.</p>
-<h4>1.10 "Store Pickup"</h4>
-<p>Means a service option under which the Customer collects an Order directly from the Merchant's location.</p>
-<h4>1.11 "Mobile Top-up"</h4>
-<p>Means the purchase of supported mobile phone credit through CloudCity Balance or another supported payment method displayed in the Mini App.</p>
-<h4>1.12 "CloudCity Balance"</h4>
-<p>Means the digital balance recorded in the Customer's CloudCity account and available for supported services.</p>
-<h4>1.13 "KBZPay"</h4>
-<p>Means the digital payment services provided by Kanbawza Bank Limited through the KBZPay application.</p>
-<h4>1.14 "Refund"</h4>
-<p>Means a full or partial repayment approved in connection with a cancelled, unavailable, incorrect, damaged, incomplete, duplicated, or otherwise unsatisfactory Order or transaction.</p>
-<h4>1.15 "Business Day"</h4>
-<p>Means a day other than Saturday, Sunday, a public holiday, or a bank holiday in Myanmar.</p>
+  <p>“Business Day” means a day other than a Saturday, Sunday, public holiday, or bank holiday in Myanmar.</p>
+          <p>“KBZ Bank” means Kanbawza Bank Limited and all the branches of KBZ Bank, including any branches that shall be set up by KBZ Bank in the future.</p>
+          <p>“KYC” means “Know Your Customers”, requirements for registration issued by the Central Bank of Myanmar and/or other relevant authorities.</p>
+          <p>“Mini App” means the CloudCity Food App owned by the Merchant, a Mini App that can be used in the KBZPay, and KBZPay acts as an agent on behalf of the Merchant to perform the functions of this Mini App and the functions of the App to facilitate Users' orders.</p>
+          <p>“Service Fees” means all fees and costs charged for using the Service of CloudCity Food (Mini App).</p>
+          <p>“Services” means products and Services offered by Merchants in CloudCity Food App (Mini App) for Users, for which Service fees can be paid through KBZPay.</p>
+          <p>“User/Customer” means any individual who uses the Mini App to order goods, request delivery or errand services, or otherwise utilize the services provided within the Mini App.</p>
+          <p>“Vendors” means an individual or company that supplies services to the Customer through the CloudCity Food (Mini App) in the KBZPay.</p>
 </section>
 
-<section class="policy-section" id="ch2">
-  <h3><span class="ch-num">2</span>SERVICES PROVIDED</h3>
-  <h4>2.1</h4>
-<p>CloudCity Food provides an online platform through which Customers may access the following services:</p>
-<ul><li>Food Delivery;</li><li>Store Pickup;</li><li>Deli;</li><li>Say Buy;</li><li>Taxi Service;</li><li>Mobile Top-up; and</li><li>other services that may be added from time to time.</li></ul>
-<h4>2.2</h4>
-<p>The primary purpose of the CloudCity Food Mini App is to allow Customers to browse nearby Merchants, view products and menus, place Orders, make payments, communicate with Merchants, and track Order progress directly within KBZPay.</p>
-<h4>2.3</h4>
-<p>Service availability may depend on:</p>
-<ul><li>the Customer's location;</li><li>supported service areas;</li><li>Merchant operating hours;</li><li>product availability;</li><li>Rider or Driver availability;</li><li>road and traffic conditions;</li><li>internet and telecommunications conditions;</li><li>system availability; and</li><li>other operational circumstances.</li></ul>
-<h4>2.4</h4>
-<p>CloudCity may add, modify, restrict, suspend, or discontinue any Service where reasonably necessary for operational, security, legal, technical, or commercial reasons.</p>
+<section class="policy-section" id="kbz-en-2">
+  <h3><span class="ch-num">2</span>OBTAINING AND USING CLOUDCITY FOOD (MINI APP)</h3>
+  <p>Users are responsible for ensuring that their own software and hardware are suitable and up-to-date. User must provide certain devices, software, and internet connections to use CloudCity Food services. For as long as User use CloudCity Food services, CloudCity Food consent to retrieve updated information about CloudCity Food activities or from CloudCity Food .</p>
+          <p>CloudCity Food Mini App is provided by developers of CloudCity Food Company. CloudCity Food is fully responsible for the authenticity, legality, and validity of the service information, data and operations.</p>
+          <p>KBZ reserves the right to revise initiatives introduced in response to COVID-19 and natural disasters or force majeure events at any time, as the situation evolves.</p>
+          <p>In case of any dispute arising from the all processes and the services received by the Receiver, the Customer can directly contact the CloudCity Food Call center support through the contact methods mentioned in Clause [ 26 ] and CloudCity Food will make a decision on these complaints.</p>
+          <p>Those who wish to use this Service but are under 18 years of age shall agree and accept these Terms and Conditions, and with the approval of parent(s) or legal guardian(s) who are liable for any payment the Users under 18 years of age can obtain this Service. Without the approval of parent(s) or legal guardian(s), the Service User under 18 years of age shall cease using this Service by accessing CloudCity Food (Mini App).</p>
+          <p>To obtain this service, it is needed to be a KBZPay user registered at the KBZPay.</p>
+          <p>To be able to provide Service to the User, to respond to the request of the User, to use in legal affairs, to enforce rules and regulations, to settle any affairs arising out of using the Service, and to send information concerning with the Service, the User shall agree and grant KBZPay to access User’s information which have been filled when the registration was made to use this Service for maintaining, sharing and disclosing. Registering in CloudCity Food (Mini App) through the mobile phone or email of the User is considered that the User accepts and agrees to send all information on this Service to the mobile phone or email of the User through SMS and SMS link.</p>
+          <p>KBZ and CloudCity Food will use reasonable efforts to ensure the availability of the Mini App and its associated services. However, the User acknowledges that there may be interruptions or delays due to maintenance, updates, or technical issues, and KBZ does not guarantee uninterrupted or error-free services.</p>
+          <p>You are prohibited from utilizing CloudCity Food ’s products for unlawful or unauthorized activities and must adhere to all legal regulations while using the Service. All communications, including emails and text messages, exchanged between you and CloudCity Food , KBZPay may be recorded either to protect the rights, to ensure quality and for legal considerations.</p>
+          <p>The User agrees and acknowledges to notify immediately to KBZ and Mini App service providers of unauthorized use of their accounts or services without their permissions or any breach of security. The User shall solely be responsible for any losses or damages resulting from the failure of such notification.</p>
+          <p>According to this Terms and Conditions, User agrees that KBZ has the right to provide personal information and Biometric data, and account data of the User to other parties (outside Service providers or agents), or User’s data mentioned by the User in the Application to use this Service to subsidiaries of KBZ, Branches, financial institutions, Credit Bureau, representatives and legal organizations, and authorizes KBZ to do so.</p>
+          <p>User mobile phone number and information will be recorded in CloudCity Food system after you registered the app. User mobile phone number and others information will also be recorded in Cloud City system based on your using app function. User must access counting User data information and activities to make changes updated information from CloudCity Food, or for rewards, rating or other discount features.</p>
+          <p>User agrees to follow CloudCity Food Terms and Conditions that may be regularly updated on CloudCity Food ’s website.</p>
+          <p>All normal KBZPay Terms and Conditions apply.</p>
 </section>
 
-<section class="policy-section" id="ch3">
-  <h3><span class="ch-num">3</span>USER ELIGIBILITY AND ACCOUNT</h3>
-  <h4>3.1</h4>
-<p>Customers aged 18 or above may use the Mini App independently.</p>
-<p>Customers under 18 must use the Mini App with the permission and supervision of a parent or legal guardian. The parent or legal guardian shall be responsible for the Customer's use of the Services and any related payments.</p>
-<h4>3.2</h4>
-<p>Customers may access the Mini App through KBZPay authorization and may be required to provide additional information necessary for Order processing, payment, delivery, pickup, or customer support.</p>
-<h4>3.3</h4>
-<p>Customers must provide complete, accurate, truthful, and current information, including where applicable:</p>
-<ul><li>Customer name;</li><li>telephone number;</li><li>delivery address;</li><li>pickup address;</li><li>destination address;</li><li>map location;</li><li>Order details;</li><li>product details;</li><li>recipient information; and</li><li>other information required for the relevant Service.</li></ul>
-<h4>3.4</h4>
-<p>CloudCity, the Merchant, Rider, or Driver shall not be responsible for delay, service failure, loss, additional cost, or unsuccessful delivery caused by incorrect, incomplete, misleading, or outdated information provided by the Customer.</p>
-<h4>3.5</h4>
-<p>Customers are responsible for maintaining the security of their mobile devices, KBZPay accounts, and CloudCity accounts.</p>
-<h4>3.6</h4>
-<p>CloudCity will never ask a Customer to disclose the Customer's KBZPay PIN, OTP, or other confidential authentication information.</p>
+<section class="policy-section" id="kbz-en-3">
+  <h3><span class="ch-num">3</span>SERVICES OF CLOUDCITY FOOD</h3>
+  <p>Users in Mandalay will be able to access and use the following services through the CloudCity Food Mini App on KBZPay.</p>
+          <p>Food Delivery Service</p>
+          <p>Errand Service</p>
+          <p>Say Buy Service</p>
+          <p>Motorcycle Taxi Service</p>
+          <p>Users must access the CloudCity Food Mini App through KBZPay to perform account verification with KBZPay's verification, select the required service from the above offerings, review the applicable service fees as well as the terms and conditions, and complete the payment via KBZPay.</p>
+          <p>This Mini App integrates and connects users, Vendors, riders, motorcycle taxi drivers, and the Merchant’s operational system into a single digital service. The Mini App supports features such as creating orders or rides, confirming payments, service fulfillment by merchants or riders, real-time status and rider location tracking, proof of service completion, order history viewing, and feedback submission.</p>
+          <p>This Mini App will be available in 4 languages: Burmese, English, Chinese, and Thai.</p>
 </section>
 
-<section class="policy-section" id="ch4">
-  <h3><span class="ch-num">4</span>MERCHANT, PRODUCT, AND SERVICE INFORMATION</h3>
-  <h4>4.1</h4>
-<p>Merchant information, menus, product descriptions, images, prices, stock availability, operating hours, preparation times, and related details may be provided or maintained by the Merchant.</p>
-<h4>4.2</h4>
-<p>CloudCity will take reasonable steps to maintain accurate Merchant and product information but does not guarantee that all information will always be complete, current, accurate, or error-free.</p>
-<h4>4.3</h4>
-<p>Products, services, prices, stock, operating hours, and estimated preparation times may change without prior notice.</p>
-<h4>4.4</h4>
-<p>Product images are for reference only. The actual product, packaging, portion size, colour, presentation, or appearance may differ.</p>
-<h4>4.5</h4>
-<p>Where a product becomes unavailable after an Order is submitted, CloudCity or the Merchant may:</p>
-<ul><li>contact the Customer;</li><li>suggest a substitute;</li><li>remove the unavailable item;</li><li>process a partial Refund;</li><li>adjust the Order with the Customer's approval; or</li><li>cancel the Order where fulfilment is not reasonably possible.</li></ul>
+<section class="policy-section" id="kbz-en-4">
+  <h3><span class="ch-num">4</span>FOOD DELIVERY SERVICE USER RESPONSIBILITIES</h3>
+  <p>Through the Mini App, Users will be able to browse menus and items from Vendors restaurants, add desired food items to their shopping cart, place orders, choose between home delivery or self-pickup based on their preference, review the total amount and make full payment via KBZPay, track food delivery status in real-time, view order history, and submit reviews and feedback.</p>
+          <p>If a User selects the home delivery service, they must accurately select and enter the delivery address and pay the total amount, including the delivery fee, via KBZPay; if Self Pickup is selected, providing a delivery address and paying a delivery fee are not required.</p>
+          <p>Neither KBZ nor the Merchant shall be held liable for any delivery failures or delays resulting from incomplete, inaccurate, or missing information provided by the User. The User assumes full responsibility for ensuring that all submitted details including, but not limited to, the delivery address and contact information are accurate, complete, and correct to facilitate proper order fulfillment.</p>
+          <p>Allergens- KBZ has no obligation to display ingredient or allergen information on the Mini App, nor does KBZ guarantee that products sold by Vendors are allergen-free. If the User has any allergies, dietary sensitivities, or specific dietary restrictions, the User must contact the Vendor directly before placing an order through the Mini App.</p>
+          <p>The User shall accept the ordered food items from the delivery rider at the agreed location and time. The User is obligated to use all reasonable efforts to take delivery of the ordered items at the designated location and time agreed upon between the User and the Vendor.</p>
+          <p>The User shall bear all risks of loss, damage, deterioration in food quality, or changes in condition (such as variations from suitable consumption temperatures) resulting from their unreasonable delay in accepting the delivered order. In such events, the User shall not be entitled to any refund, replacement, or exchange of the food items. In the case of Self Pickup, the User holds sole responsibility for inspecting the ordered items and must report any issues and/or defects to the Vendor before leaving the Merchant's premises.</p>
+          <p>KBZ shall not be held liable for any act, omission, or default in any part of the Vendor’s services, including but not limited to service deficiencies, incorrect order fulfillment, delivery delays, or improper packaging.</p>
+          <p>If any breach of food safety or quality standards occurs regarding the food items ordered by the User, which are provided by the Vendor, the User must contact the Vendor directly for that order. KBZ shall not be held liable or responsible for providing such services.</p>
+          <p>The User acknowledges and agrees that KBZ acts as a Payment Agency and shall not be held liable or responsible for any issues or disputes arising from the use of the Food Delivery service within the Mini App.</p>
 </section>
 
-<section class="policy-section" id="ch5">
-  <h3><span class="ch-num">5</span>PLACING AND CONFIRMING ORDERS</h3>
-  <h4>5.1</h4>
-<p>Customers may browse Merchants, select products, choose product specifications and add-ons, add products to the shopping cart, enter Order remarks, select a delivery method, choose a payment method, and submit an Order through the Mini App.</p>
-<h4>5.2</h4>
-<p>Before confirming an Order, the Customer must review:</p>
-<ul><li>selected products or services;</li><li>quantity;</li><li>product specifications;</li><li>add-ons;</li><li>delivery or pickup information;</li><li>recipient information;</li><li>special instructions;</li><li>prices;</li><li>fees;</li><li>taxes, if applicable; and</li><li>the total payment amount.</li></ul>
-<h4>5.3</h4>
-<p>Submitting an Order or successfully completing payment does not necessarily mean that the Merchant has accepted the Order.</p>
-<h4>5.4</h4>
-<p>A Food Delivery Order is considered accepted for fulfilment only after the Merchant confirms the Order.</p>
-<h4>5.5</h4>
-<p>A Merchant may reject or cancel an Order due to:</p>
-<ul><li>the Merchant being closed;</li><li>product unavailability;</li><li>inability to fulfil special instructions;</li><li>delivery area limitations;</li><li>system errors;</li><li>obvious pricing errors;</li><li>operational difficulties;</li><li>suspected fraud or misuse; or</li><li>other reasonable circumstances.</li></ul>
-<h4>5.6</h4>
-<p>If payment is completed but an Order confirmation is not displayed, the Customer should first check the Order History before attempting another payment.</p>
-<h4>5.7</h4>
-<p>If the payment or Order status remains unclear, the Customer should contact CloudCity Customer Support.</p>
+<section class="policy-section" id="kbz-en-5">
+  <h3><span class="ch-num">5</span>ERRAND SERVICE USER RESPONSIBILITIES</h3>
+  <p>When using the Errand Service via the Mini App, the User shall select either the delivery or pick-up service, provide and confirm the pick-up/delivery addresses and contact numbers, select the item type and weight, and enter special instructions if required. The User shall pay the total delivery fee, as calculated by the Mini App based on the base fare, distance, and time, via KBZPay. Upon successful payment, the delivery process will commence, wherein the rider accepts the order, collects the item from the pick-up location, and delivers it to the destination. The User may track the delivery status in real time within the Mini App, and upon completion, view the order details and submit feedback.</p>
+          <p>The User shall be solely responsible for providing detailed information regarding the pick-up and delivery addresses, as well as the items to be sent or retrieved, at the time of initiating the service. The item type and weight must be accurately specified to ensure proper and precise delivery or retrieval.</p>
+          <p>The User shall be solely responsible for any issues arising from incomplete delivery or pick-up addresses, inability to reach the recipient by phone, absence of the recipient, failure to provide required documents or fulfill necessary requirements in a timely manner, or refusal/inability to receive the items regarding the Errand Service.</p>
+          <p>The User warrants that they are the lawful owner of the items designated for delivery or pick-up and shall assume full responsibility for such items.</p>
+          <p>The User agrees not to transport any illegal items. The Mini App reserves the right to refuse carriage if an item is deemed illegal or dangerous. The User shall be solely responsible for any legal actions, criminal liabilities, and other related issues arising from the transportation of legally prohibited, illegal, or hazardous items. The User acknowledges and agrees that neither the Merchant nor KBZ shall bear any liability or responsibility for resolving such matters.</p>
+          <p>Once the User has requested the Service, they shall not be permitted to modify the delivery address or cancel the order.</p>
+          <p>The User shall make all reasonable efforts to accept and receive the item from the rider at the agreed location and time.</p>
+          <p>The User acknowledges and agrees that additional service fees may apply for overweight items. The rider will contact the User directly to propose any additional fees; if no agreement is reached, the rider reserves the right to decline delivery, and the order cancellation and refund process will be initiated.</p>
+          <p>Neither the Merchant nor KBZ shall bear any responsibility or liability if there is a discrepancy between the item specified on the receipt and the actual content or information of the item. Furthermore, neither the Merchant nor KBZ shall be held liable whatsoever in the event that the User, Vendor, or any relevant person surreptitiously sends valuable, prohibited, or illegal items of their own volition without prior notification to CloudCity Food. The User shall be solely responsible for resolving all consequences, damages, legal proceedings, and penalties resulting from such actions.</p>
+          <p>Neither the Merchant nor KBZ shall be held responsible or liable for any delays, damages, or additional costs resulting from the User's negligence, nor for any loss or damage to items that are not properly and securely packaged.</p>
+          <p>The User shall be responsible for any additional costs incurred for returned items.</p>
+          <p>The User shall be responsible for paying all applicable taxes and fees incurred when using the Errand Service.</p>
+          <p>CloudCity Food and KBZ reserve the right to refuse the transportation of any item or document that does not comply with the terms and conditions of CloudCity Food and KBZ.</p>
+          <p>If any loss or damage occurs due to the negligence or error of CloudCity Food's staff, claims for such loss or damage must be submitted to CloudCity Food along with the original purchase voucher/receipt showing the item's value within one month. KBZ shall not be held liable or responsible under any circumstances.</p>
+          <p>The User acknowledges and agrees that KBZ acts as a Payment Agency and shall not be held liable or responsible for any issues or disputes arising from the use of the Errand Service within the Mini App.</p>
 </section>
 
-<section class="policy-section" id="ch6">
-  <h3><span class="ch-num">6</span>MINIMUM ORDER VALUE</h3>
-  <h4>6.1</h4>
-<p>Some Merchants may require a minimum Order value before an Order can be submitted.</p>
-<h4>6.2</h4>
-<p>The applicable minimum Order value will be displayed in the Mini App.</p>
-<h4>6.3</h4>
-<p>Where an Order does not meet the minimum Order value, the Customer may be required to add more products before proceeding.</p>
+<section class="policy-section" id="kbz-en-6">
+  <h3><span class="ch-num">6</span>SAY BUY SERVICE USER RESPONSIBILITIES</h3>
+  <p>the User shall select the Say Buy Service within the Mini App, enter the location, shop and item details, and delivery address, and review the service request. Upon agreeing to the terms and conditions, the User shall pay the specified Say Buy delivery fee via KBZPay to proceed with the Service.</p>
+          <p>Upon confirming the Say Buy service, the rider will visit the specified shop as instructed by the User to check item availability. If the item is available, the rider will verify the actual price of the item and contact the User. The User must then transfer the actual item cost in advance to the rider via KBZPay, as the rider will not advance funds for the purchase. Once payment receipt is confirmed, the rider will purchase the item and deliver it to the User. If the item is out of stock at the specified shop, the rider will contact the User to agree on replacing the item or canceling the order in accordance with the relevant policy.</p>
+          <p>The User shall be solely responsible for providing detailed information regarding the shop location, delivery address, and desired items at the time of initiating the Service. The item type and specific details must be clearly specified to ensure proper and precise delivery to the User.</p>
+          <p>The User shall be solely responsible for any issues arising from incomplete delivery or shop addresses, inability to reach the contact person by phone, absence of the recipient, failure to provide required documents or fulfill necessary requirements in a timely manner, or refusal  to receive the items regarding the Service.</p>
+          <p>Once the User has requested the Service, they shall not be permitted to modify the delivery address or cancel the order.</p>
+          <p>The User shall make all reasonable efforts to accept and receive the item from the rider at the agreed location and time.</p>
+          <p>The User acknowledges and agrees that KBZ acts as a Payment Agency and shall not be held liable or responsible for any issues or disputes arising from the use of the Say Buy Service within the Mini App.</p>
 </section>
 
-<section class="policy-section" id="ch7">
-  <h3><span class="ch-num">7</span>SPECIAL INSTRUCTIONS AND ALLERGENS</h3>
-  <h4>7.1</h4>
-<p>Customers may submit reasonable special instructions relating to matters such as:</p>
-<ul><li>spice level;</li><li>sugar level;</li><li>ice level;</li><li>ingredients;</li><li>packaging;</li><li>preparation;</li><li>delivery; and</li><li>other relevant requests.</li></ul>
-<h4>7.2</h4>
-<p>CloudCity and the Merchant will make reasonable efforts to fulfil special instructions but cannot guarantee that every request will be fulfilled.</p>
-<h4>7.3</h4>
-<p>Special instructions do not automatically create a right to cancellation, replacement, compensation, or Refund.</p>
-<h4>7.4</h4>
-<p>Customers with food allergies, dietary restrictions, medical conditions, religious requirements, or ingredient concerns should contact the Merchant before submitting the Order.</p>
-<h4>7.5</h4>
-<p>CloudCity does not guarantee that food or products are free from allergens, cross-contamination, or ingredients unsuitable for a particular Customer.</p>
-<h4>7.6</h4>
-<p>Food preparation, ingredients, food quality, food safety, and packaging are primarily the responsibility of the Merchant.</p>
+<section class="policy-section" id="kbz-en-7">
+  <h3><span class="ch-num">7</span>MOTORCYCLE TAXI SERVICE USER RESPONSIBILITIES</h3>
+  <p>When using the Motorcycle Taxi Service through the Mini App, full payment for the booked trip must be made via KBZPay. Users are responsible for paying any applicable fares and taxes when using the Service. Such payments will be automatically deducted from your KBZPay wallet, covering both the trip fare and any applicable taxes.</p>
+          <p>Users shall be able to view the fare for their trip prior to confirming the booking and bear the sole responsibility for reviewing and verifying the fare before making any payment.</p>
+          <p>Users may book trips at any time through the Mini App to utilize the Motorcycle Taxi Service. The provision of the Service is subject to the availability of motorcycle taxi drivers connected with CloundCity Food at the User’s current location.</p>
+          <p>Users are responsible for accurately selecting the pick-up and drop-off locations for their chosen trip.</p>
+          <p>Users shall ensure their presence at the selected pick-up location on time, not later than the scheduled pick-up time or before the motorcycle taxi driver’s arrival.</p>
+          <p>Motorcycle taxi drivers will not accept rides carrying more than the designated limit of one (1) passenger.</p>
+          <p>Users are fully responsible for keeping their belongings, including valuables, mobile phones, and wallets, with them at all times during the trip. Additionally, before exiting the vehicle, Users must carefully check to ensure that no personal items are left behind. Merchant and KBZ shall not be liable for any loss, damage, or injury to belongings resulting from the User’s negligence or any other reason.</p>
+          <p>If the User makes a advance booking for a location or trip and wishes to cancel it, the cancellation will be free of charge with no service fee required provided that the motorcycle taxi driver has not yet reached halfway along the route to the pick-up location; however, a cancellation fee will be charged if the motorcycle taxi driver has reached or passed the halfway point.</p>
+          <p>The User acknowledges and agrees that KBZ acts as a Payment Agency and shall not be held liable or responsible for any issues or disputes arising from the use of the Motorcycle Taxi Service within the Mini App.</p>
 </section>
 
-<section class="policy-section" id="ch8">
-  <h3><span class="ch-num">8</span>PRICES, FEES, AND PAYMENTS</h3>
-  <h4>8.1</h4>
-<p>All prices will generally be displayed in Myanmar Kyat unless otherwise stated.</p>
-<h4>8.2</h4>
-<p>The total Order amount may include:</p>
-<ul><li>product price;</li><li>packaging fee;</li><li>delivery fee;</li><li>service fee;</li><li>tax, if applicable;</li><li>waiting fee;</li><li>cancellation fee;</li><li>toll or route-related charges for Taxi Service; and</li><li>other charges clearly displayed before confirmation.</li></ul>
-<h4>8.3</h4>
-<p>Prices, products, services, fees, and availability may change from time to time.</p>
-<h4>8.4</h4>
-<p>The price confirmed at checkout will generally apply, except in the case of an obvious pricing, system, or calculation error.</p>
-<h4>8.5</h4>
-<p>Supported payment methods may include:</p>
-<ul><li>KBZPay;</li><li>CloudCity Balance for supported Services; and</li><li>other payment methods displayed in the Mini App.</li></ul>
-<h4>8.6</h4>
-<p>For KBZPay payments, the Customer must maintain sufficient funds in the Customer's KBZPay account.</p>
-<h4>8.7</h4>
-<p>KBZPay payments are subject to applicable KBZPay Terms and Conditions, account limits, compliance requirements, security controls, and system availability.</p>
-<h4>8.8</h4>
-<p>CloudCity is not responsible for payment failure caused by insufficient balance, account restrictions, incorrect authentication, network interruption, KBZPay downtime, or other circumstances outside CloudCity's reasonable control.</p>
+<section class="policy-section" id="kbz-en-8">
+  <h3><span class="ch-num">8</span>MERCHANT’S RIGHT</h3>
+  <p>CloudCity Food may verify the accuracy of the documents submitted by the User regarding any claims for damages or losses. Even if compensation is deemed necessary, CluodCity Food will not take into account the future value of the item when determining the amount to be reimbursed.</p>
+          <p>CloudCity Food will not be held responsible for any damage to food or odorous items caused by rodents or other animals.</p>
+          <p>CloudCity Food will not be responsible for any items that are unusable at the time of dispatch if such items are sent by the consignor.</p>
+          <p>CloudCity Food will not consider for the claim which cannot provide strong evidence, photo, video for the loss or damages of goods that is taken at the time of receiving at the receiving end immediately after receiving the Parcel.</p>
+          <p>CloudCity Food shall not liable for the loss of goods which have not be declared by the User to Cloud City. Claim will be proceeded only when the original value of the goods is declared.</p>
+          <p>CloudCity Food and KBZ shall not be liable for any losses, damages or delay resulting from force majeure including but not limited to war, terrorism, riots, natural disasters and by relevant authorities and customs.</p>
+          <p>The User acknowledge and agree that KBZ acts solely as a payment service provider to facilitate payments for the services. KBZ shall not be responsible for the availability, accuracy, or quality of the services provided by CloudCity Food , nor shall it be liable for any compensation or procedures related to such services.</p>
 </section>
 
-<section class="policy-section" id="ch9">
-  <h3><span class="ch-num">9</span>FOOD DELIVERY</h3>
-  <h4>9.1</h4>
-<p>After the Merchant accepts an Order, the Order may progress through the following statuses:</p>
-<ul><li>Merchant Accepted;</li><li>Preparing Food;</li><li>Food Ready;</li><li>Rider Assigned;</li><li>Rider Accepted;</li><li>Rider Arrived at Store;</li><li>Rider Picked Up;</li><li>Delivering;</li><li>Delivered; and</li><li>Completed.</li></ul>
-<h4>9.2</h4>
-<p>Estimated preparation and delivery times are for reference only and are not guaranteed.</p>
-<h4>9.3</h4>
-<p>Actual preparation and delivery times may be affected by:</p>
-<ul><li>Merchant preparation time;</li><li>traffic;</li><li>weather;</li><li>road conditions;</li><li>Rider availability;</li><li>Customer location;</li><li>delivery distance;</li><li>security restrictions;</li><li>incorrect address information;</li><li>network conditions; and</li><li>events outside reasonable control.</li></ul>
-<h4>9.4</h4>
-<p>The Customer must remain contactable and reasonably available to receive the Order.</p>
-<h4>9.5</h4>
-<p>If the Customer cannot be contacted, provides an incorrect address, refuses delivery, or fails to receive the Order within a reasonable period, the Order may be treated as completed, cancelled, or unsuccessful according to CloudCity's operational rules.</p>
-<h4>9.6</h4>
-<p>Additional delivery, return, waiting, or unsuccessful delivery charges may apply where the failure is caused by the Customer.</p>
-<h4>9.7</h4>
-<p>The Customer should inspect the Order as soon as reasonably possible and report any missing, incorrect, damaged, spilled, or materially defective item without unreasonable delay.</p>
+<section class="policy-section" id="kbz-en-9">
+  <h3><span class="ch-num">9</span>SERVICE CANCELLATION &amp; REFUND POLICY</h3>
+  <p>Food Delivery Service: Full refunds, partial refunds, or refunds due to items being out of stock, store closures, or restaurant cancellations will be processed and credited back to the User's KBZPay account. Once the restaurant accepts the order or the food preparation is complete, the User can no longer cancel the order directly. If the restaurant needs to cancel the User's food order, the restaurant will process a full refund.</p>
+          <p>Errand Service: The User may cancel the Service before the rider accepts the order, and the paid delivery fee will be refunded back to the User's KBZPay account. Once the rider has accepted the service, any refund will be processed based on the rider's travel status and at the sole discretion of Customer Support.</p>
+          <p>Say Buy Service: If the ordered item is out of stock at the specified shop, the rider will contact the User. If the User does not accept a replacement item, the order will be canceled, and a fifty percent (50%) refund of the delivery fee will be issued back to the User's KBZPay account. If the User cancels the order after the rider has already arrived at the specified shop, an empty-trip fee will be charged to compensate for the trip.</p>
+          <p>Motorcycle Taxi Service: If no motorcycle taxi driver is found, the trip will be automatically canceled and a full refund will be issued. If the User cancels the trip before the motorcycle taxi driver reaches halfway to the pick-up location, the cancellation will be free of charge; however, if the driver has reached or passed the halfway mark, a cancellation fee will be incurred. Once the User has boarded and the ride has commenced, cancellation will no longer be permitted.</p>
+          <p>The User acknowledges and agrees that all refund decisions shall be subject solely to the determination of the Merchant and Vendors, and KBZ shall not be held liable or responsible under any circumstances for any disputes arising in connection with such refund conditions.</p>
 </section>
 
-<section class="policy-section" id="ch10">
-  <h3><span class="ch-num">10</span>STORE PICKUP</h3>
-  <h4>10.1</h4>
-<p>Where Store Pickup is available, the Customer must collect the Order from the selected Merchant location at the stated or agreed time.</p>
-<h4>10.2</h4>
-<p>The Customer may be required to present the Order number, confirmation, telephone number, or other identifying information.</p>
-<h4>10.3</h4>
-<p>CloudCity and the Merchant shall not be responsible for deterioration in food quality caused by unreasonable delay by the Customer in collecting the Order.</p>
-<h4>10.4</h4>
-<p>The Customer should inspect the Order before leaving the Merchant location and promptly report any visible issue.</p>
+<section class="policy-section" id="kbz-en-10">
+  <h3><span class="ch-num">10</span>MEMBERSHIP REGISTRATION</h3>
+  <p>To be able to use this service, membership registration shall be made in CloudCity Food (Mini App) service. To register as a member, the user needs to provide required information which is updated, correct and complete. To be able to provide service to the user, to respond to the request of the user, to use in legal affairs, to enforce rules and regulations, to settle any affairs arising out of using the service, and to send information concerning with the service, the user shall agree and grant KBZPay and CloudCity Food (Mini App) to access user’s information which have been filled when the registration was made to use this service for maintaining, sharing and disclosing.   Registering in CloudCity Food (Mini App) through the mobile phone of the user is considered that the user accepts and agrees to send all information on this service to the mobile phone or email of the user through SMS and SMS link.</p>
 </section>
 
-<section class="policy-section" id="ch11">
-  <h3><span class="ch-num">11</span>DELI</h3>
-  <h4>11.1</h4>
-<p>Deli allows the Customer to request pickup and delivery of permitted items between locations specified by the Customer.</p>
-<h4>11.2</h4>
-<p>The Customer must provide accurate and complete information, including:</p>
-<ul><li>pickup address;</li><li>delivery address;</li><li>sender information;</li><li>recipient information;</li><li>contact numbers;</li><li>item description;</li><li>size and quantity;</li><li>handling instructions; and</li><li>any relevant delivery requirements.</li></ul>
-<h4>11.3</h4>
-<p>Customers must not request the delivery of illegal, dangerous, prohibited, restricted, stolen, counterfeit, or hazardous items.</p>
-<h4>11.4</h4>
-<p>Prohibited items include, without limitation:</p>
-<ul><li>illegal drugs;</li><li>weapons;</li><li>ammunition;</li><li>explosives;</li><li>flammable materials;</li><li>hazardous chemicals;</li><li>restricted medicines;</li><li>stolen goods;</li><li>counterfeit goods;</li><li>human remains or body parts;</li><li>illegal wildlife products;</li><li>live animals where prohibited;</li><li>cash or high-value property unless expressly approved; and</li><li>any item prohibited by Myanmar law or CloudCity policy.</li></ul>
-<h4>11.5</h4>
-<p>CloudCity or the Rider may inspect, reject, or cancel a request where the item is unsafe, prohibited, incorrectly described, improperly packed, or not reasonably transportable.</p>
-<h4>11.6</h4>
-<p>The Customer is responsible for ensuring that items are safely and appropriately packaged before pickup.</p>
-<h4>11.7</h4>
-<p>If the Rider has already travelled to or arrived at the pickup location before the Customer cancels, or if the Service cannot be completed due to the Customer's actions, an unsuccessful-trip or cancellation fee may apply.</p>
-<h4>11.8</h4>
-<p>CloudCity may limit liability for fragile, perishable, improperly packaged, high-value, or sensitive items unless CloudCity expressly agreed to handle them.</p>
+<section class="policy-section" id="kbz-en-11">
+  <h3><span class="ch-num">11</span>TERMINATION, SUSPENDING AND CANCELLATION OF SERVICES</h3>
+  <p>The User can terminate the Service following the rules mentioned in the Service termination clause, if the User has no wish to use CloudCity Food (Mini App) Service. Without giving prior notice to the User, KBZPay or CloudCity Food (Mini App) may terminate, suspend or cancel the Service at any time for any reason. CloudCity Food will endeavor to inform the User in the event of cancellation of reservation, owing to fraud or suspicious activity, to the best of its capacity. The User agrees and accepts that KBZPay and CloudCity Food (Mini App) shall not be responsible to anyone for such acts.</p>
 </section>
 
-<section class="policy-section" id="ch12">
-  <h3><span class="ch-num">12</span>SAY BUY</h3>
-  <h4>12.1</h4>
-<p>Say Buy allows a Rider to purchase permitted products on behalf of the Customer and deliver them to the Customer.</p>
-<h4>12.2</h4>
-<p>The Customer must provide accurate information, including:</p>
-<ul><li>requested product;</li><li>quantity;</li><li>preferred shop;</li><li>acceptable substitute;</li><li>estimated budget;</li><li>delivery address; and</li><li>relevant purchase instructions.</li></ul>
-<h4>12.3</h4>
-<p>The final purchase cost may differ from the estimated amount due to:</p>
-<ul><li>shop prices;</li><li>stock availability;</li><li>substitutions;</li><li>quantity differences;</li><li>market price changes; or</li><li>other reasonable circumstances.</li></ul>
-<h4>12.4</h4>
-<p>The Rider may contact the Customer for approval where a substitute is required or where the actual price materially differs from the estimate.</p>
-<h4>12.5</h4>
-<p>CloudCity and the Rider may refuse to purchase illegal, prohibited, dangerous, age-restricted, regulated, or restricted products.</p>
-<h4>12.6</h4>
-<p>The Customer must remain contactable while the purchase is being completed.</p>
-<h4>12.7</h4>
-<p>An unsuccessful-trip, waiting, or cancellation fee may apply where the Rider has already started the Service and the failure is caused by:</p>
-<ul><li>incorrect information;</li><li>Customer cancellation;</li><li>the Customer being unreachable;</li><li>refusal to approve a reasonable price adjustment;</li><li>refusal to receive the purchased item; or</li><li>other circumstances attributable to the Customer.</li></ul>
+<section class="policy-section" id="kbz-en-12">
+  <h3><span class="ch-num">12</span>SENDING NOTIFICATIONS</h3>
+  <p>By using the Service provided by CloudCity Food (Mini App), the User agrees and accepts sending of notifications to the CloudCity Food (Mini App) account of the User and making contact through the phone or email address which have been used to open CloudCity Food (Mini App). Notifications on new movies, programs, promotion programs, and surveys collected from the Users will be sent to the Users by CloudCity Food (Mini App) through a notification in the App or SMS or other means of communication. Moreover, the User agrees to receive notifications regarding payments, agreements, disclosure, and other information CloudCity Food (Mini App) has the right to send data, content, text, software, voice mail, photos, designs, videos, messages, and related contents and other content through CloudCity Food (Mini App) to the User who has bought this Service. The User is the sole responsible person for the data provided when he is registered and any consequences arising out of such data.</p>
 </section>
 
-<section class="policy-section" id="ch13">
-  <h3><span class="ch-num">13</span>TAXI SERVICE</h3>
-  <h4>13.1</h4>
-<p>Taxi Service enables Customers to request transportation between selected pickup and destination locations.</p>
-<h4>13.2</h4>
-<p>The Customer must provide accurate pickup and destination details and remain available at the pickup location.</p>
-<h4>13.3</h4>
-<p>Estimated fares and arrival times are for reference only.</p>
-<h4>13.4</h4>
-<p>The final fare may change due to:</p>
-<ul><li>route changes;</li><li>additional distance;</li><li>waiting time;</li><li>traffic;</li><li>tolls;</li><li>incorrect location information;</li><li>Customer-requested stops;</li><li>destination changes; or</li><li>other applicable charges.</li></ul>
-<h4>13.5</h4>
-<p>A cancellation or waiting fee may apply where:</p>
-<ul><li>the Driver has accepted the request;</li><li>the Driver has travelled toward the pickup location;</li><li>the Driver has arrived;</li><li>the Customer cannot be contacted;</li><li>the Customer fails to appear; or</li><li>the Customer cancels after the applicable free-cancellation period.</li></ul>
-<h4>13.6</h4>
-<p>Customers and Drivers must comply with applicable traffic, safety, conduct, and legal requirements.</p>
-<h4>13.7</h4>
-<p>CloudCity may suspend or cancel a trip where continuing the trip would create a safety, legal, or operational risk.</p>
+<section class="policy-section" id="kbz-en-13">
+  <h3><span class="ch-num">13</span>LIMITATIONS</h3>
+  <p>This Service is for the User's personal and non-commercial use only. The User agrees that in receiving</p>
+          <p>the Service, he will not take the following measures:</p>
+          <p>using other means which are not of the media arranged by CloudCity Food App (Mini App),</p>
+          <p>disrupting the Service or using other automatic means by using Robot, Spider, Scraper, Script, and</p>
+          <p>Web Crawler.</p>
+          <p>concealing the source of receiving the Service by forging identifier codes or changing data.</p>
+          <p>conducting acts and using software that can harm CloudCity Food App (Mini App) server.</p>
+          <p>sending texts, writing emails, or using virus software to disrupt the Service.</p>
+          <p>The User shall use the Mini App Service in accordance with the Terms and Conditions set by the Mini App Service. The User agrees that he/she will not use the Mini App Service by breaching the Terms and Conditions set by Mini App or exceeding the rules; and without the approval of the concerned official of CloudCity Food (Mini App), he/she shall not use the social media Pages such as Facebook, Instagram, YouTube and Web Page of the CloudCity Food . As a rule of using this Service, the User assures and guarantees that he will not use this Service with a purpose which is against the law.</p>
+          <p>The User warrants that the Services will not be used for any illegal purpose as the terms and conditions of using the Services. The User agrees that he will follow the existing law, regulations, bylaws and provisions relating to the use of Services.</p>
 </section>
 
-<section class="policy-section" id="ch14">
-  <h3><span class="ch-num">14</span>MOBILE TOP-UP</h3>
-  <h4>14.1</h4>
-<p>Mobile Top-up is available only for supported mobile operators, telephone numbers, and denominations displayed in the Mini App.</p>
-<h4>14.2</h4>
-<p>Mobile Top-up may be paid using CloudCity Balance or another supported method displayed in the Mini App.</p>
-<h4>14.3</h4>
-<p>The Customer must carefully confirm:</p>
-<ul><li>mobile phone number;</li><li>mobile operator;</li><li>top-up amount; and</li><li>transaction details.</li></ul>
-<h4>14.4</h4>
-<p>A successfully completed Mobile Top-up generally cannot be cancelled or reversed where the Customer entered an incorrect phone number, selected an incorrect operator, or confirmed an incorrect amount.</p>
-<h4>14.5</h4>
-<p>If the Customer's balance is deducted but the top-up is not received, the Customer should contact CloudCity Customer Support for investigation.</p>
-<h4>14.6</h4>
-<p>Completion time may depend on the relevant telecommunications operator and technical system availability.</p>
+<section class="policy-section" id="kbz-en-14">
+  <h3><span class="ch-num">14</span>INDEMNITY</h3>
+  <p>The User agrees to indemnify KBZ or KBZPay or CloudCity Food , its directors or officers or staff or representatives or agents and third parties and save their harmless against any and all claims including but not limited to costs and damages including but not limited to, legal fees) arising from Customer’s use of the Mini App or Customer’s breach of these Terms.</p>
 </section>
 
-<section class="policy-section" id="ch15">
-  <h3><span class="ch-num">15</span>CANCELLATION AND REFUNDS</h3>
-  <h4>15.1 Cancellation Before Merchant Acceptance</h4>
-<p>The Customer may request cancellation before the Merchant accepts a Food Delivery Order.</p>
-<p>Where payment has already been completed, an approved Refund will be processed to the Customer's original KBZPay account.</p>
-<h4>15.2 Cancellation After Merchant Acceptance</h4>
-<p>After the Merchant accepts the Order, cancellation and Refund eligibility will depend on:</p>
-<ul><li>the Merchant's preparation progress;</li><li>whether the product has been prepared;</li><li>whether a Rider has been assigned;</li><li>whether the Rider has started travelling;</li><li>the reason for cancellation;</li><li>the condition of the product;</li><li>costs already incurred; and</li><li>CloudCity's applicable cancellation and Refund policy.</li></ul>
-<p>A full Refund is not guaranteed after the Merchant begins preparation.</p>
-<h4>15.3 Merchant Cancellation</h4>
-<p>Where the Merchant cannot fulfil the Order, CloudCity may cancel the Order and arrange a full or partial Refund, as appropriate.</p>
-<h4>15.4 Partial Refund</h4>
-<p>A partial Refund may be processed where:</p>
-<ul><li>one or more items are unavailable;</li><li>an item is missing;</li><li>an incorrect item is delivered;</li><li>an item is damaged or spilled;</li><li>the quantity is incorrect; or</li><li>another partial Refund is approved by CloudCity.</li></ul>
-<h4>15.5 Refund Method</h4>
-<p>For Orders paid using KBZPay through the CloudCity Food Mini App, all approved full or partial Refunds will be processed automatically to the Customer's original KBZPay account through the <strong>KBZPay Refund API</strong>.</p>
-<h4>15.6 Refund Processing Time</h4>
-<p>Refund processing and crediting time may vary depending on:</p>
-<ul><li>KBZPay system processing;</li><li>technical conditions;</li><li>reconciliation;</li><li>compliance review;</li><li>banking procedures; and</li><li>other relevant operational processes.</li></ul>
-<h4>15.7 Duplicate Payment</h4>
-<p>Where a duplicate payment is confirmed, CloudCity will investigate the transaction and, where approved, process the duplicate amount through the applicable Refund method.</p>
-<h4>15.8 Deli, Say Buy, and Taxi Cancellation</h4>
-<p>Cancellation fees, waiting fees, or unsuccessful-trip fees may apply where a Rider or Driver has already accepted, started travelling, arrived, purchased goods, or incurred reasonable expenses.</p>
+<section class="policy-section" id="kbz-en-15">
+  <h3><span class="ch-num">15</span>REPRESENTATION AND WARRANTIES</h3>
+  <p>The User acknowledges and agrees that the contents in CloudCity Food App (Mini App) is provided “as it is” and “as available”.  Accepting or using any contents, goods or products or Services displayed on CloudCity Food App (Mini App) is at the User’s sole risk and discretion. All liabilities for loss and damages of the User or any party relating to using any content on CloudCity Food App (Mini App) or Services or any website links whether they are stated in the agreement or it is due to ignorance shall be excluded. Although KBZPay and CloudCity Food App (Mini App) have exerted reasonable efforts to make sure that Services provided can be achieved at all times, KBZPay and CloudCity Food will not guarantee or represent that CloudCity Food App (Mini App) is safe or no technical problems or no interruption or no error or no virus. The User understands and agrees that KBZPay and CloudCity Food App (Mini App) will not be responsible for temporary interruption in the platform due to scheduled system maintenance, or the Internet or electronic communication or other forces.</p>
 </section>
 
-<section class="policy-section" id="ch16">
-  <h3><span class="ch-num">16</span>CUSTOMER, MERCHANT, RIDER, AND CLOUDCITY RESPONSIBILITIES</h3>
-  <h4>16.1 Customer Responsibilities</h4>
-<p>Customers must:</p>
-<ul><li>provide accurate and complete information;</li><li>review Orders before confirmation;</li><li>maintain sufficient funds;</li><li>remain contactable;</li><li>receive or collect Orders promptly;</li><li>use the Services lawfully;</li><li>avoid prohibited items;</li><li>treat Merchants, Riders, Drivers, and support staff respectfully;</li><li>avoid false Orders, fraud, abuse, threats, or harassment; and</li><li>comply with these Terms and applicable law.</li></ul>
-<h4>16.2 Merchant Responsibilities</h4>
-<p>Merchants are primarily responsible for:</p>
-<ul><li>food and product preparation;</li><li>food quality;</li><li>food safety;</li><li>ingredients;</li><li>packaging;</li><li>product descriptions;</li><li>stock availability;</li><li>pricing information;</li><li>licences and legal compliance; and</li><li>fulfilment of accepted Orders.</li></ul>
-<h4>16.3 Rider and Driver Responsibilities</h4>
-<p>Riders and Drivers are responsible for:</p>
-<ul><li>handling Orders with reasonable care;</li><li>following assigned routes where reasonably possible;</li><li>communicating appropriately;</li><li>complying with safety and legal requirements;</li><li>updating service status; and</li><li>completing accepted Services professionally.</li></ul>
-<h4>16.4 CloudCity Responsibilities</h4>
-<p>CloudCity is responsible for:</p>
-<ul><li>operating the platform;</li><li>transmitting Orders and service requests;</li><li>coordinating Merchant, Rider, and Driver operations;</li><li>providing Order and service status information;</li><li>managing supported payment and Refund processes;</li><li>handling customer service enquiries; and</li><li>maintaining the Mini App within reasonable operational limits.</li></ul>
-<h4>16.5 KBZPay Responsibilities</h4>
-<p>KBZPay provides:</p>
-<ul><li>the Mini App operating environment;</li><li>account authorization;</li><li>payment processing; and</li><li>related payment services.</li></ul>
-<p>KBZPay does not prepare food, supply products, operate Merchants, or directly perform CloudCity delivery, Deli, Say Buy, or Taxi Services.</p>
+<section class="policy-section" id="kbz-en-16">
+  <h3><span class="ch-num">16</span>INTELLECTUAL PROPERTY RIGHTS</h3>
+  <p>KBZ is an owner of all intellectual property rights, whether in contents or wording, pictures, signs, logo, trade service marks, trade name as well as all design works, in all documents, websites of KBZ, and KBZPay Application. CloudCity Food and its partners and other related businesses are owners of all intellectual property rights, whether in contents or wordings, of logo, the name of CloudCity Food (Mini App), pictures, signs, and trade Service mark. name, logo and Service mark. The User must not exploit the intellectual property right of KBZ or make any advertisement of the CloudCity Food without receiving prior written consent from KBZ. The User shall not perform or allow any third party to perform any action that might cause damage to the image, trademark, trade name, or other intellectual property right of KBZ.</p>
 </section>
 
-<section class="policy-section" id="ch17">
-  <h3><span class="ch-num">17</span>RATINGS, REVIEWS, MESSAGES, AND NOTIFICATIONS</h3>
-  <h4>17.1</h4>
-<p>Customers may be able to rate or review Merchants, Riders, Drivers, Orders, or Services.</p>
-<h4>17.2</h4>
-<p>Reviews must be honest, relevant, lawful, and based on genuine experience.</p>
-<h4>17.3</h4>
-<p>Customers must not submit:</p>
-<ul><li>false or misleading reviews;</li><li>threats;</li><li>harassment;</li><li>discrimination;</li><li>obscene or unlawful content;</li><li>private information belonging to another person;</li><li>spam; or</li><li>content infringing third-party rights.</li></ul>
-<h4>17.4</h4>
-<p>CloudCity may remove, restrict, or refuse content that violates these Terms or applicable law.</p>
-<h4>17.5</h4>
-<p>Customers may communicate with Merchants or CloudCity through supported chat or messaging features.</p>
-<h4>17.6</h4>
-<p>Communications may be recorded, stored, or reviewed for:</p>
-<ul><li>service quality;</li><li>dispute handling;</li><li>safety;</li><li>fraud prevention;</li><li>training;</li><li>compliance; and</li><li>legal requirements.</li></ul>
-<h4>17.7</h4>
-<p>CloudCity may send necessary service notifications relating to:</p>
-<ul><li>Order status;</li><li>payment status;</li><li>Merchant acceptance;</li><li>Rider or Driver status;</li><li>delivery progress;</li><li>cancellation;</li><li>Refund;</li><li>system updates; and</li><li>customer support.</li></ul>
-<h4>17.8</h4>
-<p>Promotional messages may be sent subject to applicable law and the Customer's communication preferences.</p>
+<section class="policy-section" id="kbz-en-17">
+  <h3><span class="ch-num">17</span>DISCLAIMER</h3>
+  <p>In any situation, KBZ including its staff, directors, agents, representatives, and subsidiaries; CloudCity Food and its partners, members, staff, representatives, and those who have been granted copyright shall not be responsible for the loss of the User and other parties directly or indirectly for breaching of the said Terms and Conditions by the User or due to information received from the Service, software, products, and Service; lawsuit, litigation, court decision, loss and liabilities according to the agreement or civil case or irrevocable responsibility or cost or damage or claims made against the User. The User understands and agrees that he is the only responsible person to settle such claims.  Regarding the use of CloudCity Food (Mini App), the remedial action to be taken is to terminate the use of CloudCity Food (Mini App) by the User.  Organizations of KBZ, its agents, representatives, and Service providers shall not be responsible directly or indirectly or as a consequence for damages and claims for using CloudCity Food (Mini App) by the User.</p>
 </section>
 
-<section class="policy-section" id="ch18">
-  <h3><span class="ch-num">18</span>PERSONAL DATA AND PRIVACY</h3>
-  <h4>18.1</h4>
-<p>CloudCity may collect and process information reasonably necessary to provide the Services, including:</p>
-<ul><li>name;</li><li>telephone number;</li><li>account identifier;</li><li>delivery address;</li><li>pickup address;</li><li>destination;</li><li>location information;</li><li>Order information;</li><li>payment status;</li><li>service history;</li><li>customer support communications;</li><li>device information; and</li><li>technical information.</li></ul>
-<h4>18.2</h4>
-<p>Information may be shared with KBZPay, Merchants, Riders, Drivers, service providers, and competent authorities where reasonably necessary for:</p>
-<ul><li>authentication;</li><li>payment processing;</li><li>Order fulfilment;</li><li>delivery;</li><li>Deli;</li><li>Say Buy;</li><li>Taxi Service;</li><li>customer support;</li><li>fraud prevention;</li><li>dispute resolution;</li><li>safety;</li><li>legal compliance; or</li><li>regulatory requirements.</li></ul>
-<h4>18.3</h4>
-<p>Only information reasonably necessary to complete the relevant Service should be shared with Merchants, Riders, or Drivers.</p>
-<h4>18.4</h4>
-<p>CloudCity will not ask Customers to disclose their KBZPay PIN or OTP.</p>
-<h4>18.5</h4>
-<p>The CloudCity Privacy Policy forms part of these Terms and must be read together with them.</p>
+<section class="policy-section" id="kbz-en-18">
+  <h3><span class="ch-num">18</span>FORCE MAJEURE</h3>
+  <p>The User understands that KBZ and CloudCity Food shall not be liable for any failure of or delay in the performance of this Services for the period that such failure or delay is due to causes beyond its reasonable control, including but not limited to acts of God, war, strikes or labor disputes, embargoes, government orders, fire, flood, torrential rain, storm or other extreme weather conditions, riot, insurrection, civil commotion, sanctions, boycott, failure of electricity, equipment failure, or any other force majeure event. Performance of this Service will, to the extent that it is prevented, hindered or delayed by such circumstances, be suspended by KBZ and/or CloudCity Food until such circumstances cease to exist. KBZ will not be liable to the User or any other party or be considered in breach of this terms and conditions for a failure to perform, or delay in performing, any such obligation set out in this terms and conditions while those circumstances continue.</p>
 </section>
 
-<section class="policy-section" id="ch19">
-  <h3><span class="ch-num">19</span>PROHIBITED USE</h3>
-  <p>Customers must not:</p>
-<p>    > permission;</p>
-<p>    > personnel;</p>
-<p>    > activity; or</p>
-<p>    > reputational risk.</p>
-<ul><li>use the Mini App for unlawful purposes;</li><li>place false, fraudulent, or abusive Orders;</li><li>misuse the Refund or cancellation process;</li><li>request transportation or purchase of prohibited goods;</li><li>interfere with the Mini App or its systems;</li><li>introduce malicious software;</li><li>attempt unauthorized access;</li><li>misuse another person's identity or account;</li><li>scrape, copy, or commercially exploit platform data without</li><li>threaten, harass, or abuse Merchants, Riders, Drivers, or support</li><li>manipulate ratings or reviews;</li><li>engage in money laundering, fraud, or other illegal financial</li><li>use the Services in a way that creates legal, safety, security, or</li></ul>
-<p>CloudCity may suspend, restrict, investigate, or terminate access where prohibited activity is reasonably suspected.</p>
+<section class="policy-section" id="kbz-en-19">
+  <h3><span class="ch-num">19</span>NOTIFICATION</h3>
+  <p>The above-mentioned Terms and Conditions are legal. As it is deemed that the User understands and agrees to the Terms and Conditions starting from the time of using CloudCity Food (Mini App), it is the sole responsibility of the User to use this Service without reading the Terms and Conditions.</p>
 </section>
 
-<section class="policy-section" id="ch20">
-  <h3><span class="ch-num">20</span>SERVICE AVAILABILITY, DISCLAIMER, AND LIMITATION OF LIABILITY</h3>
-  <h4>20.1</h4>
-<p>The Mini App and Services are provided on an "as available" basis.</p>
-<h4>20.2</h4>
-<p>CloudCity does not guarantee that the Services will always be:</p>
-<ul><li>uninterrupted;</li><li>error-free;</li><li>available in every location;</li><li>free from delays;</li><li>free from technical faults; or</li><li>compatible with every device or network.</li></ul>
-<h4>20.3</h4>
-<p>Temporary interruptions may occur due to:</p>
-<ul><li>maintenance;</li><li>internet failure;</li><li>telecommunications failure;</li><li>power failure;</li><li>KBZPay interruption;</li><li>Merchant system interruption;</li><li>CloudCity system interruption;</li><li>traffic;</li><li>weather;</li><li>security events;</li><li>public emergencies; or</li><li>other circumstances outside reasonable control.</li></ul>
-<h4>20.4</h4>
-<p>To the extent permitted by applicable law, CloudCity shall not be liable for indirect, incidental, special, punitive, exemplary, or consequential loss arising from the Customer's use of the Mini App.</p>
-<h4>20.5</h4>
-<p>CloudCity is not the manufacturer or producer of Merchant products and does not independently guarantee the quality, ingredients, suitability, or safety of every product offered by a Merchant.</p>
-<h4>20.6</h4>
-<p>Nothing in these Terms excludes liability that cannot lawfully be excluded or limited.</p>
+<section class="policy-section" id="kbz-en-20">
+  <h3><span class="ch-num">20</span>AMENDMENT</h3>
+  <p>The User acknowledges that KBZ and CloudCity Food reserve the right to amend, modify or substitute any provisions of this Terms and Conditions or to the Services and/or any charges at any time for any reason at its sole discretion and without any prior notice. The amended Terms and Conditions are in effect as soon as they are posted online. It is considered that with continued use of CloudCity Food (Mini App) is the User agrees to the amended Terms and Conditions. If the User does not agree with the whole or part of the amended version, the User shall terminate the use of CloudCity Food (Mini App).</p>
 </section>
 
-<section class="policy-section" id="ch21">
-  <h3><span class="ch-num">21</span>FORCE MAJEURE</h3>
-  <h4>21.1</h4>
-<p>CloudCity, KBZPay, Merchants, Riders, and Drivers shall not be responsible for failure, interruption, or delay caused by events beyond reasonable control.</p>
-<h4>21.2</h4>
-<p>Such events may include:</p>
-<ul><li>flood;</li><li>fire;</li><li>earthquake;</li><li>storm;</li><li>epidemic;</li><li>public health emergency;</li><li>war;</li><li>civil unrest;</li><li>terrorism;</li><li>government action;</li><li>sanctions;</li><li>embargoes;</li><li>strikes;</li><li>road closures;</li><li>internet failure;</li><li>telecommunications failure;</li><li>power failure;</li><li>system-wide technical failure; or</li><li>other comparable circumstances.</li></ul>
-<h4>21.3</h4>
-<p>Affected Services may be suspended, delayed, restricted, changed, or cancelled until normal operations can reasonably resume.</p>
+<section class="policy-section" id="kbz-en-21">
+  <h3><span class="ch-num">21</span>SEVERABILITY</h3>
+  <p>Each of the provisions of this Terms and Conditions shall be several and distinct from one another. If any of the provisions of these Terms and Conditions becomes invalid, void, illegal or unenforceable in any respect under any law, the validity, legally and enforceability of the remaining provisions shall not in any way be thereby affected or impaired.</p>
 </section>
 
-<section class="policy-section" id="ch22">
-  <h3><span class="ch-num">22</span>INTELLECTUAL PROPERTY</h3>
-  <h4>22.1</h4>
-<p>All CloudCity names, logos, software, designs, text, graphics, images, content, trademarks, and related intellectual property are owned by or licensed to CloudCity.</p>
-<h4>22.2</h4>
-<p>KBZPay names, logos, trademarks, systems, and related intellectual property are owned by KBZ Bank or its licensors.</p>
-<h4>22.3</h4>
-<p>Customers may use the Mini App only for personal and lawful purposes.</p>
-<h4>22.4</h4>
-<p>Customers may not, without prior written permission:</p>
-<ul><li>copy;</li><li>reproduce;</li><li>distribute;</li><li>modify;</li><li>sell;</li><li>sublicense;</li><li>reverse engineer;</li><li>scrape;</li><li>commercially exploit; or</li><li>create derivative works from protected content or systems.</li></ul>
+<section class="policy-section" id="kbz-en-22">
+  <h3><span class="ch-num">22</span>ASSIGNMENT</h3>
+  <p>The User shall not assign its rights or obligations under these Terms and Conditions, in whole or in part, nor enter into any subcontract to perform any portion of these Terms and Conditions, without the written consent of KBZ.</p>
 </section>
 
-<section class="policy-section" id="ch23">
-  <h3><span class="ch-num">23</span>SUSPENSION AND TERMINATION</h3>
-  <p>CloudCity may suspend, restrict, or terminate a Customer's access where:</p>
-<p>    > promotions;</p>
-<p>    > reputational risk.</p>
-<ul><li>the Customer breaches these Terms;</li><li>fraud or illegal activity is suspected;</li><li>the Customer misuses payments, cancellations, Refunds, or</li><li>false or misleading information is provided;</li><li>the Customer threatens the safety of another person;</li><li>required by law, regulation, KBZPay, or a competent authority;</li><li>the account creates a security risk; or</li><li>continued access creates material operational, legal, or</li></ul>
-<p>Termination does not affect:</p>
-<ul><li>completed transactions;</li><li>outstanding payments;</li><li>liabilities;</li><li>pending investigations; or</li><li>provisions intended to survive termination.</li></ul>
+<section class="policy-section" id="kbz-en-23">
+  <h3><span class="ch-num">23</span>GOVERNING LAW AND DISPUTE RESOLUTION</h3>
+  <p>These Terms and Conditions shall be governed by, and construed in accordance with, the laws of the Republic of the Union of Myanmar and the Courts in Myanmar shall have exclusive jurisdiction to solve any dispute arising from or under these Terms and Conditions.</p>
 </section>
 
-<section class="policy-section" id="ch24">
-  <h3><span class="ch-num">24</span>AMENDMENTS</h3>
-  <h4>24.1</h4>
-<p>CloudCity may update these Terms due to changes in:</p>
-<ul><li>Services;</li><li>business operations;</li><li>payment arrangements;</li><li>technology;</li><li>KBZPay requirements;</li><li>safety standards;</li><li>laws;</li><li>regulations; or</li><li>compliance obligations.</li></ul>
-<h4>24.2</h4>
-<p>Updated Terms will become effective when published in the Mini App or on the CloudCity website, unless another effective date is stated.</p>
-<h4>24.3</h4>
-<p>Continued use of the Mini App after the effective date constitutes acceptance of the updated Terms.</p>
-<h4>24.4</h4>
-<p>If the Customer does not agree with the updated Terms, the Customer must stop using the Mini App.</p>
+<section class="policy-section" id="kbz-en-24">
+  <h3><span class="ch-num">24</span>WAIVER</h3>
+  <p>Failure or delay on part of either party to enforce any provision(s) of these Terms and Conditions at any point of time shall not be construed to be a waiver by such party of such rights thereafter to enforce each and every provision of these Terms and Conditions.</p>
 </section>
 
-<section class="policy-section" id="ch25">
-  <h3><span class="ch-num">25</span>SEVERABILITY AND WAIVER</h3>
-  <h4>25.1</h4>
-<p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions will continue in full force to the extent permitted by law.</p>
-<h4>25.2</h4>
-<p>Failure or delay by CloudCity to enforce any right or provision shall not constitute a waiver of that right or provision.</p>
+<section class="policy-section" id="kbz-en-25">
+  <h3><span class="ch-num">25</span>LANGUAGE</h3>
+  <p>This Terms and Conditions is made in both English and Myanmar and both versions shall be equally authentic and effective. In case of any discrepancy between two versions, the Myanmar version shall prevail.</p>
 </section>
 
-<section class="policy-section" id="ch26">
-  <h3><span class="ch-num">26</span>GOVERNING LAW AND DISPUTE RESOLUTION</h3>
-  <h4>26.1</h4>
-<p>These Terms shall be governed by and interpreted in accordance with the laws of the Republic of the Union of Myanmar.</p>
-<h4>26.2</h4>
-<p>Customers should first contact CloudCity Customer Support regarding any complaint or dispute.</p>
-<h4>26.3</h4>
-<p>CloudCity and the Customer shall attempt to resolve disputes in good faith through discussion.</p>
-<h4>26.4</h4>
-<p>Where a dispute cannot be resolved amicably, it shall be submitted to the competent courts of Myanmar, subject to applicable law.</p>
+<section class="policy-section" id="kbz-en-26">
+  <h3><span class="ch-num">26</span>CUSTOMER CONTACT</h3>
+  <p>If the User wishes to contact CloudCity Food (Mini App) for questions or comments,</p>
+          <p>CloudCity Food Hotline: 09782099992</p>
+          <p>CloudCity Food Email: cloudcitymm@gmail.com</p>
+</section>
+</article>
+  </div>
+</div>
+
+
+<div class="lang-version" data-lang-version="my">
+  <div class="hero-intro-text"><p>ဤ “စည်းမျဥ်းစည်းကမ်း သတ်မှတ်ချက်များ” သည် KBZPay App ရှိ ကုန်သည် (“CloudCity Food”) ၏ CloudCity Food  Mini App (“Mini App”) ကို ဝင်ရောက်အသုံးပြုမည့် အသုံးပြုသူ (“သင်”၊ “သင့်”၊ “သင်၏”၊ “သင်တို့၏”) မှ လိုက်နာရမည့်စည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များဖြစ်ပါသည်။ CloudCity Food  Mini Appကို ရယူအသုံးပြုသူများအနေဖြင့် ဤ စည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များအတိုင်း လိုက်နာရမည်ဖြစ်ပါသည်။ KBZPay Blue App တွင် ရှိသော CloudCity Food  App (Mini App) ကို ဝင်ရောက်အသုံးပြု၍ Mini App ဝန်ဆောင်မှုကို ရယူ အသုံးပြုသူများသည် Mini App တွင်ရရှိနိုင်သော သို့မဟုတ် ဟိုက်ပါလင့်ခ်ဖြင့် ရရှိနိုင်သော မူဝါဒများနှင့် ထပ်မံဖြည့်စွက်ထားသော စည်းမျဥ်းစည်းကမ်းသတ်မှတ်ချက်များအပါအဝင် စည်းကမ်းသတ်မှတ်ချက်များကို ဖတ်ရှုနားလည်၍ သဘောတူလက်ခံခြင်းဖြစ်သည်။ ဤဝန်ဆောင်မှုကို မှတ်ပုံတင်၍ ရယူရာတွင် အသုံးပြုသူ၏ ပေါ့လျော့မှု တစ်စုံတစ်ရာကြောင့် တိုက်ရိုက်သော်လည်းကောင်း၊ သွယ်ဝိုက်၍သော်လည်းကောင်း၊ အသုံးပြုသူ၏ ကိုယ်ရေးကိုယ်တာ အချက်အလက်များနှင့် ငွေကြေးအပါအဝင် အကျိုးစီးပွားထိခိုက်မှုဖြစ်ပေါ်လာပါက Mini App နှင့်  ငွေပေးချေမှုဆိုင်ရာ အေဂျင်စီ ကမ္ဘောဇဘဏ် (ဤနေရာမှစ၍ “KBZ” ဟု ခေါ်‌ဝေါ်သုံးနှုန်းသွားမည်ဖြစ်သည်)၊ CloudCity Food နှင့် ၎င်းတို့၏အဖွဲ့ဝင်တို့ထံတွင် တစ်စုံတစ်ရာ တာဝန်ရှိမည် မဟုတ်ပါ။ CloudCity Food (Mini App) ဝန်ဆောင်မှုကို အသုံးပြုရန်အတွက် စည်းမျဉ်းစည်းကမ်း အသေးစိတ်မှာ အောက်ပါအတိုင်း ဖြစ်ပါသည်။</p></div>
+  <div class="legal-layout">
+    <aside class="toc-sidebar">
+      <div class="toc-title">မာတိကာ</div>
+      <a href="#kbz-my-1" class="toc-link">1. ၁။   	အဓိပ္ပါယ်ဖွင့်ဆိုချက်</a><a href="#kbz-my-2" class="toc-link">2. ၂။	CloudCity Food  Mini App အား ရယူအသုံးပြုခြ</a><a href="#kbz-my-3" class="toc-link">3. ၃။	CLOUDCITY FOOD ၏ဝန်ဆောင်မှုများ</a><a href="#kbz-my-4" class="toc-link">4. ၄။	အစားအသောက် ပို့ဆောင်သည့် ဝန်ဆောင်မှု (Food</a><a href="#kbz-my-5" class="toc-link">5. ၅။	အဝယ်တော်ဝန်ဆောင်မှု (Errand Service) အသုံး</a><a href="#kbz-my-6" class="toc-link">6. ၆။	မှာယူမှုများကိုဝယ်ပေးသည့် ဝန်ဆောင်မှု (Say</a><a href="#kbz-my-7" class="toc-link">7. ၇။	ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှု (Motorcycle Ta</a><a href="#kbz-my-8" class="toc-link">8. ၈။	ကုန်သည်၏ အခွင့်အရေး</a><a href="#kbz-my-9" class="toc-link">9. ၉။	ဝန်ဆောင်မှုပယ်ဖျက်ခြင်းနှင့် ငွေပြန်အမ်းပေ</a><a href="#kbz-my-10" class="toc-link">10. ၁၀။	အဖွဲ့ဝင်အဖြစ် မှတ်ပုံတင်ခြင်း</a><a href="#kbz-my-11" class="toc-link">11. ၁၁။	၀န်ဆောင်မှုရပ်ဆိုင်းခြင်း၊ ဆိုင်းငံ့ခြင်း</a><a href="#kbz-my-12" class="toc-link">12. ၁၂။	အသိပေးချက်များပေးပို့ခြင်း</a><a href="#kbz-my-13" class="toc-link">13. ၁၃။	ကန့်သတ်တားမြစ်ချက်များ</a><a href="#kbz-my-14" class="toc-link">14. ၁၄။	လျော်ကြေး</a><a href="#kbz-my-15" class="toc-link">15. ၁၅။	ကိုယ်စားပြုချက်များ၊ အာမခံချက်များ</a><a href="#kbz-my-16" class="toc-link">16. ၁၆။	အသိဉာဏ်ပစ္စည်းများဆိုင်ရာ မူပိုင်ခွင့်</a><a href="#kbz-my-17" class="toc-link">17. ၁၇။	တာဝန်မရှိကြောင်းရှင်းလင်းဖော်ပြချက်</a><a href="#kbz-my-18" class="toc-link">18. ၁၈။	မလွန်ဆန်နိုင်သော ဖြစ်ရပ်များ</a><a href="#kbz-my-19" class="toc-link">19. ၁၉။	အသိပေးချက်</a><a href="#kbz-my-20" class="toc-link">20. ၂၀။	ပြင်ဆင်ပြောင်းလဲခြင်း</a><a href="#kbz-my-21" class="toc-link">21. ၂၁။	ဆက်လက်အသက်ဝင်ခြင်း</a><a href="#kbz-my-22" class="toc-link">22. ၂၂။	လွှဲပြောင်းခြင်း</a><a href="#kbz-my-23" class="toc-link">23. ၂၃။	ဥပဒေသက်ရောက်မှုနှင့် တရားစီရင်ပိုင်ခွင့်</a><a href="#kbz-my-24" class="toc-link">24. ၂၄။	စွန့်လွှတ်ခြင်း</a><a href="#kbz-my-25" class="toc-link">25. ၂၅။	ဘာသာစကား</a><a href="#kbz-my-26" class="toc-link">26. ၂၆။	ဆက်သွယ်ရန်</a>
+    </aside>
+    <article class="policy-article">
+<section class="policy-section" id="kbz-my-1">
+  <h3><span class="ch-num">1</span>၁။   	အဓိပ္ပါယ်ဖွင့်ဆိုချက်</h3>
+  <p class="sub-clause">၁၊၁။	“အလုပ်လုပ်ရက်” ဆိုသည်မှာ မြန်မာနိုင်ငံရှိ စနေ၊ တနင်္ဂနွေနေ့၊ အများပြည်သူအလုပ်ပိတ်ရက် သို့မဟုတ် ဘဏ်ပိတ်ရက်မဟုတ်သည့် နေ့ရက်များကို ဆိုလိုခြင်းဖြစ်သည်။</p>
+          <p class="sub-clause">၁၊၂။	“ကမ္ဘောဇဘဏ်" ဆိုသည်မှာ ကမ္ဘောဇဘဏ်လီမိတက်နှင့် အနာဂတ်တွင် ကမ္ဘောဇဘဏ်မှ တည်ထောင်မည့် ကမ္ဘောဇဘဏ်ခွဲများ  အပါအဝင် ယခုလက်ရှိ ကမ္ဘောဇဘဏ်ခွဲများအားလုံးကို ဆိုလိုသည်။</p>
+          <p class="sub-clause">၁၊၃။	“KYC” ဆိုသည်မှာ မြန်မာနိုင်ငံတော်ဗဟိုဘဏ်နှင့်/သို့ အခြား အခွင့်အာဏာပိုင်များမှ ထုတ်ပြန်ထားသော “သင်၏ ဖောက်သည်ကို သိပါ” ဟူသော မှတ်ပုံတင် မှတ်ပုံတင်ရာတွင် လိုအပ်သော အချက်အလက်များကို ဆိုလိုသည်။ များကို ဆိုလိုသည်။</p>
+          <p class="sub-clause">၁၊၄။	“Mini App” ဆိုသည်မှာ ကုန်သည်မှပိုင်ဆိုင်သော CloudCity Food App ကိုဆိုလိုခြင်းဖြစ်ပြီး KBZPay တွင်အသုံးပြုနိုင်သော Mini Appတစ်ခုဖြစ်ပြီး ဤ Mini App ၏လုပ်ဆောင်ချက်များနှင့် အသုံးပြုသူများ၏မှာယူမှုကို လွယ်ကူချောမွေ့စေရန်အတွက် App၏ လုပ်‌ဆောင်ချက်များအား ကုန်သည်ကိုယ်စား ဆောင်ရွက်ပေးသည့် အေးဂျင့်အဖြစ် KBZPay မှလုပ်ဆောင်ပါသည်။</p>
+          <p class="sub-clause">၁၊၅။	"ဝန်ဆောင်ခ" ဆိုသည်မှာ CloudCity Food (Mini App) မှ ထုတ်ပြန်ထားသော ဝန်ဆောင်မှုအသုံးပြုမှုအတွက် ကောက်ခံသည့် အခကြေးငွေ၊ ကောက်ခံမှုအားလုံးကို ဆိုလိုပါသည်။</p>
+          <p class="sub-clause">၁၊၆။	“ဝန်ဆောင်မှုများ” ဆိုသည်မှာ KBZPay ဖြင့် ငွေပေးချေခြင်းပြုနိုင်သည့် အသုံးပြုသူများမှ ရယူအသုံးပြုနိုင်သော Mini App အတွင်း ကုန်သည်မှ ကမ်းလှမ်းသည့် ကုန်စည်နှင့် ဝန်ဆောင်မှုကို ဆိုလိုခြင်းဖြစ်သည်။</p>
+          <p class="sub-clause">၁၊၇။	“အသုံးပြုသူ” ဆိုသည်မှာ Mini App အား အသုံးပြုကာ Mini App ၏ဝန်ဆောင်မှုများကို ရယူအသုံးပြုသူများကို ဆိုလိုခြင်းဖြစ်သည်။</p>
+          <p class="sub-clause">၁၊၈။	“မိတ်ဖက်ဝန်ဆောင်မှု လုပ်ငန်း/ပေးသူ” ဆိုသည်မှာ KBZPay ရှိ CloudCity Food (Mini App) မှတစ်ဆင့် အသုံးပြုသူများအား ဝန်ဆောင်မှုပေးသည့် တစ်ဦးချင်း သို့မဟုတ် ကုမ္ပဏီတစ်ခုဖြစ်သည်။</p>
 </section>
 
-<section class="policy-section" id="ch27">
-  <h3><span class="ch-num">27</span>LANGUAGE</h3>
-  <blockquote>These Terms and Conditions may be provided in English, Myanmar, Chinese, or other supported languages. In the event of any inconsistency, conflict, or discrepancy between the English version and any translated version, the English version shall prevail.</blockquote>
+<section class="policy-section" id="kbz-my-2">
+  <h3><span class="ch-num">2</span>၂။	CloudCity Food  Mini App အား ရယူအသုံးပြုခြင်း</h3>
+  <p class="sub-clause">၂၊၁။ 	အသုံးပြုသူများသည် ၎င်းတို့၏ကိုယ်ပိုင်ဆော့ဖ်ဝဲလ်နှင့် ဟာ့ဒ်ဝဲများ သင့်လျော်ပြီး ခေတ်မီကြောင်း သေချာစေရန်အတွက် တာဝန်ရှိပါသည်။ CloudCity Food  ဝန်ဆောင်မှုများကို အသုံးပြုရန်အတွက် အသုံးပြုသူသည် အချို့သော စက်ပစ္စည်းများ၊ ဆော့ဖ်ဝဲများနှင့် အင်တာနက်ချိတ်ဆက်မှုများကို ပံ့ပိုးပေးရပါမည်။ အသုံးပြုသူသည် CloudCity Food  ဝန်ဆောင်မှုများကို အသုံးပြုနေသမျှကာလပတ်လုံး CloudCity Food  ၏ သဘောတူညီချက်ဖြင့် CloudCity Food  လှုပ်ရှားမှုများ သို့မဟုတ် CloudCity Food  နှင့်ပတ်သက်သော ပြုပြင်မွမ်းမံထားသော အချက်အလက်များကို ရယူနိုင်သည်။</p>
+          <p class="sub-clause">၂၊၂။ 	CloudCity Food (Mini App) ကို CloudCity Food ကုမ္ပဏီ၏ developer များမှ ပံ့ပိုးပေးပါသောကြောင့် CloudCity Food သည် ဝန်ဆောင်မှုအချက်အလက်များ၊ ဒေတာနှင့် လုပ်ငန်းဆောင်ရွက်မှုများ၏ စစ်မှန်မှု၊ ဥပဒေနှင့်အညီ တရားဝင်မှုတို့အတွက် အပြည့် အဝ တာဝန်ရှိပါသည်။</p>
+          <p class="sub-clause">၂၊၃။	အခြေအနေ ပြောင်းလဲလာသည်နှင့်အမျှ COVID-19 နှင့် သဘာဝဘေးအန္တရာယ်များ သို့မဟုတ် မလွန်ဆန်နိုင်သော ဖြစ်ရပ်များ ပေါ်ပေါက်လာခဲ့ပါက  အချိန်မရွေးKBZ မှ  မိတ်ဆက်ခဲ့သော ပဏာမခြေလှမ်းများကို ပြန်လည်ပြင်ဆင်ပိုင်ခွင့်ရှိသည်။</p>
+          <p class="sub-clause">၂၊၄။	လုပ်ငန်းစဉ်များနှင့် လက်ခံသူရရှိသောဝန်ဆောင်မှုများ နှင့်ပတ်သတ်၍အငြင်းပွားမှုများ ပေါ်ပေါက်လာပါက သုံးစွဲသူများသည် ဆက်သွယ်ရန် ဖော်ပြထားသည့် နည်းလမ်းများထဲမှ အပိုဒ် (၂၆) ရှိ CloudCity Food Call center အကူအညီကို တိုက်ရိုက် ဆက်သွယ်နိုင်ပြီးအဆိုပါတိုင်ကြားမှုများအပေါ်တွင် CloudCity Food မှ ဆုံးဖြတ်ချက် ပြုလုပ်မည် ဖြစ်ပါ သည်။</p>
+          <p class="sub-clause">၂၊၅။	အသက်၁၈နှစ်အောက်အသုံးပြုသူများအနေဖြင့် ဤဝန်ဆောင်မှုကိုဝယ်ယူအသုံးပြုလိုပါက ဤစည်းမျဥ်းစည်းကမ်း သတ်မှတ်ချက် များကို   လက်ခံပြီး ကျသင့်သည့် အခကြေးငွေများအားလုံးကို တာဝန်ယူရန် သဘောတူထားသည့် မိဘ(များ) သို့မဟုတ် တရားဝင် အုပ်ထိန်းသူ(များ)၏ သဘောတူညီချက်ကို ရယူ၍ ၁၈ နှစ်အောက် အသုံးပြုသူမှ ဤဝန်ဆောင်မှုကို ဝယ်ယူ အသုံးပြုနိုင် မည်ဖြစ်သည်။  အသက် ၁၈ နှစ်အောက် အသုံးပြုသူအနေဖြင့် မိမိ၏ မိဘ(များ) သို့မဟုတ် တရားဝင် အုပ်ထိန်းသူ(များ)၏ သဘော တူညီချက်မရပါက၊ အသုံးပြုသူသည် Mini App အသုံးပြု၍ ဝန်ဆောင်မှုအား အသုံးပြုခြင်း၊ CloudCity Food (Mini App) သို့ဝင်ရောက်ခြင်းကိုချက်ချင်းရပ်ရပါမည်။ ဤနေရာတွင်ဖော်ပြထားသည့် စည်းမျဥ်းစည်းကမ်းများသည် ပြည်ထောင်စုသမ္မတ မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေများနှင့် အကျုံးဝင်မည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၂၊၆။	ဤဝန်ဆောင်မှုများကို  အသုံးပြုနိုင်ရန် အတွက် KBZPay တွင် မှတ်ပုံတင်ထားသော KBZPay အသုံးပြုသူ ဖြစ်ရန် လိုအပ်ပါသည်။</p>
+          <p class="sub-clause">၂၊၇။	အသုံးပြုသူအား ဝန်ဆောင်မှုပေးရန်နှင့် ဝန်ဆောင်မှုနှင့် ပတ်သက်၍ အသုံးပြုသူ၏ တောင်းဆိုမှုများကို ပြန်လည် တုံ့ပြန်ပေးရန်၊ ဥပဒေကြောင်းအရ လုပ်ဆောင်ရန် ကိစ္စများရှိလာသည့်အခါ အသုံးပြုရန်၊ စည်းမျဉ်းစည်းကမ်း များ အကျိုးသက်ရောက်မှုရှိစေရန်၊ ဝန်ဆောင်မှုနှင့်ပတ်သက်၍ အခြားဖြစ် ပေါ်လာသော ကိစ္စအ၀၀ကို ဖြေရှင်းဆောင်ရွက်ရန်၊ ဤဝန်ဆောင်မှုနှင့် ပတ်သက်သည့် သတင်းအချက်အလက်များကို ပေးပို့ဆက်သွယ်ရန် လိုအပ်သောကြောင့် အသုံးပြုသူ၏ အချက်အလက်များ ကိုKBZ မှ ဝင်ရောက်ကြည့်ရှုခြင်း၊ ထိန်းသိမ်းမှုပြုလုပ်ခြင်း၊ မျှဝေခြင်းနှင့် ထုတ်ဖော်ခြင်းတိုတို့ ပြုလုပ်ရန် အသုံးပြုသူအနေဖြင့် သဘောတူလက်ခံမည်ဖြစ်သည်။ KBZPay အသုံးပြုသူအနေဖြင့် Mini App အား အသုံးပြုခြင်းသည် ဤဝန်ဆောင်မှုနှင့် ပတ်သက်သည့် အကြောင်းအရာများ အားလုံးကို အသုံးပြုသူ၏ မိုဘိုင်းလ်ဖုန်း သို့မဟုတ် Email ထံသို့ SMS၊ စာတိုများနှင့် SMS Link များ ပေးပို့မည်ကို အသုံးပြုသူကသိရှိ လက်ခံသဘောတူခြင်းဖြစ်သည်ဟု မှတ်ယူမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၂၊၈။	ကမ္ဘောဇဘဏ်နှင့် CloudCity Food  သည် Mini App နှင့်၎င်းနှင့်ဆက်စပ်နေသည့်ဝန်ဆောင်မှုများအားပေးနိုင်ရန် အတွက် ကျိုးကြောင်း ဆီလျော်သော ဆောင်ရွက်ချက်များကို အကောင်းဆုံးဆောင်ရွက်ပေးသွားမည်ဖြစ်သော်လည်း အသုံးပြုသူသည် ပြင်ဆင် မွမ်းမံခြင်း၊ အဆင့်မြှင့်တင်ခြင်း သို့မဟုတ် နည်းပညာဆိုင်ရာ ကိစ္စရပ်များကြောင့် နှောင့်နှေးခြင်း၊ ကြန့်ကြာခြင်း များဖြစ်နိုင်ကြောင်းကို သိရှိနားလည်သဘောတူပြီးKBZသည် အနှောက်အယှက်ကင်းစင်ပြီး အမှားအယွင်းကင်းသည့် ဝန်ဆောင်မှုများကိုပေးရန် အာမခံခြင်းမရှိကြောင်းကိုလည်းကောင်း အသုံးပြုသူက သိရှိနားလည်သဘောတူပါသည်။</p>
+          <p class="sub-clause">၂၊၉။	သင်သည် Mini App ၏ထုတ်ကုန်များကို တရားမဝင် သို့မဟုတ် ခွင့်ပြုချက်မရှိဘဲ ရည်ရွယ်ချက် တစ်ခုခု အတွက် အသုံးမပြုနိုင်သလို ဝန်ဆောင်မှုအသုံးပြုရာတွင် ဥပဒေများကို ချိုးဖောက်ခြင်းမပြုရ။ ခေါ်ဆိုမှုများ၊ အီးမေးလ်နှင့် စာတိုပေးပို့သူအားလုံးအပါအဝင် မည်သည့် ဆက်သွယ်ရေး နည်းလမ်းဖြင့်မဆို သင်နှင့် CloudCity Food နှင့်/သို့မဟုတ် KBZ တို့ကြားတွင်အခွင့်အရေးများကိုကာကွယ်ရန်အတွက်သော်လည်းကောင်း၊အရည်အသွေး အာမခံချက်နှင့် ဥပဒေရေးရာရည်ရွယ် ချက်များအတွက် မှတ်တမ်းတင်ထားနိုင်သည်။</p>
+          <p class="sub-clause">၂၊၁၀။	အသုံးပြုသူသည် ၎င်းတို့၏ Account သို့မဟုတ် ဝန်ဆောင်မှုများအား ခွင့်ပြုချက်မရှိဘဲအသုံးပြုနေခြင်း သို့မဟုတ် အခြားသော လုံခြုံရေး ကျိုးပေါက်မှုများ ဖြစ်ခြင်းရှိသည်ဆိုလျှင် အသုံးပြုသူအနေဖြင့် KBZ သို့မဟုတ် Mini App ဝန်ဆောင်မှု ပေးနေသူထံသို့ ချက်ခြင်း အကြောင်းကြားရန် သိရှိသဘောတူသည်။ ယင်းသို့သော ပြဿနာများမှ ပေါ်ပေါက်လာသည့် ပျက်ကွက်မှုများ၊ နစ်နာမှုများ သို့မဟုတ် ဆုံးရှုံးမှုများအတွက် KBZ နှင့် CloudCity Food တွင် တာဝန်မရှိပါ။</p>
+          <p class="sub-clause">၂၊၁၁။	KBZ သည် ဤစည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များအရ ပေးအပ်နေသော ဝန်ဆောင်မှုများနှင့် ပတ်သက်၍ အသုံးပြုသူ၏ကိုယ်ရေးအချက်အလက်များ၊ Biometric အချက်အလက်များနှင့် ငွေစာရင်းဆိုင်ရာအချက်အလက်များအား အခြားပါတီဝင်များ (ပြင်ပမှဝန်ဆောင်မှုပေးသူများ သို့မဟုတ် အေးဂျင့်များ) ထံသို့ဖြစ်စေ သို့မဟုတ် ဤဝန်ဆောင်မှုအား အသုံးပြုရန်အတွက် အသုံးပြုသူမှ Application ထဲတွင်ဖော်ပြထားသော အသုံးပြုသူ၏ အချက်အလက်များအား KBZ၏လုပ်ငန်းခွဲများ၊ ဘဏ်များ၊ ငွေရေးကြေးရေးအဖွဲ့အစည်းများ၊ ခရက်ဒစ်ဗျူရို၊ ကိုယ်စားလှယ်များနှင့် ဥပဒေရေးရာ အဖွဲ့အစည်းများထံသို့ လိုအပ်ပါက မျှဝေခြင်းနှင့် ထုတ်ဖော်ပြောဆိုခြင်းတို့ပြုနိုင်ကြောင်းကို အသုံးပြုသူက သဘောတူပြီး ထိုသို့ဆောင်ရွက်ပိုင်ခွင့်ကိုKBZ သို့ အပ်နှင်းထားပါသည်။</p>
+          <p class="sub-clause">၂၊၁၂။ 	CloudCity Food  စနစ်တွင် သုံးစွဲသူ၏ မိုဘိုင်းဘ်ဖုန်းနံပါတ် နှင့် အချက်အလက်များကို Mini Appတွင် စာရင်းသွင်းပြီးနောက် မှတ်တမ်းတင်ထားပါမည်။ အသုံးပြုသူ၏ မိုဘိုင်းဘ်ဖုန်းနံပါတ် နှင့် အခြားအချက်အလက်များ ကို သင်အသုံးပြုနေသည့် App ၏လုပ်ဆောင်ချက်အပေါ်မူတည်၍ CloudCity Food  စနစ်တွင် မှတ်တမ်း တင်ထားမည်ဖြစ်သည်။ အသုံးပြုသူသည် CloudCity Food  မှ update အချက်အလက်များကို ပြောင်းလဲမှုများပြုလုပ်ရန် သို့မဟုတ် ဆုလက်ဆောင်များ၊ အဆင့်သတ်မှတ်ခြင်း သို့မဟုတ် အခြားလျှော့စျေးဝန်ဆောင်မှုများအတွက် အသုံးပြုသူ၏ဒေတာအချက်အလက်နှင့် လုပ်ဆောင်ချက်များကို ဝင်ရောက် ကြည့်ရှုနိုင်ပါမည်။</p>
+          <p class="sub-clause">၂၊၁၃။	အသုံးပြုသူသည် CloudCity Food Website တွင် ပုံမှန်မွမ်းမံပြင်ဆင်နိုင်သည့် CloudCity Food စည်းမျဥ်းစည်းကမ်းများကို လိုက်နာရန် သဘောတူပါသည်။</p>
+          <p class="sub-clause">၂၊၁၄။	KBZPay ဆိုင်ရာပုံမှန်စည်းမျဉ်းနှင့်စည်းကမ်း သတ်မှတ်ချက်များလည်း အကျုံးဝင်မည်ဖြစ်သည်။</p>
 </section>
 
-<section class="policy-section" id="ch28">
-  <h3><span class="ch-num">28</span>CONTACT US</h3>
-  <p>For questions, Order assistance, cancellations, Refunds, complaints, or other service matters, please contact:</p>
-<p><strong>CloudCity Food Customer Support</strong></p>
-<p><strong>Company:</strong> CLOUDCITY INTERNET SERVICE CO., LTD <strong>Address:</strong> 38D Street (Between 56th & 57th Street), Ye Mon Taung Ward, Maha Aung Mye Township, Mandalay, Myanmar <strong>Customer Service Phone:</strong> 09 782 099 992 <strong>Customer Service Email:</strong> yinduasan680@gmail.com <strong>In-App Support:</strong> Available through the CloudCity Food Mini App</p>
-<p>For KBZPay account or payment-account-related matters:</p>
-<p><strong>KBZPay Hotline:</strong> 09 96996 3211 <strong>KBZPay Email:</strong> query@kbzpay.com</p>
+<section class="policy-section" id="kbz-my-3">
+  <h3><span class="ch-num">3</span>၃။	CLOUDCITY FOOD ၏ဝန်ဆောင်မှုများ</h3>
+  <p class="sub-clause">၃၊၁။	အသုံးပြုသူသည် မန္တလေးမြို့အတွင်း အောက်ပါဝန်ဆောင်မှုများကို KBZPay ရှိ CloudCity Food Mini App မှတစ်ဆင့် ရယူသုံးစွဲနိုင်မည် ဖြစ်သည်။</p>
+          <p>အစားအသောက် ပို့ဆောင်သည့် ဝန်ဆောင်မှု (Food Delivery)</p>
+          <p>အဝယ်တော် ဝန်ဆောင်မှု (Errand Service)</p>
+          <p>မှာယူမှုများကိုဝယ်ပေးသည့် ဝန်ဆောင်မှု (Say Buy)</p>
+          <p>ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှု (Motorcycle Taxi Service )</p>
+          <p class="sub-clause">၃၊၂။	အသုံးပြုသူသည် KBZPay မှတစ်ဆင့် CloudCity Food Mini Appသို့ ဝင်ရောက်၍ KBZPay ၏ အတည်ပြုချက်ဖြင့် အကောင့်စစ်ဆေးအတည်ပြုခြင်းကို ဆောင်ရွက်ရမည်ဖြစ်ပြီး၊ အထက်ပါဝန်ဆောင်မှုများထဲမှ လိုအပ်သော ဝန်ဆောင်မှုကို ရွေးချယ်ကာ သက်ဆိုင်ရာ ဝန်ဆောင်ခများနှင့် စည်းမျဉ်းစည်းကမ်းများကို စစ်ဆေးကြည့်ရှုပြီးပါက KBZPay မှတစ်ဆင့် ငွေပေးချေမှုကို ပြီးမြောက်အောင် ဆောင်ရွက်ရမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၃၊၃။	ဤ Mini App သည် အသုံးပြုသူများ၊ မိတ်ဖက်ဝန်ဆောင်မှု လုပ်ငန်းများ၊ ပို့ဆောင်သူများ၊ ဆိုင်ကယ်တက္ကစီမောင်းသူများနှင့် ကုန်သည်၏ လုပ်ငန်းလည်ပတ်မှုစနစ်တို့ကို ဒစ်ဂျစ်တယ် ဝန်ဆောင်မှုတစ်ခုတည်းအဖြစ် ပေါင်းစည်းချိတ်ဆက်ပေးထားပါသည်။ Mini App အတွင်း မှာယူမှု သို့မဟုတ် ခရီးစဉ်ဖန်တီးခြင်း၊ ငွေပေးချေမှု အတည်ပြုခြင်း၊ ကုန်သည် သို့မဟုတ် ပို့ဆောင်သူများ၏ ဝန်ဆောင်မှုပေးအပ်ခြင်း၊ တိုက်ရိုက်အခြေအနေနှင့် ပို့ဆောင်သူ၏ တည်နေရာကို တိုက်ရိုက် ကြည့်ရှုနိုင်ခြင်း၊ ဝန်ဆောင်မှုပြီးမြောက်ကြောင်း အထောက်အထားနှင့် မှာယူမှုမှတ်တမ်းများ ကြည့်ရှုနိုင်ခြင်း၊ သုံးသပ်ချက် ပေးပို့ခြင်း စသည့် ဝန်ဆောင်မှုများကို ထောက်ပံ့ပေးထားသည်။</p>
+          <p class="sub-clause">၃၊၄။	ဤ Mini App ကို မြန်မာ၊ အင်္ဂလိပ်၊ တရုတ် နှင့် ထိုင်း ဘာသာစကား ၄ မျိုးဖြင့် အသုံးပြုနိုင်မည်ဖြစ်သည်။</p>
 </section>
 
-  </article>
+<section class="policy-section" id="kbz-my-4">
+  <h3><span class="ch-num">4</span>၄။	အစားအသောက် ပို့ဆောင်သည့် ဝန်ဆောင်မှု (Food Delivery) အသုံးပြုသူ၏ တာဝန်ဝတ္တရားများ</h3>
+  <p class="sub-clause">၄၊၁။	အသုံးပြုသူများသည် Mini App မှတစ်ဆင့် မိတ်ဖက်ဝန်ဆောင်မှုပေးသူများ၏ စားသောက်ဆိုင်များနှင့် စားသောက်ကုန် မီနူးများကို ကြည့်ရှုခြင်း၊ ဝယ်ယူလိုသော စားသောက်ကုန်များကို ဈေးဝယ်ခြင်းတောင်း အတွင်းသို့ ထည့်သွင်းခြင်း၊ မှာယူခြင်း၊ အိမ်တိုင်ရာရောက် ပို့ဆောင်သည့်ဝန်ဆောင်မှုကိုရယူခြင်း သို့မဟုတ် ဆိုင်သို့ ကိုယ်တိုင်သွားရောက်ယူဆောင်ခြင်းတို့အနက်မှ ကြိုက်နှစ်သက်ရာကို ရွေးချယ်ခြင်း၊ စုစုပေါင်း ကျသင့်ငွေကို စစ်ဆေးကြည့်ရှုပြီး ကုန်ကျစရိတ် အပြည့်အဝကို KBZPay မှတစ်ဆင့် ငွေပေးချေခြင်း၊ အစားအသောက် ပို့ဆောင်ရေး အခြေအနေများကို စောင့်ကြည့်ခြင်း၊ မှာယူမှုမှတ်တမ်းများကို ပြန်လည်ကြည့်ရှုခြင်း နှင့် သုံးသပ်ချက် ပေးပို့ခြင်း စသည့် ဝန်ဆောင်မှုများကို ဆောင်ရွက်နိုင်မည် ဖြစ်သည်။</p>
+          <p class="sub-clause">၄၊၂။	အသုံးပြုသူသည် အိမ်တိုင်ရာရောက် ပို့ဆောင်သည့်ဝန်ဆောင်မှုကို ရွေးချယ်ပါက အစားအသောက် ပို့ဆောင်ရမည့် လိပ်စာကို တိကျမှန်ကန်စွာ ရွေးချယ်ထည့်သွင်းရမည်ဖြစ်ပြီး ပို့ဆောင်ခအပါအဝင် စုစုပေါင်း ကျသင့်ငွေကို KBZPay မှတစ်ဆင့် ငွေပေးချေ ကိုယ်တိုင်သွားရောက်ယူဆောင်ခြင်း (Self Pickup) ကို ရွေးချယ်ပါက ပို့ဆောင်ရမည့်လိပ်စာနှင့် ပို့ဆောင်ခကို ပေးဆောင်ရန် မလိုအပ်ပါ။</p>
+          <p class="sub-clause">၄၊၃။	အသုံးပြုသူမှထည့်သွင်းသော အချက်အလက်မပြည့်စုံမှု၊ မှန်ကန်ခြင်းမရှိမှု (သို့မဟုတ်) ပျောက်ဆုံးနေခြင်းကြောင့် မှာယူမှုပေးပို့ရာတွင်ပြဿနာများ ကြုံတွေ့ရသည့် မှာယူမှုများအတွက် KBZ နှင့် ကုန်သည်တို့တွင် တာဝန်မရှိပါ။ အသုံးပြုသူများသည် မှာယူမှုအားပေးပို့ရမည့်လိပ်စာနှင့် ဆက်သွယ်ရန်အချက်အလက်များအပါအဝင်  မှာယူမှုအား သင့်တင့်လျောက်ပတ်သောမှန်ကန်မှုဖြင့် ပြင်ဆင်နိုင်ရန်အတွက် အသုံးပြုသူသည် တိကျ၊ ပြည့်စုံ၊ မှန်ကန်မှုရှိသောအချက်အလက်များကို ပေးရန် တာဝန်ရှိပါသည်။</p>
+          <p class="sub-clause">၄၊၄။	အလက်ဂျစ်ဖြစ်စေသောပစ္စည်း- KBZ သည် ပါဝင်ပစ္စည်းနှင့်ပတ်သ‌တ်သောအချက်အလက်များ (သို့မဟုတ်) ဓာတ်မတည့်မှုဆိုင်ရာ အချက်အလက်များကို Mini App တွင် ဖော်ပြပေးရန် တာဝန်မရှိပါ။ ထို့အပြင် KBZ သည် မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်းများမှ ရောင်းချသည့် ကုန်ပစ္စည်းများသည် ဓာတ်မတည့်မှု ကင်းစင်ကြောင်း အာမခံခြင်းမရှိပါ။ အသုံးပြုသူတွင် ဓာတ်မတည့်မှု၊ မတည့်မှုကြောင့် ဝေဒနာတစ်စုံတစ်ရာခံစားရမှုများ (သို့မဟုတ်) အစားအစာတွင်ပါဝင်မှု အတိုင်းအဆကန့်သတ်ချက်များနှင့် လိုအပ်ချက်များမှာကြားလိုပါက Mini App တွင် မှာယူမှုမတင်မီ မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်းထံသို့ ဆက်သွယ်ပြောကြားရမည်ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၄၊၅။	အသုံးပြုသူအနေဖြင့် မှာယူမှုအားလက်ခံရယူရာတွင် အသုံးပြုသူမှပို့‌ဆောင်ရန်သဘောတူထားသည့်နေရာနှင့်အချိန်၌ ပို့ဆောင်သူထံမှ မှာယူထားသောစားသောက်ကုန်ကို လက်ခံရယူရမည်ဖြစ်ပြီး အသုံးပြုသူနှင့် မိတ်ဖက်ဝန်ဆောင်မှုပေးသူတို့ သဘောတူထားသည့်အချိန်နှင့် သဘောတူထားသည့် ပို့ဆောင်ရမည့်နေရာတွင် အသုံးပြုသူအနေဖြင့် မှာယူထားသည့်စားသောက်ကုန်ကို လက်ခံရယူရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှုအားလုံးကို အသုံးပြုရမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၄၊၆။	အသုံးပြုသူသည် ပေးပို့‌လာသော မှာယူမှုများအား လက်ခံရယူရာတွင် အသုံးပြုသူ၏ ကျိုးကြောင်းဆီလျော်မှုမရှိသော နှောင့်နှေးမှုဖြင့် လက်ခံရယူခြင်းကြောင့် ဖြစ်ပေါ်သောအခါ၊ ပျက်စီးခြင်း (သို့မဟုတ်) ဆုံးရှုံးခြင်း (သို့မဟုတ်) စားသောက်ကုန်</p>
+          <p>အရည်အသွေး ယိုယွင်းနေခြင်း (သို့မဟုတ်) အခြေအနေ ပြောင်းလဲနေခြင်း (ဥပမာ - စားသုံးရန်သင့်လျော်သော အပူချိန်အပြောင်းအလဲများ) ၏ အန္တရာယ်ကို အသုံးပြုသူအနေဖြင့် လက်ခံရမည်။ ဤသို့သောကိစ္စရပ်များတွင် အသုံးပြုသူသည် စားသောက်ကုန်ကို အစားထိုးပေးရန်၊ ငွေပြန်အမ်းရန် (သို့မဟုတ်) အစားထိုးလဲလှယ်ခွင့်ပြုရန်တို့ကို ခံစားခွင့်မရှိပါ။ အသုံးပြုသူမှ ၎င်း၏ မှာယူထားသည့်စားသောက်ကုန်များအား ကိုယ်တိုင်သွားရောက်ယူဆောင်ရာတွင် မှာယူမှုအား စစ်ဆေးရန်မှာ အသုံးပြုသူတစ်ဦးတည်းတွင် တာဝန်ရှိပြီး ပြဿနာများ နှင့်/သို့မဟုတ် ချို့ယွင်းချက်တစ်စုံတစ်ရာကို မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်း၏နေရာမှ မထွက်ခွာမီ တင်ပြရမည်။</p>
+          <p class="sub-clause">၄၊၇။	KBZ သည် ဝန်ဆောင်မှုအားနည်းခြင်း၊ မှာယူမှုမှားယွင်းပေးပို့ခြင်း၊ အော်ဒါရောက်ရှိရန် ကြန့်ကြာခြင်း၊ မှာယူမှုထုတ်ပိုးမှုအဆင်ပြေမှုမရှိခြင်းတို့ဟုသာ ကန့်သတ်ထားခြင်းမရှိဘဲစသည်တို့အပါအဝင် မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်း၏ မည်သည့်အစိတ်အပိုင်းကိုမဆို ပျက်ကွက်မှု သို့မဟုတ် မည်သည့်လုပ်ရပ်အတွက်မဆို လုပ်ဆောင်မှုများအတွက် KBZ တွင် တာဝန်မရှိပါ။</p>
+          <p class="sub-clause">၄၊၈။ 	အသုံးပြုသူမှ မှာယူသည့် စားသောက်ကုန်အပေါ်တွင် မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်းမှ ပေးသည့် အစားအသောက် စံချိန်စံညွှန်းများနှင့် ပတ်သတ်၍ တစ်စုံတစ်ရာ ဖောက်ဖျက်ခြင်းဖြစ်ပေါ်ပါကယင်းအမှာယူမှုအတွက် မိတ်ဖက်ဝန်‌ဆောင်မှုလုပ်ငန်း ထံသို့သာ တိုက်ရိုက် ပြောကြားရမည်ဖြစ်ပြီး ထိုကဲ့သို့သော ဝန်ဆောင်မှုများကို ပေးခြင်းအတွက် KBZ တွင် မည်သည့်တာဝန်မျှမရှိပါ။</p>
+          <p class="sub-clause">၄၊၉။	KBZ သည် ငွေပေးချေမှုဆိုင်ရာ အေဂျင်စီသာ ဖြစ်ပြီး Mini App ရှိ အစားအသောက် ပို့ဆောင်သည့် ဝန်ဆောင်မှု (Food Delivery)  အသုံးပြုရာမှ ပေါ်ပေါက်လာမည့် မည်သည့် ပြဿနာ (သို့မဟုတ်) အငြင်းပွားမှု တစ်ရပ်ရပ်အတွက် KBZတွင် တာဝန်မရှိသည်ကို အသုံးပြုသူမှ သိရှိနားလည်သဘောတူပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-5">
+  <h3><span class="ch-num">5</span>၅။	အဝယ်တော်ဝန်ဆောင်မှု (Errand Service) အသုံးပြုသူ၏ တာဝန်ဝတ္တရားများ</h3>
+  <p class="sub-clause">၅၊၁။	အသုံးပြုသူသည် Mini App မှတစ်ဆင့် အဝယ်တော် ဝန်ဆောင်မှု ကို အသုံးပြုရာတွင် ပစ္စည်းပို့ဆောင်ပေးရန် သို့မဟုတ် ပစ္စည်းသွားရောက်ယူဆောင်ပေးရန် တို့အနက်မှ ကြိုက်နှစ်သက်ရာကို ရွေးချယ်ပြီး၊ ပစ္စည်းယူဆောင်/ပေးပို့ရမည့် လိပ်စာ၊ ဆက်သွယ်ရန် ဖုန်းနံပါတ်များကို ထည့်သွင်းအတည်ပြုခြင်း၊ ပစ္စည်းအမျိုးအစားနှင့် အလေးချိန်ကို ရွေးချယ်ခြင်း၊ လိုအပ်ပါက အထူးညွှန်ကြားချက်များ ထည့်သွင်းခြင်းတို့ကို ဆောင်ရွက်ရမည်ဖြစ်ပါသည်။ Mini Appမှ အခြေခံဝန်ဆောင်ခ၊ အကွာအဝေးနှင့် အချိန်ပေါ်မူတည်၍ ကျသင့်စရိတ်များကို တွက်ချက်ကာ စုစုပေါင်း ပို့ဆောင်ခကို KBZPay မှတစ်ဆင့် ငွေပေးချေရမည်။ ငွေပေးချေမှု အောင်မြင်ပါက ပို့ဆောင်ရေးလုပ်ငန်းစဉ်ကို စတင်မည်ဖြစ်ပြီး၊ ပို့ဆောင်သူ မှ မှာယူမှုကို လက်ခံကာ ပစ္စည်းယူဆောင်ရမည့်နေရာသို့ သွားရောက်၍ ပစ္စည်းကို လက်ခံရယူပြီး အသုံးပြုသူထံသို့ သွားရောက်ပို့ဆောင်ပေးမည်ဖြစ်ရာ ပို့ဆောင်မှု အခြေအနေများကို Mini Appအတွင်း တိုက်ရိုက် စောင့်ကြည့်ခြင်း၊ လုပ်ငန်းစဉ်ပြီးမြောက်ပါက အသုံးပြုသူသည် မှာယူမှုအသေးစိတ်အား ပြန်လည်ကြည့်ရှုနိုင်ခြင်းနှင့် သုံးသပ်ချက်များပေးပို့ခြင်းတို့လုပ်ဆောင်နိုင်မည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၅၊၂။	အသုံးပြုသူသည် မိမိပေးပို့/ယူဆောင်လိုသည့် လိပ်စာ အချက်အလက်များ နှင့် ပေးပို့/ယူဆောင်လိုသည့်ပစ္စည်းများအား ဝန်ဆောင်မှုစတင်ရယူသည့်အချိန်တွင် အသေးစိတ် ဖော်ပြရန်မှာ အသုံးပြုသူ၏ တာဝန်သာဖြစ်သည်။ ပစ္စည်း အမျိုးအစားနှင့် အလေးချိန်ကို ဖော်ပြမှသာလျှင် မှန်ကန်တိကျစွာ ပို့ဆောင်/ယူဆောင် ပေးနိုင်မည်ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၅၊၃။	အဝယ်တော်ဝန်ဆောင်မှုအတွက် ပေးပို့/ယူဆောင်ရန် လိပ်စာမပြည့်စုံခြင်း၊ ဖုန်းဆက်သွယ်၍ မရနိင်ခြင်း၊ ပစ္စည်းလက်ခံမည့်သူမရှိခြင်း၊ စာရွက်စာတမ်းနှင့်  အခြားလိုအပ်ချက်များအချိန်မှီပေးပို့ဆောင်ရွက်ရန် ပျက်ကွက်ခြင်း၊ လက်ခံရန်ငြင်းပယ်ခြင်း/အဆင်မပြေခြင်းများ ဖြစ်ပေါ်ပါက အသုံးပြုသူ၏တာဝန်သာ ဖြစ်သည်။</p>
+          <p class="sub-clause">၅၊၄။	အသုံးပြုသူသည် ပေးပို့/ယူဆောင်ရန်ညွှန်ကြားထားသည့် ပစ္စည်းများ၏ တရားဝင်ပိုင်ဆိုင်သူဖြစ်ကြောင်း အာမခံသူဖြစ်ပြီး ပေးပို့/ယူဆောင်ရမည့်ပစ္စည်းနှင့် ပတ်သက်၍ အပြည့်အဝတာဝန်ရှိ ပါသည်။</p>
+          <p class="sub-clause">၅၊၅။	အသုံးပြုသူသည် ဥပဒေနှင့်မလွတ်ကင်းသည့် ပစ္စည်းများ သယ်ယူခြင်းမပြုရန် သဘောတူပါသည်။ Mini App အနေဖြင့်တရားမ၀င်၊ အန္တရာယ်ရှိသော ပစ္စည်းများ ဖြစ်သည်ဟု ယူဆပါက တင်ဆောင်ရန် ငြင်းဆန်ပိုင်ခွင့်ရှိမည်ဖြစ်သည်။ ဥပဒေအရ တားမြစ်ထားသော ပစ္စည်းများ (သို့မဟုတ်) တရားမဝင်ပစ္စည်းများ၊ အန္တရာယ်ရှိသော ပစ္စည်းများ သယ်ဆောင်ခြင်းကြောင့် ဖြစ်ပေါ်လာနိုင်သည့် ဥပဒေနှင့်သက်ဆိုင်သော အရေးယူမှုများ၊ ပြစ်မှုဆိုင်ရာ တာဝန်ဝတ္တရားများ နှင့် အခြားဆက်စပ်ပြဿနာများအတွက် အသုံးပြုသူကိုယ်တိုင် တာဝန်ခံရမည်ဖြစ်ပါသည်။ အဆိုပါ အခြေအနေများနှင့် ပတ်သက်၍ ကုန်သည်နှင့် KBZ တို့မှ မည်သည့်တာဝန်ဝတ္တရားကိုမျှ ရှိမည်မဟုတ်သလို၊ တာဝန်ယူဖြေရှင်းပေးမည်လည်းမဟုတ်ကြောင်းကို သိရှိနားလည်သဘောတူပါသည်။</p>
+          <p class="sub-clause">၅၊၆။	အသုံးပြုသူအနေဖြင့် ပစ္စည်းပို့ဆောင်ရန် ဝန်ဆောင်မှုရယူပြီးသည်နှင့် ပို့ဆောင်ရမည့်လိပ်စာပြောင်းလဲခြင်း သို့မဟုတ် ဖျက်သိမ်းခြင်း ပြုလုပ်ခွင့်မရှိပါ။</p>
+          <p class="sub-clause">၅၊၇။	အသုံးပြုသူအနေဖြင့် ပစ္စည်းပို့ဆောင်ခြင်းကို လက်ခံရယူရာတွင် အသုံးပြုသူမှပို့‌ဆောင်ရန်သဘောတူထားသည့်နေရာနှင့်အချိန်၌ ပို့ဆောင်သူထံမှ မှာယူထားသောပစ္စည်းကို လက်ခံရယူရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှုအားလုံးကို အသုံးပြုရမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၅၊၈။	အသုံးပြုသူသည် အလေးချိန် ပိုလွန်နေသည့် ပစ္စည်းများအတွက် ထပ်ဆောင်းဝန်ဆောင်ခများရှိနိုင်သည်ကို သိရှိသဘောတူပါသည်။ ပို့ဆောင်သူသည် ထပ်ဆောင်းဝန်ဆောင်ခ အဆိုပြုရန် အသုံးပြုသူထံ တိုက်ရိုက်ဆက်သွယ်မည်ဖြစ်ပြီး၊ သဘောတူညီမှု မရရှိပါက ပို့ဆောင်သူမှ ပစ္စည်းပို့ဆောင်ရန် ငြင်းဆိုပိုင်ခွင့်ရှိကာ မှာယူမှု ပယ်ဖျက်ခြင်းနှင့် ငွေပြန်အမ်းခြင်း လုပ်ငန်းစဉ်များကို ဆောင်ရွက်ပေးမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၅၊၉။	ငွေလက်ခံဖြတ်ပိုင်း တွင်ရေးသားထားသည့် ပစ္စည်းအမျိုးအစားနှင့် ပါဆယ်ထုတ်အတွင်းပါဝင်သည့် ပစ္စည်းအမျိုးအစား၊ အချက်အလက် ကွဲလွဲနေလျှင် ကုန်သည်နှင့် KBZ တွင် တာဝန်မရှိပါ။ CloudCity Food  သို့အသိပေးခြင်းတစုံတရာမရှိဘဲ အသုံးပြုသူ (သို့) မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်း တို့အပါအဝင် သက်ဆိုင်သည့်သူ တစ်စုံတစ်ယောက်မှ မိမိသဘောဆန္ဒအလျှောက်တန်ဖိုးကြီး၊ တားမြစ်၊ တရားမဝင်ပစ္စည်းများအား လျှို့ဝှက်ထည့်သွင်းပို့ဆောင်ခြင်းများအတွက်ကုန်သည်နှင့်  KBZ မှလုံးဝ (လုံးဝ) တာဝန်မရှိသည့်အပြင် ၄င်းလုပ်ရပ်များ၏ အကျိုးဆက်များ၊ ထိခိုက်နစ်နာမှုများ ၊ တရားရေးရင်ဆိုင်ရမှုများ ၊ အပြစ်ဒဏ်ကျခံရမှုများကိုဖြေရှင်းရန်မှာ အသုံးပြုသူ၏တာဝန်သာဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၅၊၁၀။	အသုံးပြုသူ၏ ပေါ့လျော့မှုကြောင့်ဖြစ်ပေါ်လာသော ကြန့်ကြာမှုများ၊ ပျက်စီးမှုများ၊ အခြားကုန်ကျစရိတ်များ၊ စနစ်တကျလုံခြုံစွာ ထုတ်ပိုးထားခြင်းမရှိသော ပစ္စည်းများ၏ ပျက်စီးပျောက်ဆုံးမှုများကို ကုန်သည်နှင့် KBZ မှ တာဝန်ယူမည်မဟုတ်ပါ။</p>
+          <p class="sub-clause">၅၊၁၁။	ပစ္စည်း return ပြန်ခြင်းများအတွက် ထပ်မံကုန်ကျစရိတ်များရှိပါက အသုံးပြုသူ တွင်တာဝန်ရှိပါသည်။</p>
+          <p class="sub-clause">၅၊၁၂။	ပစ္စည်းပို့ဆောင်သည့် ဝန်ဆောင်မှု ကိုရယူရာတွင် ကျသင့်သည့် အခွန်အခများကို အသုံးပြုသူဘက်မှပေးဆောင်ရန် တာဝန်ရှိပါသည်။</p>
+          <p class="sub-clause">၅၊၁၃။	မည်သည့် ကုန်ပစ္စည်း ဖြစ်စေ ၊ စာရွက်စာတမ်း ဖြစ်စေ CloudCity Food  နှင့် KBZ ၏ စည်းမျဉ်းစည်းကမ်းနှင့် မကိုက်ညီပါက CloudCity Food  နှင့် KBZ မှသယ်ယူပို့ဆောင်ရန် ငြင်းပယ်ခွင့်ရှိပါသည်။</p>
+          <p class="sub-clause">၅၊၁၄။	CloudCity Food  ၏ ဝန်ထမ်းများအမှားကြောင့် ပျောက်ဆုံး ၊ ပျက်စီးမှုများဖြစ်ပေါ်လာပါက ပျက်စီးဆုံးရှုံးမှု အတွက် CloudCity Food သို့ လျှောက်ထားသည့်အခါ ပစ္စည်း၏တန်ဖိုးကို ဖော်ပြသည့် မူရင်းဘောင်ချာကို တစ်လအတွင်း တင်သွင်းရမည် ဖြစ်ပြီး KBZ မှတာဝန်ယူမည်မဟုတ်ပါ။</p>
+          <p class="sub-clause">၅၊၁၅။	KBZ သည် ငွေပေးချေမှုဆိုင်ရာ အေဂျင်စီသာ ဖြစ်ပြီး Mini App ရှိ အဝယ်တော်ဝန်ဆောင်မှု (Errand Service) အသုံးပြုရာမှ ပေါ်ပေါက်လာမည့် မည်သည့် ပြဿနာ (သို့မဟုတ်) အငြင်းပွားမှု တစ်ရပ်ရပ်အတွက် KBZတွင် တာဝန်မရှိသည်ကို အသုံးပြုသူမှ သိရှိနားလည်သဘောတူပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-6">
+  <h3><span class="ch-num">6</span>၆။	မှာယူမှုများကိုဝယ်ပေးသည့် ဝန်ဆောင်မှု (Say Buy) အသုံးပြုသူ၏ တာဝန်ဝတ္တရားများ</h3>
+  <p class="sub-clause">၆၊၁။	အသုံးပြုသူသည် Mini App အတွင်းရှိ Say Buy ဝန်ဆောင်မှုကို ရွေးချယ်၍ တည်နေရာ၊ ဆိုင်နှင့် ပစ္စည်းအချက်အလက်များ၊ ပို့ဆောင်ပေးရမည့် လိပ်စာတို့ကို ဖြည့်သွင်းပြီး ဝန်ဆောင်မှုတောင်းဆိုချက်ကို ပြန်လည်စစ်ဆေးရမည်ဖြစ်ကာ၊ စည်းမျဉ်းနှင့် စည်းကမ်းချက်များကို သဘောတူညီပြီးပါက သတ်မှတ်ထားသော Say Buy ပို့ဆောင်ခကို KBZPay မှတစ်ဆင့် ပေးချေကာ ဝန်ဆောင်မှုကို ရယူရမည် ဖြစ်သည်။</p>
+          <p class="sub-clause">၆၊၂။	Say Buy ဝန်ဆောင်မှုကို အတည်ပြုပြီးနောက် ပို့ဆောင်သူသည် အသုံးပြုသူ ညွှန်ကြားထားသည့်အတိုင်း သတ်မှတ်ဆိုင်သို့ သွားရောက်၍ ပစ္စည်း ရ/မရ သွားရောက်ကြည့်ရှုပေးမည်ဖြစ်ပါသည်။ သတ်မှတ်ထားသည့်ဆိုင်တွင်ပစ္စည်းရှိပါက ပစ္စည်း၏ အမှန်တကယ်ကျသင့်ငွေကို စစ်ဆေးအတည်ပြုမည်ဖြစ်ပြီး အသုံးပြုသူထံ ဆက်သွယ်မည် ဖြစ်သည်။  အသုံးပြုသူသည် ထပ်မံ၍ ပစ္စည်း၏ကျသင့်ငွေကို KBZPay ဖြင့် ပို့ဆောင်သူထံသို့ ကြိုတင်လွှဲပြောင်းပေးရမည်ဖြစ်ပြီး ပို့ဆောင်သူ မှ ကျသင့်ငွေကိုစိုက်ထုတ်ဝယ်ယူပေးမည် မဟုတ်ပါ။ ငွေလက်ခံရရှိကြောင်း အတည်ပြုပြီးနောက် ပို့ဆောင်သူ သည် ပစ္စည်းကို ဝယ်ယူ၍ အသုံးပြုသူထံ ပို့ဆောင်ပေးမည်ဖြစ်ပါသည်။ သတ်မှတ်ထားဆိုင်တွင် ပစ္စည်းမရှိပါက သက်ဆိုင်ရာ မူဝါဒနှင့်အညီ ပစ္စည်းပြောင်းလဲရန် သို့မဟုတ် ပယ်ဖျက်ရန် အသုံးပြုသူထံ ဆက်သွယ်ပြီး သဘောတူညီချက်ရယူမည် ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၆၊၃။	အသုံးပြုသူသည် မိမိဝယ်ယူလိုသည့်ဆိုင်၏တည်နေရာ၊ ပို့ဆောင်ရမည့် လိပ်စာ အချက်အလက်များ နှင့် ဝယ်ယူလိုသည့်ပစ္စည်းများအား ဝန်ဆောင်မှုစတင်ရယူသည့်အချိန်တွင် အသေးစိတ် ဖော်ပြရန်မှာ အသုံးပြုသူ၏ တာဝန်သာဖြစ်သည်။ ပစ္စည်း အမျိုးအစားနှင့် အချက်အလက်များကိုသေချာစွာ ဖော်ပြမှသာလျှင် အသုံးပြုသူထံသို့ မှန်ကန်တိကျစွာ ပို့ဆောင် ပေးနိုင်မည်ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၆၊၄။	ဝန်ဆောင်မှုအတွက် ပေးပို့/သွားရောက်ဝယ်ယူရန် လိပ်စာမပြည့်စုံခြင်း၊ ဖုန်းဆက်သွယ်၍ မရနိင်ခြင်း၊ ပစ္စည်းလက်ခံမည့်သူမရှိခြင်း၊ စာရွက်စာတမ်းနှင့်  အခြားလိုအပ်ချက်များအချိန်မှီပေးပို့ဆောင်ရွက်ရန် ပျက်ကွက်ခြင်း၊ လက်ခံရန်ငြင်းပယ်ခြင်း/အဆင်မပြေခြင်းများ ဖြစ်ပေါ်ပါက အသုံးပြုသူ၏တာဝန်သာ ဖြစ်သည်။</p>
+          <p class="sub-clause">၆၊၅။ 	အသုံးပြုသူအနေဖြင့် ဤဝန်ဆောင်မှုရယူပြီးသည်နှင့် ပို့ဆောင်ရမည့်လိပ်စာပြောင်းလဲခြင်း သို့မဟုတ် ဖျက်သိမ်းခြင်း ပြုလုပ်ခွင့်မရှိပါ။</p>
+          <p class="sub-clause">၆၊၆။	အသုံးပြုသူအနေဖြင့် ပစ္စည်းပို့ဆောင်ခြင်းကို လက်ခံရယူရာတွင် အသုံးပြုသူမှပို့‌ဆောင်ရန်သဘောတူထားသည့်နေရာနှင့်အချိန်၌ ပို့ဆောင်သူထံမှ မှာယူထားသောပစ္စည်းကို လက်ခံရယူရန် ကျိုးကြောင်းဆီလျော်သော အားထုတ်မှုအားလုံးကို အသုံးပြုရမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၆၊၇။	KBZ သည် ငွေပေးချေမှုဆိုင်ရာ အေဂျင်စီသာ ဖြစ်ပြီး Mini App ရှိ မှာယူမှုများကိုဝယ်ပေးသည့် ဝန်ဆောင်မှု (Say Buy) အသုံးပြုရာမှ ပေါ်ပေါက်လာမည့် မည်သည့် ပြဿနာ (သို့မဟုတ်) အငြင်းပွားမှု တစ်ရပ်ရပ်အတွက် KBZတွင် တာဝန်မရှိသည်ကို အသုံးပြုသူမှ သိရှိနားလည်သဘောတူပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-7">
+  <h3><span class="ch-num">7</span>၇။	ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှု (Motorcycle Taxi Service ) အသုံးပြုသူ၏ တာဝန်ဝတ္တရားများ</h3>
+  <p class="sub-clause">၇၊၁။	အသုံးပြုသူသည် Mini App မှတဆင့် ဆိုင်ကယ်တက္ကစီ ဝန်ဆောင်မှုကိုအသုံးပြုကာ မိမိသွားလိုသည့် ခရီးစဥ်ကို ဘိုကင်တင်ခြင်းများအတွက် KBZPay မှတစ်ဆင့် အပြည့်အဝငွေပေးချေရန် တာဝန်ရှိမည်ဖြစ်သည်။ ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှု ကိုရယူရာတွင် ကျသင့်သည့် အခွန်အခများကို အသုံးပြုသူဘက်မှပေးဆောင်ရန် တာဝန်ရှိပါသည်။ ထိုသို့ ငွေပေးချေမှုများပြုလုပ်ရာတွင် ခရီးစဥ်၏ကျသင့်‌ငွေနှင့် အခွန်အခများကို သင်၏ KBZPay wallet မှအလိုအလျောက် နှုတ်ယူသွားမည်ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၇၊၂။	အသုံးပြုသူသည်  ခရီးစဥ်၏ကျသင့်ငွေကို ဘိုကင်အတည်မပြုမှီတွင် မြင်တွေ့ရမည်ဖြစ်ပြီး ငွေပေးချေမှုမပြုလုပ်ခင် ပြန်လည်စစ်ဆေးရန်မှာ သင့်ထံတွင်သာတာဝန်ရှိပါသည်။</p>
+          <p class="sub-clause">၇၊၃။	အသုံးပြုသူများသည် မည်သည့် အချိန်တွင်မဆို Mini App မှတဆင့် မိမိသွားလိုသည့် ခရီးစဥ်ကို ဘိုကင်တင်ကာ Mini App ၏ ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှုကိုရယူနိုင်ပါသည်။ CloudCity Food ဆိုင်ကယ် တက္ကစီဝန်ဆောင်မှု ရခြင်းမရခြင်း သည်  မိမိဌားရမ်းသည့် တည်နေရာတွင် CloudCity Food နှင့် ချိတ်ဆက်ထားသော ဆိုင်ကယ်တက္ကစီမောင်းသူ များ ရှိမရှိပေါ်တွင်မူတည်ပါသည်။</p>
+          <p class="sub-clause">၇၊၄။	အသုံးပြုသူများသည် မိမိ‌ရွေးချယ်ထားသော ခရီးစဥ်၏ Pick Up နေရာနှင့် Drop-off နေရာကို မှန်ကန်စွာ‌ရွေးချယ်ရန်တာဝန်ရှိပါသည်။</p>
+          <p class="sub-clause">၇၊၅။	အသုံးပြုသူများသည် မိမိရွေးချယ်ထားသော Pick up တည်နေရာသို့ ဆိုင်ကယ်တက္ကစီမောင်းသူများမရောက်မှီအချိန် သို့မဟုတ် သတ်မှတ်ထားသည့်အချိန်ထက် နောက်မကျဘဲရောက်ရှိနေရမည်။</p>
+          <p class="sub-clause">၇၊၆။	ဆိုင်ကယ်တက္ကစီမောင်းသူသည် သတ်မှတ်ထားသောလူဦးရေ(၁)ဦး ထက်ပိုသော စီးနင်းလိုက်ပါမှုများအတွက် လက်ခံမည်မဟုတ်ပါ။</p>
+          <p class="sub-clause">၇၊၇။	အသုံးပြုသူများသည် လမ်းခရီးတစ်လျောက်တွင်  အဖိုးတန်ရွေငွေ လက်ဝတ်လက်စားများ၊ လက်ကိုင်ဖုန်းများ နှင့် ပိုက်ဆံအိတ်များအပါအဝင် မည်သည့်ပစ္စည်းကိုဖြစ်စေ မိမိနှင့်အတူကိုယ်နှင့်မကွာထိန်းသိမ်းထားရန် အပြည့်အဝတာဝန်ရှိပါသည်။ ထို့အပြင် ဆိုင်ကယ်တက္ကစီမှမဆင်းခင်အချိန်တွင်လည်း အသုံးပြုသူ၏ ပစ္စည်းတစ်စုံတစ်ရာ ကျန်ရှိခြင်းမရှိစေရန် အသုံးပြုသူမှ သေချာစွာ စစ်ဆေးရမည်ဖြစ်ပြီး အသုံးပြုသူ၏ ပေါ့ဆမှုကြောင့်ဖြစ်စေ၊ တစ်စုံတစ်ရာသော အကြောင်းကြောင့်ဖြစ်စေ ပစ္စည်းများကျန်ရှိခြင်း သို့မဟုတ် အသုံးပြုသူအား ထိခိုက်နစ်နာမှု သို့မဟုတ် ဆုံးရှုံးမှုတစ်စုံတစ်ရာ ဖြစ်ပေါ်ပါက CloudCity Food နှင့် KBZ တွင် ပေးလျော်ရန်တာဝန်မရှိပါ။</p>
+          <p class="sub-clause">၇၊၈။	အသုံးပြုသူသည် ကြိုတင်နေရာ/ခရီးစဥ်အတွက် ဘိုကင်တင်ခြင်းအားပြုလုပ်ပြီး  ပယ်ဖျက်လိုပါက၊ ဆိုင်ကယ်တက္ကစီမောင်း သူသည် သတ်မှတ်ထားသော ခရီးစဥ်တစ်ဝက် လမ်းကြောင်းသို့ မရောက်ရှိသေးပါက ဝန်ဆောင်ခ ပေးဆောင်ရန် မလိုဘဲ အခမဲ့ ပယ်ဖျက်နိုင်မည်ဖြစ်ပြီး၊ ဆိုင်ကယ်တက္ကစီမောင်း သူသည် ထို ခရီးစဥ်တစ်ဝက် လမ်းကြောင်းသို့ ရောက်ရှိပြီး (သို့မဟုတ်) ကျော်လွန်ပြီးပါက ပယ်ဖျက်ခ ကောက်ခံမည်ဖြစ်သည်။</p>
+          <p class="sub-clause">၇၊၉။	KBZ သည် ငွေပေးချေမှုဆိုင်ရာ အေဂျင်စီသာ ဖြစ်ပြီး Mini App ရှိ ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှု (Motorcycle Taxi Service ) အသုံးပြုရာမှ ပေါ်ပေါက်လာမည့် မည်သည့် ပြဿနာ (သို့မဟုတ်) အငြင်းပွားမှု တစ်ရပ်ရပ်အတွက် KBZတွင် တာဝန်မရှိသည်ကို အသုံးပြုသူမှ သိရှိနားလည်သဘောတူပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-8">
+  <h3><span class="ch-num">8</span>၈။	ကုန်သည်၏ အခွင့်အရေး</h3>
+  <p class="sub-clause">၈၊၁။	CloudCity Food သည် ပျက်စီးဆုံးရှုံးမှုတစ်စုံတစ်ရာအတွက် လျော်ကြေး ‌တောင်းခံခြင်းနှင့်ပတ်သက်၍ အသုံးပြုသူမှ တင်ပြလာသော စာရွက်စာတမ်းများအပေါ်တွင် မှန်ကန်မှုရှိမရှိ စစ်ဆေးနိုင်မည်ဖြစ်ပြီး ထိုကဲ့သို့ ပျက်စီးဆုံးရှုံးမှုများအတွက် အမှန်တကယ် ပေးလျော်ရန်လိုအပ်ပါကလည်း   ပစ္စည်း၏ အနာဂတ်တန်ဖိုးကို ထည့်သွင်းစဉ်းစားမည်မဟုတ်ပါ။</p>
+          <p class="sub-clause">၈၊၂။	CloudCity Food သည် အစားအစာနှင့် အနံ့ရှိသော ပစ္စည်းများအား ကြွက်များ သို့မဟုတ် တခြားတိရစ္ဆာန်များကြောင့် ဖြစ်ပေါ်သော ပျက်စီးမှုများအတွက် တာဝန်မရှိပါ။</p>
+          <p class="sub-clause">၈၊၃။	ပေးပို့သူမှ ပစ္စည်းအပ်စဥ်ကပင် အသုံးပြု၍မရသော ပစ္စည်းများပေးပို့ထားပါက CloudCity Food သည် ထိုပစ္စည်းအမျိုးအစားအတွက် တာဝန်မရှိပါ။</p>
+          <p class="sub-clause">၈၊၄။	ပျောက်ဆုံး ၊ ပျက်စီးသွားသော ပစ္စည်းများအတွက် ပစ္စည်းလက်ခံရရှိချိန်တွင်တိကျ ၊ သေချာခိုင်မာသော သက်သေအထောက်အထား ၊ ဓာတ်ပုံ ၊ Video များ ရိုက်ကူး၍ ပစ္စည်းလက်ခံရလျှင်ရချင်း အကြောင်းကြားတင်ပြနိုင်ခြင်း  မရှိသော claim များအတွက် CloudCity Food  မှ ထည့်သွင်းစဉ်းစားပေးမည်မဟုတ်ပါ။</p>
+          <p class="sub-clause">၈၊၅။	ပေးပို့သူမှ CloudCity Food  သို့ ထုတ်ဖော်ပြောဆိုထားခြင်းမရှိသည့် ကုန်ပစ္စည်းများ၏ ပျက်စီးပျောက်ဆုံးမှုများကို CloudCity Food  က တာဝန်ယူမည်မဟုတ်ပါ။ ပစ္စည်း၏မူလတန်ဖိုးကိုဖော်ပြထားမှသာလျှင် ပေးလျော်ခြင်းကဏ္ဍအား ဆောင်ရွက်ပေးမည်ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၈၊၆။	ရန်သူမျိုး ၅ ပါး​အန္တရာယ်၊ စစ်မက် ၊အကြမ်းဖက်လုပ်ရပ်၊ အဓိကရုဏ်းများနှင့် အခြား​သောကြိုတင်မ​မျော်မှန်းနိုင်​သော ကိစ္စရပ်များ​၊ သဘာဝ​ဘေးအန္တရာယ်ကိစ္စရပ်များ၊ သက်ဆိုင်ရာ အာဏာပိုင်များ နှင့် အကောက်ခွန် မှတာဝန်အရ​ ဆောင်ရွက်ခြင်းများ​​ကြောင့် ဖြစ်ပေါ်လာသည့် ပျက်စီးဆုံးရှုံးနစ်နာကြံ့ကြာမှုများအ​ပေါ် CloudCity Food  နှင့် KBZတွင်တာဝန်မရှိပါ။</p>
+          <p class="sub-clause">၈၊၇။	KBZသည် ဝန်ဆောင်မှုများ ရယူရန်အတွက် ငွေပေးချေနိုင်ရန်ဆောင်ရွက်ပေးသည့် ဝန်ဆောင်မှုပေးသူအဖြစ်သာ လုပ်ဆောင် ကြောင်း သင်နားလည်ပြီး အသိအမှတ်ပြုပါသည်။ KBZ သည် CloudCityမှ ပံ့ပိုးပေးသော ဝန်ဆောင်မှုများ၏ ရရှိနိုင်မှု၊ တိကျမှု၊ သို့မဟုတ် အရည်အသွေးအတွက် တာဝန်ရှိမည် မဟုတ်သလို  မည်သည့် လျော်ကြေးများ သို့မဟုတ် လုပ်ထုံးလုပ်နည်းများအတွက် လည်း တာဝန်ရှိမည်မဟုတ်ပါ။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-9">
+  <h3><span class="ch-num">9</span>၉။	ဝန်ဆောင်မှုပယ်ဖျက်ခြင်းနှင့် ငွေပြန်အမ်းပေးခြင်းဆိုင်ရာ စည်းကမ်းချက်များ</h3>
+  <p class="sub-clause">၉၊၁။	အစားအသောက် ပို့ဆောင်သည့် ဝန်ဆောင်မှု (Food Delivery) : ငွေအပြည့်အဝ ပြန်အမ်းခြင်း ၊ တစ်စိတ်တစ်ပိုင်း ငွေပြန်အမ်းခြင်း၊ အစားအသောက်များ ကုန်သွား၍ ငွေပြန်အမ်းခြင်း ၊ ဆိုင်ပိတ်ထား၍ ငွေပြန်အမ်းခြင်းနှင့် ဆိုင်မှ မှာယူမှုပယ်ဖျက်ခြင်းကြောင့် ငွေပြန်အမ်းခြင်းတို့ကိုဆောင်ရွက်ပေးမည်ဖြစ်ပြီး အသုံးပြုသူ၏ KBZPay အကောင့်အတွင်းသို့ ငွေပြန်လည်ထည့်သွင်းပေးမည် ဖြစ်ပါသည်။ အသုံးပြုသူ၏ မှာယူမှုကို စားသောက်ဆိုင်ဘက်မှ အော်ဒါကို လက်ခံပြီးပါက သို့မဟုတ် အစားအသောက် ပြင်ဆင်ပြီးစီးသွားပါက အသုံးပြုသူအနေဖြင့် မှာယူမှုများကို တိုက်ရိုက်ပယ်ဖျက်နိုင်တော့မည်မဟုတ်ပါ။ ဆိုင်ဘက်မှ အသုံးပြုသူ၏ အစားအသောက်မှာယူမှုများကို ပယ်ဖျက်ရန် လိုအပ်ပါက ဆိုင်ဘက်မှ ငွေအပြည့်အဝ ပြန်အမ်းခြင်းကို ဆောင်ရွက်ပေးမည်ဖြစ်ပါသည်။</p>
+          <p class="sub-clause">၉၊၂။	အဝယ်တော် ဝန်ဆောင်မှု (Errand Service) : အသုံးပြုသူသည် ပို့ဆောင်သူမှ ဝန်ဆောင်မှုကို လက်မခံမီအချိန်တွင် ပယ်ဖျက်နိုင်ပြီး ပေးချေထားသော ပို့ဆောင်ခကို အသုံးပြုသူ၏ KBZPay အကောင့်အတွင်းသို့ ငွေပြန်လည်ထည့်သွင်းပေးမည် ဖြစ်သည်။ ပို့ဆောင်သူမှ ဝန်‌ဆောင်မှုကို လက်ခံပြီးပါက ပို့ဆောင်သူ၏ သွားရောက်မှုအခြေအနေနှင့် Customer Support ၏ သီးခြားဆုံးဖြတ်ချက်အတိုင်း ငွေပြန်အမ်းခြင်းကိုဆောင်ရွက်သွားမည် ဖြစ်သည်။</p>
+          <p class="sub-clause">၉၊၃။	မှာယူမှုများကိုဝယ်ပေးသည့် ဝန်ဆောင်မှု (Say Buy) : သတ်မှတ်ထားသောဆိုင်တွင် မှာယူသော ပစ္စည်းမရှိပါက ပို့ဆောင်သူမှ အသုံးပြုသူအားဆက်သွယ်ပြောဆိုမည်ဖြစ်ပြီး အသုံးပြုသူဘက်မှ အစားထိုးပစ္စည်းကို လက်မခံပါက မှာယူမှုကို ပယ်ဖျက်မည်ဖြစ်ပြီး ပို့ဆောင်ခ၏ တစ်ဝက် (၅၀%) ကို ပြန်အမ်းပေးမည် ဖြစ်သည်။ ပြန်အမ်းငွေများကို အသုံးပြုသူ၏ KBZPay အကောင့်အတွင်းသို့ ငွေပြန်လည်ထည့်သွင်းပေးမည် ဖြစ်သည်။ ပို့ဆောင်သူသည် သတ်မှတ်ထားသောဆိုင်သို့ ရောက်ရှိသွားပြီးမှ အသုံးပြုသူဘက်မှ မှာယူမှုကို ပယ်ဖျက်ပါက အလကားသွားရသည့်အတွက် အခကြေးငွေ (Empty-trip fee) ကောက်ခံမည် ဖြစ်သည်။</p>
+          <p class="sub-clause">၉၊၄။	ဆိုင်ကယ် တက္ကစီ ဝန်ဆောင်မှု (Motorcycle Taxi Service) : ဆိုင်ကယ်တက္ကစီမောင်းသူ ရှာမတွေ့ပါက ခရီးစဉ်အား အလိုအလျောက် ပယ်ဖျက်၍ ငွေအပြည့်အဝ ပြန်အမ်းပေးမည်ဖြစ်ပြီး၊ ဆိုင်ကယ်တက္ကစီမောင်းသူ သတ်မှတ်ထားသော ခရီးတစ်ဝက်သို့ မရောက်မီ အသုံးပြုသူဘက်မှ ခရီးစဉ်ကို ပယ်ဖျက်ပါက အခမဲ့ ပယ်ဖျက်နိုင်သော်လည်း ခရီးတစ်ဝက် သို့မဟုတ် ထို့ထက်ကျော်လွန်သွားပါက ပယ်ဖျက်ခ (Cancellation fee) ကျခံရမည်ဖြစ်ကာ၊ အသုံးပြုသူ စီးနင်းလိုက်ပါပြီးပါက ခရီးစဉ်အား ပယ်ဖျက်ခွင့်ပြုမည် မဟုတ်ပါ။</p>
+          <p class="sub-clause">၉၊၅။	ငွေပြန်အမ်းခြင်းဆိုင်ရာ ဆုံးဖြတ်ချက်သည် ကုန်သည် နှင့် မိတ်ဖက်ဝန်ဆောင်မှုလုပ်ငန်းများ၏ ဆုံးဖြတ်ချက်အတိုင်းသာ အတည်ဖြစ်ပြီး၊ ထိုသို့ ငွေပြန်အမ်းသည့် အခြေအနေများနှင့် ပတ်သက်၍ အငြင်းပွားမှုတစ်စုံတစ်ရာ‌ပေါ်ပေါက်လာပါက KBZ မှ လုံးဝ တာဝန်ရှိမည် မဟုတ်ကြောင်း အသုံးပြုသူမှ သိရှိနားလည် သဘောတူပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-10">
+  <h3><span class="ch-num">10</span>၁၀။	အဖွဲ့ဝင်အဖြစ် မှတ်ပုံတင်ခြင်း</h3>
+  <p>ဤဝန်ဆောင်မှုကို အသုံးပြုနိုင်ရန်အတွက် Mini App  ဝန်ဆောင်မှုတွင် အဖွဲ့ဝင်ထားရန် လိုအပ်သည်။ အဖွဲ့ဝင်အဖြစ် မှတ်ပုံတင်ရာတွင် တောင်းခံသည့် လိုအပ်သောအချက်အလက်များကို  အသုံး ပြုသူ အနေဖြင့် လတ်တလောဖြစ်သော၊ တိကျမှန်ကန်သော၊ ပြည့်စုံမှုရှိသော အချက်အလက်များကို ဖြည့်သွင်းရမည်။ Mini App မှတောင်းဆိုနိုင်သည့် သက်သေခံကတ်ပြားများ၊ အခြားစာရွက်စာတမ်းများ သို့မဟုတ် ခွင့်ပြုချက်များကို အသုံးပြုသူမှ ပေးဆောင်ရန်သဘောတူရမည်။  အသုံးပြုသူအား ဝန်ဆောင်မှုပေးရန်နှင့် ဝန်ဆောင်မှုနှင့်ပတ်သက်၍ အသုံးပြုသူ၏ တောင်းဆိုမှုများကို ပြန်လည် တုံ့ပြန်ပေးရန်၊ ဥပဒေကြောင်းအရ လုပ်ဆောင်ရန်ကိစ္စများရှိလာသည့်အခါ အသုံးပြုရန်၊ စည်းမျဉ်း စည်းကမ်းများ အကျိုးသက်ရောက်မှုရှိစေရန်၊ ဝန်ဆောင်မှုနှင့်ပတ်သက်၍ အခြားဖြစ်ပေါ်လာသောကိစ္စအ၀၀ကို ဖြေရှင်း ဆောင်ရွက်ရန်၊ ဤဝန်ဆောင်မှုနှင့် ပတ်သက်သည့် သတင်းအချက်အလက်များကို ပေးပို့ဆက်သွယ်ရန် လိုအပ်သော ကြောင့် ဤဝန်ဆောင်မှုကိုအသုံးပြုရန် မှတ်ပုံတင်စဉ်က ဖြည့်သွင်းခဲ့သော အသုံးပြုသူ၏ အချက်အလက်များကို KBZ နှင့် Mini App မှ ဝင်ရောက်ကြည့်ရှုခြင်း၊ ထိန်းသိမ်းမှု ပြုလုပ်ခြင်း၊ မျှဝေခြင်းနှင့် ထုတ်ဖော်ခြင်းတို့ကို ပြုလုပ်ရန် အသုံးပြုသူအနေဖြင့် သဘောတူလက်ခံမည်ဖြစ်သည်။ Mini App ဝန်ဆောင်မှုတွင် အသုံးပြုသူ၏ဖုန်းနံပါတ်ဖြင့် မှတ်ပုံတင်ခြင်းသည် ဤဝန်ဆောင်မှုနှင့် ပတ်သက်သည့် အကြောင်းအရာများအားလုံးကို အသုံးပြုသူ၏ မိုဘိုင်းလ်ဖုန်း သို့မဟုတ် Email ထံသို့ SMS၊ စာတိုများနှင့် SMS Link များ ပေးပို့မည်ကို အသုံးပြုသူကသိရှိလက်ခံသဘောတူရာရောက်သည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-11">
+  <h3><span class="ch-num">11</span>၁၁။	၀န်ဆောင်မှုရပ်ဆိုင်းခြင်း၊ ဆိုင်းငံ့ခြင်း၊ ဖျက်သိမ်းခြင်း</h3>
+  <p>အသုံးပြုသူအနေဖြင့် Mini App ဝန်ဆောင်မှုကို ဆက်လက်အသုံးမပြုလိုပါက ဝန်ဆောင်မှု ရပ်ဆိုင်းခြင်းဆိုင်ရာ နည်းလမ်းများအတိုင်း ဝန်ဆောင်မှုကို ရပ်ဆိုင်းနိုင်သည်။ မည်သည့်အကြောင်း ကြောင်းကြောင့်မဆို အသုံးပြုသူအား ကြိုတင်အကြောင်းကြားခြင်းမရှိဘဲ မည်သည့်အချိန်တွင်မဆို အသုံးပြုသူ၏ ဤဝန်ဆောင်မှု အသုံးပြုနေခြင်းကို ဖျက်သိမ်းခြင်း၊ ဆိုင်းငံ့ခြင်း၊ ရပ်ဆိုင်းခြင်းတို့ကို KBZ မှဖြစ်စေ သို့မဟုတ် CloudCityမှဖြစ်စေ ပြုလုပ်ခွင့်ရှိသည်။ ထို့အတွက် မည်သူတစ်ဦး တစ်ယောက်အတွက်မျှ KBZ နှင့် CloudCity Food တို့တွင် တာဝန်ရှိမည်မဟုတ်ကြောင်းကို အသုံးပြုသူအနေဖြင့် သိရှိသဘောတူ လက်ခံပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-12">
+  <h3><span class="ch-num">12</span>၁၂။	အသိပေးချက်များပေးပို့ခြင်း</h3>
+  <p>Mini App ဝန်ဆောင်မှုကို အသုံးပြုခြင်းဖြင့် အသုံးပြုသူ၏ Mini App အကောင့်ထံသို့ အကြောင်းကြား ချက်များပေးပို့ခြင်း၊ Mini App အကောင့်ဖွင့်စဉ်က စာရင်းပေးသွင်းထားသော ဖုန်းနံပါတ် သို့မဟုတ် Email သို့ Mini App  မှ ဆက်သွယ်ခြင်းတို့ကို သဘောတူလက်ခံပါသည်။  Mini App  အနေဖြင့် အစီအစဉ်အသစ်များ၊ ပရိုမိုးရှင်းအစီအစဉ်များ၊ အသုံးပြုသူများထံမှစစ်တမ်းကောက်ယူခြင်းများ စသည်တို့ကို App ထဲမှ အသိပေးချက်များမှတဆင့်ဖြစ်စေ၊ SMS ကတဆင့်ဖြစ်စေ၊ အခြားသော ဆက်သွယ်ရေး နည်းလမ်းများမှတဆင့်ဖြစ်စေ ဆက်သွယ်ပေးပို့သွားမှာ ဖြစ်ပါသည်။ ဒါအပြင် Mini  App ထဲမှာ ဝန်ဆောင်မှုအသုံးပြုခြင်းအတွက် အသုံးပြုသူ၏ငွေပေးချေမှုကိစ္စများ၊ သဘောတူညီမှုများ၊ ထုတ်ဖော်ချက်များနှင့် အခြားအချက် အလက်များပေးပို့ခြင်းကိုလည်း အသုံးပြုသူမှ လက်ခံပါမည်။ ဤဝန်ဆောင်မှုကို ရယူထားသော အသုံးပြုသူထံသို့ Mini App မှတစ်ဆင့် အချက်အလက်များ၊ အကြောင်းအရာများ၊ စာသားများ၊ ဆော့ဖ်ဝဲများ၊ အသံများ၊ ဓာတ်ပုံများ၊ ဒီဇိုင်းပုံရိပ်များ၊ ဗီဒီယိုများ၊ မက်ဆေ့ချ်များ၊ တွဲဖက်အကြောင်းအရာများနှင့် အခြားသော အကြောင်းအရာများကို Mini App မှ ပေးပို့ခွင့်ရှိသည်။ မှတ်ပုံတင်စဉ်က အသုံးပြုသူမှ ပေးသွင်းသော အချက်အလက်များနှင့် ထိုသို့ပေးသွင်းခြင်းကြောင့် ဖြစ်ပေါ်လာသော အကျိုးဆက်များအတွက် အသုံးပြုသူထံတွင်သာ အလုံးစုံ တာဝန်ရှိသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-13">
+  <h3><span class="ch-num">13</span>၁၃။	ကန့်သတ်တားမြစ်ချက်များ</h3>
+  <p class="sub-clause">၁၃၊၁။	CloudCity Food  ဝန်ဆောင်မှုကို အသုံးပြုသူများအနေဖြင့် စီးပွားဖြစ်အသုံးပြုခွင့်မရှိပါ။ ဤဝန်ဆောင်မှုသည် အသုံးပြုသူ၏ တစ်ကိုယ်ရည်နှင့် အကျိုးအမြတ်အတွက် မဟုတ်သော အသုံးပြုမှုအတွက်သာ ဖြစ်သည်။ အသုံးပြုသူအနေဖြင့် ဝန်ဆောင်မှုအား ရယူရာတွင်</p>
+          <p class="sub-clause">၁၃၊၁၊၁။	Mini App မှ စီစဉ်ပေးထားသော ကြားခံစနစ် မဟုတ်သည့် အခြားနည်းလမ်းများကို အသုံးပြုခြင်း၊</p>
+          <p class="sub-clause">၁၃၊၁၊၂။	ဝန်ဆောင်မှုများရယူရာတွင် Robot၊ Spider၊ Scraper၊ Script၊ Web Crawler များအသုံးပြု၍ နှောင့်ယှက်ခြင်းများ ပြုလုပ်ခြင်းနှင့် အခြားအလိုအလျောက် နည်းလမ်းများကို အသုံးပြုခြင်း၊</p>
+          <p class="sub-clause">၁၃၊၁၊၃။	ဝန်ဆောင်မှုကို ရယူခြင်း၏ ဇာတ်မြစ်ကို ဖုံးကွယ်ရန်အတွက် Identifier ကုဒ်နံပါတ်များကို အတုအပပြုလုပ်ခြင်း၊ အချက်အလက်များကို လိုသလိုပြုပြင်ခြင်း၊</p>
+          <p class="sub-clause">၁၃၊၁၊၄။	Mini App ဆာဗာ အား ပျက်ဆီးစေမည့်လုပ်ရပ်များ၊ ဆော့ဖ်ဝဲလ်များ အသုံးပြုခြင်း၊</p>
+          <p class="sub-clause">၁၃၊၁၊၅။	နှောင့်ယှက်ဖျက်ဆီးလိုသော ရည်ရွယ်ချက်ဖြင့်စာများ၊ အီးမေးလ်များရေးသားခြင်း၊ ဗိုင်းရပ်စ်ပါသောဆော့ဖ်ဝဲလ်များ အသုံးပြုခြင်းများကို လုံး၀ မပြုလုပ်ပါဟု သဘောတူပါသည်။</p>
+          <p class="sub-clause">၁၃၊၂။	အသုံးပြုသူသည် Mini App ဝန်ဆောင်မှုကို Mini App ဝန်ဆောင်မှုမှ သတ်မှတ်ပေးထားသော စည်းကမ်းများနှင့် သတ်မှတ်ချက်များဘောင်အတွင်းကသာ အသုံးပြုရမည် ဖြစ်သည်။ အသုံးပြုသူအနေဖြင့် Mini App  ဝန်ဆောင်မှုက သတ်မှတ်ပေးထားသော စည်းမျဉ်းစည်းကမ်းများကို ဖောက်ဖျက်၍သော်လည်းကောင်း၊သတ်မှတ်ချက်များကို မလိုက်နာဘဲ ကျော်လွန်၍သော်လည်းကောင်း Mini App ဝန်ဆောင်မှုကို အသုံးပြုခြင်း၊ Mini App ဝန်ဆောင်မှု၏ Social Media စာမျက်နှာများဖြစ်သည့် Facebook ၊ Instagram ၊ YouTube နှင့် Web Page များကို Mini App ဝန်ဆောင်မှုမှ သက်ဆိုင်ရာ တစ်ဦးတစ်ယောက်၏ ခွင့်ပြုချက်မရှိဘဲ ရယူသုံးစွဲခြင်းများ မပြုလုပ်ပါဟု သဘောတူပါသည်။</p>
+          <p class="sub-clause">၁၃၊၃။	ဤဝန်ဆောင်မှုအသုံးပြုခြင်းဆိုင်ရာ စည်းကမ်းချက်အဖြစ် ဝန်‌ဆောင်မှုများအား ဥပဒေနှင့်မညီသည့် မည်သည့် ရည်ရွယ်ချက် အတွက်မှ အသုံးပြုမည်မဟုတ်ကြောင်းကို အသုံးပြုသူမှ အာမခံသည်ဖြစ်သည်။ ဝန်ဆောင်မှုများကို အသုံးပြုမှုနှင့် စပ်လျဉ်းသည့် တည်ဆဲဥပဒေ၊ စည်းမျဉ်းစည်းကမ်း၊ နည်းဥပဒေနှင့် ပြဋ္ဌာန်းဥပဒေအရပ်ရပ်ကို လိုက်နာရန် အသုံးပြုသူမှ သဘောတူသည်ဖြစ်သည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-14">
+  <h3><span class="ch-num">14</span>၁၄။	လျော်ကြေး</h3>
+  <p>အသုံးပြုသူမှ Mini Appအား အသုံးပြုခြင်း သို့မဟုတ် ဤစည်းမျဉ်းစည်းကမ်းသတ်မှတ်ချက်များအား ချိုးဖောက်ခြင်းကြောင့်  ဖြစ်ပေါ်လာသော CloudCity Food  သို့မဟုတ် KBZ၊ ၎င်း၏ဒါရိုက်တာများ၊ အရာရှိများ၊ ဝန်ထမ်းများ၊ ကိုယ်စားလှယ်များ၊ အေးဂျင့်များနှင့် တတိယအဖွဲ့အစည်း၏ ထိခိုက်နစ်နစ်မှုတောင်းဆိုချက်အားလုံး၊ တာဝန်ယူမှု၊ (ပါဝင်သော်လည်း အကန့်အသတ်မရှိ၊ တရားဝင်အခကြေးငွေများ)ကုန်ကျစရိတ်၊ ပျက်စီးမှုများအားလုံးအတွက် လျော်ကြေးပေးရန် အသုံးပြုသူမှသဘောတူသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-15">
+  <h3><span class="ch-num">15</span>၁၅။	ကိုယ်စားပြုချက်များ၊ အာမခံချက်များ</h3>
+  <p>Mini App ပေါ်ရှိ အကြောင်းအရာများ ”အရှိအတိုင်း” နှင့် ”ရရှိနိုင်သည့်အတိုင်းသာပေးထားခြင်းဖြစ်ကြောင်းကို အသုံးပြုသူမှ သိရှိသဘောတူပြီး Mini App ပေါ်တွင် ဖော်ပြထားသော ဖော်ပြချက်များပေါ်တွင် မှီတည်၍ မည်သည့်အကြောင်းအရာကိုမဆို၊ ကုန်ပစ္စည်းများ၊ ထုတ်ကုန်များ သို့မဟုတ် ဝန်ဆောင်မှုများ၏ အသုံးပြုသူမှလက်ခံခြင်း သို့မဟုတ် ရယူအသုံးပြုခြင်းသည် အသုံးပြုသူတစ်ဦးတည်း၏ အန္တရာယ်နှင့် ဆုံးဖြတ်ချက်ဖြင့် လက်ခံရယူခြင်းဖြစ်သည်။ Mini App ဖြစ်စေ၊ ဝန်ဆောင်မှုများအားဖြစ်စေ၊ Mini App ရှိ မည်သည့် Website လင့်ခ်ကိုဖြစ်စေ နှင့် Mini App ပေါ်တွင် တင်ထားသောမည်သည့်အကြောင်းအရာကိုဖြစ်စေ အသုံးပြုခြင်းနှင့်ပတ်သတ်၍ ဖြစ်ပေါ်လာနိုင်သည့် အသုံးပြုသူ၏ သို့မဟုတ် အခြားမည်သည့် ပါတီ၏ ဆုံးရှုံးခြင်း သို့မဟုတ် ပျက်စီးခြင်းအတွက် တာဝန်ရှိမှုအားလုံး (စာချုပ်တွင် ဖြစ်ပေါ်လာသည်ဖြစ်စေ၊ ပေါ့ဆမှုဖြစ်စေ သို့မဟုတ် အခြားနည်းဖြင့်ဖြစ်စေ) ကို ဖယ်ထုတ်ထားမည်ဖြစ်သည်။ KBZ နှင့် Mini App သည် Mini App တွင် ကမ်းလှမ်းထားသော ဝန်ဆောင်မှုများကို အချိန်တိုင်းရရှိနိုင်စေရန် ကျိုးကြောင်းဆီလျော်စွာ ကြိုးပမ်း ဆောင်ရွက်နေသော်လည်း Mini App အား လုံခြုံမှုရှိသည်ဟူ၍ဖြစ်စေ၊ အချိန်မှီ၊ အနှောက်အယှက်မရှိဟူ၍ဖြစ်စေ၊ အမှားအယွင်းမရှိပါဟူ၍ဖြစ်စေ၊  နည်းပညာအခက်အခဲမရှိဟူ၍ဖြစ်စေ၊ ချွတ်ယွင်းချက် မရှိဟူ၍ဖြစ်စေ (သို့မဟုတ်) ဗိုင်းရပ်စ်များ မရှိပါဟု  KBZ က သော်လည်းကောင်း၊ Mini App ကသော်လည်းကောင်း အာမခံခြင်း (သို့မဟုတ်) ကိုယ်စားပြုခြင်းများကို မပြုလုပ်ပါ။ စီစဉ်ထားသော သို့မဟုတ် ပုံမှန်စနစ်ထိန်းသိမ်းခြင်းလုပ်ငန်း၊ အင်တာနက် (သို့မဟုတ်) အီလက်ထရွန်နစ်ဆက်သွယ်ရေးကြောင့်ဖြစ်စေ (သို့မဟုတ်) အင်အားကြီးသည့်ဖြစ်ရပ်များကြောင့် ပလပ်ဖောင်း၏ ယာယီပြတ်တောက်မှုများဖြစ်ပေါ်နိုင်ပြီး ထို့အတွက် KBZ နှင့် Mini App  ၌တာဝန်မရှိသည်ကို အသုံးပြုသူမှ သိရှိသဘောတူပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-16">
+  <h3><span class="ch-num">16</span>၁၆။	အသိဉာဏ်ပစ္စည်းများဆိုင်ရာ မူပိုင်ခွင့်</h3>
+  <p>စာရွက်စာတမ်း၊ KBZ ၏ဝဘ်ဆိုက်နှင့် KBZPay Application ဝန်ဆောင်မှု အမည်နှင့် ကုန်အမှတ်တံဆိပ်များအပါအဝင်  အားလုံးတွင် အကြောင်းအရာအဖြစ်ဖြင့်ဖြစ်စေ၊ စကားအသုံးအနှုန်း ပုံစံအဖြစ် ဖြင့်ဖြစ်စေ ပါရှိသော ကုန်အမှတ်တံဆိပ်၊ သင်္ကေတ၊ စာလုံးအမှတ်အသား၊ လုပ်ငန်းဝန်ဆောင်မှု အမှတ်အသား၊ ကုန်အမှတ်တံဆိပ်အမည်နှင့်  ဒီဇိုင်းလက်ရာအားလုံး၏ ဉာဏပစ္စည်းဆိုင်ရာ မူပိုင်ခွင့်အရပ်ရပ်သည် KBZ၏မူပိုင် ဖြစ်သည်။ CloudCity Food  ဝန်ဆောင်မှုတွင် အသုံးပြုထားသော ကုန်အမှတ်တံဆိပ်များ (CloudCity Food  Mini App  ဝန်ဆောင်မှု အမည်နှင့် ကုန်အမှတ်တံဆိပ်များအပါအဝင်)၊ လုပ်ငန်းအမည်များ၊ လိုဂိုများ၊ ဝန်ဆောင်မှု အမှတ်အသားများ အားလုံးသည် CloudCity Food  ဝန်ဆောင်မှုနှင့် ယင်း၏လုပ်ငန်းဖော်ကုမ္ပဏီများ၊ အခြားသက်ဆိုင်ရာ လုပ်ငန်းများမှ ပိုင်ဆိုင်ပါသည်။အသုံးပြုသူသည် KBZ နှင့် CloudCity Food  ၏ ဉာဏပစ္စည်းဆိုင်ရာ မူပိုင်ခွင့်ကို ကိုယ်ကျိုးအတွက် သုံးစွဲခြင်းမပြုရ သို့မဟုတ် KBZ နှင့် CloudCity Food  မှ စာဖြင့်ရေးသားထားသော ကြိုတင်ခွင့်ပြုချက် ရရှိထားခြင်းမရှိဘဲ မည်သည့်ကိစ္စကိုမဆို ကြော်ငြာခြင်းမပြုရ။ အသုံးပြုသူသည် KBZ၏ပုံရိပ်၊ ကုန်အမှတ်တံဆိပ်၊ လုပ်ငန်းအမည် သို့မဟုတ် အခြားဉာဏပစ္စည်းဆိုင်ရာ မူပိုင်ခွင့်ကို ထိခိုက်ပျက်ပြားစေနိုင်သည့် မည်သည့်ပြုလုပ်မှုမျိုးကိုမဆို ပြုလုပ်ခွင့်ရှိမည်မဟုတ်ပါ ထိုနာမည်များကို အသုံးပြုပြီး CloudCity Food  ဝန်ဆောင်မှုကို ရည်ညွှန်းခြင်း၊ အခြားတစ်ခုခုကို ရည်ညွန်းခြင်းများ ဆောင်ရွက်ခွင့်မရှိပါ။ သို့မဟုတ် အခြားသူက ပြုလုပ်ခြင်းကိုလည်း ခွင့်ပြုပေးပိုင်ခွင့်ရှိမည်မဟုတ်ပါ။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-17">
+  <h3><span class="ch-num">17</span>၁၇။	တာဝန်မရှိကြောင်းရှင်းလင်းဖော်ပြချက်</h3>
+  <p>မည်သည့်အခြေအနေတွင်ဖြစ်စေ အထက်ဖော်ပြပါ စည်းမျဉ်းစည်းများကို အသုံးပြုသူမှ ဖောက်ဖျက်ခြင်း၊ ချိုးဖောက်ခြင်းကြောင့် (သို့မဟုတ်) စာချုပ်အရဖြစ်စေ၊ တရားမနစ်နာမှုအရဖြစ်စေ၊ ယတိပြတ်တာဝန်ရှိမှုကြောင့် ဖြစ်စေ (သို့မဟုတ်) ဤ ဝန်ဆောင်မှုကို ရယူအသုံးပြုခြင်းကြောင့် ကုန်ကျစရိတ်၊ နစ်နာကြေး၊ တောင်းဆိုချက်၊ အရေးယူဆောင်ရွက်မှု၊ တရားစွဲ ဆိုခြင်း၊ ဥပဒေအဆုံးအဖြတ်၊ ဆုံးရှုံးမှုနှင့်တာဝန်ရှိမှုများ (သို့မဟုတ်) ဝန်ဆောင်မှုမှတဆင့် ရရှိသော အချက်အလက်များ၊ အကြောင်းအရာများ၊ ဆော့ဖ်ဝဲလ်များ၊ ထုတ်ကုန်များ၊ ဝန်ဆောင်မှုများကြောင့် အသုံးပြုသူနှင့်အခြား အဖွဲ့အစည်းများအတွက် တိုက်ရိုက်သော်လည်းကောင်း၊ သွယ်ဝိုက်၍သော်လည်းကောင်း၊ ကြီးမားပြင်းထန်သော၊ အသေးအဖွဲဖြစ်သော၊ (သို့မဟုတ်) အကျိုးဆက်အရ ဖြစ်ပေါ်လာသော အကြောင်းကိစ္စများ၊ ထိခိုက်နစ်နာမှုများ၊ နစ်နာကြေးတောင်းခံမှုများ၊ အရေးယူမှုများ၊ တောင်းဆိုချက်များ၊ တရားရင်ဆိုင်မှုများကြောင့် ဖြစ်ပေါ်လာသည့်စွဲဆိုချက်များ၊ စီရင်ချက်များ၊ ကုန်ကျစရိတ်များ အမျိုးမျိုးသည် KBZ (၎င်း၏ဝန်ထမ်းများ၊ ဒါရိုက်တာများ၊ အေးဂျင့်များ၊ ကိုယ်စားလှယ်များ၊ လုပ်ငန်းခွဲများအပါအဝင်)၊ CloudCity Food  (Mini App) နှင့် မိတ်ဖက်၊ ၎င်းတို့၏အဖွဲ့ဝင်များ၊ ဝန်ထမ်းများ၊ ကိုယ်စားလှယ်များ၊ တွဲဖက်လုပ်ကိုင်သူများ၊ မူပိုင်ခွင့်ပေးအပ်သူများတွင် ဥပဒေအရ တာဝန်မရှိစေရပါ။ အသုံးပြုသူအနေဖြင့်သာ ကိစ္စအ၀၀တို့အတွက် တာဝန်ယူဖြေရှင်း သွားမည်ဖြစ်ကြောင်း သိရှိသဘောတူပါသည်။ အသုံးပြုသူမှ Mini App အား အသုံးပြုမှုနှင့်စပ်လျဉ်း၍ သီးသန့်ကုစားခွင့်မှာ အသုံးပြုသူမှ Mini App အသုံးပြုခြင်းကို ရပ်ဆိုင်းရန်ဖြစ်သည်။KBZ၏ အဖွဲ့အစည်းများ၊ ၎င်း၏ အေးဂျင့်များ၊ ကိုယ်စားလှယ်များနှင့် ဝန်ဆောင်မှုပေးသူများသည် အသုံးပြုသူမှ  Mini App ကို အသုံးပြုခြင်းကြောင့် ဖြစ်ပေါ်လာသည့် သွယ်ဝိုက်၍ဖြစ်စေ၊ အထူး၊ မတော်တဆ၊ နောက်ဆက်တွဲအနေဖြင့် ဖြစ်စေ သို့မဟုတ် ပျက်စီးဆုံးရှုံးမှုများအတွက်ဖြစ်စေ သို့မဟုတ် Mini App  ကို အသုံးပြုခြင်းနှင့်စပ်လျဉ်း၍ မည်သည့် တောင်းဆိုမှုတို့အတွက်ကိုမျှ တာ၀န်မရှိစေရပါ။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-18">
+  <h3><span class="ch-num">18</span>၁၈။	မလွန်ဆန်နိုင်သော ဖြစ်ရပ်များ</h3>
+  <p>ဤဝန်ဆောင်မှုကို KBZ နှင့် CloudCity Food  က ဆောင်ရွက်ပေးနေစဉ်ကာလအတွင်း သဘာဝဘေးအန္တရာယ်၊ စစ်ဖြစ်ပွားမှု၊ ဆန္ဒပြမှု သို့မဟုတ် အလုပ်သမားအငြင်းပွားမှု၊ ကုန်သွယ်ရေးပိတ်ပင်မှု၊ အစိုးရအမိန့်၊ မီးလောင်ခြင်း၊ ရေကြီးခြင်း၊ မိုးသည်းထန်စွာ ရွာသွန်းခြင်း၊ မုန်တိုင်း သို့မဟုတ် အလွန်ဆိုးရွားသည့်ရာသီဥတုအခြေအနေများ၊ ဆူပူအုံကြွမှု၊ ပုန်ကန်မှု၊ လူထုမငြိမ်မသက်ဖြစ်မှု၊ စီးပွားရေးပိတ်ဆို့အရေးယူမှု၊ သပိတ်မှောက်မှု၊ လျှပ်စစ်ဓာတ်အား ပြတ်တောက်မှု၊ စက်ချွတ်ယွင်းမှု သို့မဟုတ်    အခြားသောမလွန်ဆန်နိုင်သော ဖြစ်ရပ်များသာဖြစ်သည်ဟု ကန့်သတ်ထားမှု မရှိသော်လည်း ယင်းတို့အပါအဝင်ဖြစ်ပြီး KBZ သို့မဟုတ် CloudCity Food  မှ ကျိုးကြောင်းဆီလျော်စွာ ထိန်းချုပ်နိုင်မှုထက် ကျော်လွန်နေသည့် ဖြစ်ရပ်များကြောင့် အချိန်ကာလတစ်ရပ်အထိ ဖြစ်ပေါ်လာရသည့် မည်သည့်လုပ်ငန်း ဆောင်ရွက်ရန် ပျက်ကွက်မှု သို့မဟုတ် နှောင့်နှေးမှုဖြစ်ခြင်း များအတွက်မဆို KBZတွင်သော်လည်းကောင်း၊ CloudCity Food  တွင်လည်းကောင်း တာဝန်မရှိကြောင်းကို အသုံးပြုသူသည် နားလည်သဘောတူပါသည်။ KBZ နှင့်/သို့မဟုတ် CloudCity Food သည် ယင်းသို့သော အခြေအနေ များကြောင့် အဟန့်အတားဖြစ်ခြင်း၊ အတားအဆီးဖြစ်ခြင်း သို့မဟုတ် နှောင့်နှေးနေခြင်းများ ကြုံတွေ့နေရသည့် အတိုင်းအတာအပေါ်မူတည်၍ အဆိုပါအခြေအနေများ ပြီးဆုံးသွားသည့် အချိန်အထိ ပေးနေသည့် ဤဝန်ဆောင်မှုအား ဆိုင်းငံ့ထားမည်ဖြစ်သည်။ ထိုသို့သော အခြေအနေများ ဆက်လက်ဖြစ်ပျက်နေစဉ် ကာလအတွင်း ဤစည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များတွင် ဖော်ပြထားသော တာဝန်ဝတ္တရားများကို ဖြည့်ဆည်းရန်၊ ထမ်းဆောင်ရန် ပျက်ကွက်ခြင်း သို့မဟုတ် နှောင့်နှေးခြင်းများအတွက် KBZနှင့်/သို့မဟုတ် CloudCity Food အနေဖြင့် အသုံးပြုသူအပေါ်တွင်ဖြစ်စေ သို့မဟုတ် အခြားမည်သည့် လူပုဂ္ဂိုလ်တစ်ဉီးဉီးအပေါ်တွင် ဖြစ်စေ တာဝန်ရှိစေခြင်း သို့မဟုတ် ဤစည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များအား ချိုးဖောက်ခြင်းဖြစ်သည်ဟု မှတ်ယူခြင်းမရှိစေရပါ။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-19">
+  <h3><span class="ch-num">19</span>၁၉။	အသိပေးချက်</h3>
+  <p>အထက်ဖော်ပြပါ စည်းမျဉ်းစည်းကမ်းများသည် တရားဝင်ဖြစ်သည်။ အသုံးပြုသူအနေဖြင့် Mini App ဝန်ဆောင်မှုကို စတင်အသုံးပြုသည့် အချိန်မှစ၍ အသုံးပြုသူများစည်းမျဉ်းစည်းကမ်းများကို သိရှိသဘောတူ လက်ခံပြီးဖြစ်သည် ဟုမှတ်ယူသည့်အတွက် ထိုစည်းမျည်းစည်းကမ်းများကို မဖတ်ရှုဘဲ ဤဝန်ဆောင်မှုကို ရယူအသုံးပြုခြင်းသည် အသုံးပြုသူတစ်ဦးတည်း၏ တာဝန်သာ ဖြစ်သည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-20">
+  <h3><span class="ch-num">20</span>၂၀။	ပြင်ဆင်ပြောင်းလဲခြင်း</h3>
+  <p>KBZ နှင့် Mini App သည် မည်သည့်အချိန်တွင်မဆို တစ်စုံတစ်ရာသော အကြောင်းကြောင့် အသိပေးအကြောင်းကြားနိုင်ခြင်းမရှိဘဲ သတ်မှတ်ထားသော စည်းမျဉ်း စည်းကမ်းသတ်မှတ်ချက်များကို ပြင်ဆင်ပြောင်းလဲခြင်း၊ ရပ်စဲခြင်းနှင့်/ သို့မဟုတ် ပယ်ဖျက်ခွင့် နှင့် Mini App ၏ သွင်ပြင်လက္ခဏာများအား ပြောင်းလဲခွင့် နှင့်/သို့မဟုတ် ပြင်ဆင်၊ ဖြည့်စွက်၊ ပယ်ဖျက်ပိုင်ခွင့်တို့အား အခြေအနေအရ ပြုလုပ် ဆောင်ရွက်နိုင်ပါသည်။ ပြင်ဆင်ထားသော စည်းမျဥ်းစည်းကမ်းများအား တင်ပြီးသည်နှင့် ချက်ချင်း သက်ရောက်မည်ဖြစ်ပြီး ပြင်ဆင်ပြီးနောက် အသုံးပြုသူက Mini App ကို ဆက်လက်အသုံးပြုခြင်းသည် ထိုပြင်ဆင်ထားသောစည်းမျဥ်းအသစ်များကို သဘောတူခြင်းဖြစ်ပါသည်။ ပြင်ဆင်ထားသော စည်းမျဉ်းစည်းကမ်း တစ်ခုလုံးကိုဖြစ်စေ သို့မဟုတ် တစ်စိတ်တစ်ပိုင်းကိုဖြစ်စေ အသုံးပြုသူက သဘောမတူပါက အသုံးပြုသူမှ Mini App အား အသုံးပြုခြင်းကိုချက်ချင်းရပ်တန့်ရပါမည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-21">
+  <h3><span class="ch-num">21</span>၂၁။	ဆက်လက်အသက်ဝင်ခြင်း</h3>
+  <p>ဤစည်းကမ်းချက်များပါ ပြဋ္ဌာန်းချက်တစ်ရပ်ရပ်သည် တရားဝင်မှုမရှိတော့ခြင်း၊ ပျက်ပြယ်ခြင်း သို့မဟုတ် ဥပဒေတစ်ရပ်ရပ်အရ အာဏာသက်ရောက်မှုမရှိတော့ခြင်းများဖြစ်လာပါက ယင်းအပိုင်းသည်သာ ပျက်ပြယ်မည်ဖြစ်ပြီး ကျန်ပြဋ္ဌာန်းချက်များအား ထိခိုက်စေခြင်း သို့မဟုတ် ပျက်ပြယ်စေခြင်းများရှိမည်မဟုတ်ဘဲ ကျန်ပြဋ္ဌာန်းချက်များသည် ဆက်လက်အသက်ဝင်နေမည် ဖြစ်သည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-22">
+  <h3><span class="ch-num">22</span>၂၂။	လွှဲပြောင်းခြင်း</h3>
+  <p>ဤစည်းမျဉ်းစည်းကမ်းသတ်မှတ်ချက်များအရ အသုံးပြုသူသည် မိမိ၏ အခွင့်အရေးများ သို့မဟုတ် တာဝန်ဝတ္တရားများ အားလုံးကိုဖြစ်စေ သို့မဟုတ် တစ်စိတ်တစ်ပိုင်းကိုဖြစ်စေ ပေးအပ်ခြင်း သို့မဟုတ် လွှဲပြောင်းခြင်းတို့အား KBZ ၏ စာဖြင့် ရေးသားဖော်ပြထားသော သဘောတူညီချက်မရှိဘဲ ဆောင်ရွက်ခြင်း မပြုရပါ။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-23">
+  <h3><span class="ch-num">23</span>၂၃။	ဥပဒေသက်ရောက်မှုနှင့် တရားစီရင်ပိုင်ခွင့်</h3>
+  <p>အထက်ဖော်ပြပါ စည်းမျဉ်းစည်းကမ်းများနှင့် သတ်မှတ်ချက်များအားလုံးသည် ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံ ၏တည်ဆဲဥပဒေများနှင့် အညီ အဓိပ္ပါယ်ဖော်ဆောင်ရမည် ဖြစ်သည်။ ဤဝန်ဆောင်မှုကို အသုံးပြုမှုကြောင့် ပေါ်ပေါက်လာသော အငြင်းပွားမှုတစ်စုံတစ်ရာ၊ ပြဿနာတစ်ခုခု ပေါ်ပေါက်လာပါက အနုညာတ ခုံသမာဓိနည်းအရ ဖြေရှင်း ဆောင်ရွက်မည်ဖြစ်ကြောင်း အသုံးပြုသူအနေဖြင့် သဘောတူလက်ခံပါသည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-24">
+  <h3><span class="ch-num">24</span>၂၄။	စွန့်လွှတ်ခြင်း</h3>
+  <p>ဤစည်းကမ်းချက်များပါ မည်သည့်ပြဋ္ဌာန်းချက်(များ) ကိုမဆို မည်သည့်အချိန်တွင်မဆို အကျိုးသက်ရောက်မှုရှိအောင် ဆောင်ရွက်ရန် မည်သည့်ဖက်ကမဆို ပျက်ကွက်ခြင်း သို့မဟုတ် နှောင့်နှေးခြင်းကို ဤစည်းကမ်းချက်များပါ ပြဋ္ဌာန်းချက် တစ်ခုစီတိုင်းနှင့် ပြဋ္ဌာန်းချက်အရပ်ရပ်ကို အာဏာသက်ရောက်အောင် လုပ်ဆောင်ပိုင်ခွင့်အား စွန့်လွှတ်ခြင်းဖြစ်သည်ဟု အဓိပ္ပာယ်ကောက်ယူခြင်းမရှိစေရ။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-25">
+  <h3><span class="ch-num">25</span>၂၅။	ဘာသာစကား</h3>
+  <p>ဤစည်းမျဉ်းနှင့်စည်းကမ်းသတ်မှတ်ချက်များအား အင်္ဂလိပ်၊ မြန်မာ နှစ်ဘာသာဖြင့် ပြုလုပ်ထားပြီး နှစ်မျိုးစလုံးသည် တူညီသော အဓိပ္ပာယ် သက်ရောက်မှုရှိမည်ဖြစ်သည်။ အင်္ဂလိပ်ဘာသာနှင့် မြန်မာဘာသာနှစ်မျိုးဖြင့် ပြုလုပ်ထားခြင်းဖြစ်သောကြောင့် ကွဲလွဲမှုတစ်စုံတစ်ရာရှိလျှင် မြန်မာဘာသာဖြင့် ရေးသားထားသည့် စည်းကမ်း သတ်မှတ်ချက်များကိုသာလျှင် အမှန်ယူရမည် ဖြစ်သည်။</p>
+</section>
+
+<section class="policy-section" id="kbz-my-26">
+  <h3><span class="ch-num">26</span>၂၆။	ဆက်သွယ်ရန်</h3>
+  <p>အကယ်၍ အသုံးပြုသူသည် မေးခွန်းများ သို့မဟုတ် မှတ်ချက်များရှိ၍ CloudCity Food (Mini App) ထံ ဆက်သွယ်လိုပါက၊ ကျေးဇူးပြု၍ CloudCity Food (Mini App) ၏ customer support team သို့ အီးမေးလ်ပေးပို့ခြင်းဖြင့်ဖြစ်စေ သို့မဟုတ် CloudCity Food (Mini App) အတွင်းရှိ အသုံးပြုသူများမေးမြန်းနိုင်သည့် feature မှတစ်ဆင့်ပေးပို့နိုင်ပါသည်။</p>
+          <p>CloudCity Food  Hotline:  09782099992</p>
+          <p>CloudCity Food  Email:</p>
+</section>
+</article>
+  </div>
 </div>
 
 <footer>
-  <p>&copy; 2026 CloudCityFood · CLOUDCITY INTERNET SERVICE CO., LTD ·
-    <a href="index.html">Home</a> ·
-    <a href="legal.html">Website Terms</a>
-  </p>
+  <p>&copy; 2026 CloudCityFood &middot; CLOUDCITY INTERNET SERVICE CO., LTD</p>
 </footer>
-
 <script>
-// Highlight active TOC link on scroll
-const sections = document.querySelectorAll('.policy-section');
-const tocLinks = document.querySelectorAll('.toc-link');
-
-function updateActiveTOC() {
-  let current = '';
-  sections.forEach(sec => {
-    const rect = sec.getBoundingClientRect();
-    if (rect.top <= 120) current = sec.id;
-  });
-  tocLinks.forEach(link => {
-    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-  });
+const langNames = { en:'English', my:'မြန်မာ' };
+const pageTitles = { en:'Terms and Conditions — CloudCity Food Mini App', my:'စည်းမျဉ်းစည်းကမ်းများ — CloudCity Food' };
+function setLang(l){
+  document.body.setAttribute('data-lang', l);
+  document.documentElement.lang = l;
+  document.title = pageTitles[l] || pageTitles.en;
+  document.getElementById('currentLang').textContent = langNames[l];
+  const codes = ['en','my'];
+  document.querySelectorAll('.lang-option').forEach((opt,i) => opt.classList.toggle('active', codes[i]===l));
+  document.querySelectorAll('[data-lang-text]').forEach(el => el.style.display = el.getAttribute('data-lang-text')===l ? '' : 'none');
+  document.getElementById('langDropdown').classList.remove('open');
+  document.querySelectorAll('.lang-version').forEach(v => v.classList.toggle('active', v.getAttribute('data-lang-version')===l));
+  window.scrollTo({top:0});
+  updateActiveTOC();
 }
-window.addEventListener('scroll', updateActiveTOC, { passive: true });
-updateActiveTOC();
+function toggleLang(e){ if(e) e.stopPropagation(); document.getElementById('langDropdown').classList.toggle('open'); }
+document.addEventListener('click', e => { if(!e.target.closest('#langBtn') && !e.target.closest('#langDropdown')) document.getElementById('langDropdown').classList.remove('open'); });
+const urlLang = new URLSearchParams(location.search).get('lang');
+setLang(['en','my'].includes(urlLang) ? urlLang : 'en');
+function updateActiveTOC(){
+  const v = document.querySelector('.lang-version.active'); if(!v) return;
+  const secs = v.querySelectorAll('.policy-section'); const links = v.querySelectorAll('.toc-link');
+  let cur=''; secs.forEach(s => { if(s.getBoundingClientRect().top <= 120) cur = s.id; });
+  links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
+}
+window.addEventListener('scroll', updateActiveTOC, { passive:true });
 </script>
-
 </body>
 </html>
