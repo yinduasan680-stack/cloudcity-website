@@ -2,7 +2,7 @@
 // Provides offline support and faster repeat-visit loads.
 // Version is bumped to invalidate old caches when content changes.
 
-const CACHE_VERSION = 'cloudcity-v1.2026.10.29';
+const CACHE_VERSION = 'cloudcity-v1.2026.10.29.2';
 const RUNTIME_CACHE = 'cloudcity-runtime-v1';
 
 // Core files to pre-cache (the app shell)
